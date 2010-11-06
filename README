@@ -1,0 +1,5 @@
+The WAR development Repo.
+
+Contents:
+-openframeworks directory.
+	-apps/projects/war/ contains the xcode project
