@@ -1,0 +1,13 @@
+.DS_Store
+*.swp
+*~.nib
+
+of_preRelease_v0061_osxSL_FAT/apps/projects/WAR/build/
+of_preRelease_v0061_osxSL_FAT/apps/projects/WAR/bin/
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+*.mode1v3
+*.mode2v3

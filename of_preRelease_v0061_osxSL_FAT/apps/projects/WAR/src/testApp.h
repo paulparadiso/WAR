@@ -1,8 +1,10 @@
 #ifndef _TEST_APP
 #define _TEST_APP
 
-
 #include "ofMain.h"
+#include "ofxOsc.h"
+
+#define PORT 9000
 
 class testApp : public ofBaseApp{
 
@@ -24,6 +26,10 @@ class testApp : public ofBaseApp{
 		int showMsg;
 		int timeOfLastFlash;
 		int flashDelay;
+
+	private:
+		ofxOscReceiver	receiver;
+		float			wiiX, wiiY;
 };
 
 #endif
