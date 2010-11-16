@@ -22,6 +22,14 @@ void testApp::setup(){
 	// listen on the given port
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
+	
+	// video
+	bool result = video.loadMovie("videos/phantom.flv");
+	cout << "loadMovie returned " << result << "\n";
+	video.play();
+	
+	// flashlight
+	flashlightImage.loadImage("flashlight-mask-invert-rings.png");
 }
 
 //--------------------------------------------------------------
@@ -54,16 +62,32 @@ void testApp::update(){
 		{
 			cout << "unrecognized message: " << m.getAddress() << "\n";
 		}
-		
 	}
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	ofSetColor(255, 130, 0);
-	float radius = 50;
-	ofFill();
-	ofCircle(wiiX, wiiY, radius);
+//	ofSetColor(255, 130, 0);
+//	float radius = 50;
+//	ofFill();
+//	ofCircle(wiiX, wiiY, radius);
+	
+	glEnable(GL_BLEND);
+	glColorMask(false, false, false, true);
+	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
+	//glColor4f(0.5,0.5,1,0.5f);
+	//ofCircle (wiiX,wiiY,200);
+	flashlightImage.draw(wiiX-250, wiiY-250);
+	
+	glColorMask(true,true,true,true);
+	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
+	//ofSetColor(0xff0000);
+	glColor4f(1.0,1.0,1.0,1.0f);
+//	for (int i = 0; i < 400; i++){
+//		ofLine(ofRandom(0,300), ofRandom(0,300), ofRandom(0,300), ofRandom(0,300));
+//	}
+	// 478 x 359
+	video.draw(50,50, 478*2, 359*2);
 }
 
 //--------------------------------------------------------------

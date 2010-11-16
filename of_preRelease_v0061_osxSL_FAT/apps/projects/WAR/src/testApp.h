@@ -28,8 +28,10 @@ class testApp : public ofBaseApp{
 		int flashDelay;
 
 	private:
+		ofVideoPlayer	video;
 		ofxOscReceiver	receiver;
 		float			wiiX, wiiY;
+		ofImage			flashlightImage;
 };
 
 #endif
