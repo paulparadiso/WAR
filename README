@@ -3,3 +3,6 @@ The WAR development Repo.
 Contents:
 -openframeworks directory.
 	-apps/projects/war/ contains the xcode project
+
+Dependencies:
+-Perian - for video playback - can be downloaded here - http://perian.org/
