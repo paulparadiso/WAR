@@ -1,0 +1,1200 @@
+TemptyExample
+v7
+r0
+t311565172.335048
+cCheck dependencies
+cProcessInfoPlistFile /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/Info.plist openFrameworks-Info.plist
+cProcessPCH++ /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cPhaseScriptExecution "Run Script" /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+cPBXCp bin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+cPBXCp bin/emptyExampleDebug.app/Contents/Resources/openFrameworks-Info.plist openFrameworks-Info.plist
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004A49A9E400000000000000EE
+t1246341604
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h
+c0000000047BAEC060000000000000476
+t1203432454
+s1142
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004864BE3E00000000000005D7
+t1214561854
+s1495
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c0000000047BAD4120000000000000400
+t1203426322
+s1024
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004702C63B0000000000025B59
+t1191364155
+s154457
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004702C63B0000000000003F8D
+t1191364155
+s16269
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004864C165000000000000067F
+t1214562661
+s1663
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/AvailabilityMacros.h
+c000000004817F968000000000000506E
+t1209530728
+s20590
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/TargetConditionals.h
+c000000004817F9680000000000002778
+t1209530728
+s10104
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/ctype.h
+c0000000047BA99310000000000002C3A
+t1203411249
+s11322
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/dirent.h
+c0000000047BA993100000000000014E4
+t1203411249
+s5348
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/errno.h
+c0000000047BA993000000000000003EB
+t1203411248
+s1003
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/fcntl.h
+c0000000047BA993000000000000003EA
+t1203411248
+s1002
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/getopt.h
+c0000000047BA99300000000000000CBC
+t1203411248
+s3260
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/inttypes.h
+c0000000047BA993000000000000027D1
+t1203411248
+s10193
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h
+c0000000047BA987000000000000004B7
+t1203411056
+s1207
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/pthread.h
+c0000000047BA9932000000000000380F
+t1203411250
+s14351
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/setjmp.h
+c0000000047BA99300000000000000438
+t1203411248
+s1080
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h
+c0000000047BA99310000000000003D1D
+t1203411249
+s15645
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h
+c0000000047BA99310000000000002A79
+t1203411249
+s10873
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h
+c0000000047BA99320000000000001731
+t1203411250
+s5937
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/ioctl.h
+c0000000047E883CF00000000000011D1
+t1206420431
+s4561
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/select.h
+c0000000047E883D100000000000016A2
+t1206420433
+s5794
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/termios.h
+c0000000047BA993000000000000004D4
+t1203411248
+s1236
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h
+c0000000047BA9932000000000000178E
+t1203411250
+s6030
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/unistd.h
+c0000000047BA993200000000000053FF
+t1203411250
+s21503
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/wchar.h
+c0000000047BA993200000000000025DA
+t1203411250
+s9690
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11EAF100000000000010DD
+t1242688241
+s4317
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A11EAF10000000000003197
+t1242688241
+s12695
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004BD2589F0000000000043820
+t1272076447
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004BD255330000000002B48410
+t1272075571
+s45384720
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004B73AAD700000000004C9980
+t1265871575
+s5020032
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004C0FDD7E000000000000A5F0
+t1276108158
+s42480
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004BD24C2800000000002180C0
+t1272073256
+s2195648
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004BC13513000000000077DFF0
+t1270953235
+s7856112
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004A11F09A0000000000021710
+t1242689690
+s136976
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004BBD310E0000000000172A20
+t1270690062
+s1518112
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004C584E830000000000043310
+t1280855683
+s275216
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004BF9C9EC0000000000783950
+t1274661356
+s7878992
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/FreeImage/lib/osx/freeimage.a
+c000000004CD4AC020000000000AA64B0
+t1289006082
+s11166896
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/GLee/include/GLee.h
+c000000004CD4AC020000000000090A87
+t1289006082
+s592519
+i<windows.h>
+i<GL/gl.h>
+i<OpenGL/gl.h>
+i<GL/gl.h>
+i<GL/glx.h>
+i<stddef.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/GLee/lib/osx/GLee.a
+c000000004CD4AC0200000000000C88C8
+t1289006082
+s821448
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/fmodex/include/fmod.h
+c000000004CD4AC020000000000028E68
+t1289006082
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/fmodex/include/fmod_errors.h
+c000000004CD4AC020000000000003408
+t1289006082
+s13320
+i"fmod.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/fmodex/lib/osx/libfmodex.dylib
+c000000004CD4AC0200000000001DD8CC
+t1289006082
+s1956044
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/freeimage/include/FreeImage.h
+c000000004CD4AC02000000000000CC1B
+t1289006082
+s52251
+i<wchar.h>
+i<inttypes.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/freetype/lib/osx/freetype.a
+c000000004CD4AC0200000000004D82C8
+t1289006082
+s5079752
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx/GLUT.framework
+c000000004CD4AC020000000000000132
+t1289006082
+s306
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx/GLUT.framework/GLUT
+c000000004CD4AC02000000000011A218
+t1289006082
+s1155608
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx/CppUnit.a
+c000000004CD4AC04000000000003ABB0
+t1289006084
+s240560
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx/PocoFoundation.a
+c000000004CD4AC0400000000005A62E8
+t1289006084
+s5923560
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx/PocoNet.a
+c000000004CD4AC040000000000378278
+t1289006084
+s3637880
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx/PocoUtil.a
+c000000004CD4AC0400000000000FFB80
+t1289006084
+s1047424
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx/PocoXML.a
+c000000004CD4AC040000000000239BC0
+t1289006084
+s2333632
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/rtAudio/lib/osx/rtAudio.a
+c000000004CD4AC0400000000000BC8E8
+t1289006084
+s772328
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app
+t2
+s0
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/Info.plist
+t1289872359
+s621
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug
+t2
+s0
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/PkgInfo
+t1289872360
+s8
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework
+t1289872371
+s306
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/emptyExampleDebug.app/Contents/Resources/openFrameworks-Info.plist
+t1289872372
+s631
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/emptyExampleDebug.LinkFileList
+c000000004CE1E3E7000000000000012F
+t1289872359
+s303
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o
+t2
+s0
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004CE1E3E70000000000000113
+t1289872359
+s275
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/openFrameworks-Info.plist
+c000000004B6D53E60000000000000277
+t1265456102
+s631
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp
+c000000004BD9BE0E00000000000000BF
+t1272561166
+s191
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp
+c000000004BD9BE0E0000000000001299
+t1272561166
+s4761
+i"testApp.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h
+c000000004BD9BE0E000000000000060B
+t1272561166
+s1547
+i"ofMain.h"
+i"ofxVectorMath.h"
+i"ofxBox2d.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod.h
+c000000004CD4AC020000000000028E68
+t1289006082
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_codec.h
+c000000004CD4AC02000000000000334A
+t1289006082
+s13130
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_dsp.h
+c000000004CD4AC02000000000000892F
+t1289006082
+s35119
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_memoryinfo.h
+c000000004CD4AC020000000000003C95
+t1289006082
+s15509
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx/GLUT.framework/Headers/glut.h
+c000000004CD4AC02000000000000578C
+t1289006082
+s22412
+i<windows.h>
+i<AvailabilityMacros.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004CD4AC030000000000000446
+t1289006083
+s1094
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppGlutWindow.h
+c000000004CD4AC03000000000000066C
+t1289006083
+s1644
+i"ofConstants.h"
+i"ofAppBaseWindow.h"
+i"glut.h"
+i<GLUT/glut.h>
+i<GL/glut.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppRunner.h
+c000000004CD4AC03000000000000050D
+t1289006083
+s1293
+i"ofMain.h"
+i"ofBaseApp.h"
+i"ofAppBaseWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofBaseApp.h
+c000000004CD4AC030000000000000375
+t1289006083
+s885
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/communication/ofArduino.h
+c000000004CD4AC030000000000003D3C
+t1289006083
+s15676
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/communication/ofSerial.h
+c000000004CD4AC030000000000000D2E
+t1289006083
+s3374
+i"ofConstants.h"
+i<termios.h>
+i<sys/ioctl.h>
+i<getopt.h>
+i<dirent.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<fcntl.h>
+i<errno.h>
+i<ctype.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/events/ofEventUtils.h
+c000000004CD4AC030000000000000A8A
+t1289006083
+s2698
+i"ofConstants.h"
+i"Poco/FIFOEvent.h"
+i"Poco/Delegate.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/events/ofEvents.h
+c000000004CD4AC0300000000000007AF
+t1289006083
+s1967
+i"ofConstants.h"
+i"ofEventUtils.h"
+i"ofxEventUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofGraphics.h
+c000000004CD4AC030000000000000B73
+t1289006083
+s2931
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofImage.h
+c000000004CD4AC030000000000000C9F
+t1289006083
+s3231
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"FreeImage.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofTexture.h
+c000000004CD4AC030000000000000B5A
+t1289006083
+s2906
+i"ofConstants.h"
+i"ofGraphics.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004CD4AC03000000000000087A
+t1289006083
+s2170
+i"ofConstants.h"
+i"ofGraphics.h"
+i"ofUtils.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/ofMain.h
+c000000004CD4AC030000000000000347
+t1289006083
+s839
+i"ofConstants.h"
+i"ofMath.h"
+i"ofUtils.h"
+i"ofTypes.h"
+i"ofSerial.h"
+i"ofArduino.h"
+i"ofTexture.h"
+i"ofTrueTypeFont.h"
+i"ofGraphics.h"
+i"ofImage.h"
+i"ofBaseApp.h"
+i"ofAppRunner.h"
+i"ofSoundStream.h"
+i"ofSoundPlayer.h"
+i"ofVideoGrabber.h"
+i"ofVideoPlayer.h"
+i"ofEvents.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004CD4AC0300000000000006C3
+t1289006083
+s1731
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/sound/ofSoundStream.h
+c000000004CD4AC030000000000000254
+t1289006083
+s596
+i"ofConstants.h"
+i"ofBaseApp.h"
+i"ofEvents.h"
+i"ofMath.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofConstants.h
+c000000004CD4AC030000000000002AA0
+t1289006083
+s10912
+i<TargetConditionals.h>
+i<windows.h>
+i"GLee.h"
+i"glu.h"
+i<unistd.h>
+i"GLee.h"
+i<OpenGL/glu.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i"GLee.h"
+i<GL/glu.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<stdio.h>
+i<stdarg.h>
+i<math.h>
+i<time.h>
+i<stdlib.h>
+i<string.h>
+i<iostream>
+i<vector>
+i<string>
+i<sstream>
+i<iomanip>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofMath.h
+c000000004CD4AC0300000000000006DB
+t1289006083
+s1755
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofTypes.h
+c000000004CD4AC030000000000001991
+t1289006083
+s6545
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofUtils.h
+c000000004CD4AC0300000000000005A4
+t1289006083
+s1444
+i"ofConstants.h"
+i<shellapi.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofGstUtils.h
+c000000004CD4AC030000000000000B42
+t1289006083
+s2882
+i<gst/gst.h>
+i<pthread.h>
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofQtUtils.h
+c000000004CD4AC0300000000000006CF
+t1289006083
+s1743
+i"ofConstants.h"
+i"ofGraphics.h"
+i<QuickTime/QuickTime.h>
+i<CoreServices/CoreServices.h>
+i<ApplicationServices/ApplicationServices.h>
+i<QTML.h>
+i<FixMath.h>
+i<QuickTimeComponents.h>
+i<TextUtils.h>
+i<MediaHandlers.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofUCUtils.h
+c000000004CD4AC0300000000000004A7
+t1289006083
+s1191
+i"ofConstants.h"
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<unicap.h>
+i<unistd.h>
+i<string.h>
+i<pthread.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofVideoGrabber.h
+c000000004CD4AC030000000000000C9C
+t1289006083
+s3228
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofTypes.h"
+i"ofQtUtils.h"
+i"videoInput.h"
+i"ofUCUtils.h"
+i"ofGstUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofVideoPlayer.h
+c000000004CD4AC030000000000000BD3
+t1289006083
+s3027
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGstUtils.h"
+i"ofQtUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c000000004CDABBA400000000003BA608
+t1289403300
+s3909128
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractDelegate.h
+c000000004CD4AC030000000000000B2E
+t1289006083
+s2862
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractEvent.h
+c000000004CD4AC030000000000002C6A
+t1289006083
+s11370
+i"Poco/Foundation.h"
+i"Poco/SingletonHolder.h"
+i"Poco/SharedPtr.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveMethod.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveMethod.h
+c000000004CD4AC030000000000001C64
+t1289006083
+s7268
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveRunnable.h"
+i"Poco/ActiveStarter.h"
+i"Poco/AutoPtr.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveResult.h
+c000000004CD4AC030000000000002E66
+t1289006083
+s11878
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveRunnable.h
+c000000004CD4AC030000000000001785
+t1289006083
+s6021
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/Runnable.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i"Poco/Exception.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveStarter.h
+c000000004CD4AC030000000000000927
+t1289006083
+s2343
+i"Poco/Foundation.h"
+i"Poco/ThreadPool.h"
+i"Poco/ActiveRunnable.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AutoPtr.h
+c000000004CD4AC030000000000001E0C
+t1289006083
+s7692
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Bugcheck.h
+c000000004CD4AC0300000000000012FE
+t1289006083
+s4862
+i"Poco/Foundation.h"
+i<string>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/CompareFunctions.h
+c000000004CD4AC0300000000000007EC
+t1289006083
+s2028
+i"Poco/Foundation.h"
+i<functional>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Config.h
+c000000004CD4AC0300000000000008B5
+t1289006083
+s2229
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Delegate.h
+c000000004CD4AC030000000000001802
+t1289006083
+s6146
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/FunctionDelegate.h"
+i"Poco/Expire.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event.h
+c000000004CD4AC030000000000000E21
+t1289006083
+s3617
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Event_WIN32.h"
+i"Poco/Event_POSIX.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event_POSIX.h
+c000000004CD4AC030000000000000A91
+t1289006083
+s2705
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event_WIN32.h
+c000000004CD4AC030000000000000947
+t1289006083
+s2375
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Exception.h
+c000000004CD4AC0300000000000026AC
+t1289006083
+s9900
+i"Poco/Foundation.h"
+i<stdexcept>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Expire.h
+c000000004CD4AC030000000000000CF1
+t1289006083
+s3313
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/Timestamp.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FIFOEvent.h
+c000000004CD4AC030000000000000AD4
+t1289006083
+s2772
+i"Poco/AbstractEvent.h"
+i"Poco/FIFOStrategy.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/CompareFunctions.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FIFOStrategy.h
+c000000004CD4AC0300000000000010F3
+t1289006083
+s4339
+i"Poco/NotificationStrategy.h"
+i<map>
+i<list>
+i<memory>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Foundation.h
+c000000004CD4AC030000000000001023
+t1289006083
+s4131
+i"Poco/Config.h"
+i"Poco/Platform.h"
+i"Poco/Platform_WIN32.h"
+i"Poco/Platform_VMS.h"
+i"Poco/Platform_POSIX.h"
+i"Poco/Bugcheck.h"
+i"Poco/Types.h"
+i<string>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FunctionDelegate.h
+c000000004CD4AC0300000000000013CA
+t1289006083
+s5066
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex.h
+c000000004CD4AC030000000000001A61
+t1289006083
+s6753
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/ScopedLock.h"
+i"Poco/Mutex_WIN32.h"
+i"Poco/Mutex_POSIX.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex_POSIX.h
+c000000004CD4AC030000000000000AC3
+t1289006083
+s2755
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex_WIN32.h
+c000000004CD4AC030000000000000A07
+t1289006083
+s2567
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/NotificationStrategy.h
+c000000004CD4AC040000000000000A37
+t1289006084
+s2615
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform.h
+c000000004CD4AC040000000000001A3A
+t1289006084
+s6714
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_POSIX.h
+c000000004CD4AC040000000000000843
+t1289006084
+s2115
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_VMS.h
+c000000004CD4AC040000000000000BAA
+t1289006084
+s2986
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_WIN32.h
+c000000004CD4AC040000000000000D4D
+t1289006084
+s3405
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/RefCountedObject.h
+c000000004CD4AC040000000000000B10
+t1289006084
+s2832
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Runnable.h
+c000000004CD4AC040000000000000861
+t1289006084
+s2145
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ScopedLock.h
+c000000004CD4AC0400000000000008EB
+t1289006084
+s2283
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SharedPtr.h
+c000000004CD4AC0400000000000021DE
+t1289006084
+s8670
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Mutex.h"
+i<algorithm>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SignalHandler.h
+c000000004CD4AC0400000000000011EB
+t1289006084
+s4587
+i"Poco/Foundation.h"
+i<vector>
+i<setjmp.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SingletonHolder.h
+c000000004CD4AC040000000000000A64
+t1289006084
+s2660
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread.h
+c000000004CD4AC040000000000001C3A
+t1289006084
+s7226
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Thread_WIN32.h"
+i"Poco/Thread_POSIX.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ThreadPool.h
+c000000004CD4AC040000000000001849
+t1289006084
+s6217
+i"Poco/Foundation.h"
+i"Poco/Thread.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread_POSIX.h
+c000000004CD4AC0400000000000012A8
+t1289006084
+s4776
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/SignalHandler.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i<pthread.h>
+i<sys/select.h>
+i<errno.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread_WIN32.h
+c000000004CD4AC04000000000000106C
+t1289006084
+s4204
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Timestamp.h
+c000000004CD4AC0400000000000019A7
+t1289006084
+s6567
+i"Poco/Foundation.h"
+i<ctime>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Types.h
+c000000004CD4AC040000000000001910
+t1289006084
+s6416
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/UnWindows.h
+c000000004CD4AC040000000000000FD1
+t1289006084
+s4049
+i<windows.h>
+
+N/var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h.gch
+t1289872367
+s54335856
+
+NopenFrameworks-Info.plist
+c000000004B6D53E60000000000000277
+t1265456102
+s631
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies311565159#311565159#0(110"[WARN]Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.1(22@103"Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.311565159#18446744073709551615#0#0(1@0"0(0#1#0"27866456492998768#0"0#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s311565167.857498
+e311565170.936109
+r0
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o
+x/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp:2:
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:4:27: error: ofxVectorMath.h: No such file or directory
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:5:22: error: ofxBox2d.h: No such file or directory
+oIn file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp:2:
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:8: error: expected class-name before '{' token
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: In member function 'void CustomParticle::draw()':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:15: error: 'getRadius' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:18: error: 'getPosition' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: At global scope:
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:52: error: 'ofxBox2d' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: 'ofxBox2dCircle' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: 'ofxBox2dPolygon' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: 'ofxBox2dRect' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: 'ofxBox2dLine' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:59: error: 'ofxBox2dCircle' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:60: error: 'ofxBox2dJoint' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:62: error: 'ofxBox2dLine' does not name a type
+lSLF07#2@93"Compile /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565167#311565170#0(3312"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp:2:/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:4:27: error: ofxVectorMath.h: No such file or directory/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:5:22: error: ofxBox2d.h: No such file or directoryIn file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp:2:/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:8: error: expected class-name before '{' token/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: In member function 'void CustomParticle::draw()':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:15: error: 'getRadius' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:18: error: 'getPosition' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: At global scope:/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:52: error: 'ofxBox2d' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: 'ofxBox2dCircle' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: 'ofxBox2dPolygon' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: 'ofxBox2dRect' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: 'ofxBox2dLine' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:59: error: 'ofxBox2dCircle' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:60: error: 'ofxBox2dJoint' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:62: error: 'ofxBox2dLine' does not name a type22(4@42"OfxVectorMath.h: No such file or directory311565169#111#143#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565169#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@132"OfxVectorMath.h: No such file or directory in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565169#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#4#0#4#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#4#0#4#0#28"*: No such file or directory0(4@37"OfxBox2d.h: No such file or directory311565169#254#138#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565169#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@127"OfxBox2d.h: No such file or directory in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565169#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#5#0#5#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#5#0#5#0#28"*: No such file or directory0(4@36"Expected class-name before '{' token311565170#503#134#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@126"Expected class-name before '{' token in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#8#0#8#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#8#0#8#0#19"expected * before *0(4@42"'getRadius' was not declared in this scope311565170#775#141#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@132"'getRadius' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#15#0#15#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#15#0#15#0#34"'*' was not declared in this scope0(4@44"'getPosition' was not declared in this scope311565170#916#143#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@134"'getPosition' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#18#0#18#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#18#0#18#0#34"'*' was not declared in this scope0(23@16"At global scope:311565170#1059#105#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@106"At global scope: in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#0#0#0#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#0#0#0#0#0"0(4@31"'ofxBox2d' does not name a type311565170#1164#130#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@121"'ofxBox2d' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#52#0#52#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#52#0#52#0#24"'*' does not name a type0(4@47"'ofxBox2dCircle' was not declared in this scope311565170#1294#146#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@137"'ofxBox2dCircle' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#1440#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(4@30"Template argument 2 is invalid311565170#1569#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(4@48"'ofxBox2dPolygon' was not declared in this scope311565170#1698#147#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@138"'ofxBox2dPolygon' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#1845#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(4@30"Template argument 2 is invalid311565170#1974#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(4@45"'ofxBox2dRect' was not declared in this scope311565170#2103#144#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@135"'ofxBox2dRect' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#2247#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(4@30"Template argument 2 is invalid311565170#2376#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(4@45"'ofxBox2dLine' was not declared in this scope311565170#2505#144#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@135"'ofxBox2dLine' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#2649#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(4@30"Template argument 2 is invalid311565170#2778#129#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(4@37"'ofxBox2dCircle' does not name a type311565170#2907#136#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@127"'ofxBox2dCircle' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#59#0#59#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#59#0#59#0#24"'*' does not name a type0(4@36"'ofxBox2dJoint' does not name a type311565170#3043#135#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@126"'ofxBox2dJoint' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#60#0#60#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#60#0#60#0#24"'*' does not name a type0(4@35"'ofxBox2dLine' does not name a type311565170#3178#134#2(7@107"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp311565170#18446744073709551615#0#0(6@85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp294253966#2#0#2#0#0"0(13@125"'ofxBox2dLine' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#62#0#62#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#62#0#62#0#24"'*' does not name a type0(0#0#85"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp6866955308631023616#1959"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin -F/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h -c /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/main.cpp -o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/main.o1#
+
+CCompileC build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s311565167.860002
+e311565171.029584
+r0
+xCompileC
+xbuild/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o
+x/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:2:
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:4:27: error: ofxVectorMath.h: No such file or directory
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:5:22: error: ofxBox2d.h: No such file or directory
+oIn file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:2:
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:8: error: expected class-name before '{' token
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: In member function 'void CustomParticle::draw()':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:15: error: 'getRadius' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:18: error: 'getPosition' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: At global scope:
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:52: error: 'ofxBox2d' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: 'ofxBox2dCircle' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: 'ofxBox2dPolygon' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: 'ofxBox2dRect' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: 'ofxBox2dLine' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 1 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 2 is invalid
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:59: error: 'ofxBox2dCircle' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:60: error: 'ofxBox2dJoint' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:62: error: 'ofxBox2dLine' does not name a type
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::setup()':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:19: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:30: error: 'ballJoints' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:35: error: 'joints' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:36: error: 'ballJoints' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:46: error: 'lineStrip' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::update()':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:61: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:67: error: request for member 'size' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:68: error: invalid types 'int[int]' for array subscript
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:69: error: invalid types 'int[int]' for array subscript
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:72: error: 'class CustomParticle' has no member named 'addAttractionPoint'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:73: error: 'class CustomParticle' has no member named 'addDamping'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::draw()':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:85: error: request for member 'size' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:86: error: invalid types 'int[int]' for array subscript
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:88: error: request for member 'size' in '((testApp*)this)->testApp::polygons', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:89: error: invalid types 'int[int]' for array subscript
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:91: error: request for member 'size' in '((testApp*)this)->testApp::boxes', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:92: error: invalid types 'int[int]' for array subscript
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:94: error: request for member 'size' in '((testApp*)this)->testApp::lines', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:95: error: invalid types 'int[int]' for array subscript
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:102: error: 'ballJoints' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:103: error: 'joints' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:105: error: 'lineStrip' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:106: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:130: error: 'ofxBox2dCircle' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:130: error: expected `;' before 'circle'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:131: error: 'circle' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:132: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:133: error: request for member 'push_back' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:138: error: 'class CustomParticle' has no member named 'setPhysics'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:139: error: 'class CustomParticle' has no member named 'setup'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:139: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:148: error: 'ofxBox2dRect' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:148: error: expected `;' before 'rect'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:149: error: 'rect' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:150: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:151: error: request for member 'push_back' in '((testApp*)this)->testApp::boxes', which is of non-class type 'int'
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::mouseDragged(int, int, int)':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:172: error: 'lineStrip' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::mousePressed(int, int, int)':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:180: error: 'lineStrip' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:180: error: 'box2d' was not declared in this scope
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::mouseReleased(int, int, int)':
+o/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:188: error: 'lineStrip' was not declared in this scope
+lSLF07#2@96"Compile /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565167#311565171#0(10532"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:2:/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:4:27: error: ofxVectorMath.h: No such file or directory/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:5:22: error: ofxBox2d.h: No such file or directoryIn file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:2:/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:8: error: expected class-name before '{' token/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: In member function 'void CustomParticle::draw()':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:15: error: 'getRadius' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:18: error: 'getPosition' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h: At global scope:/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:52: error: 'ofxBox2d' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: 'ofxBox2dCircle' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:53: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: 'ofxBox2dPolygon' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:54: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: 'ofxBox2dRect' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:55: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: 'ofxBox2dLine' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 1 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:56: error: template argument 2 is invalid/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:59: error: 'ofxBox2dCircle' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:60: error: 'ofxBox2dJoint' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h:62: error: 'ofxBox2dLine' does not name a type/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::setup()':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:19: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:30: error: 'ballJoints' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:35: error: 'joints' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:36: error: 'ballJoints' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:46: error: 'lineStrip' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::update()':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:61: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:67: error: request for member 'size' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:68: error: invalid types 'int[int]' for array subscript/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:69: error: invalid types 'int[int]' for array subscript/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:72: error: 'class CustomParticle' has no member named 'addAttractionPoint'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:73: error: 'class CustomParticle' has no member named 'addDamping'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::draw()':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:85: error: request for member 'size' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:86: error: invalid types 'int[int]' for array subscript/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:88: error: request for member 'size' in '((testApp*)this)->testApp::polygons', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:89: error: invalid types 'int[int]' for array subscript/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:91: error: request for member 'size' in '((testApp*)this)->testApp::boxes', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:92: error: invalid types 'int[int]' for array subscript/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:94: error: request for member 'size' in '((testApp*)this)->testApp::lines', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:95: error: invalid types 'int[int]' for array subscript/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:102: error: 'ballJoints' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:103: error: 'joints' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:105: error: 'lineStrip' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:106: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::keyPressed(int)':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:130: error: 'ofxBox2dCircle' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:130: error: expected `;' before 'circle'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:131: error: 'circle' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:132: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:133: error: request for member 'push_back' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:138: error: 'class CustomParticle' has no member named 'setPhysics'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:139: error: 'class CustomParticle' has no member named 'setup'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:139: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:148: error: 'ofxBox2dRect' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:148: error: expected `;' before 'rect'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:149: error: 'rect' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:150: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:151: error: request for member 'push_back' in '((testApp*)this)->testApp::boxes', which is of non-class type 'int'/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::mouseDragged(int, int, int)':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:172: error: 'lineStrip' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::mousePressed(int, int, int)':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:180: error: 'lineStrip' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:180: error: 'box2d' was not declared in this scope/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp: In member function 'virtual void testApp::mouseReleased(int, int, int)':/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp:188: error: 'lineStrip' was not declared in this scope62(4@42"OfxVectorMath.h: No such file or directory311565169#114#143#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565169#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@132"OfxVectorMath.h: No such file or directory in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565169#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#4#0#4#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#4#0#4#0#28"*: No such file or directory0(4@37"OfxBox2d.h: No such file or directory311565169#257#138#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565169#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@127"OfxBox2d.h: No such file or directory in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565169#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#5#0#5#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#5#0#5#0#28"*: No such file or directory0(4@36"Expected class-name before '{' token311565170#509#134#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@126"Expected class-name before '{' token in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#8#0#8#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#8#0#8#0#19"expected * before *0(4@42"'getRadius' was not declared in this scope311565170#781#141#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@132"'getRadius' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#15#0#15#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#15#0#15#0#34"'*' was not declared in this scope0(4@44"'getPosition' was not declared in this scope311565170#922#143#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@134"'getPosition' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#18#0#18#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#18#0#18#0#34"'*' was not declared in this scope0(23@16"At global scope:311565170#1065#105#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@106"At global scope: in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#0#0#0#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#0#0#0#0#0"0(4@31"'ofxBox2d' does not name a type311565170#1170#130#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@121"'ofxBox2d' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#52#0#52#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#52#0#52#0#24"'*' does not name a type0(4@47"'ofxBox2dCircle' was not declared in this scope311565170#1300#146#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@137"'ofxBox2dCircle' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#1446#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(4@30"Template argument 2 is invalid311565170#1575#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#53#0#53#0#0"0(4@48"'ofxBox2dPolygon' was not declared in this scope311565170#1704#147#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@138"'ofxBox2dPolygon' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#1851#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(4@30"Template argument 2 is invalid311565170#1980#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#54#0#54#0#0"0(4@45"'ofxBox2dRect' was not declared in this scope311565170#2109#144#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@135"'ofxBox2dRect' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#2253#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(4@30"Template argument 2 is invalid311565170#2382#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#55#0#55#0#0"0(4@45"'ofxBox2dLine' was not declared in this scope311565170#2511#144#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@135"'ofxBox2dLine' was not declared in this scope in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#34"'*' was not declared in this scope0(4@30"Template argument 1 is invalid311565170#2655#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 1 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(4@30"Template argument 2 is invalid311565170#2784#129#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@120"Template argument 2 is invalid in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#56#0#56#0#0"0(4@37"'ofxBox2dCircle' does not name a type311565170#2913#136#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@127"'ofxBox2dCircle' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#59#0#59#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#59#0#59#0#24"'*' does not name a type0(4@36"'ofxBox2dJoint' does not name a type311565170#3049#135#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@126"'ofxBox2dJoint' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#60#0#60#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#60#0#60#0#24"'*' does not name a type0(4@35"'ofxBox2dLine' does not name a type311565170#3184#134#2(7@110"In file included from /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp311565170#18446744073709551615#0#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#2#0#2#0#0"0(13@125"'ofxBox2dLine' does not name a type in /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h311565170#18446744073709551615#0#0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#62#0#62#0#0"0(6@86"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.h294253966#62#0#62#0#24"'*' does not name a type0(4@38"'box2d' was not declared in this scope311565170#3460#139#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#19#0#19#0#34"'*' was not declared in this scope0(4@43"'ballJoints' was not declared in this scope311565170#3599#144#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#30#0#30#0#34"'*' was not declared in this scope0(4@39"'joints' was not declared in this scope311565170#3743#140#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#35#0#35#0#34"'*' was not declared in this scope0(4@43"'ballJoints' was not declared in this scope311565170#3883#144#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#36#0#36#0#34"'*' was not declared in this scope0(4@42"'lineStrip' was not declared in this scope311565170#4027#143#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#46#0#46#0#34"'*' was not declared in this scope0(4@38"'box2d' was not declared in this scope311565170#4313#139#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#61#0#61#0#34"'*' was not declared in this scope0(4@99"Request for member 'size' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'311565170#4452#200#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#67#0#67#0#0"0(4@44"Invalid types 'int[int]' for array subscript311565170#4652#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#68#0#68#0#0"0(4@44"Invalid types 'int[int]' for array subscript311565170#4797#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#69#0#69#0#0"0(4@63"'class CustomParticle' has no member named 'addAttractionPoint'311565170#4942#164#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#72#0#72#0#27"'*' has no member named '*'0(4@55"'class CustomParticle' has no member named 'addDamping'311565170#5106#156#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#73#0#73#0#27"'*' has no member named '*'0(4@99"Request for member 'size' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'311565170#5403#200#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#85#0#85#0#0"0(4@44"Invalid types 'int[int]' for array subscript311565170#5603#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#86#0#86#0#0"0(4@100"Request for member 'size' in '((testApp*)this)->testApp::polygons', which is of non-class type 'int'311565170#5748#201#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#88#0#88#0#0"0(4@44"Invalid types 'int[int]' for array subscript311565170#5949#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#89#0#89#0#0"0(4@97"Request for member 'size' in '((testApp*)this)->testApp::boxes', which is of non-class type 'int'311565170#6094#198#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#91#0#91#0#0"0(4@44"Invalid types 'int[int]' for array subscript311565170#6292#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#92#0#92#0#0"0(4@97"Request for member 'size' in '((testApp*)this)->testApp::lines', which is of non-class type 'int'311565170#6437#198#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#94#0#94#0#0"0(4@44"Invalid types 'int[int]' for array subscript311565170#6635#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#95#0#95#0#0"0(4@43"'ballJoints' was not declared in this scope311565170#6780#145#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#102#0#102#0#34"'*' was not declared in this scope0(4@39"'joints' was not declared in this scope311565170#6925#141#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#103#0#103#0#34"'*' was not declared in this scope0(4@42"'lineStrip' was not declared in this scope311565170#7066#144#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#105#0#105#0#34"'*' was not declared in this scope0(4@38"'box2d' was not declared in this scope311565170#7210#140#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#106#0#106#0#34"'*' was not declared in this scope0(4@47"'ofxBox2dCircle' was not declared in this scope311565170#7500#149#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#130#0#130#0#34"'*' was not declared in this scope0(4@28"Expected `;' before 'circle'311565170#7649#130#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#130#0#130#0#19"expected * before *0(4@39"'circle' was not declared in this scope311565170#7779#141#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#131#0#131#0#34"'*' was not declared in this scope0(4@38"'box2d' was not declared in this scope311565170#7920#140#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#132#0#132#0#34"'*' was not declared in this scope0(4@104"Request for member 'push_back' in '((testApp*)this)->testApp::circles', which is of non-class type 'int'311565170#8060#206#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#133#0#133#0#0"0(4@55"'class CustomParticle' has no member named 'setPhysics'311565170#8266#157#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#138#0#138#0#27"'*' has no member named '*'0(4@50"'class CustomParticle' has no member named 'setup'311565170#8423#152#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#139#0#139#0#27"'*' has no member named '*'0(4@38"'box2d' was not declared in this scope311565170#8575#140#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#139#0#139#0#34"'*' was not declared in this scope0(4@45"'ofxBox2dRect' was not declared in this scope311565170#8715#147#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#148#0#148#0#34"'*' was not declared in this scope0(4@26"Expected `;' before 'rect'311565170#8862#128#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#148#0#148#0#19"expected * before *0(4@37"'rect' was not declared in this scope311565170#8990#139#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#149#0#149#0#34"'*' was not declared in this scope0(4@38"'box2d' was not declared in this scope311565170#9129#140#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#150#0#150#0#34"'*' was not declared in this scope0(4@102"Request for member 'push_back' in '((testApp*)this)->testApp::boxes', which is of non-class type 'int'311565170#9269#204#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#151#0#151#0#0"0(4@42"'lineStrip' was not declared in this scope311565170#9635#144#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#172#0#172#0#34"'*' was not declared in this scope0(4@42"'lineStrip' was not declared in this scope311565170#9941#144#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#180#0#180#0#34"'*' was not declared in this scope0(4@38"'box2d' was not declared in this scope311565170#10085#140#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#180#0#180#0#34"'*' was not declared in this scope0(4@42"'lineStrip' was not declared in this scope311565170#10388#144#0(6@88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp294253966#188#0#188#0#34"'*' was not declared in this scope0(0#0#88"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp8600575392#1965"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin -F/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h -c /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/src/testApp.cpp -o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/testApp.o1#
+
+CLd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug normal i386
+r0
+
+CPBXCp bin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+s311565171.081672
+e311565172.324272
+r1
+xPBXCp
+xbin/emptyExampleDebug.app/Contents/Frameworks/GLUT.framework
+x../../../libs/glut/lib/osx/GLUT.framework
+lSLF07#2@46"Copy ../../../libs/glut/lib/osx/GLUT.framework311565171#311565172#0(0"0(0#0#114"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx/GLUT.framework8602874688#462"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx/GLUT.framework /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/emptyExampleDebug.app/Contents/Frameworks0#
+
+CPBXCp bin/emptyExampleDebug.app/Contents/Resources/openFrameworks-Info.plist openFrameworks-Info.plist
+s311565172.324460
+e311565172.334858
+r1
+xPBXCp
+xbin/emptyExampleDebug.app/Contents/Resources/openFrameworks-Info.plist
+xopenFrameworks-Info.plist
+lSLF07#2@30"Copy openFrameworks-Info.plist311565172#311565172#0(0"0(0#0#98"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/openFrameworks-Info.plist8603126240#445"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/openFrameworks-Info.plist /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/emptyExampleDebug.app/Contents/Resources0#
+
+CPhaseScriptExecution "Run Script" /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+s311565171.029778
+e311565171.081224
+r0
+xPhaseScriptExecution
+xRun Script
+x/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+ocp: /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/libfmodex.dylib: No such file or directory
+oinstall_name_tool: can't open file: /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug (No such file or directory)
+lSLF07#2@36"Run custom shell script 'Run Script'311565171#311565171#0(359"cp: /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/libfmodex.dylib: No such file or directoryinstall_name_tool: can't open file: /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug (No such file or directory)2(4@161"Cp: /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/libfmodex.dylib: No such file or directory311565171#0#162#0(1@0"0(13@197"install_name_tool: can't open file: /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug (No such file or directory)311565171#162#197#0(1@0"0(0#0#0"8602673312#20733"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER pp    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build    setenv BUILD_ROOT /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/    setenv CACHE_ROOT /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/    setenv CONFIGURATION_TEMP_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug    setenv CONTENTS_FOLDER_PATH emptyExampleDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/emptyExample.dst    setenv DWARF_DSYM_FILE_NAME emptyExampleDebug.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH emptyExampleDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH emptyExampleDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME emptyExampleDebug    setenv EXECUTABLE_PATH emptyExampleDebug.app/Contents/MacOS/emptyExampleDebug    setenv FILE_LIST /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH emptyExampleDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/\"  \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME emptyExampleDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//include\" ../../../libs/openFrameworks/** ../../../libs/freetype/include/ ../../../libs/freetype/include/freetype2 ../../../libs/poco/include ../../../addons/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH emptyExampleDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH emptyExampleDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/emptyExample.dst/Users/pp/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER pp    setenv INSTALL_PATH /Users/pp/Applications    setenv INSTALL_ROOT /tmp/emptyExample.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/\"  \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/freeimage/lib/osx\" \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/FreeImage/lib/osx\"  \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/GLee/lib/osx\" \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx\" \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/rtAudio/lib/osx\"        \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/fmodex/lib/osx\" \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/freetype/lib/osx\" \"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/freeimage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/fmodex/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/freetype/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/GLee/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/poco/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/rtAudio/lib/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal/i386/emptyExampleDebug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Objects-normal    setenv OBJROOT /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH emptyExampleDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/PkgInfo    setenv PKGINFO_PATH emptyExampleDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH emptyExampleDebug.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH emptyExampleDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME emptyExampleDebug    setenv PRODUCT_SETTINGS_PATH /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT emptyExample    setenv PROJECT_DERIVED_FILE_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/DerivedSources    setenv PROJECT_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv PROJECT_FILE_PATH /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/emptyExample.xcodeproj    setenv PROJECT_NAME emptyExample    setenv PROJECT_TEMP_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build    setenv PUBLIC_HEADERS_FOLDER_PATH emptyExampleDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH emptyExampleDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_NAME macosx10.5    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH emptyExampleDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH emptyExampleDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv SRCROOT /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/SymbolRepositories    setenv SYMROOT /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME emptyExample    setenv TARGET_BUILD_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/    setenv TARGET_NAME emptyExample    setenv TARGET_TEMP_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_FILES_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_FILE_DIR /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build    setenv TEMP_ROOT /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH emptyExampleDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER pp    setenv USER_APPS_DIR /Users/pp/Applications    setenv USER_LIBRARY_DIR /Users/pp/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH emptyExampleDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER pp    setenv VERSION_INFO_FILE emptyExampleDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:emptyExampleDebug  PROJECT:emptyExample-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME emptyExampleDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0324    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh1#
+
+CProcessInfoPlistFile /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/Info.plist openFrameworks-Info.plist
+s311565159.976230
+e311565160.002549
+r1
+xProcessInfoPlistFile
+x/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/Info.plist
+xopenFrameworks-Info.plist
+lSLF07#2@33"Process openFrameworks-Info.plist311565159#311565160#0(0"0(0#0#98"/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/openFrameworks-Info.plist30681189081153604#425"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app/Contents/Info.plist0#
+
+CProcessPCH++ /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h.gch /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+s311565160.002900
+e311565167.857187
+r1
+xProcessPCH++
+x/var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h.gch
+x/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@101"Precompile /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h311565160#311565167#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#90"/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h8603099520#1816"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/emptyExampleDebug.hmap -F/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin -F/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/../../../libs/glut/lib/osx -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources/i386 -I/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/build/emptyExample.build/Debug/emptyExample.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cxkmaijvvuiharfdjrtnxfqknrdu/Carbon.h.gch0#
+
+CTouch /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/box2d/bin//emptyExampleDebug.app
+r0
+
