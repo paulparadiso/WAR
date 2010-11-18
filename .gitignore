@@ -11,3 +11,5 @@ of_preRelease_v0061_osxSL_FAT/apps/projects/WAR/bin/
 
 *.mode1v3
 *.mode2v3
+
+*.git
