@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "ofxOsc.h"
+#include "ofxDirList.h"
 
 #define PORT 9000
 

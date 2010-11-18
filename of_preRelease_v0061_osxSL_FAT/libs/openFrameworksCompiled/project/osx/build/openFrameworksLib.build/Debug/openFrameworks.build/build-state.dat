@@ -1,29 +1,29 @@
 TopenFrameworks
 v7
 r0
-t310954655.177450
+t311799237.402705
 cCheck dependencies
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
-cLibtool "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a" normal i386
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLibtool /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a normal i386
 
 N/Developer/SDKs/MacOSX10.5.sdk
-c000000004B7E366000000000000000EE
-t1266562656
+c000000004A49A9E400000000000000EE
+t1246341604
 s238
 
 N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h
@@ -162,18 +162,18 @@ t1203411250
 s9690
 
 N/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h
-c000000004AC59D930000000000001538
-t1254464915
+c000000004A11EAF10000000000001538
+t1242688241
 s5432
 
 N/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
-c000000004AC59D9300000000000010DD
-t1254464915
+c000000004A11EAF100000000000010DD
+t1242688241
 s4317
 
 N/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
-c000000004AC59D930000000000003197
-t1254464915
+c000000004A11EAF10000000000003197
+t1242688241
 s12695
 
 N/System/Library/Frameworks/AGL.framework/AGL
@@ -202,8 +202,8 @@ t1272073256
 s2195648
 
 N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-c000000004C117243000000000077DFF0
-t1276211779
+c000000004BC13513000000000077DFF0
+t1270953235
 s7856112
 
 N/System/Library/Frameworks/CoreServices.framework/CoreServices
@@ -222,8 +222,8 @@ t1280855683
 s275216
 
 N/System/Library/Frameworks/QuickTime.framework/QuickTime
-c000000004C1173010000000000783950
-t1276211969
+c000000004BF9C9EC0000000000783950
+t1274661356
 s7878992
 
 N/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod.h
@@ -1298,9 +1298,1081 @@ i<exception>
 i<iostream>
 i<string>
 
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod.h
+c000000004CD4AC020000000000028E68
+t1289006082
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_codec.h
+c000000004CD4AC02000000000000334A
+t1289006082
+s13130
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_dsp.h
+c000000004CD4AC02000000000000892F
+t1289006082
+s35119
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_memoryinfo.h
+c000000004CD4AC020000000000003C95
+t1289006082
+s15509
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/freetype/include/freetype2/freetype/config/ftheader.h
+c000000004CD4AC020000000000005B39
+t1289006082
+s23353
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/freetype/include/freetype2/freetype/freetype.h
+c000000004CD4AC020000000000032885
+t1289006082
+s206981
+i<ft2build.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/freetype/include/freetype2/freetype/ftglyph.h
+c000000004CD4AC020000000000008DCF
+t1289006082
+s36303
+i<ft2build.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/freetype/include/freetype2/freetype/ftoutln.h
+c000000004CD4AC020000000000007B3C
+t1289006082
+s31548
+i<ft2build.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/freetype/include/freetype2/freetype/fttrigon.h
+c000000004CD4AC0200000000000020FB
+t1289006082
+s8443
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/freetype/include/ft2build.h
+c000000004CD4AC020000000000000F32
+t1289006082
+s3890
+i<freetype/config/ftheader.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004CD4AC030000000000000446
+t1289006083
+s1094
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppGlutWindow.h
+c000000004CD4AC03000000000000066C
+t1289006083
+s1644
+i"ofConstants.h"
+i"ofAppBaseWindow.h"
+i"glut.h"
+i<GLUT/glut.h>
+i<GL/glut.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppRunner.h
+c000000004CD4AC03000000000000050D
+t1289006083
+s1293
+i"ofMain.h"
+i"ofBaseApp.h"
+i"ofAppBaseWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofBaseApp.h
+c000000004CD4AC030000000000000375
+t1289006083
+s885
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/communication/ofArduino.h
+c000000004CD4AC030000000000003D3C
+t1289006083
+s15676
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/communication/ofSerial.h
+c000000004CD4AC030000000000000D2E
+t1289006083
+s3374
+i"ofConstants.h"
+i<termios.h>
+i<sys/ioctl.h>
+i<getopt.h>
+i<dirent.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<fcntl.h>
+i<errno.h>
+i<ctype.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/events/ofEventUtils.h
+c000000004CD4AC030000000000000A8A
+t1289006083
+s2698
+i"ofConstants.h"
+i"Poco/FIFOEvent.h"
+i"Poco/Delegate.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofBitmapFont.h
+c000000004CD4AC03000000000000018C
+t1289006083
+s396
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofGraphics.h
+c000000004CD4AC030000000000000B73
+t1289006083
+s2931
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofImage.h
+c000000004CD4AC030000000000000C9F
+t1289006083
+s3231
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"FreeImage.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofTexture.h
+c000000004CD4AC030000000000000B5A
+t1289006083
+s2906
+i"ofConstants.h"
+i"ofGraphics.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004CD4AC03000000000000087A
+t1289006083
+s2170
+i"ofConstants.h"
+i"ofGraphics.h"
+i"ofUtils.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004CD4AC0300000000000006C3
+t1289006083
+s1731
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/sound/ofSoundStream.h
+c000000004CD4AC030000000000000254
+t1289006083
+s596
+i"ofConstants.h"
+i"ofBaseApp.h"
+i"ofEvents.h"
+i"ofMath.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofConstants.h
+c000000004CD4AC030000000000002AA0
+t1289006083
+s10912
+i<TargetConditionals.h>
+i<windows.h>
+i"GLee.h"
+i"glu.h"
+i<unistd.h>
+i"GLee.h"
+i<OpenGL/glu.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i"GLee.h"
+i<GL/glu.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<stdio.h>
+i<stdarg.h>
+i<math.h>
+i<time.h>
+i<stdlib.h>
+i<string.h>
+i<iostream>
+i<vector>
+i<string>
+i<sstream>
+i<iomanip>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofMath.h
+c000000004CD4AC0300000000000006DB
+t1289006083
+s1755
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofNoise.h
+c000000004CD4AC030000000000004F24
+t1289006083
+s20260
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofUtils.h
+c000000004CD4AC0300000000000005A4
+t1289006083
+s1444
+i"ofConstants.h"
+i<shellapi.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofGstUtils.h
+c000000004CD4AC030000000000000B42
+t1289006083
+s2882
+i<gst/gst.h>
+i<pthread.h>
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofQtUtils.h
+c000000004CD4AC0300000000000006CF
+t1289006083
+s1743
+i"ofConstants.h"
+i"ofGraphics.h"
+i<QuickTime/QuickTime.h>
+i<CoreServices/CoreServices.h>
+i<ApplicationServices/ApplicationServices.h>
+i<QTML.h>
+i<FixMath.h>
+i<QuickTimeComponents.h>
+i<TextUtils.h>
+i<MediaHandlers.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofUCUtils.h
+c000000004CD4AC0300000000000004A7
+t1289006083
+s1191
+i"ofConstants.h"
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<unicap.h>
+i<unistd.h>
+i<string.h>
+i<pthread.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofVideoGrabber.h
+c000000004CD4AC030000000000000C9C
+t1289006083
+s3228
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofTypes.h"
+i"ofQtUtils.h"
+i"videoInput.h"
+i"ofUCUtils.h"
+i"ofGstUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofVideoPlayer.h
+c000000004CD4AC030000000000000BD3
+t1289006083
+s3027
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGstUtils.h"
+i"ofQtUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../FreeImage/include/FreeImage.h
+c000000004CD4AC02000000000000CC1B
+t1289006082
+s52251
+i<wchar.h>
+i<inttypes.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../fmodex/include/fmod.h
+c000000004CD4AC020000000000028E68
+t1289006082
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../fmodex/include/fmod_errors.h
+c000000004CD4AC020000000000003408
+t1289006082
+s13320
+i"fmod.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../glee/include/GLee.h
+c000000004CD4AC020000000000090A87
+t1289006082
+s592519
+i<windows.h>
+i<GL/gl.h>
+i<OpenGL/gl.h>
+i<GL/gl.h>
+i<GL/glx.h>
+i<stddef.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp
+c000000004CD4AC0300000000000045B6
+t1289006083
+s17846
+i"ofAppGlutWindow.h"
+i"ofBaseApp.h"
+i"ofMain.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp
+c000000004CD4AC0300000000000017AA
+t1289006083
+s6058
+i"ofAppRunner.h"
+i"ofAppiPhoneWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.h
+c000000004CD4AC03000000000000050D
+t1289006083
+s1293
+i"ofMain.h"
+i"ofBaseApp.h"
+i"ofAppBaseWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp
+c000000004CD4AC030000000000004269
+t1289006083
+s17001
+i"ofArduino.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.h
+c000000004CD4AC030000000000003D3C
+t1289006083
+s15676
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp
+c000000004CD4AC03000000000000478C
+t1289006083
+s18316
+i"ofSerial.h"
+i"ofMain.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.h
+c000000004CD4AC030000000000000D2E
+t1289006083
+s3374
+i"ofConstants.h"
+i<termios.h>
+i<sys/ioctl.h>
+i<getopt.h>
+i<dirent.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<fcntl.h>
+i<errno.h>
+i<ctype.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/events/ofEvents.h
+c000000004CD4AC0300000000000007AF
+t1289006083
+s1967
+i"ofConstants.h"
+i"ofEventUtils.h"
+i"ofxEventUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp
+c000000004CD4AC030000000000009319
+t1289006083
+s37657
+i"ofBitmapFont.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp
+c000000004CD4AC030000000000007585
+t1289006083
+s30085
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"ofBitmapFont.h"
+i<OpenGL/glu.h>
+i"glu.h"
+i"GL/glu.h"
+i"glu.h"
+i<vector>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.h
+c000000004CD4AC030000000000000B73
+t1289006083
+s2931
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp
+c000000004CD4AC030000000000003F32
+t1289006083
+s16178
+i"ofImage.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.h
+c000000004CD4AC030000000000000C9F
+t1289006083
+s3231
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"FreeImage.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp
+c000000004CD4AC030000000000003969
+t1289006083
+s14697
+i"ofTexture.h"
+i"ofUtils.h"
+i"ofAppRunner.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.h
+c000000004CD4AC030000000000000B5A
+t1289006083
+s2906
+i"ofConstants.h"
+i"ofGraphics.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp
+c000000004CD4AC030000000000006D00
+t1289006083
+s27904
+i"ofTrueTypeFont.h"
+i<ft2build.h>
+i<freetype/freetype.h>
+i<freetype/ftglyph.h>
+i<freetype/ftoutln.h>
+i<freetype/fttrigon.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.h
+c000000004CD4AC03000000000000087A
+t1289006083
+s2170
+i"ofConstants.h"
+i"ofGraphics.h"
+i"ofUtils.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/ofMain.h
+c000000004CD4AC030000000000000347
+t1289006083
+s839
+i"ofConstants.h"
+i"ofMath.h"
+i"ofUtils.h"
+i"ofTypes.h"
+i"ofSerial.h"
+i"ofArduino.h"
+i"ofTexture.h"
+i"ofTrueTypeFont.h"
+i"ofGraphics.h"
+i"ofImage.h"
+i"ofBaseApp.h"
+i"ofAppRunner.h"
+i"ofSoundStream.h"
+i"ofSoundPlayer.h"
+i"ofVideoGrabber.h"
+i"ofVideoPlayer.h"
+i"ofEvents.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp
+c000000004CD4AC030000000000002413
+t1289006083
+s9235
+i"ofSoundPlayer.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.h
+c000000004CD4AC0300000000000006C3
+t1289006083
+s1731
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp
+c000000004CD4AC030000000000001402
+t1289006083
+s5122
+i"ofSoundStream.h"
+i"RtAudio.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.h
+c000000004CD4AC030000000000000254
+t1289006083
+s596
+i"ofConstants.h"
+i"ofBaseApp.h"
+i"ofEvents.h"
+i"ofMath.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofConstants.h
+c000000004CD4AC030000000000002AA0
+t1289006083
+s10912
+i<TargetConditionals.h>
+i<windows.h>
+i"GLee.h"
+i"glu.h"
+i<unistd.h>
+i"GLee.h"
+i<OpenGL/glu.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i"GLee.h"
+i<GL/glu.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<stdio.h>
+i<stdarg.h>
+i<math.h>
+i<time.h>
+i<stdlib.h>
+i<string.h>
+i<iostream>
+i<vector>
+i<string>
+i<sstream>
+i<iomanip>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp
+c000000004CD4AC0300000000000013C6
+t1289006083
+s5062
+i"ofMath.h"
+i"ofAppRunner.h"
+i"float.h"
+i<sys/time.h>
+i"ofNoise.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.h
+c000000004CD4AC0300000000000006DB
+t1289006083
+s1755
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofTypes.h
+c000000004CD4AC030000000000001991
+t1289006083
+s6545
+i"ofConstants.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp
+c000000004CD4AC030000000000002629
+t1289006083
+s9769
+i"ofUtils.h"
+i"ofImage.h"
+i"sys/time.h"
+i<mmsystem.h>
+i<direct.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.h
+c000000004CD4AC0300000000000005A4
+t1289006083
+s1444
+i"ofConstants.h"
+i<shellapi.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp
+c000000004CD4AC0300000000000024FB
+t1289006083
+s9467
+i"ofQtUtils.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp
+c000000004CD4AC030000000000007EA5
+t1289006083
+s32421
+i"ofVideoGrabber.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.h
+c000000004CD4AC030000000000000C9C
+t1289006083
+s3228
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofTypes.h"
+i"ofQtUtils.h"
+i"videoInput.h"
+i"ofUCUtils.h"
+i"ofGstUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp
+c000000004CD4AC0300000000000065E6
+t1289006083
+s26086
+i"ofVideoPlayer.h"
+i"ofUtils.h"
+i<gst/video/video.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.h
+c000000004CD4AC030000000000000BD3
+t1289006083
+s3027
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGstUtils.h"
+i"ofQtUtils.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../rtAudio/include/RtAudio.h
+c000000004CD4AC040000000000009B55
+t1289006084
+s39765
+i<string>
+i<vector>
+i"RtError.h"
+i<windows.h>
+i<process.h>
+i<pthread.h>
+i<sys/time.h>
+i<sstream>
+i<CoreAudio/AudioHardware.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
+t1290106437
+s3909128
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o
+t1289320890
+s698920
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o
+t1289320890
+s787820
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o
+t1289320890
+s697348
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o
+t1289006083
+s44960
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o
+t1289006083
+s201732
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o
+t1289006083
+s82928
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o
+t1289006083
+s54900
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o
+t1289006083
+s33636
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o
+t1289320890
+s76712
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o
+t1289006083
+s57616
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o
+t1289320890
+s447008
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o
+t1289006083
+s51752
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o
+t1289006083
+s264684
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o
+t1289006083
+s101396
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o
+t1289006083
+s95220
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o
+t1289006083
+s90956
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList
+c000000004CE576440000000000000B7A
+t1290106436
+s2938
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractDelegate.h
+c000000004CD4AC030000000000000B2E
+t1289006083
+s2862
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractEvent.h
+c000000004CD4AC030000000000002C6A
+t1289006083
+s11370
+i"Poco/Foundation.h"
+i"Poco/SingletonHolder.h"
+i"Poco/SharedPtr.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveMethod.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveMethod.h
+c000000004CD4AC030000000000001C64
+t1289006083
+s7268
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveRunnable.h"
+i"Poco/ActiveStarter.h"
+i"Poco/AutoPtr.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveResult.h
+c000000004CD4AC030000000000002E66
+t1289006083
+s11878
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveRunnable.h
+c000000004CD4AC030000000000001785
+t1289006083
+s6021
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/Runnable.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i"Poco/Exception.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveStarter.h
+c000000004CD4AC030000000000000927
+t1289006083
+s2343
+i"Poco/Foundation.h"
+i"Poco/ThreadPool.h"
+i"Poco/ActiveRunnable.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AutoPtr.h
+c000000004CD4AC030000000000001E0C
+t1289006083
+s7692
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Bugcheck.h
+c000000004CD4AC0300000000000012FE
+t1289006083
+s4862
+i"Poco/Foundation.h"
+i<string>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/CompareFunctions.h
+c000000004CD4AC0300000000000007EC
+t1289006083
+s2028
+i"Poco/Foundation.h"
+i<functional>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Config.h
+c000000004CD4AC0300000000000008B5
+t1289006083
+s2229
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Delegate.h
+c000000004CD4AC030000000000001802
+t1289006083
+s6146
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/FunctionDelegate.h"
+i"Poco/Expire.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event.h
+c000000004CD4AC030000000000000E21
+t1289006083
+s3617
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Event_WIN32.h"
+i"Poco/Event_POSIX.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event_POSIX.h
+c000000004CD4AC030000000000000A91
+t1289006083
+s2705
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event_WIN32.h
+c000000004CD4AC030000000000000947
+t1289006083
+s2375
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Exception.h
+c000000004CD4AC0300000000000026AC
+t1289006083
+s9900
+i"Poco/Foundation.h"
+i<stdexcept>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Expire.h
+c000000004CD4AC030000000000000CF1
+t1289006083
+s3313
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/Timestamp.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FIFOEvent.h
+c000000004CD4AC030000000000000AD4
+t1289006083
+s2772
+i"Poco/AbstractEvent.h"
+i"Poco/FIFOStrategy.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/CompareFunctions.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FIFOStrategy.h
+c000000004CD4AC0300000000000010F3
+t1289006083
+s4339
+i"Poco/NotificationStrategy.h"
+i<map>
+i<list>
+i<memory>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Foundation.h
+c000000004CD4AC030000000000001023
+t1289006083
+s4131
+i"Poco/Config.h"
+i"Poco/Platform.h"
+i"Poco/Platform_WIN32.h"
+i"Poco/Platform_VMS.h"
+i"Poco/Platform_POSIX.h"
+i"Poco/Bugcheck.h"
+i"Poco/Types.h"
+i<string>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FunctionDelegate.h
+c000000004CD4AC0300000000000013CA
+t1289006083
+s5066
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex.h
+c000000004CD4AC030000000000001A61
+t1289006083
+s6753
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/ScopedLock.h"
+i"Poco/Mutex_WIN32.h"
+i"Poco/Mutex_POSIX.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex_POSIX.h
+c000000004CD4AC030000000000000AC3
+t1289006083
+s2755
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex_WIN32.h
+c000000004CD4AC030000000000000A07
+t1289006083
+s2567
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/NotificationStrategy.h
+c000000004CD4AC040000000000000A37
+t1289006084
+s2615
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform.h
+c000000004CD4AC040000000000001A3A
+t1289006084
+s6714
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_POSIX.h
+c000000004CD4AC040000000000000843
+t1289006084
+s2115
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_VMS.h
+c000000004CD4AC040000000000000BAA
+t1289006084
+s2986
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_WIN32.h
+c000000004CD4AC040000000000000D4D
+t1289006084
+s3405
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/RefCountedObject.h
+c000000004CD4AC040000000000000B10
+t1289006084
+s2832
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Runnable.h
+c000000004CD4AC040000000000000861
+t1289006084
+s2145
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ScopedLock.h
+c000000004CD4AC0400000000000008EB
+t1289006084
+s2283
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SharedPtr.h
+c000000004CD4AC0400000000000021DE
+t1289006084
+s8670
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Mutex.h"
+i<algorithm>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SignalHandler.h
+c000000004CD4AC0400000000000011EB
+t1289006084
+s4587
+i"Poco/Foundation.h"
+i<vector>
+i<setjmp.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SingletonHolder.h
+c000000004CD4AC040000000000000A64
+t1289006084
+s2660
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread.h
+c000000004CD4AC040000000000001C3A
+t1289006084
+s7226
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Thread_WIN32.h"
+i"Poco/Thread_POSIX.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ThreadPool.h
+c000000004CD4AC040000000000001849
+t1289006084
+s6217
+i"Poco/Foundation.h"
+i"Poco/Thread.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread_POSIX.h
+c000000004CD4AC0400000000000012A8
+t1289006084
+s4776
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/SignalHandler.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i<pthread.h>
+i<sys/select.h>
+i<errno.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread_WIN32.h
+c000000004CD4AC04000000000000106C
+t1289006084
+s4204
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Timestamp.h
+c000000004CD4AC0400000000000019A7
+t1289006084
+s6567
+i"Poco/Foundation.h"
+i<ctime>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Types.h
+c000000004CD4AC040000000000001910
+t1289006084
+s6416
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/UnWindows.h
+c000000004CD4AC040000000000000FD1
+t1289006084
+s4049
+i<windows.h>
+
+N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/rtAudio/include/RtError.h
+c000000004CD4AC040000000000000846
+t1289006084
+s2118
+i<exception>
+i<iostream>
+i<string>
+
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies310954654#310954655#0(0"0(0#1#0"8630090496#0"0#
+lSLF07#2@18"Check dependencies311799236#311799236#0(0"0(0#1#0"8625268544#0"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s310945074.570582
@@ -1316,6 +2388,9 @@ xcom.apple.compilers.gcc.4_2
 oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
 lSLF07#2@171"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp310945074#310945088#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#163"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp8011673038010331136#1833"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o"0#
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s310945074.682866
 e310945088.682277
@@ -1329,6 +2404,9 @@ xc++
 xcom.apple.compilers.gcc.4_2
 oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
 lSLF07#2@167"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp310945074#310945088#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#159"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp8616144128#1825"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o"0#
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s310945088.681295
@@ -1344,19 +2422,37 @@ xcom.apple.compilers.gcc.4_2
 oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
 lSLF07#2@175"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp310945088#310945093#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#167"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp8612346240#1831"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o"0#
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
@@ -1373,7 +2469,13 @@ xcom.apple.compilers.gcc.4_2
 oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
 lSLF07#2@174"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp310945088#310945092#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#166"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp8616865664#1829"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o"0#
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
@@ -1390,19 +2492,37 @@ xcom.apple.compilers.gcc.4_2
 oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
 lSLF07#2@171"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp310945092#310945095#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#163"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp8616193984#1831"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o"0#
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
 
 CLibtool "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a" normal i386
@@ -1414,4 +2534,14 @@ x/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/lib
 xnormal
 xi386
 lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386310945095#310945095#0(0"0(0#0#0"8610139808#1008"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" -filelist "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList" -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a"0#
+
+CLibtool /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a normal i386
+s311799236.816963
+e311799237.402543
+r1
+xLibtool
+x/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
+xnormal
+xi386
+lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386311799236#311799237#0(0"0(0#0#0"28429264713089132#908"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
 
