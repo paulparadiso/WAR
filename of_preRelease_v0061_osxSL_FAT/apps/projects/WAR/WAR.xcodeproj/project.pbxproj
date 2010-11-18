@@ -40,7 +40,6 @@
 		E4C242CD10CC650E004149E2 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C242CC10CC650E004149E2 /* libfmodex.dylib */; };
 		E4C2443910CC7693004149E2 /* openFrameworks-Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */; };
 		E4C246DA10CCAE22004149E2 /* freeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C246D910CCAE22004149E2 /* freeimage.a */; };
-		EEFE0BAD128AF4D0001EB294 /* WARVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFE0BAC128AF4D0001EB294 /* WARVideoPlayer.cpp */; };
 		EEFE0BBE128AF5D3001EB294 /* ofxMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFE0BB1128AF5D3001EB294 /* ofxMatrix3x3.cpp */; };
 		EEFE0BBF128AF5D3001EB294 /* ofxMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFE0BB3128AF5D3001EB294 /* ofxMatrix4x4.cpp */; };
 		EEFE0BC0128AF5D3001EB294 /* ofxQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFE0BB8128AF5D3001EB294 /* ofxQuaternion.cpp */; };
@@ -151,8 +150,6 @@
 		E4C2429310CC5C38004149E2 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../../../libs/freetype/lib/osx/freetype.a; sourceTree = SOURCE_ROOT; };
 		E4C242CC10CC650E004149E2 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../../libs/fmodex/lib/osx/libfmodex.dylib; sourceTree = SOURCE_ROOT; };
 		E4C246D910CCAE22004149E2 /* freeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freeimage.a; path = ../../../libs/FreeImage/lib/osx/freeimage.a; sourceTree = SOURCE_ROOT; };
-		EEFE0BAB128AF4D0001EB294 /* WARVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WARVideoPlayer.h; sourceTree = "<group>"; };
-		EEFE0BAC128AF4D0001EB294 /* WARVideoPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WARVideoPlayer.cpp; sourceTree = "<group>"; };
 		EEFE0BAF128AF5D3001EB294 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EEFE0BB1128AF5D3001EB294 /* ofxMatrix3x3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMatrix3x3.cpp; sourceTree = "<group>"; };
 		EEFE0BB2128AF5D3001EB294 /* ofxMatrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMatrix3x3.h; sourceTree = "<group>"; };
@@ -505,8 +502,6 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
-				EEFE0BAB128AF4D0001EB294 /* WARVideoPlayer.h */,
-				EEFE0BAC128AF4D0001EB294 /* WARVideoPlayer.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -713,7 +708,6 @@
 				120B6F411288B4AE00962100 /* ofxOscMessage.cpp in Sources */,
 				120B6F421288B4AE00962100 /* ofxOscReceiver.cpp in Sources */,
 				120B6F431288B4AE00962100 /* ofxOscSender.cpp in Sources */,
-				EEFE0BAD128AF4D0001EB294 /* WARVideoPlayer.cpp in Sources */,
 				EEFE0BBE128AF5D3001EB294 /* ofxMatrix3x3.cpp in Sources */,
 				EEFE0BBF128AF5D3001EB294 /* ofxMatrix4x4.cpp in Sources */,
 				EEFE0BC0128AF5D3001EB294 /* ofxQuaternion.cpp in Sources */,
