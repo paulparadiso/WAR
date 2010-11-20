@@ -4,6 +4,8 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 #include "ofxDirList.h"
+#include "videoObject.h"
+#include "visibleObjectManager.h"
 
 #define PORT 9000
 
@@ -27,10 +29,13 @@ class testApp : public ofBaseApp{
 		int showMsg;
 		int timeOfLastFlash;
 		int flashDelay;
-
+	
 	private:
 		ofxOscReceiver	receiver;
 		float			wiiX, wiiY;
+		VisibleObjectManager vom;
+		ofxDirList dir;
+	
 };
 
 #endif

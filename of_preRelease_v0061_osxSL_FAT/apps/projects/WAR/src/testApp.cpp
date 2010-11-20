@@ -5,11 +5,20 @@ void testApp::setup(){
 	ofSetCircleResolution(50);
 	ofSetFrameRate(60);
 	ofSetWindowTitle("!WAR");
-	ofSetWindowShape(1920, 1200);
+	//ofSetWindowShape(1920, 1200);
+	ofSetWindowShape(1024, 768);
 	ofBackground(0, 0, 0);
 	ofSetVerticalSync(true);
 	ofEnableSmoothing();
-	ofSetFullscreen(true);
+	//ofSetFullscreen(true);
+	
+	//vom.addObject(new VideoObject("stVbdXdDSlE.flv"));
+	int numVideos = dir.listDir("video");
+	for(int i = 0; i < numVideos; i++){
+		vom.addObject(new VideoObject(dir.getPath(i)));
+	}
+	
+	vom.randomPositions();
 	
 	w = 0;
 	h = 0;	// set in update()
@@ -22,11 +31,14 @@ void testApp::setup(){
 	// listen on the given port
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
+
+	
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	// check for waiting messages
+	vom.update();
 	while( receiver.hasWaitingMessages() )
 	{
 		if(w == 0 || h == 0){
@@ -60,8 +72,10 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+	ofSetColor(255,255,255);
+	vom.draw();
 	ofSetColor(255, 130, 0);
-	float radius = 50;
+	float radius = 10;
 	ofFill();
 	ofCircle(wiiX, wiiY, radius);
 }
@@ -78,7 +92,9 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
+	vom.checkInsides(x,y);
+	wiiX = x;
+	wiiY = y;
 }
 
 //--------------------------------------------------------------
