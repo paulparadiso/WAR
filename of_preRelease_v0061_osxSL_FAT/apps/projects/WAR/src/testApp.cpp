@@ -38,7 +38,7 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
 	// check for waiting messages
-	vom.update();
+	vom.update(wiiX,wiiY);
 	while( receiver.hasWaitingMessages() )
 	{
 		if(w == 0 || h == 0){
@@ -92,7 +92,6 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-	vom.checkInsides(x,y);
 	wiiX = x;
 	wiiY = y;
 }

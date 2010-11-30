@@ -19,11 +19,18 @@ VideoObject::VideoObject(string _path):VisibleObject(){
 	vp.setPosition(0.2);
 	vp.setLoopState(true);
 	rot = ofRandom(-45.0,45.0);
+	state = STATE_REST;
 	this->updateShape();
 }
 
 void VideoObject::update(){
-	vp.idleMovie();
+	if(state == STATE_PLAY){
+		vp.idleMovie();
+		if(vp.getIsMovieDone()){
+			state = STATE_REST;
+			this->resetState();
+		}
+	}
 }
 
 void VideoObject::draw(){
@@ -34,12 +41,18 @@ void VideoObject::draw(){
 	ofSetColor(255, 255, 255);
 	vp.draw(0,0, drawSize.x, drawSize.y);
 	glPopMatrix();
-	this->drawShape();
+	//this->drawShape();
 }
 	
 void VideoObject::react(int _lvl){
-	if(_lvl == 2 && isPlaying == 0){
-		vp.play();
+	if(_lvl){
+		state++;
+		if(state > STATE_PLAY)
+			state = STATE_REST;
+		this->resetState();
+	} else {
+		state = STATE_REST;
+		this->resetState();
 	}
 }
 	
@@ -51,10 +64,9 @@ int VideoObject::isInside(int _x, int _y){
 		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 			inside = !inside;
 		}
-		//if((((*vi)->y > _y) || ((*vj)->y > _y)) &&
-//		   (_y < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x)){
-//			inside  = !inside;
-//		}
+	}
+	if(inside){
+		cout<<"X = "<<pos.x<<" Y = "<<pos.y<<endl;
 	}
 	return inside;
 }
@@ -105,6 +117,38 @@ void VideoObject::drawShape(){
 	}
 }
 
+void VideoObject::resetState(){
+	switch(state){
+		case STATE_REST:
+			vp.stop();
+			vp.setPosition(0.2);
+			pos = restPos;
+			drawSize = restSize;
+			break;
+		case STATE_HOVER:
+			restPos = pos;
+			restSize = drawSize;
+			this->resizeByPercent(10.0);
+			break;
+		case STATE_PLAY:
+			this->resizeByPercent(10.0);
+			vp.play();
+			break;
+		default:
+			break;
+	}
+}
+
+void VideoObject::resizeByPercent(float _p){
+	if(_p == 0.0)
+		return;
+	if(_p > 0.0){
+		this->resizeByWidth(drawSize.x + (drawSize.x / _p));
+	} else {
+		this->resizeByWidth(drawSize.x - (drawSize.x / _p));
+	}
+}
+
 void VideoObject::resizeByHeight(float _h){
 	float hPercent = _h  / size.y;
 	drawSize.set(size.x * hPercent, _h);
@@ -112,4 +156,21 @@ void VideoObject::resizeByHeight(float _h){
 void VideoObject::resizeByWidth(float _w){
 	float wPercent = _w / size.x;
 	drawSize.set(_w, size.y * wPercent);
+}
+
+void VideoObject::adjustPosition(){
+	while(pos.x < MARGIN){
+		pos.x += 10;
+		cout<<"RESETTING X: "<<pos.x<<endl;
+	}
+	while(pos.x > ofGetWidth() - (MARGIN + drawSize.x)){
+		pos.x -= 100;
+	}
+	while(pos.y < MARGIN){
+		pos.y += MARGIN;
+	}
+	while(pos.y > ofGetHeight() - (MARGIN + drawSize.y)){
+		pos.y -= 10;
+	}
+	this->updateShape();
 }

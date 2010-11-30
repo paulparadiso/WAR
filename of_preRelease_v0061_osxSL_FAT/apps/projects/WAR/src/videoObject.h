@@ -32,6 +32,8 @@ public:
 	void setRotAcc(float _rA);
 	void resizeByHeight(float _h);
 	void resizeByWidth(float _w);
+	void resizeByPercent(float _p);
+	void adjustPosition();
 	
 private:
 	ofVideoPlayer vp;
@@ -40,6 +42,10 @@ private:
 	void updateShape();
 	void drawShape();
 	vector<ofxVec2f*>shape;
+	void resetState();
+	int state;
+	ofxVec2f restPos;
+	ofxVec2f restSize;
 };
 
 #endif

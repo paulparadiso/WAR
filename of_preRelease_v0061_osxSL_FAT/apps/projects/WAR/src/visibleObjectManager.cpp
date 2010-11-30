@@ -10,10 +10,12 @@
 #include "visibleObjectManager.h"
 
 VisibleObjectManager::VisibleObjectManager(){
+	idAssign = 0;
 }
 
 void VisibleObjectManager::addObject(VisibleObject *_vo){
 	_vo->resizeByWidth(250.0);
+	_vo->id = idAssign++;
 	objects.push_back(_vo);
 }
 
@@ -29,6 +31,11 @@ void VisibleObjectManager::update(){
 	}
 }
 
+void VisibleObjectManager::update(int _x, int _y){
+	this->update();
+	this->checkInsides(_x,_y);
+}
+
 void VisibleObjectManager::draw(){
 	vector<VisibleObject*>::iterator vi;
 	for(vi = objects.begin(); vi < objects.end(); vi++){
@@ -40,6 +47,7 @@ void VisibleObjectManager::randomPositions(){
 	vector<VisibleObject*>::iterator vi;
 	for(vi = objects.begin(); vi < objects.end(); vi++){
 		(*vi)->setPos(ofRandom(0,ofGetWidth()),ofRandom(0, ofGetHeight()));
+		(*vi)->adjustPosition();
 	}
 }
 
@@ -58,6 +66,15 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	if(remove > -1){
 		objects.erase(objects.begin() + remove);
 		objects.push_back(tmpObject);
+		if(tmpObject->id == lastHoverId){
+			hoverTime += ofGetElapsedTimeMillis() - hoverTime; 
+			if(hoverTime > HOVER_CLICK_TIME){
+				tmpObject->react(1);
+			}
+		} else {
+			lastHoverId = tmpObject->id;
+			hoverTime = ofGetElapsedTimeMillis();
+		}
 	}
 }
 

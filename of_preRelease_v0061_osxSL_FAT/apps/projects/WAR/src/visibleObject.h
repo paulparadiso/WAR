@@ -17,6 +17,11 @@
 
 #include "ofxVectorMath.h"
 
+#define MARGIN 100
+#define STATE_REST 0
+#define STATE_HOVER 1
+#define STATE_PLAY 2
+
 class VisibleObject{
 public:
 	virtual int isInside(int _x, int _y) = 0;
@@ -31,6 +36,7 @@ public:
 	virtual void setRotAcc(float _rA) = 0;
 	virtual void resizeByHeight(float _h) = 0;
 	virtual void resizeByWidth(float _w) = 0;
+	virtual void adjustPosition() = 0;
 	
 	VisibleObject(){
 	};
@@ -42,6 +48,8 @@ public:
 	float rotVel;
 	float rotAcc;
 	ofxVec2f size;
+	
+	int id;
 };
 
 #endif
