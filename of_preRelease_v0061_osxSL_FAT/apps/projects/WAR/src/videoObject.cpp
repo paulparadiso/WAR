@@ -18,6 +18,8 @@ VideoObject::VideoObject(string _path):VisibleObject(){
 	drawSize.set(size);
 	vp.setPosition(0.2);
 	vp.setLoopState(true);
+	rot = ofRandom(-45.0,45.0);
+	this->updateShape();
 }
 
 void VideoObject::update(){
@@ -25,7 +27,14 @@ void VideoObject::update(){
 }
 
 void VideoObject::draw(){
-	vp.draw(pos.x, pos.y, drawSize.x, drawSize.y);
+	glPushMatrix();
+	glTranslatef(pos.x,pos.y,0);
+	glRotatef(rot,0,0,1);
+	//vp.draw(pos.x, pos.y, drawSize.x, drawSize.y);
+	ofSetColor(255, 255, 255);
+	vp.draw(0,0, drawSize.x, drawSize.y);
+	glPopMatrix();
+	this->drawShape();
 }
 	
 void VideoObject::react(int _lvl){
@@ -35,16 +44,24 @@ void VideoObject::react(int _lvl){
 }
 	
 int VideoObject::isInside(int _x, int _y){
-	if((_x > pos.x && _x < pos.x + drawSize.x) && 
-	   (_y > pos.y && _y < pos.y + drawSize.y)){
-		return 1;
-		cout<<"Inside"<<endl;
+	int inside = 0;
+	vector<ofxVec2f*>::iterator vi, vj;
+	for(vi = shape.begin(), vj = shape.end() - 1; vi < shape.end(); vj = vi++){
+		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
+		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
+			inside = !inside;
+		}
+		//if((((*vi)->y > _y) || ((*vj)->y > _y)) &&
+//		   (_y < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x)){
+//			inside  = !inside;
+//		}
 	}
-	return 0;
+	return inside;
 }
 
 void VideoObject::setPos(float _x, float _y){
 	pos.set(_x,_y);
+	this->updateShape();
 }
 
 void VideoObject::setPosVel(float _xV, float _yV){
@@ -57,6 +74,7 @@ void VideoObject::setPosAcc(float _xA, float _yA){
 
 void VideoObject::setRot(float _r){
 	rot = _r;
+	this->updateShape();
 }
 
 void VideoObject::setRotVel(float _rV){
@@ -65,6 +83,26 @@ void VideoObject::setRotVel(float _rV){
 
 void VideoObject::setRotAcc(float _rA){
 	rotAcc = _rA;
+}
+
+void VideoObject::updateShape(){
+	shape.clear();
+	//calculate bottom left corner
+	ofxVec2f bl = ofxVec2f(pos.x + cos(ofDegToRad(90.0 + rot)) * drawSize.y, pos.y + sin(ofDegToRad(90.0 + rot)) * drawSize.y);
+	//fill shape vector with rotated values.  The order is intentional.
+	shape.push_back(new ofxVec2f(pos.x,pos.y));
+	shape.push_back(new ofxVec2f(pos.x + cos(ofDegToRad(rot)) * drawSize.x, pos.y + sin(ofDegToRad(rot)) * drawSize.x));
+	shape.push_back(new ofxVec2f(bl.x + cos(ofDegToRad(rot)) * drawSize.x, bl.y + sin(ofDegToRad(rot)) * drawSize.x));
+	shape.push_back(new ofxVec2f(bl.x,bl.y));
+}
+
+void VideoObject::drawShape(){
+	vector<ofxVec2f*>::iterator vi, vj;
+	ofSetColor(255, 0, 0);
+	for(vi = shape.begin(), vj = shape.end() - 1; vi < shape.end(); vj = vi++){
+		//ofEllipse((*vi)->x, (*vi)->y, 10, 10);
+		ofLine((*vj)->x, (*vj)->y, (*vi)->x, (*vi)->y);
+	}
 }
 
 void VideoObject::resizeByHeight(float _h){

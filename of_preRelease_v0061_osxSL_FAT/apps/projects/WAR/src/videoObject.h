@@ -13,6 +13,7 @@
 #include "visibleObject.h"
 #include "ofMain.h"
 #include "ofxVectorMath.h"
+#include <vector>
 
 class VideoObject : public VisibleObject{
 public:
@@ -36,6 +37,9 @@ private:
 	ofVideoPlayer vp;
 	int isPlaying;	
 	ofxVec2f drawSize;
+	void updateShape();
+	void drawShape();
+	vector<ofxVec2f*>shape;
 };
 
 #endif
