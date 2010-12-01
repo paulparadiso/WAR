@@ -17,13 +17,19 @@ VideoObject::VideoObject(string _path):VisibleObject(){
 	size.set(vp.getWidth(),vp.getHeight());
 	drawSize.set(size);
 	vp.setPosition(0.2);
-	vp.setLoopState(true);
-	rot = ofRandom(-45.0,45.0);
+	vp.setLoopState(false);
+	rot = ofRandom(-30.0,30.0);
 	state = STATE_REST;
+	stopTime = 0;
+	xAdd = 0.0;
+	artFont.loadFont("HelveticaNeue.dfont", 8);
 	this->updateShape();
 }
 
 void VideoObject::update(){
+	if(ofGetElapsedTimeMillis() < stopTime && drawSize.x >= restSize.x){
+		this->resizeByWidth(drawSize.x + (xAdd * (ofGetElapsedTimeMillis() - (stopTime - GROW_TIME))));
+	}
 	if(state == STATE_PLAY){
 		vp.idleMovie();
 		if(vp.getIsMovieDone()){
@@ -34,25 +40,39 @@ void VideoObject::update(){
 }
 
 void VideoObject::draw(){
+	ofEnableAlphaBlending();
 	glPushMatrix();
 	glTranslatef(pos.x,pos.y,0);
 	glRotatef(rot,0,0,1);
 	//vp.draw(pos.x, pos.y, drawSize.x, drawSize.y);
-	ofSetColor(255, 255, 255);
+	if (state > STATE_REST) {
+		ofSetColor(0, 0, 0, 200);
+		ofRect(0.0, 0.0, drawSize.x + 175, drawSize.y);
+		ofSetColor(0,255,0,255);
+		artFont.drawString(" ARTIST: JANE DOE",drawSize.x + 10, 10);
+		artFont.drawString("ARTWORK: UNTITLED #4",drawSize.x + 10, 30);
+		artFont.drawString("   YEAR: 1974",drawSize.x + 10, 50);
+		ofSetColor(255, 255, 255, 255);
+	} else {
+		ofSetColor(255, 255, 255, 255);
+	}
 	vp.draw(0,0, drawSize.x, drawSize.y);
 	glPopMatrix();
+	ofDisableAlphaBlending();
 	//this->drawShape();
 }
 	
-void VideoObject::react(int _lvl){
+int VideoObject::react(int _lvl){
 	if(_lvl){
+		if(state == STATE_PLAY)
+			return state;
 		state++;
-		if(state > STATE_PLAY)
-			state = STATE_REST;
 		this->resetState();
+		return state;
 	} else {
 		state = STATE_REST;
 		this->resetState();
+		return state;
 	}
 }
 	
@@ -64,9 +84,6 @@ int VideoObject::isInside(int _x, int _y){
 		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 			inside = !inside;
 		}
-	}
-	if(inside){
-		cout<<"X = "<<pos.x<<" Y = "<<pos.y<<endl;
 	}
 	return inside;
 }
@@ -120,18 +137,22 @@ void VideoObject::drawShape(){
 void VideoObject::resetState(){
 	switch(state){
 		case STATE_REST:
-			vp.stop();
 			vp.setPosition(0.2);
+			vp.stop();
+			stopTime = ofGetElapsedTimeMillis() + GROW_TIME;
 			pos = restPos;
-			drawSize = restSize;
+			xAdd = ((restSize.x - drawSize.x) / GROW_TIME);
+			cout<<"resizing by "<<xAdd<<endl;
+			//drawSize = restSize;
 			break;
 		case STATE_HOVER:
 			restPos = pos;
 			restSize = drawSize;
-			this->resizeByPercent(10.0);
+			this->resizeByPercent(1.0);
 			break;
 		case STATE_PLAY:
-			this->resizeByPercent(10.0);
+			this->resizeByPercent(1.0);
+			vp.setPosition(0.0);
 			vp.play();
 			break;
 		default:
@@ -143,7 +164,8 @@ void VideoObject::resizeByPercent(float _p){
 	if(_p == 0.0)
 		return;
 	if(_p > 0.0){
-		this->resizeByWidth(drawSize.x + (drawSize.x / _p));
+		stopTime = ofGetElapsedTimeMillis() + GROW_TIME;
+		xAdd = ((drawSize.x * _p) / 100.0) / GROW_TIME;
 	} else {
 		this->resizeByWidth(drawSize.x - (drawSize.x / _p));
 	}
@@ -154,14 +176,13 @@ void VideoObject::resizeByHeight(float _h){
 	drawSize.set(size.x * hPercent, _h);
 }
 void VideoObject::resizeByWidth(float _w){
-	float wPercent = _w / size.x;
-	drawSize.set(_w, size.y * wPercent);
+	float wPercent = _w / drawSize.x;
+	drawSize.set(_w, drawSize.y * wPercent);
 }
 
 void VideoObject::adjustPosition(){
 	while(pos.x < MARGIN){
 		pos.x += 10;
-		cout<<"RESETTING X: "<<pos.x<<endl;
 	}
 	while(pos.x > ofGetWidth() - (MARGIN + drawSize.x)){
 		pos.x -= 100;

@@ -15,6 +15,8 @@
 #include "ofxVectorMath.h"
 #include <vector>
 
+#define GROW_TIME 500.0
+
 class VideoObject : public VisibleObject{
 public:
 	
@@ -22,7 +24,7 @@ public:
 	VideoObject(string _path);
 	void draw();
 	void update();
-	void react(int _lvl);
+	int react(int _lvl);
 	int isInside(int _x, int _y);
 	void setPos(float _x, float _y);
 	void setPosVel(float _xV, float _yV);
@@ -46,6 +48,9 @@ private:
 	int state;
 	ofxVec2f restPos;
 	ofxVec2f restSize;
+	float xAdd, yAdd;
+	int stopTime;
+	ofTrueTypeFont artFont;
 };
 
 #endif

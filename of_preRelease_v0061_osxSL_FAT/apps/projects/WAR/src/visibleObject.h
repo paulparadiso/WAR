@@ -27,7 +27,7 @@ public:
 	virtual int isInside(int _x, int _y) = 0;
 	virtual void draw() = 0;
 	virtual void update() = 0;
-	virtual void react(int _lvl) = 0;
+	virtual int react(int _lvl) = 0;
 	virtual void setPos(float _x, float _y) = 0;
 	virtual void setPosVel(float _xV, float _yV) = 0;
 	virtual void setPosAcc(float _xA, float _yA) = 0;

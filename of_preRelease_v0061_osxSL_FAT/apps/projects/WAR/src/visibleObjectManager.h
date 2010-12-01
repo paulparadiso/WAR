@@ -27,6 +27,7 @@ public:
 	void addObject(VisibleObject *_vo);
 	void checkInsides(int _x, int _y);
 	void randomPositions();
+	void resetById(int _id);
 	//void addObject(VisibleObject _vo);
 private:
 	vector<VisibleObject*>objects;
@@ -35,6 +36,9 @@ private:
 	int idAssign;
 	int currHoverId;
 	int lastHoverId;
+	int lastReactId;
+	int currentlyPlaying;
+	int currentlyBig;
 };
 
 #endif

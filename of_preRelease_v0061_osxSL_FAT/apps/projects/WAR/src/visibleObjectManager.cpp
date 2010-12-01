@@ -11,6 +11,9 @@
 
 VisibleObjectManager::VisibleObjectManager(){
 	idAssign = 0;
+	lastHoverId = -1;
+	currentlyPlaying = -1;
+	currentlyBig = -1;
 }
 
 void VisibleObjectManager::addObject(VisibleObject *_vo){
@@ -21,13 +24,8 @@ void VisibleObjectManager::addObject(VisibleObject *_vo){
 
 void VisibleObjectManager::update(){
 	vector<VisibleObject*>::iterator vi;
-	int count = 0;
 	for(vi = objects.begin(); vi < objects.end(); vi++){
-		if(count == 0){
-			(*vi)->react(2);
-		}
 		(*vi)->update();
-		count++;
 	}
 }
 
@@ -51,6 +49,15 @@ void VisibleObjectManager::randomPositions(){
 	}
 }
 
+void VisibleObjectManager::resetById(int _id){
+	vector<VisibleObject*>::iterator vi;
+	for(vi = objects.begin(); vi < objects.end(); vi++){
+		if((*vi)->id == _id){
+			(*vi)->react(0);
+		}
+	}
+}
+
 void VisibleObjectManager::checkInsides(int _x, int _y){
 	VisibleObject* tmpObject;
 	vector<VisibleObject*>::iterator vi;
@@ -67,9 +74,27 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 		objects.erase(objects.begin() + remove);
 		objects.push_back(tmpObject);
 		if(tmpObject->id == lastHoverId){
-			hoverTime += ofGetElapsedTimeMillis() - hoverTime; 
-			if(hoverTime > HOVER_CLICK_TIME){
-				tmpObject->react(1);
+			if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+				int result = tmpObject->react(1);
+				if(result == 2){
+					if(currentlyPlaying > -1 && currentlyPlaying != tmpObject->id){
+						this->resetById(currentlyPlaying);
+						currentlyPlaying = tmpObject->id;
+					} else {
+						currentlyPlaying = tmpObject->id;
+					}
+				}
+				if(result == 1){
+					if(currentlyBig > -1 && currentlyBig != currentlyPlaying){
+						this->resetById(currentlyBig);
+						currentlyBig = tmpObject->id;
+					} else {
+						currentlyBig = tmpObject->id;
+					}
+
+				}
+				hoverTime = ofGetElapsedTimeMillis();
+				lastHoverId = -1;
 			}
 		} else {
 			lastHoverId = tmpObject->id;
@@ -78,8 +103,5 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	}
 }
 
-//void VisibleObjectManager::addObject(VisibleObject _vo){
-//	objects.push_back(_vo);
-//}
 
 
