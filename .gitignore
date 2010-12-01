@@ -4,6 +4,7 @@
 
 of_preRelease_v0061_osxSL_FAT/apps/projects/WAR/build/
 of_preRelease_v0061_osxSL_FAT/apps/projects/WAR/bin/
+of_preRelease_v0061_osxSL_FAT/libs/
 
 *.pbxuser
 *.perspective
