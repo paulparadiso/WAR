@@ -36,9 +36,18 @@ void VisibleObjectManager::update(int _x, int _y){
 
 void VisibleObjectManager::draw(){
 	vector<VisibleObject*>::iterator vi;
+	int haveDrawing = 0;
+	VisibleObject* playing;
 	for(vi = objects.begin(); vi < objects.end(); vi++){
-		(*vi)->draw();
+		if((*vi)->id != currentlyPlaying){
+			(*vi)->draw();
+		} else {
+			haveDrawing = 1;
+			playing = (*vi);
+		}
 	}
+	if(haveDrawing)
+		playing->draw();
 }
 
 void VisibleObjectManager::randomPositions(){
@@ -60,16 +69,26 @@ void VisibleObjectManager::resetById(int _id){
 
 void VisibleObjectManager::checkInsides(int _x, int _y){
 	VisibleObject* tmpObject;
+	VisibleObject* playObject;
 	vector<VisibleObject*>::iterator vi;
 	int count = 0;
 	int remove =  -1;
+	int playing = -1;
 	for(vi = objects.begin(); vi < objects.end(); vi++){
 		if((*vi)->isInside(_x,_y)){
 			tmpObject = (*vi);
 			remove = count;
 		}
+		//if((*vi)->id == currentlyPlaying){
+//			playObject = (*vi);
+//			playing = count;
+//		}
 		count++;
-	}	
+	}
+	//if(playing > -1){
+//		objects.push_back(playObject);
+//		objects.erase(objects.begin() + playing);
+//	}
 	if(remove > -1){
 		objects.erase(objects.begin() + remove);
 		objects.push_back(tmpObject);
