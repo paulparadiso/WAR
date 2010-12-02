@@ -12,3 +12,8 @@ of_preRelease_v0061_osxSL_FAT/libs/
 
 *.mode1v3
 *.mode2v3
+<<<<<<< HEAD
+=======
+
+*.git
+>>>>>>> paul

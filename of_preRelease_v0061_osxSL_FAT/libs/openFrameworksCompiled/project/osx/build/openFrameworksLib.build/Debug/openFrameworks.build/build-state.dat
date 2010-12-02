@@ -1,7 +1,7 @@
 TopenFrameworks
 v7
 r0
-t312933906.815722
+t312940308.191648
 cCheck dependencies
 cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp normal i386 c++ com.apple.compilers.gcc.4_2
@@ -1963,7 +1963,7 @@ i<sstream>
 i<CoreAudio/AudioHardware.h>
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
-t1291241106
+t1291245758
 s3909128
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o
@@ -3035,7 +3035,7 @@ i<sstream>
 i<CoreAudio/AudioHardware.h>
 
 N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
-t1290106980
+t1290106437
 s3909128
 
 N/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o
@@ -3444,7 +3444,7 @@ i<string>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies312933906#312933906#0(0"0(0#1#0"29836824280170608#0"0#
+lSLF07#2@18"Check dependencies312940308#312940308#0(0"0(0#1#0"8607928320#0"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s310945074.570582
@@ -3656,22 +3656,22 @@ xi386
 lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386310945095#310945095#0(0"0(0#0#0"8610139808#1008"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" -filelist "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList" -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a"0#
 
 CLibtool /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a normal i386
-s312933906.469523
-e312933906.815564
+s311816613.245480
+e311816613.535506
 r1
 xLibtool
 x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
 xnormal
 xi386
-lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386312933906#312933906#0(0"0(0#0#0"27303562371793008#944"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
+lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386311816613#311816613#0(0"0(0#0#0"27303562371793008#944"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
 
 CLibtool /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a normal i386
-s311096100.042486
-e311096100.393778
+s311799236.816963
+e311799237.402543
 r1
 xLibtool
 x/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
 xnormal
 xi386
-lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386311096100#311096100#0(0"0(0#0#0"28429264713089132#908"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
+lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386311799236#311799237#0(0"0(0#0#0"28429264713089132#908"    cd /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
 
