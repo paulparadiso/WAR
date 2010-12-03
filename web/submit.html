@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Women Art Revolution | Add an Artwork</title>
+		<link type="text/css" href="css/war.css" rel="Stylesheet" />
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.6.custom.css" rel="Stylesheet" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.6.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.autoclear.min.js"></script>
+		<script type="text/javascript" src="js/submit.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="site-title">
+				RAW / WOMEN ART REVOLUTION
+			</div>
+			<div id="navigation">
+				<a href="http://www.rawwar.org/about/">About</a><br />
+				<strong>Submit Artwork</strong><br />
+				<!--
+<a href="#">Recent Additions</a><br />
+				<a href="#">Featured Artworks</a><br />
+				<a href="#">Browse Archive</a><br />
+-->
+				<a href="http://www.womenartrevolution.com/">Documentary Film</a><br />
+				<form method="get" id="searchform" action="http://www.rawwar.org/">
+					<input type="text" class="search-input autoclear" value="Search Archive" name="s"></input>
+					<input type="submit" id="search-submit" value="Search" />
+				</form>
+			</div>
+		</div>
+		
+		<div id="form">
+			<h1>
+				Add an Artwork
+			</h1>
+			<h2>
+				Just YouTube links for now!
+			</h2>
+			
+			<input id="url" name="url" type="text" class="autoclear main-input url-input" value="http://www.youtube.com/..."></input>
+			<!-- ui-icon-check -->
+			<!-- ui-icon-alert -->
+			<!-- ui-icon-circle-check -->
+			<div id="url-check" class="ui-icon ui-icon-alert"></div><br class="clearall" />
+			
+			<div id="form-small">
+				<input id="firstname" 	name="firstname" type="text" class="autoclear main-input" value="Your first name"></input><br />
+				<input id="email" 		name="email" type="text" class="autoclear main-input" value="Your email address"></input><br />
+				<input id="title" 		name="title" type="text" class="autoclear main-input" value="Title of artwork"></input><br />
+				<input id="artistname" 	name="artistname" type="text" class="autoclear main-input" value="Artist's name"></input><br />
+				<input id="year" 		name="year" type="text" class="autoclear main-input" value="Year of artwork"></input><br />
+				<!--
+				<select>
+					<option>Type</option>
+					<option>Video</option>
+					<option>Still Image</option>
+				</select><br /> -->
+				<input id="tags-input" type="text" class="main-input" value="Add tags"></input><br />
+				
+				<div id="tag-container"></div><br />
+				
+				<div id="geotag-container">
+					<div id="geotag-cb-container">
+						<input id="geotag-cb" type="checkbox" checked="checked" />
+					</div>
+					<div id="geotag-description">
+						<span id="geotag-title">Geotag this Submission</span><br />
+					
+						This will display the submitter's location on the web and in the installation as:<br />
+						<span id="geotag-location">Location</span><br /><br />
+						Geotagging enables us to create a map of where our users are and better understand the role of geography in the art in our database.
+					</div>
+				</div>
+				<br />
+				<input id="submit-button" type="button" value="Submit"></input>
+			</div>
+			<div id="themes">
+				<div class="themes-title">Themes</div>
+				<span style="font-size:10px">Select all that apply</span><br />
+				<div class="theme">
+					<div class="theme-cb-container">
+						<input id="theme-cb1" class="theme-cb" type="checkbox"></input>
+					</div>
+					<div class="theme-info">
+						<div class="theme-title">THE BODY POLITIC</div>
+						<div class="theme-readmore">Read more...</div>
+						<div class="theme-description">The politically inscribed body, referencing suppressive aspects of culture.</div>
+					</div>
+				</div>
+				
+				<div class="theme">
+					<div class="theme-cb-container">
+						<input id="theme-cb1" class="theme-cb" type="checkbox"></input>
+					</div>
+					<div class="theme-info">
+						<div class="theme-title">CONSCIOUSNESS RAISING</div>
+						<div class="theme-readmore">Read more...</div>
+						<div class="theme-description">Communities of individuals who share and compare experiences, with the goal of creating a dialogue for collaborative empowerment.</div>
+					</div>
+				</div>
+				
+				<div class="theme">
+					<div class="theme-cb-container">
+						<input id="theme-cb1" class="theme-cb" type="checkbox"></input>
+					</div>
+					<div class="theme-info">
+						<div class="theme-title">IDENTITY</div>
+						<div class="theme-readmore">Read more...</div>
+						<div class="theme-description">A method for defining the self in a context of history where experience had been either erased or unacknowledged. This often includes questioning notions of sexuality, race and gender.</div>
+					</div>
+				</div>
+				
+				<div class="theme">
+					<div class="theme-cb-container">
+						<input id="theme-cb1" class="theme-cb" type="checkbox"></input>
+					</div>
+					<div class="theme-info">
+						<div class="theme-title">MEDIA</div>
+						<div class="theme-readmore">Read more...</div>
+						<div class="theme-description">“Media” refers to both a vehicle for communication that reach a broad public and use forms of film, video the internet to broaden their audience.</div>
+					</div>
+				</div>
+				
+				<div class="theme">
+					<div class="theme-cb-container">
+						<input id="theme-cb1" class="theme-cb" type="checkbox"></input>
+					</div>
+					<div class="theme-info">
+						<div class="theme-title">ACTIVISM AND SOCIAL PROTEST</div>
+						<div class="theme-readmore">Read more...</div>
+						<div class="theme-description">Art that calls attention to issues of social justice and civil rights in an attempt to point out or correct inequality.</div>
+					</div>
+				</div>
+				
+				<div class="theme">
+					<div class="theme-cb-container">
+						<input id="theme-cb1" class="theme-cb" type="checkbox"></input>
+					</div>
+					<div class="theme-info">
+						<div class="theme-title">SECRET HISTORIES</div>
+						<div class="theme-readmore">Read more...</div>
+						<div class="theme-description">A cornerstone of feminist activism is exposing this information and making it visible, particularly secret information that has been omitted from existing historical references.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="trace"></div>
+	</body>
+</html>

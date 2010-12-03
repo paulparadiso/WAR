@@ -1,0 +1,167 @@
+body {
+	font-family: Arial;
+}
+
+#header {
+	float: right;
+}
+
+#navigation {
+	float: right;
+	margin-left: 20px;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#site-title {
+	float:left;
+	font-family: "Arial Black";
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+#form {
+	float: left;
+	margin-top:-40px;
+	margin-left: 20px;
+	width: auto;
+}
+
+#form-small {
+	float:left;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+/* FORM FIELDS */
+
+input {
+	border: 1px solid gray;
+	font-family: Arial;
+}
+
+.search-input {
+	
+}
+#search-submit {
+	height: 17px;
+}
+
+.main-input {
+	width: 200px;
+	font-size: 16px;
+	padding-left: 7px;
+	height: 26px;
+	margin: 4px;
+}
+
+.url-input {
+	width: 400px;
+	height: 38px;
+	font-size: 20px;
+	float:left;
+}
+
+#url-check {
+	/* float:right; */
+}
+
+.default {
+	color: gray;
+}
+
+/* THEMES */
+
+#themes {
+	margin-left: 25px;
+	margin-top: 15px;
+	float:right;
+	width: 500px;
+	font-size:12px;
+}
+
+.themes-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.theme {
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-cb-container {
+	height:auto;
+	float:left;
+}
+
+.theme-cb {
+	width:20px;
+}
+
+.theme-info {
+	/* float:right; */
+	width: 600px;
+}
+
+.theme-title {
+	font-weight: bold;
+}
+
+.theme-readmore {
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.theme-description {
+	
+}
+
+/* GEOTAGGING */
+
+#geotag-container {
+	font-size: 10px;
+	width: 200px;
+}
+
+#geotag-cb-container {
+	width: 30px;
+	height: 150px;
+	float:left;
+}
+
+#geotag-cb {
+	width: 40;
+	height: 40px;
+}
+
+#geotag-title {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#geotag-description {
+	
+}
+
+#geotag-location {
+	font-weight: bold;
+}
+
+/* MISC */
+
+#trace {
+	float:clear;
+}
+
+.clearall {
+	clear: both;
+}
