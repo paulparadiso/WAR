@@ -35,6 +35,8 @@ class testApp : public ofBaseApp{
 		float			wiiX, wiiY;
 		VisibleObjectManager vom;
 		ofxDirList dir;
+		ofImage flashLightImage;
+		ofVideoPlayer video;
 	
 };
 

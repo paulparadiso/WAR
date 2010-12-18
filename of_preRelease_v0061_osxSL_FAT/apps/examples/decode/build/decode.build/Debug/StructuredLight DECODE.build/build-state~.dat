@@ -1,0 +1,64 @@
+TStructuredLight DECODE
+v7
+r1
+cCheck dependencies
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/../../../libs/glut/lib/osx/GLUT.framework
+c000000004CD4AC020000000000000132
+t1289006082
+s306
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin//StructuredLight DECODEDebug.app
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin//StructuredLight DECODEDebug.app/Contents/Info.plist
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin//StructuredLight DECODEDebug.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin/StructuredLight DECODEDebug.app/Contents/Frameworks/GLUT.framework
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin/StructuredLight DECODEDebug.app/Contents/Resources/openFrameworks-Info.plist
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/build/decode.build/Debug/StructuredLight DECODE.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/openFrameworks-Info.plist
+c000000004D0105BB0000000000000277
+t1291912635
+s631
+
+NopenFrameworks-Info.plist
+c000000004D0105BB0000000000000277
+t1291912635
+s631
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies313605652#313605652#0(196"[BEROR]error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'[WARN]Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.2(4@78"error: There is no SDK with the name or path '/Developer/SDKs/MacOSX10.4u.sdk'313605652#18446744073709551615#0#0(1@0"0(22@103"Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.313605652#18446744073709551615#0#0(1@0"0(0#1#0"8620119616#0"0#
+
+CPBXCp "bin/StructuredLight DECODEDebug.app/Contents/Frameworks/GLUT.framework" ../../../libs/glut/lib/osx/GLUT.framework
+r0
+
+CPBXCp "bin/StructuredLight DECODEDebug.app/Contents/Resources/openFrameworks-Info.plist" openFrameworks-Info.plist
+r0
+
+CPhaseScriptExecution "Run Script" "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/build/decode.build/Debug/StructuredLight DECODE.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
+r0
+
+CProcessInfoPlistFile "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin//StructuredLight DECODEDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+r0
+
+CTouch "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/bin//StructuredLight DECODEDebug.app"
+r0
+

@@ -1,7 +1,7 @@
 TopenFrameworks
 v7
 r0
-t312944843.033075
+t314338092.354276
 cCheck dependencies
 cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 cCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp normal i386 c++ com.apple.compilers.gcc.4_2
@@ -1963,76 +1963,76 @@ i<sstream>
 i<CoreAudio/AudioHardware.h>
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
-t1291251691
-s3909128
+t1292626429
+s4100400
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o
-t1289320890
-s698920
+t1292626392
+s698824
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o
-t1289320890
-s787820
+t1292626393
+s787724
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o
-t1289320890
-s697348
+t1292626400
+s697252
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o
-t1289006083
-s44960
+t1292626401
+s81992
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o
-t1289006083
-s201732
+t1292626406
+s185720
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o
-t1289006083
-s82928
+t1292626407
+s104364
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o
-t1289006083
-s54900
+t1292626420
+s81068
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o
-t1289006083
-s33636
+t1292626425
+s63416
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o
-t1289320890
-s76712
+t1292626398
+s76672
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o
-t1289006083
-s57616
+t1292626415
+s74540
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o
-t1289320890
-s447008
+t1292626417
+s446912
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o
-t1289006083
-s51752
+t1292626412
+s81832
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o
-t1289006083
-s264684
+t1292626412
+s223380
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o
-t1289006083
-s101396
+t1292626423
+s154936
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o
-t1289006083
-s95220
+t1292626428
+s116552
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o
-t1289006083
-s90956
+t1292626429
+s113980
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList
-c000000004CF6C6920000000000000C0A
-t1291241106
+c000000004D0BE9CD0000000000000C0A
+t1292626381
 s3082
 
 N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractDelegate.h
@@ -3444,7 +3444,7 @@ i<string>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies312944843#312944843#0(0"0(0#1#0"8608167168#0"0#
+lSLF07#2@18"Check dependencies314338092#314338092#0(0"0(0#1#0"8612109184#0"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
 s310945074.570582
@@ -3461,7 +3461,18 @@ oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because link
 lSLF07#2@171"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp310945074#310945088#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#163"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp8011673038010331136#1833"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319181.325673
+e314319192.431183
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@157"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp314319181#314319192#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#149"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp8622610880#1705"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppGlutWindow.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppGlutWindow.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3481,7 +3492,18 @@ oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because link
 lSLF07#2@167"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp310945074#310945088#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#159"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp8616144128#1825"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319181.328011
+e314319193.078112
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@153"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp314319181#314319193#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#145"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp8622076416#1697"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofAppRunner.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/app/ofAppRunner.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3501,7 +3523,18 @@ oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because link
 lSLF07#2@175"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp310945088#310945093#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#167"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp8612346240#1831"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319192.431478
+e314319200.342722
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@161"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp314319192#314319200#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#153"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp8644809088#1703"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofArduino.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofArduino.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3510,7 +3543,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319198.300518
+e314319201.350830
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@159"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp314319198#314319201#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#151"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp8642027488#1704"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofBitmapFont.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofBitmapFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3519,7 +3563,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319200.343075
+e314319206.972090
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@157"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp314319200#314319206#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#149"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp8627965312#1700"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofGraphics.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofGraphics.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3528,7 +3583,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319201.351024
+e314319207.021269
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@154"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp314319201#314319207#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#146"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp8643756768#1694"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofImage.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3537,7 +3603,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319215.454989
+e314319220.860588
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@150"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp314319215#314319220#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#142"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp8627878848#1689"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofMath.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofMath.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3546,7 +3623,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319220.860853
+e314319225.164727
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@153"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp314319220#314319225#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#145"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp8631234016#1695"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofQtUtils.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofQtUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3566,7 +3654,18 @@ oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because link
 lSLF07#2@174"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp310945088#310945092#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#166"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp8616865664#1829"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319193.078311
+e314319198.300130
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@160"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp314319193#314319198#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#152"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp8629209536#1701"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSerial.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/communication/ofSerial.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3575,7 +3674,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319212.220933
+e314319215.454719
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@157"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp314319212#314319215#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#149"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp8644781120#1703"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundPlayer.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3595,7 +3705,18 @@ oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because link
 lSLF07#2@171"Compile /Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp310945092#310945095#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#163"/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp8616193984#1831"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap" "-F/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include" -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386" "-I/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp" -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o"0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319212.574286
+e314319217.432219
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@157"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp314319212#314319217#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#149"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp8632180448#1703"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofSoundStream.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/sound/ofSoundStream.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3604,7 +3725,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319206.972470
+e314319212.220666
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@156"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp314319206#314319212#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#148"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp8606859232#1698"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTexture.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTexture.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3613,7 +3745,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319207.021468
+e314319212.574082
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@161"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp314319207#314319212#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#153"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp8599609792#1708"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofTrueTypeFont.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/graphics/ofTrueTypeFont.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3622,7 +3765,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319217.432573
+e314319223.220123
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@151"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp314319217#314319223#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#143"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp8643969408#1691"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofUtils.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/utils/ofUtils.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3631,7 +3785,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319223.220481
+e314319228.070928
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@158"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp314319223#314319228#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#150"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp8644361792#1705"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoGrabber.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoGrabber.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3640,7 +3805,18 @@ CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-norma
 r0
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-r0
+s314319225.165091
+e314319229.738591
+r1
+xCompileC
+xbuild/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@157"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp314319225#314319229#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#149"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp8644747648#1703"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -isysroot /Developer/SDKs/MacOSX10.5.sdk -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/openFrameworksDebug.hmap -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx/include -I../../../../libs/freetype/include -I../../../../libs/freetype/include/freetype2 -I../../../../libs/poco/include -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources/i386 -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/DerivedSources -D__MACOSX_CORE__ -lpthread -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o0#
 
 CCompileC build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/ofVideoPlayer.o /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../../openFrameworks/video/ofVideoPlayer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 r0
@@ -3656,14 +3832,14 @@ xi386
 lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386310945095#310945095#0(0"0(0#0#0"8610139808#1008"    cd "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx" -filelist "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList" -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o "/Users/daleth/Projects/Lynn Hershman/Code/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a"0#
 
 CLibtool /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a normal i386
-s311816613.245480
-e311816613.535506
+s314319229.738868
+e314319229.934884
 r1
 xLibtool
 x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a
 xnormal
 xi386
-lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386311816613#311816613#0(0"0(0#0#0"27303562371793008#944"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
+lSLF07#2@56"Libtool ../../lib/osx//openFrameworksDebug.a normal i386314319229#314319229#0(0"0(0#0#0"8631543456#944"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx -filelist /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/build/openFrameworksLib.build/Debug/openFrameworks.build/Objects-normal/i386/openFrameworksDebug.LinkFileList -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework GLUT -framework OpenGL -framework QuickTime -o /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a0#
 
 CLibtool /Users/pp/projects/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/project/osx/../../lib/osx//openFrameworksDebug.a normal i386
 s311799236.816963

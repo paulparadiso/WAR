@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/211/trunk/OpenFrameworks/apps/structuredLight/capture/src
+END
+ofxThreadedVideoGrabber.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/76/trunk/OpenFrameworks/apps/structuredLight/capture/src/ofxThreadedVideoGrabber.h
+END
+testApp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/211/trunk/OpenFrameworks/apps/structuredLight/capture/src/testApp.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/211/trunk/OpenFrameworks/apps/structuredLight/capture/src/main.cpp
+END
+testApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/211/trunk/OpenFrameworks/apps/structuredLight/capture/src/testApp.h
+END
+ofxImageSaver.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/76/trunk/OpenFrameworks/apps/structuredLight/capture/src/ofxImageSaver.h
+END
+ofxAutoControlPanel.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/76/trunk/OpenFrameworks/apps/structuredLight/capture/src/ofxAutoControlPanel.h
+END

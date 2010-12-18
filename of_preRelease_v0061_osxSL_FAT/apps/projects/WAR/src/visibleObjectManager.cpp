@@ -36,7 +36,7 @@ void VisibleObjectManager::update(int _x, int _y){
 
 void VisibleObjectManager::draw(){
 	vector<VisibleObject*>::iterator vi;
-	int haveDrawing = 0;
+	int haveDrawing = 0; 
 	VisibleObject* playing;
 	for(vi = objects.begin(); vi < objects.end(); vi++){
 		if((*vi)->id != currentlyPlaying){

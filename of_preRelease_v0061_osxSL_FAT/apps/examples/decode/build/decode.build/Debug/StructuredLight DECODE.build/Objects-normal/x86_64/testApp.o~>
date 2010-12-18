@@ -1,0 +1,44 @@
+In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h:10,
+                 from ../../../libs/openFrameworks/ofMain.h:38,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.h:14,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.cpp:1:
+../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'MediaHandler' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:45: error: expected primary-expression before '*' token
+../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'outIsMPEG' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:45: error: initializer expression list treated as compound expression
+../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'MediaHandler' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:46: error: expected primary-expression before '*' token
+../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'outStaticFrameRate' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:46: error: initializer expression list treated as compound expression
+../../../libs/openFrameworks/video/ofQtUtils.h:47: error: 'Media' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:47: error: expected primary-expression before 'double'
+../../../libs/openFrameworks/video/ofQtUtils.h:47: error: initializer expression list treated as compound expression
+../../../libs/openFrameworks/video/ofQtUtils.h:48: error: variable or field 'MovieGetVideoMediaAndMediaHandler' declared void
+../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Movie' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Media' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'outMedia' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'MediaHandler' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'outMediaHandler' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:50: error: variable or field 'MovieGetStaticFrameRate' declared void
+../../../libs/openFrameworks/video/ofQtUtils.h:50: error: 'Movie' was not declared in this scope
+../../../libs/openFrameworks/video/ofQtUtils.h:50: error: expected primary-expression before 'double'
+../../../libs/openFrameworks/video/ofQtUtils.h:53: error: 'UserData' has not been declared
+../../../libs/openFrameworks/video/ofQtUtils.h:54: error: 'UserData' has not been declared
+In file included from ../../../libs/openFrameworks/ofMain.h:38,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.h:14,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.cpp:1:
+../../../libs/openFrameworks/video/ofVideoGrabber.h:86: error: 'SeqGrabComponent' does not name a type
+../../../libs/openFrameworks/video/ofVideoGrabber.h:87: error: 'SGChannel' does not name a type
+../../../libs/openFrameworks/video/ofVideoGrabber.h:91: error: 'SGGrabCompleteBottleUPP' does not name a type
+In file included from ../../../libs/openFrameworks/ofMain.h:39,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.h:14,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.cpp:1:
+../../../libs/openFrameworks/video/ofVideoPlayer.h:80: error: 'MovieDrawingCompleteUPP' does not name a type
+../../../libs/openFrameworks/video/ofVideoPlayer.h:81: error: 'MovieController' does not name a type
+../../../libs/openFrameworks/video/ofVideoPlayer.h:83: error: 'Movie' does not name a type
+../../../libs/openFrameworks/video/ofVideoPlayer.h:85: error: 'Movie' has not been declared
+In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.h:18,
+                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/src/testApp.cpp:1:
+/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/../../../addons/ofxQtVideoSaver/src/ofxQtVideoSaver.h:44: error: 'Movie' does not name a type
+/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/../../../addons/ofxQtVideoSaver/src/ofxQtVideoSaver.h:45: error: 'Track' does not name a type
+/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/decode/../../../addons/ofxQtVideoSaver/src/ofxQtVideoSaver.h:46: error: 'Media' does not name a type

@@ -31,8 +31,11 @@ void testApp::setup(){
 	// listen on the given port
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
-
 	
+	//video.loadMovie("video/BQZUXcMVYYc.mp4");
+//	video.play();
+
+	flashLightImage.loadImage("flashlight-mask-invert-rings.png");
 }
 
 //--------------------------------------------------------------
@@ -72,12 +75,16 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	ofSetColor(255,255,255);
+	
+	//glEnable(GL_BLEND);
+//	glColorMask(false,false,false,true);
+//	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
+//	flashLightImage.draw(wiiX - 250, wiiY - 250);
+//	glColorMask(true,true,true,true);
+//	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
+//	glColor4f(1.0,1.0,1.0,1.0);
+	//video.draw(50,50,ofGetWidth(), ofGetHeight());
 	vom.draw();
-	ofSetColor(255, 130, 0);
-	float radius = 10;
-	ofFill();
-	ofCircle(wiiX, wiiY, radius);
 }
 
 //--------------------------------------------------------------

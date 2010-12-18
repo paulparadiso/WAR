@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/190/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src
+END
+GammaCalibration.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/GammaCalibration.h
+END
+LutFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/LutFilter.h
+END
+ThreadedSolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/ThreadedSolver.h
+END
+testApp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/testApp.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/main.cpp
+END
+testApp.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/testApp.h
+END
+LutFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/LutFilter.cpp
+END
+GammaCalibration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/189/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/GammaCalibration.cpp
+END
+ThreadedSolver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/190/trunk/OpenFrameworks/apps/structuredLight/GammaCalibrate/src/ThreadedSolver.cpp
+END

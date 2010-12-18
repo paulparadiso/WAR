@@ -1,0 +1,1347 @@
+TStructuredLight FastThreePhase
+v7
+r0
+t313606776.131729
+cCheck dependencies
+cProcessInfoPlistFile "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+cProcessPCH++ /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/Unwrap.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ThreePhaseWrap.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/testApp.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/main.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ImageUtility.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ScanlineOffset.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/PartialQualityMap.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cPhaseScriptExecution "Run Script" "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
+cPBXCp "bin/StructuredLight FastThreePhaseDebug.app/Contents/Frameworks/GLUT.framework" ../../../libs/glut/lib/osx/GLUT.framework
+cPBXCp "bin/StructuredLight FastThreePhaseDebug.app/Contents/Resources/openFrameworks-Info.plist" openFrameworks-Info.plist
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004BD2589F0000000000043820
+t1272076447
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004BD255330000000002B48410
+t1272075571
+s45384720
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h
+c000000004C46DAC00000000000000477
+t1279711936
+s1143
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004B73AAD700000000004C9980
+t1265871575
+s5020032
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004C0FDD7E000000000000A5F0
+t1276108158
+s42480
+
+N/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004C44E75100000000000005FF
+t1279584081
+s1535
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004BD24C2800000000002180C0
+t1272073256
+s2195648
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004BC13513000000000077DFF0
+t1270953235
+s7856112
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004A11F09A0000000000021710
+t1242689690
+s136976
+
+N/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c000000004C46BBD80000000000000401
+t1279704024
+s1025
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004BBD310E0000000000172A20
+t1270690062
+s1518112
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004B8EC2670000000000025B59
+t1267647079
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004B8EC2670000000000003F84
+t1267647079
+s16260
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004C584E830000000000043310
+t1280855683
+s275216
+
+N/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004B2D3F1E0000000000000659
+t1261256478
+s1625
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004BF9C9EC0000000000783950
+t1274661356
+s7878992
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/FreeImage/lib/osx/freeimage.a
+c000000004CD4AC020000000000AA64B0
+t1289006082
+s11166896
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/GLee/include/GLee.h
+c000000004CD4AC020000000000090A87
+t1289006082
+s592519
+i<windows.h>
+i<GL/gl.h>
+i<OpenGL/gl.h>
+i<GL/gl.h>
+i<GL/glx.h>
+i<stddef.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/GLee/lib/osx/GLee.a
+c000000004CD4AC0200000000000C88C8
+t1289006082
+s821448
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/fmodex/include/fmod.h
+c000000004CD4AC020000000000028E68
+t1289006082
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/fmodex/include/fmod_errors.h
+c000000004CD4AC020000000000003408
+t1289006082
+s13320
+i"fmod.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/fmodex/lib/osx/libfmodex.dylib
+c000000004CD4AC0200000000001DD8CC
+t1289006082
+s1956044
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/freeimage/include/FreeImage.h
+c000000004CD4AC02000000000000CC1B
+t1289006082
+s52251
+i<wchar.h>
+i<inttypes.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/freetype/lib/osx/freetype.a
+c000000004CD4AC0200000000004D82C8
+t1289006082
+s5079752
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx/GLUT.framework
+c000000004CD4AC020000000000000132
+t1289006082
+s306
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx/GLUT.framework/GLUT
+c000000004CD4AC02000000000011A218
+t1289006082
+s1155608
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx/CppUnit.a
+c000000004CD4AC04000000000003ABB0
+t1289006084
+s240560
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx/PocoFoundation.a
+c000000004CD4AC0400000000005A62E8
+t1289006084
+s5923560
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx/PocoNet.a
+c000000004CD4AC040000000000378278
+t1289006084
+s3637880
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx/PocoUtil.a
+c000000004CD4AC0400000000000FFB80
+t1289006084
+s1047424
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx/PocoXML.a
+c000000004CD4AC040000000000239BC0
+t1289006084
+s2333632
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/rtAudio/lib/osx/rtAudio.a
+c000000004CD4AC0400000000000BC8E8
+t1289006084
+s772328
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app
+t1291913963
+s102
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/Info.plist
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/StructuredLight FastThreePhaseDebug
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/StructuredLight FastThreePhaseDebug.app/Contents/Frameworks/GLUT.framework
+t1291913975
+s306
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/StructuredLight FastThreePhaseDebug.app/Contents/Resources/openFrameworks-Info.plist
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ImageUtility.o
+t1291913973
+s4624
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/PartialQualityMap.o
+t1291913975
+s50136
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ScanlineOffset.o
+t1291913975
+s190396
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/StructuredLight FastThreePhaseDebug.LinkFileList
+c000000004D010AEB0000000000000560
+t1291913963
+s1376
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ThreePhaseWrap.o
+t1291913970
+s75484
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/Unwrap.o
+t1291913970
+s51600
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/testApp.o
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004D010AEB0000000000000113
+t1291913963
+s275
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/openFrameworks-Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp
+c000000004D0105BB0000000000000149
+t1291912635
+s329
+i"ImageUtility.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.h
+c000000004D0105BB00000000000000A9
+t1291912635
+s169
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp
+c000000004D0105BB0000000000000A2F
+t1291912635
+s2607
+i"PartialQualityMap.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.h
+c000000004D0105BB0000000000000322
+t1291912635
+s802
+i"Shared.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp
+c000000004D0105BB0000000000001844
+t1291912635
+s6212
+i"ScanlineOffset.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.h
+c000000004D0105BB00000000000005C5
+t1291912635
+s1477
+i"Shared.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Shared.h
+c000000004D0105BB00000000000000D4
+t1291912635
+s212
+i<string>
+i<math.h>
+i<vector>
+i<iostream>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp
+c000000004D0105BB0000000000000930
+t1291912635
+s2352
+i"ThreePhaseWrap.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.h
+c000000004D0105BB00000000000004BC
+t1291912635
+s1212
+i"ImageUtility.h"
+i"Shared.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp
+c000000004D0105BB000000000000049C
+t1291912635
+s1180
+i"Unwrap.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.h
+c000000004D0105BB00000000000001B4
+t1291912635
+s436
+i"Shared.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp
+c000000004D0105BB00000000000000B8
+t1291912635
+s184
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp
+c000000004D0105BB0000000000000F70
+t1291912635
+s3952
+i"testApp.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h
+c000000004D0105BB000000000000022C
+t1291912635
+s556
+i"ofMain.h"
+i"ThreePhaseWrap.h"
+i"PartialQualityMap.h"
+i"ScanlineOffset.h"
+i"Unwrap.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod.h
+c000000004CD4AC020000000000028E68
+t1289006082
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_codec.h
+c000000004CD4AC02000000000000334A
+t1289006082
+s13130
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_dsp.h
+c000000004CD4AC02000000000000892F
+t1289006082
+s35119
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/fmodex/include/fmod_memoryinfo.h
+c000000004CD4AC020000000000003C95
+t1289006082
+s15509
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/glut/lib/osx/GLUT.framework/Headers/glut.h
+c000000004CD4AC02000000000000578C
+t1289006082
+s22412
+i<windows.h>
+i<AvailabilityMacros.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004CD4AC030000000000000446
+t1289006083
+s1094
+i"ofTypes.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppGlutWindow.h
+c000000004CD4AC03000000000000066C
+t1289006083
+s1644
+i"ofConstants.h"
+i"ofAppBaseWindow.h"
+i"glut.h"
+i<GLUT/glut.h>
+i<GL/glut.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofAppRunner.h
+c000000004CD4AC03000000000000050D
+t1289006083
+s1293
+i"ofMain.h"
+i"ofBaseApp.h"
+i"ofAppBaseWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/app/ofBaseApp.h
+c000000004CD4AC030000000000000375
+t1289006083
+s885
+i"ofTypes.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/communication/ofArduino.h
+c000000004CD4AC030000000000003D3C
+t1289006083
+s15676
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/communication/ofSerial.h
+c000000004CD4AC030000000000000D2E
+t1289006083
+s3374
+i"ofConstants.h"
+i<termios.h>
+i<sys/ioctl.h>
+i<getopt.h>
+i<dirent.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<fcntl.h>
+i<errno.h>
+i<ctype.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/events/ofEventUtils.h
+c000000004CD4AC030000000000000A8A
+t1289006083
+s2698
+i"ofConstants.h"
+i"Poco/FIFOEvent.h"
+i"Poco/Delegate.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/events/ofEvents.h
+c000000004CD4AC0300000000000007AF
+t1289006083
+s1967
+i"ofConstants.h"
+i"ofEventUtils.h"
+i"ofxEventUtils.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofGraphics.h
+c000000004CD4AC030000000000000B73
+t1289006083
+s2931
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofImage.h
+c000000004CD4AC030000000000000C9F
+t1289006083
+s3231
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"FreeImage.h"
+i"ofUtils.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofTexture.h
+c000000004CD4AC030000000000000B5A
+t1289006083
+s2906
+i"ofConstants.h"
+i"ofGraphics.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004CD4AC03000000000000087A
+t1289006083
+s2170
+i"ofConstants.h"
+i"ofGraphics.h"
+i"ofUtils.h"
+i"ofTypes.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/ofMain.h
+c000000004CD4AC030000000000000347
+t1289006083
+s839
+i"ofConstants.h"
+i"ofMath.h"
+i"ofUtils.h"
+i"ofTypes.h"
+i"ofSerial.h"
+i"ofArduino.h"
+i"ofTexture.h"
+i"ofTrueTypeFont.h"
+i"ofGraphics.h"
+i"ofImage.h"
+i"ofBaseApp.h"
+i"ofAppRunner.h"
+i"ofSoundStream.h"
+i"ofSoundPlayer.h"
+i"ofVideoGrabber.h"
+i"ofVideoPlayer.h"
+i"ofEvents.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004CD4AC0300000000000006C3
+t1289006083
+s1731
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/sound/ofSoundStream.h
+c000000004CD4AC030000000000000254
+t1289006083
+s596
+i"ofConstants.h"
+i"ofBaseApp.h"
+i"ofEvents.h"
+i"ofMath.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofConstants.h
+c000000004CD4AC030000000000002AA0
+t1289006083
+s10912
+i<TargetConditionals.h>
+i<windows.h>
+i"GLee.h"
+i"glu.h"
+i<unistd.h>
+i"GLee.h"
+i<OpenGL/glu.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i"GLee.h"
+i<GL/glu.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<stdio.h>
+i<stdarg.h>
+i<math.h>
+i<time.h>
+i<stdlib.h>
+i<string.h>
+i<iostream>
+i<vector>
+i<string>
+i<sstream>
+i<iomanip>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofMath.h
+c000000004CD4AC0300000000000006DB
+t1289006083
+s1755
+i"ofConstants.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofTypes.h
+c000000004CD4AC030000000000001991
+t1289006083
+s6545
+i"ofConstants.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/utils/ofUtils.h
+c000000004CD4AC0300000000000005A4
+t1289006083
+s1444
+i"ofConstants.h"
+i<shellapi.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofGstUtils.h
+c000000004CD4AC030000000000000B42
+t1289006083
+s2882
+i<gst/gst.h>
+i<pthread.h>
+i"ofConstants.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofQtUtils.h
+c000000004CD4AC0300000000000006CF
+t1289006083
+s1743
+i"ofConstants.h"
+i"ofGraphics.h"
+i<QuickTime/QuickTime.h>
+i<CoreServices/CoreServices.h>
+i<ApplicationServices/ApplicationServices.h>
+i<QTML.h>
+i<FixMath.h>
+i<QuickTimeComponents.h>
+i<TextUtils.h>
+i<MediaHandlers.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofUCUtils.h
+c000000004CD4AC0300000000000004A7
+t1289006083
+s1191
+i"ofConstants.h"
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<unicap.h>
+i<unistd.h>
+i<string.h>
+i<pthread.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofVideoGrabber.h
+c000000004CD4AC030000000000000C9C
+t1289006083
+s3228
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofTypes.h"
+i"ofQtUtils.h"
+i"videoInput.h"
+i"ofUCUtils.h"
+i"ofGstUtils.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworks/video/ofVideoPlayer.h
+c000000004CD4AC030000000000000BD3
+t1289006083
+s3027
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGstUtils.h"
+i"ofQtUtils.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c000000004CFD6F3F00000000003BA608
+t1291677503
+s3909128
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractDelegate.h
+c000000004CD4AC030000000000000B2E
+t1289006083
+s2862
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AbstractEvent.h
+c000000004CD4AC030000000000002C6A
+t1289006083
+s11370
+i"Poco/Foundation.h"
+i"Poco/SingletonHolder.h"
+i"Poco/SharedPtr.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveMethod.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveMethod.h
+c000000004CD4AC030000000000001C64
+t1289006083
+s7268
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveRunnable.h"
+i"Poco/ActiveStarter.h"
+i"Poco/AutoPtr.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveResult.h
+c000000004CD4AC030000000000002E66
+t1289006083
+s11878
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveRunnable.h
+c000000004CD4AC030000000000001785
+t1289006083
+s6021
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/Runnable.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i"Poco/Exception.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ActiveStarter.h
+c000000004CD4AC030000000000000927
+t1289006083
+s2343
+i"Poco/Foundation.h"
+i"Poco/ThreadPool.h"
+i"Poco/ActiveRunnable.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/AutoPtr.h
+c000000004CD4AC030000000000001E0C
+t1289006083
+s7692
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Bugcheck.h
+c000000004CD4AC0300000000000012FE
+t1289006083
+s4862
+i"Poco/Foundation.h"
+i<string>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/CompareFunctions.h
+c000000004CD4AC0300000000000007EC
+t1289006083
+s2028
+i"Poco/Foundation.h"
+i<functional>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Config.h
+c000000004CD4AC0300000000000008B5
+t1289006083
+s2229
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Delegate.h
+c000000004CD4AC030000000000001802
+t1289006083
+s6146
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/FunctionDelegate.h"
+i"Poco/Expire.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event.h
+c000000004CD4AC030000000000000E21
+t1289006083
+s3617
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Event_WIN32.h"
+i"Poco/Event_POSIX.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event_POSIX.h
+c000000004CD4AC030000000000000A91
+t1289006083
+s2705
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Event_WIN32.h
+c000000004CD4AC030000000000000947
+t1289006083
+s2375
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Exception.h
+c000000004CD4AC0300000000000026AC
+t1289006083
+s9900
+i"Poco/Foundation.h"
+i<stdexcept>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Expire.h
+c000000004CD4AC030000000000000CF1
+t1289006083
+s3313
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/Timestamp.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FIFOEvent.h
+c000000004CD4AC030000000000000AD4
+t1289006083
+s2772
+i"Poco/AbstractEvent.h"
+i"Poco/FIFOStrategy.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/CompareFunctions.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FIFOStrategy.h
+c000000004CD4AC0300000000000010F3
+t1289006083
+s4339
+i"Poco/NotificationStrategy.h"
+i<map>
+i<list>
+i<memory>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Foundation.h
+c000000004CD4AC030000000000001023
+t1289006083
+s4131
+i"Poco/Config.h"
+i"Poco/Platform.h"
+i"Poco/Platform_WIN32.h"
+i"Poco/Platform_VMS.h"
+i"Poco/Platform_POSIX.h"
+i"Poco/Bugcheck.h"
+i"Poco/Types.h"
+i<string>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/FunctionDelegate.h
+c000000004CD4AC0300000000000013CA
+t1289006083
+s5066
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex.h
+c000000004CD4AC030000000000001A61
+t1289006083
+s6753
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/ScopedLock.h"
+i"Poco/Mutex_WIN32.h"
+i"Poco/Mutex_POSIX.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex_POSIX.h
+c000000004CD4AC030000000000000AC3
+t1289006083
+s2755
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Mutex_WIN32.h
+c000000004CD4AC030000000000000A07
+t1289006083
+s2567
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/NotificationStrategy.h
+c000000004CD4AC040000000000000A37
+t1289006084
+s2615
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform.h
+c000000004CD4AC040000000000001A3A
+t1289006084
+s6714
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_POSIX.h
+c000000004CD4AC040000000000000843
+t1289006084
+s2115
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_VMS.h
+c000000004CD4AC040000000000000BAA
+t1289006084
+s2986
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Platform_WIN32.h
+c000000004CD4AC040000000000000D4D
+t1289006084
+s3405
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/RefCountedObject.h
+c000000004CD4AC040000000000000B10
+t1289006084
+s2832
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Runnable.h
+c000000004CD4AC040000000000000861
+t1289006084
+s2145
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ScopedLock.h
+c000000004CD4AC0400000000000008EB
+t1289006084
+s2283
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SharedPtr.h
+c000000004CD4AC0400000000000021DE
+t1289006084
+s8670
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Mutex.h"
+i<algorithm>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SignalHandler.h
+c000000004CD4AC0400000000000011EB
+t1289006084
+s4587
+i"Poco/Foundation.h"
+i<vector>
+i<setjmp.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/SingletonHolder.h
+c000000004CD4AC040000000000000A64
+t1289006084
+s2660
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread.h
+c000000004CD4AC040000000000001C3A
+t1289006084
+s7226
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Thread_WIN32.h"
+i"Poco/Thread_POSIX.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/ThreadPool.h
+c000000004CD4AC040000000000001849
+t1289006084
+s6217
+i"Poco/Foundation.h"
+i"Poco/Thread.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread_POSIX.h
+c000000004CD4AC0400000000000012A8
+t1289006084
+s4776
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/SignalHandler.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i<pthread.h>
+i<sys/select.h>
+i<errno.h>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Thread_WIN32.h
+c000000004CD4AC04000000000000106C
+t1289006084
+s4204
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Timestamp.h
+c000000004CD4AC0400000000000019A7
+t1289006084
+s6567
+i"Poco/Foundation.h"
+i<ctime>
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/Types.h
+c000000004CD4AC040000000000001910
+t1289006084
+s6416
+i"Poco/Foundation.h"
+
+N/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/libs/poco/include/Poco/UnWindows.h
+c000000004CD4AC040000000000000FD1
+t1289006084
+s4049
+i<windows.h>
+
+N/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/usr/include/TargetConditionals.h
+c000000004A11A9B300000000000031E9
+t1242671539
+s12777
+
+N/usr/include/ctype.h
+c000000004B738B7F0000000000002C18
+t1265863551
+s11288
+
+N/usr/include/dirent.h
+c000000004B738B7F00000000000016D3
+t1265863551
+s5843
+
+N/usr/include/errno.h
+c000000004B738B7E00000000000003EB
+t1265863550
+s1003
+
+N/usr/include/fcntl.h
+c000000004B738B7E00000000000003EA
+t1265863550
+s1002
+
+N/usr/include/getopt.h
+c000000004B738B7E0000000000000CBC
+t1265863550
+s3260
+
+N/usr/include/inttypes.h
+c000000004B738B7E00000000000027D1
+t1265863550
+s10193
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/pthread.h
+c000000004B738B7F00000000000038F0
+t1265863551
+s14576
+
+N/usr/include/setjmp.h
+c000000004B738B7E0000000000000438
+t1265863550
+s1080
+
+N/usr/include/stdio.h
+c000000004B738B7F0000000000004174
+t1265863551
+s16756
+
+N/usr/include/stdlib.h
+c000000004B738B7F0000000000002DF5
+t1265863551
+s11765
+
+N/usr/include/string.h
+c000000004B738B7F0000000000001731
+t1265863551
+s5937
+
+N/usr/include/sys/_types.h
+c000000004B8827580000000000001845
+t1267214168
+s6213
+
+N/usr/include/sys/ioctl.h
+c000000004B882752000000000000116C
+t1267214162
+s4460
+
+N/usr/include/sys/select.h
+c000000004B88275400000000000016A2
+t1267214164
+s5794
+
+N/usr/include/termios.h
+c000000004B738B7E00000000000004D4
+t1265863550
+s1236
+
+N/usr/include/time.h
+c000000004B738B7F000000000000178E
+t1265863551
+s6030
+
+N/usr/include/unistd.h
+c000000004B738B7F000000000000563E
+t1265863551
+s22078
+
+N/usr/include/wchar.h
+c000000004B738B7F00000000000025DA
+t1265863551
+s9690
+
+N/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11983400000000000010DD
+t1242667060
+s4317
+
+N/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A1198340000000000003197
+t1242667060
+s12695
+i<machine/ansi.h>
+i<sys/_types.h>
+
+N/var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h.gch
+t1291913969
+s47138384
+
+NopenFrameworks-Info.plist
+c00000000000000000000000000000000
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies313606763#313606763#0(110"[WARN]Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.1(22@103"Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.313606763#18446744073709551615#0#0(1@0"0(0#1#0"8619945984#0"0#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ImageUtility.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606773.483628
+e313606773.706000
+r1
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ImageUtility.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@119"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp313606773#313606773#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#111"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp8619526400#2182"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ImageUtility.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ImageUtility.o"0#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/PartialQualityMap.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606773.706224
+e313606775.020636
+r1
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/PartialQualityMap.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@124"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp313606773#313606775#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#116"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp8626500672#2192"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/PartialQualityMap.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/PartialQualityMap.o"0#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ScanlineOffset.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606773.488569
+e313606775.384637
+r1
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ScanlineOffset.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@121"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp313606773#313606775#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#113"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp8607906976#2186"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ScanlineOffset.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ScanlineOffset.o"0#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ThreePhaseWrap.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606769.425358
+e313606770.770550
+r1
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ThreePhaseWrap.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@121"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp313606769#313606770#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#113"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp8626059264#2186"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/ThreePhaseWrap.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/ThreePhaseWrap.o"0#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/Unwrap.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606769.422220
+e313606770.635204
+r1
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/Unwrap.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@113"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp313606769#313606770#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#105"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp8626744576#2170"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/Unwrap.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/Unwrap.o"0#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/main.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606770.770773
+e313606773.488375
+r0
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/main.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h:10,
+o                 from ../../../libs/openFrameworks/ofMain.h:38,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp:1:
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'MediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: expected primary-expression before '*' token
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'outIsMPEG' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: initializer expression list treated as compound expression
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'MediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: expected primary-expression before '*' token
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'outStaticFrameRate' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: initializer expression list treated as compound expression
+o../../../libs/openFrameworks/video/ofQtUtils.h:47: error: 'Media' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:47: error: expected primary-expression before 'double'
+o../../../libs/openFrameworks/video/ofQtUtils.h:47: error: initializer expression list treated as compound expression
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: variable or field 'MovieGetVideoMediaAndMediaHandler' declared void
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Movie' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Media' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'outMedia' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'MediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'outMediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:50: error: variable or field 'MovieGetStaticFrameRate' declared void
+o../../../libs/openFrameworks/video/ofQtUtils.h:50: error: 'Movie' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:50: error: expected primary-expression before 'double'
+o../../../libs/openFrameworks/video/ofQtUtils.h:53: error: 'UserData' has not been declared
+o../../../libs/openFrameworks/video/ofQtUtils.h:54: error: 'UserData' has not been declared
+oIn file included from ../../../libs/openFrameworks/ofMain.h:38,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp:1:
+o../../../libs/openFrameworks/video/ofVideoGrabber.h:86: error: 'SeqGrabComponent' does not name a type
+o../../../libs/openFrameworks/video/ofVideoGrabber.h:87: error: 'SGChannel' does not name a type
+o../../../libs/openFrameworks/video/ofVideoGrabber.h:91: error: 'SGGrabCompleteBottleUPP' does not name a type
+oIn file included from ../../../libs/openFrameworks/ofMain.h:39,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp:1:
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:80: error: 'MovieDrawingCompleteUPP' does not name a type
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:81: error: 'MovieController' does not name a type
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:83: error: 'Movie' does not name a type
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:85: error: 'Movie' has not been declared
+lSLF07#2@111"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606770#313606773#0(3662"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h:10,                 from ../../../libs/openFrameworks/ofMain.h:38,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp:1:../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'MediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:45: error: expected primary-expression before '*' token../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'outIsMPEG' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:45: error: initializer expression list treated as compound expression../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'MediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:46: error: expected primary-expression before '*' token../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'outStaticFrameRate' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:46: error: initializer expression list treated as compound expression../../../libs/openFrameworks/video/ofQtUtils.h:47: error: 'Media' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:47: error: expected primary-expression before 'double'../../../libs/openFrameworks/video/ofQtUtils.h:47: error: initializer expression list treated as compound expression../../../libs/openFrameworks/video/ofQtUtils.h:48: error: variable or field 'MovieGetVideoMediaAndMediaHandler' declared void../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Movie' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Media' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'outMedia' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'MediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'outMediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:50: error: variable or field 'MovieGetStaticFrameRate' declared void../../../libs/openFrameworks/video/ofQtUtils.h:50: error: 'Movie' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:50: error: expected primary-expression before 'double'../../../libs/openFrameworks/video/ofQtUtils.h:53: error: 'UserData' has not been declared../../../libs/openFrameworks/video/ofQtUtils.h:54: error: 'UserData' has not been declaredIn file included from ../../../libs/openFrameworks/ofMain.h:38,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp:1:../../../libs/openFrameworks/video/ofVideoGrabber.h:86: error: 'SeqGrabComponent' does not name a type../../../libs/openFrameworks/video/ofVideoGrabber.h:87: error: 'SGChannel' does not name a type../../../libs/openFrameworks/video/ofVideoGrabber.h:91: error: 'SGGrabCompleteBottleUPP' does not name a typeIn file included from ../../../libs/openFrameworks/ofMain.h:39,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp:1:../../../libs/openFrameworks/video/ofVideoPlayer.h:80: error: 'MovieDrawingCompleteUPP' does not name a type../../../libs/openFrameworks/video/ofVideoPlayer.h:81: error: 'MovieController' does not name a type../../../libs/openFrameworks/video/ofVideoPlayer.h:83: error: 'Movie' does not name a type../../../libs/openFrameworks/video/ofVideoPlayer.h:85: error: 'Movie' has not been declared29(4@45"'MediaHandler' was not declared in this scope313606773#271#104#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@95"'MediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#34"'*' was not declared in this scope0(4@44"Expected primary-expression before '*' token313606773#375#103#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@94"Expected primary-expression before '*' token in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#19"expected * before *0(4@42"'outIsMPEG' was not declared in this scope313606773#478#101#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@92"'outIsMPEG' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#34"'*' was not declared in this scope0(4@58"Initializer expression list treated as compound expression313606773#579#117#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@108"Initializer expression list treated as compound expression in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(4@45"'MediaHandler' was not declared in this scope313606773#696#104#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@95"'MediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#34"'*' was not declared in this scope0(4@44"Expected primary-expression before '*' token313606773#800#103#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@94"Expected primary-expression before '*' token in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#19"expected * before *0(4@51"'outStaticFrameRate' was not declared in this scope313606773#903#110#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@101"'outStaticFrameRate' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#34"'*' was not declared in this scope0(4@58"Initializer expression list treated as compound expression313606773#1013#117#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@108"Initializer expression list treated as compound expression in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(4@38"'Media' was not declared in this scope313606773#1130#97#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Media' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#34"'*' was not declared in this scope0(4@43"Expected primary-expression before 'double'313606773#1227#102#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@93"Expected primary-expression before 'double' in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#19"expected * before *0(4@58"Initializer expression list treated as compound expression313606773#1329#117#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@108"Initializer expression list treated as compound expression in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(4@67"Variable or field 'MovieGetVideoMediaAndMediaHandler' declared void313606773#1446#126#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@117"Variable or field 'MovieGetVideoMediaAndMediaHandler' declared void in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(4@38"'Movie' was not declared in this scope313606773#1572#97#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Movie' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#34"'*' was not declared in this scope0(4@38"'Media' was not declared in this scope313606773#1669#97#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Media' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#34"'*' was not declared in this scope0(4@41"'outMedia' was not declared in this scope313606773#1766#100#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@91"'outMedia' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#34"'*' was not declared in this scope0(4@45"'MediaHandler' was not declared in this scope313606773#1866#104#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@95"'MediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#34"'*' was not declared in this scope0(4@48"'outMediaHandler' was not declared in this scope313606773#1970#107#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@98"'outMediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#34"'*' was not declared in this scope0(4@57"Variable or field 'MovieGetStaticFrameRate' declared void313606773#2077#116#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@107"Variable or field 'MovieGetStaticFrameRate' declared void in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(4@38"'Movie' was not declared in this scope313606773#2193#97#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Movie' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#34"'*' was not declared in this scope0(4@43"Expected primary-expression before 'double'313606773#2290#102#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@93"Expected primary-expression before 'double' in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#19"expected * before *0(4@32"'UserData' has not been declared313606773#2392#91#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@82"'UserData' has not been declared in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#53#0#53#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#53#0#53#0#25"'*' has not been declared0(4@32"'UserData' has not been declared313606773#2483#91#4(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@82"'UserData' has not been declared in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#54#0#54#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#54#0#54#0#25"'*' has not been declared0(4@39"'SeqGrabComponent' does not name a type313606773#2767#103#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(13@94"'SeqGrabComponent' does not name a type in ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#86#0#86#0#0"0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#86#0#86#0#24"'*' does not name a type0(4@32"'SGChannel' does not name a type313606773#2870#96#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(13@87"'SGChannel' does not name a type in ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#87#0#87#0#0"0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#87#0#87#0#24"'*' does not name a type0(4@46"'SGGrabCompleteBottleUPP' does not name a type313606773#2966#110#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(13@101"'SGGrabCompleteBottleUPP' does not name a type in ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#91#0#91#0#0"0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#91#0#91#0#24"'*' does not name a type0(4@46"'MovieDrawingCompleteUPP' does not name a type313606773#3269#109#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@100"'MovieDrawingCompleteUPP' does not name a type in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#80#0#80#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#80#0#80#0#24"'*' does not name a type0(4@38"'MovieController' does not name a type313606773#3378#101#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@92"'MovieController' does not name a type in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#81#0#81#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#81#0#81#0#24"'*' does not name a type0(4@28"'Movie' does not name a type313606773#3479#91#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@82"'Movie' does not name a type in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#83#0#83#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#83#0#83#0#24"'*' does not name a type0(4@29"'Movie' has not been declared313606773#3570#92#3(7@125"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313606773#18446744073709551615#0#0(6@103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp313605435#1#0#1#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@83"'Movie' has not been declared in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#85#0#85#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#85#0#85#0#25"'*' has not been declared0(0#0#103"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp8616585856#2166"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/main.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/main.o"1#
+
+CCompileC "build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/testApp.o" /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606770.635419
+e313606773.483292
+r0
+xCompileC
+xbuild/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/testApp.o
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h:10,
+o                 from ../../../libs/openFrameworks/ofMain.h:38,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h:3,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp:1:
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'MediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: expected primary-expression before '*' token
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'outIsMPEG' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:45: error: initializer expression list treated as compound expression
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'MediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: expected primary-expression before '*' token
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'outStaticFrameRate' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:46: error: initializer expression list treated as compound expression
+o../../../libs/openFrameworks/video/ofQtUtils.h:47: error: 'Media' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:47: error: expected primary-expression before 'double'
+o../../../libs/openFrameworks/video/ofQtUtils.h:47: error: initializer expression list treated as compound expression
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: variable or field 'MovieGetVideoMediaAndMediaHandler' declared void
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Movie' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Media' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'outMedia' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'MediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'outMediaHandler' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:50: error: variable or field 'MovieGetStaticFrameRate' declared void
+o../../../libs/openFrameworks/video/ofQtUtils.h:50: error: 'Movie' was not declared in this scope
+o../../../libs/openFrameworks/video/ofQtUtils.h:50: error: expected primary-expression before 'double'
+o../../../libs/openFrameworks/video/ofQtUtils.h:53: error: 'UserData' has not been declared
+o../../../libs/openFrameworks/video/ofQtUtils.h:54: error: 'UserData' has not been declared
+oIn file included from ../../../libs/openFrameworks/ofMain.h:38,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h:3,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp:1:
+o../../../libs/openFrameworks/video/ofVideoGrabber.h:86: error: 'SeqGrabComponent' does not name a type
+o../../../libs/openFrameworks/video/ofVideoGrabber.h:87: error: 'SGChannel' does not name a type
+o../../../libs/openFrameworks/video/ofVideoGrabber.h:91: error: 'SGGrabCompleteBottleUPP' does not name a type
+oIn file included from ../../../libs/openFrameworks/ofMain.h:39,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h:3,
+o                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp:1:
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:80: error: 'MovieDrawingCompleteUPP' does not name a type
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:81: error: 'MovieController' does not name a type
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:83: error: 'Movie' does not name a type
+o../../../libs/openFrameworks/video/ofVideoPlayer.h:85: error: 'Movie' has not been declared
+lSLF07#2@114"Compile /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606770#313606773#0(4061"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h:10,                 from ../../../libs/openFrameworks/ofMain.h:38,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h:3,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp:1:../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'MediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:45: error: expected primary-expression before '*' token../../../libs/openFrameworks/video/ofQtUtils.h:45: error: 'outIsMPEG' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:45: error: initializer expression list treated as compound expression../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'MediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:46: error: expected primary-expression before '*' token../../../libs/openFrameworks/video/ofQtUtils.h:46: error: 'outStaticFrameRate' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:46: error: initializer expression list treated as compound expression../../../libs/openFrameworks/video/ofQtUtils.h:47: error: 'Media' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:47: error: expected primary-expression before 'double'../../../libs/openFrameworks/video/ofQtUtils.h:47: error: initializer expression list treated as compound expression../../../libs/openFrameworks/video/ofQtUtils.h:48: error: variable or field 'MovieGetVideoMediaAndMediaHandler' declared void../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Movie' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'Media' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:48: error: 'outMedia' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'MediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:49: error: 'outMediaHandler' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:50: error: variable or field 'MovieGetStaticFrameRate' declared void../../../libs/openFrameworks/video/ofQtUtils.h:50: error: 'Movie' was not declared in this scope../../../libs/openFrameworks/video/ofQtUtils.h:50: error: expected primary-expression before 'double'../../../libs/openFrameworks/video/ofQtUtils.h:53: error: 'UserData' has not been declared../../../libs/openFrameworks/video/ofQtUtils.h:54: error: 'UserData' has not been declaredIn file included from ../../../libs/openFrameworks/ofMain.h:38,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h:3,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp:1:../../../libs/openFrameworks/video/ofVideoGrabber.h:86: error: 'SeqGrabComponent' does not name a type../../../libs/openFrameworks/video/ofVideoGrabber.h:87: error: 'SGChannel' does not name a type../../../libs/openFrameworks/video/ofVideoGrabber.h:91: error: 'SGGrabCompleteBottleUPP' does not name a typeIn file included from ../../../libs/openFrameworks/ofMain.h:39,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h:3,                 from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp:1:../../../libs/openFrameworks/video/ofVideoPlayer.h:80: error: 'MovieDrawingCompleteUPP' does not name a type../../../libs/openFrameworks/video/ofVideoPlayer.h:81: error: 'MovieController' does not name a type../../../libs/openFrameworks/video/ofVideoPlayer.h:83: error: 'Movie' does not name a type../../../libs/openFrameworks/video/ofVideoPlayer.h:85: error: 'Movie' has not been declared29(4@45"'MediaHandler' was not declared in this scope313606773#404#104#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@95"'MediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#34"'*' was not declared in this scope0(4@44"Expected primary-expression before '*' token313606773#508#103#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@94"Expected primary-expression before '*' token in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#19"expected * before *0(4@42"'outIsMPEG' was not declared in this scope313606773#611#101#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@92"'outIsMPEG' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#34"'*' was not declared in this scope0(4@58"Initializer expression list treated as compound expression313606773#712#117#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@108"Initializer expression list treated as compound expression in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#45#0#45#0#0"0(4@45"'MediaHandler' was not declared in this scope313606773#829#104#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@95"'MediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#34"'*' was not declared in this scope0(4@44"Expected primary-expression before '*' token313606773#933#103#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@94"Expected primary-expression before '*' token in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#19"expected * before *0(4@51"'outStaticFrameRate' was not declared in this scope313606773#1036#110#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@101"'outStaticFrameRate' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#34"'*' was not declared in this scope0(4@58"Initializer expression list treated as compound expression313606773#1146#117#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@108"Initializer expression list treated as compound expression in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#46#0#46#0#0"0(4@38"'Media' was not declared in this scope313606773#1263#97#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Media' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#34"'*' was not declared in this scope0(4@43"Expected primary-expression before 'double'313606773#1360#102#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@93"Expected primary-expression before 'double' in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#19"expected * before *0(4@58"Initializer expression list treated as compound expression313606773#1462#117#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@108"Initializer expression list treated as compound expression in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#47#0#47#0#0"0(4@67"Variable or field 'MovieGetVideoMediaAndMediaHandler' declared void313606773#1579#126#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@117"Variable or field 'MovieGetVideoMediaAndMediaHandler' declared void in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(4@38"'Movie' was not declared in this scope313606773#1705#97#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Movie' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#34"'*' was not declared in this scope0(4@38"'Media' was not declared in this scope313606773#1802#97#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Media' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#34"'*' was not declared in this scope0(4@41"'outMedia' was not declared in this scope313606773#1899#100#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@91"'outMedia' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#48#0#48#0#34"'*' was not declared in this scope0(4@45"'MediaHandler' was not declared in this scope313606773#1999#104#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@95"'MediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#34"'*' was not declared in this scope0(4@48"'outMediaHandler' was not declared in this scope313606773#2103#107#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@98"'outMediaHandler' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#49#0#49#0#34"'*' was not declared in this scope0(4@57"Variable or field 'MovieGetStaticFrameRate' declared void313606773#2210#116#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@107"Variable or field 'MovieGetStaticFrameRate' declared void in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(4@38"'Movie' was not declared in this scope313606773#2326#97#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@88"'Movie' was not declared in this scope in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#34"'*' was not declared in this scope0(4@43"Expected primary-expression before 'double'313606773#2423#102#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@93"Expected primary-expression before 'double' in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#50#0#50#0#19"expected * before *0(4@32"'UserData' has not been declared313606773#2525#91#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@82"'UserData' has not been declared in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#53#0#53#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#53#0#53#0#25"'*' has not been declared0(4@32"'UserData' has not been declared313606773#2616#91#5(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(7@73"In file included from ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#10#0#10#0#0"0(13@82"'UserData' has not been declared in ../../../libs/openFrameworks/video/ofQtUtils.h313606773#18446744073709551615#0#0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#54#0#54#0#0"0(6@46"../../../libs/openFrameworks/video/ofQtUtils.h310698883#54#0#54#0#25"'*' has not been declared0(4@39"'SeqGrabComponent' does not name a type313606773#3033#103#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(13@94"'SeqGrabComponent' does not name a type in ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#86#0#86#0#0"0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#86#0#86#0#24"'*' does not name a type0(4@32"'SGChannel' does not name a type313606773#3136#96#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(13@87"'SGChannel' does not name a type in ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#87#0#87#0#0"0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#87#0#87#0#24"'*' does not name a type0(4@46"'SGGrabCompleteBottleUPP' does not name a type313606773#3232#110#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#38#0#38#0#0"0(13@101"'SGGrabCompleteBottleUPP' does not name a type in ../../../libs/openFrameworks/video/ofVideoGrabber.h313606773#18446744073709551615#0#0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#91#0#91#0#0"0(6@51"../../../libs/openFrameworks/video/ofVideoGrabber.h310698883#91#0#91#0#24"'*' does not name a type0(4@46"'MovieDrawingCompleteUPP' does not name a type313606773#3668#109#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@100"'MovieDrawingCompleteUPP' does not name a type in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#80#0#80#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#80#0#80#0#24"'*' does not name a type0(4@38"'MovieController' does not name a type313606773#3777#101#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@92"'MovieController' does not name a type in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#81#0#81#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#81#0#81#0#24"'*' does not name a type0(4@28"'Movie' does not name a type313606773#3878#91#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@82"'Movie' does not name a type in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#83#0#83#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#83#0#83#0#24"'*' does not name a type0(4@29"'Movie' has not been declared313606773#3969#92#4(7@128"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313606773#18446744073709551615#0#0(6@106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp313605435#1#0#1#0#0"0(7@126"In file included from /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313606773#18446744073709551615#0#0(6@104"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.h313605435#3#0#3#0#0"0(7@59"In file included from ../../../libs/openFrameworks/ofMain.h313606773#18446744073709551615#0#0(6@37"../../../libs/openFrameworks/ofMain.h310698883#39#0#39#0#0"0(13@83"'Movie' has not been declared in ../../../libs/openFrameworks/video/ofVideoPlayer.h313606773#18446744073709551615#0#0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#85#0#85#0#0"0(6@50"../../../libs/openFrameworks/video/ofVideoPlayer.h310698883#85#0#85#0#25"'*' has not been declared0(0#0#106"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp8620423776#2172"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h -c /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/src/testApp.cpp -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/testApp.o"1#
+
+CLd "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/StructuredLight FastThreePhaseDebug" normal x86_64
+r0
+
+CPBXCp "bin/StructuredLight FastThreePhaseDebug.app/Contents/Frameworks/GLUT.framework" ../../../libs/glut/lib/osx/GLUT.framework
+s313606775.427155
+e313606776.119523
+r1
+xPBXCp
+xbin/StructuredLight FastThreePhaseDebug.app/Contents/Frameworks/GLUT.framework
+x../../../libs/glut/lib/osx/GLUT.framework
+lSLF07#2@46"Copy ../../../libs/glut/lib/osx/GLUT.framework313606775#313606776#0(0"0(0#0#132"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx/GLUT.framework8617063296#536"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx/GLUT.framework "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/StructuredLight FastThreePhaseDebug.app/Contents/Frameworks"0#
+
+CPBXCp "bin/StructuredLight FastThreePhaseDebug.app/Contents/Resources/openFrameworks-Info.plist" openFrameworks-Info.plist
+s313606776.119723
+e313606776.131590
+r0
+xPBXCp
+xbin/StructuredLight FastThreePhaseDebug.app/Contents/Resources/openFrameworks-Info.plist
+xopenFrameworks-Info.plist
+opbxcp: openFrameworks-Info.plist: No such file or directory
+lSLF07#2@30"Copy openFrameworks-Info.plist313606776#313606776#0(60"pbxcp: openFrameworks-Info.plist: No such file or directory1(4@59"pbxcp: openFrameworks-Info.plist: No such file or directory313606776#18446744073709551615#0#0(6@0"313606776#0#0#0#0#0"0(0#0#116"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/openFrameworks-Info.plist8629009920#519"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/openFrameworks-Info.plist "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/StructuredLight FastThreePhaseDebug.app/Contents/Resources"1#
+
+CPhaseScriptExecution "Run Script" "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
+s313606775.384957
+e313606775.426972
+r0
+xPhaseScriptExecution
+xRun Script
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+ocp: /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/libfmodex.dylib: No such file or directory
+oinstall_name_tool: can't open file: /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/StructuredLight FastThreePhaseDebug (No such file or directory)
+lSLF07#2@36"Run custom shell script 'Run Script'313606775#313606775#0(449"cp: /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/libfmodex.dylib: No such file or directoryinstall_name_tool: can't open file: /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/StructuredLight FastThreePhaseDebug (No such file or directory)2(4@197"Cp: /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/libfmodex.dylib: No such file or directory313606775#0#198#0(1@0"0(13@251"install_name_tool: can't open file: /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/MacOS/StructuredLight FastThreePhaseDebug (No such file or directory)313606775#198#251#0(1@0"0(0#0#0"8607618752#22775"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER pp    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build    setenv BUILD_ROOT /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/    setenv CACHE_ROOT /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502    setenv CCHROOT /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app"    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/    setenv CONFIGURATION_TEMP_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug    setenv CONTENTS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents"    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH x86_64    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Resources/English.lproj/Documentation"    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/FastThreePhase.dst    setenv DWARF_DSYM_FILE_NAME "StructuredLight FastThreePhaseDebug.app.dSYM"    setenv DWARF_DSYM_FOLDER_PATH /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Executables"    setenv EXECUTABLE_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/MacOS"    setenv EXECUTABLE_NAME "StructuredLight FastThreePhaseDebug"    setenv EXECUTABLE_PATH "StructuredLight FastThreePhaseDebug.app/Contents/MacOS/StructuredLight FastThreePhaseDebug"    setenv FILE_LIST "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Frameworks"    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/\"  \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME "StructuredLight FastThreePhaseDebug.app"    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//include\" ../../../libs/openFrameworks/** ../../../libs/freetype/include/ ../../../libs/freetype/include/freetype2 ../../../libs/poco/include ../../../addons/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Info.plist"    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Resources/English.lproj/InfoPlist.strings"    setenv INSTALL_DIR /tmp/FastThreePhase.dst/Users/pp/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER pp    setenv INSTALL_PATH /Users/pp/Applications    setenv INSTALL_ROOT /tmp/FastThreePhase.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Resources/Java"    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug-LinkMap-normal-x86_64.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/\"  \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/freeimage/lib/osx\" \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/FreeImage/lib/osx\"  \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/GLee/lib/osx\" \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx\" \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/rtAudio/lib/osx\"        \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/fmodex/lib/osx\" \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/freetype/lib/osx\" \"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/freeimage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/fmodex/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/freetype/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/GLee/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/poco/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/rtAudio/lib/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_x86_64 "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal/x86_64/StructuredLight FastThreePhaseDebug.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Resources/English.lproj"    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Objects-normal"    setenv OBJROOT /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH "StructuredLight FastThreePhaseDebug.app/Contents/pbdevelopment.plist"    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/PkgInfo"    setenv PKGINFO_PATH "StructuredLight FastThreePhaseDebug.app/Contents/PkgInfo"    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/PlugIns"    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/PrivateHeaders"    setenv PRODUCT_NAME "StructuredLight FastThreePhaseDebug"    setenv PRODUCT_SETTINGS_PATH /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT FastThreePhase    setenv PROJECT_DERIVED_FILE_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/DerivedSources    setenv PROJECT_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv PROJECT_FILE_PATH /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/FastThreePhase.xcodeproj    setenv PROJECT_NAME FastThreePhase    setenv PROJECT_TEMP_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build    setenv PUBLIC_HEADERS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Headers"    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Resources/Scripts"    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/SharedFrameworks"    setenv SHARED_PRECOMPS_DIR /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/SharedSupport"    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv SRCROOT /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/SymbolRepositories"    setenv SYMROOT /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME "StructuredLight FastThreePhase"    setenv TARGET_BUILD_DIR /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/    setenv TARGET_NAME "StructuredLight FastThreePhase"    setenv TARGET_TEMP_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build"    setenv TEMP_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build"    setenv TEMP_FILES_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build"    setenv TEMP_FILE_DIR "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build"    setenv TEMP_ROOT /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH "StructuredLight FastThreePhaseDebug.app/Contents/Resources"    setenv UNSTRIPPED_PRODUCT NO    setenv USER pp    setenv USER_APPS_DIR /Users/pp/Applications    setenv USER_LIBRARY_DIR /Users/pp/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH "StructuredLight FastThreePhaseDebug.app/Contents/version.plist"    setenv VERSION_INFO_BUILDER pp    setenv VERSION_INFO_FILE "StructuredLight FastThreePhaseDebug_vers.c"    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:StructuredLight FastThreePhaseDebug  PROJECT:FastThreePhase-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME "StructuredLight FastThreePhaseDebug.app"    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0324    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    /bin/sh -c "\"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh\""1#
+
+CProcessInfoPlistFile "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+s313606763.389448
+e313606763.424581
+r0
+xProcessInfoPlistFile
+x/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/Info.plist
+xopenFrameworks-Info.plist
+lSLF07#2@33"Process openFrameworks-Info.plist313606763#313606763#0(100"error: The file “openFrameworks-Info.plist” couldn’t be opened because there is no such file.1(4@92"The file “openFrameworks-Info.plist” couldn’t be opened because there is no such file.313606763#18446744073709551615#0#0(6@0"313606763#0#0#0#0#0"0(0#0#116"/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/openFrameworks-Info.plist8621071904#519"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    builtin-infoPlistUtility openFrameworks-Info.plist -genpkginfo "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app/Contents/Info.plist"1#
+
+CProcessPCH++ /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal x86_64 c++ com.apple.compilers.gcc.4_2
+s313606763.424820
+e313606769.421913
+r1
+xProcessPCH++
+x/var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h.gch
+x/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@71"Precompile /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h313606763#313606769#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#60"/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h8617606432#1933"    cd /Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/StructuredLight FastThreePhaseDebug.hmap" -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin -F/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/../../../libs/glut/lib/osx -I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources/x86_64" "-I/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/build/FastThreePhase.build/Debug/StructuredLight FastThreePhase.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/Fh/Fhbiji+FHHeOGMaohmb5+++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Carbon-cnkmuobrgvyioofpyljetlkadnhm/Carbon.h.gch0#
+
+CTouch "/Users/pp/projects/Sundance/WAR/of_preRelease_v0061_osxSL_FAT/apps/examples/FastThreePhase/bin//StructuredLight FastThreePhaseDebug.app"
+r0
+
