@@ -17,6 +17,13 @@
 
 #define GROW_TIME 500.0
 
+class PanningVideoPlayer : public ofVideoPlayer{
+public:
+	void setPan(float _pan){
+		SetMovieAudioBalance(moviePtr, _pan, 0);
+	}
+};
+
 class VideoObject : public VisibleObject{
 public:
 	
@@ -37,22 +44,29 @@ public:
 	void resizeByWidth(float _w);
 	void resizeByPercent(float _p);
 	void adjustPosition();
-	ofVideoPlayer vp;
+	PanningVideoPlayer vp;
 	int getSizeX();
 	int getSizeY();
+	void updateShape();
+	void updateActualShape();
+	void drawShape();
+	void resetState();
 	
 private:
 	ofxVec2f drawSize;
+	ofxVec2f playSize;
 	int isPlaying;	
-	void updateShape();
-	void drawShape();
-	vector<ofxVec2f*>shape;
-	void resetState();
 	ofxVec2f restPos;
 	ofxVec2f restSize;
 	float xAdd, yAdd;
 	int stopTime;
 	ofTrueTypeFont artFont;
+	int oldWidth;
+	
+	ofTrueTypeFont artistFont;
+	ofTrueTypeFont themeFont;
+	ofTrueTypeFont tagsFont;
+	ofTrueTypeFont uploadFont;
 };
 
 #endif

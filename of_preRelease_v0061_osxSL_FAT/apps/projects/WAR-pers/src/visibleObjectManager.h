@@ -57,15 +57,12 @@ private:
 	ofxDirList dir;
 	int isPlaying;
 	VideoObject tester;
-
-	ofTrueTypeFont artistFont;
-	ofTrueTypeFont themeFont;
-	ofTrueTypeFont tagsFont;
-	ofTrueTypeFont uploadFont;
 	
 	void makeThemes();
 	void makeDates();
 	void makeVideos();
+	
+	int playingLeft, playingRight;
 	
 	
 };

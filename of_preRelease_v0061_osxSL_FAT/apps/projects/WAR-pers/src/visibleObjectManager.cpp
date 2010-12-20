@@ -23,12 +23,10 @@ VisibleObjectManager::VisibleObjectManager(){
 	for(int i = 0; i < 5; i++){
 		themes[i] = 0;
 	}
-	artistFont.loadFont("SpartanLTStd-HeavyClass.otf",16);
-	themeFont.loadFont("SpartanLTStd-BookClass.otf",12);
-	tagsFont.loadFont("SpartanLTStd-HeavyClass.otf",12);
-	uploadFont.loadFont("SpartanLTStd-BookClass.otf",10);
 	isPlaying = 0;
 	cout<<"finished setup"<<endl;
+	
+	playingLeft = playingRight = 0;
 }
 
 void VisibleObjectManager::makeThemes(){
@@ -170,10 +168,6 @@ void VisibleObjectManager::draw(){
 		ofRect(0, 0, ofGetWidth(), ofGetHeight());
 		ofSetColor(255, 255, 255,255);
 		tester.draw();
-		artistFont.drawString("LAURIE ANDERSON 1979",topX, topY - 50);
-		themeFont.drawString("CONSCIOUSNESS RAISING",topX, topY - 20);
-		tagsFont.drawString("TAGS: anderson, music, new york",topX, ofGetHeight()/2 + topY + 90);
-		uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight()/2 + topY + 100);
 		ofDisableAlphaBlending();
 	}
 	//vector<VisibleObject*>::iterator vi;
@@ -194,56 +188,14 @@ void VisibleObjectManager::draw(){
 void VisibleObjectManager::drawThemes(){
 	vector<VisibleObject*>::iterator ti;
 	for(ti = themeObjects.begin(); ti < themeObjects.end(); ti++){
-		if((*ti)->isLeft){
-			ofEnableAlphaBlending();
-			ofPushMatrix();
-			ofSetColor(255, 255, 255, 225);
-			ofTranslate(ofGetWidth()/2, 0, -600);
-			ofRotateY(-45.0);
-			ofRotateY(90);
-			ofTranslate(-ofGetWidth(), 0, 0);
-			//ofRotateY(-180);
-			(*ti)->draw();
-			ofPopMatrix();
-			ofDisableAlphaBlending();
-		} else {
-			ofEnableAlphaBlending();
-			ofPushMatrix();
-			ofSetColor(255, 255, 255, 225);
-			ofTranslate(ofGetWidth()/2, 0, -600);
-			ofRotateY(-45.0);
-			(*ti)->draw();
-			ofPopMatrix();
-			ofDisableAlphaBlending();
-		}
+		(*ti)->draw();
 	}
 }
 
 void VisibleObjectManager::drawDates(){
 	vector<VisibleObject*>::iterator ti;
 	for(ti = dateObjects.begin(); ti < dateObjects.end(); ti++){
-		if((*ti)->isLeft){
-			ofEnableAlphaBlending();
-			ofPushMatrix();
-			ofSetColor(255, 255, 255, 225);
-			ofTranslate(ofGetWidth()/2, 0, -600);
-			ofRotateY(-45.0);
-			ofRotateY(90);
-			ofTranslate(-ofGetWidth(), 0, 0);
-			//ofRotateY(-180);
-			(*ti)->draw();
-			ofPopMatrix();
-			ofDisableAlphaBlending();
-		} else {
-			ofEnableAlphaBlending();
-			ofPushMatrix();
-			ofSetColor(255, 255, 255, 225);
-			ofTranslate(ofGetWidth()/2, 0, -600);
-			ofRotateY(-45.0);
-			(*ti)->draw();
-			ofPopMatrix();
-			ofDisableAlphaBlending();
-		}
+		(*ti)->draw();
 	}
 }
 	
@@ -251,28 +203,7 @@ void VisibleObjectManager::drawVideos(){
 	vector<VisibleObject*>::iterator ti;
 	for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
 		if(themes[(*ti)->theme] == 1){
-			if((*ti)->isLeft){
-				ofEnableAlphaBlending();
-				ofPushMatrix();
-				ofSetColor(255, 255, 255, 255);
-				ofTranslate(ofGetWidth()/2, 0, -600);
-				ofRotateY(-45.0);
-				ofRotateY(90);
-				ofTranslate(-ofGetWidth(), 0, 0);
-				//ofRotateY(-180);
-				(*ti)->draw();
-				ofPopMatrix();
-				ofDisableAlphaBlending();
-			} else {
-				ofEnableAlphaBlending();
-				ofPushMatrix();
-				ofSetColor(255, 255, 255, 255);
-				ofTranslate(ofGetWidth()/2, 0, -600);
-				ofRotateY(-45.0);
-				(*ti)->draw();
-				ofPopMatrix();
-				ofDisableAlphaBlending();
-			}
+			(*ti)->draw();
 		}
 	}
 }
@@ -302,14 +233,28 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	int remove =  -1;
 	int playing = -1;
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
+		if((*vi)->id > 8){
+			if(playingRight){
+				return;
+			} 
+		} else {
+			if(playingLeft){
+				return;
+			}
+		}
+		
+		//if(themes[(*vi)->theme] == 0){
+//			return;
+//		}
+
 		if((*vi)->isInside(_x,_y)){
 			tmpObject = (*vi);
 			remove = count;
 		}
-		//if((*vi)->id == currentlyPlaying){
-//			playObject = (*vi);
-//			playing = count;
-//		}
+		if((*vi)->state == STATE_PLAY){
+			playObject = (*vi);
+			playing = count;
+		}
 		count++;
 	}
 	//if(playing > -1){
@@ -317,28 +262,9 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 //		videoObjects.erase(videoObjects.begin() + playing);
 //	}
 	if(remove > -1){
-		videoObjects.erase(videoObjects.begin() + remove);
-		videoObjects.push_back(tmpObject);
 		if(tmpObject->id == lastHoverId){
 			if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
 				int result = tmpObject->react(1);
-				if(result == 2){
-					if(currentlyPlaying > -1 && currentlyPlaying != tmpObject->id){
-						this->resetById(currentlyPlaying);
-						currentlyPlaying = tmpObject->id;
-					} else {
-						currentlyPlaying = tmpObject->id;
-					}
-				}
-				if(result == 1){
-					if(currentlyBig > -1 && currentlyBig != currentlyPlaying){
-						this->resetById(currentlyBig);
-						currentlyBig = tmpObject->id;
-					} else {
-						currentlyBig = tmpObject->id;
-					}
-
-				}
 				hoverTime = ofGetElapsedTimeMillis();
 				lastHoverId = -1;
 			}
@@ -346,6 +272,13 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			lastHoverId = tmpObject->id;
 			hoverTime = ofGetElapsedTimeMillis();
 		}
+	}
+	if(playing > -1){
+		videoObjects.erase(videoObjects.begin() + playing);
+		videoObjects.push_back(playObject);
+	}
+	for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
+		(*vi)->isInside(_x,_y);
 	}
 }
 

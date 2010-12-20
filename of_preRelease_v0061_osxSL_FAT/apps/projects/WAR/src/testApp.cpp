@@ -85,6 +85,7 @@ void testApp::draw(){
 //	glColor4f(1.0,1.0,1.0,1.0);
 	//video.draw(50,50,ofGetWidth(), ofGetHeight());
 	vom.draw();
+	ofEllipse(wiiX, wiiY, 10, 10);
 }
 
 //--------------------------------------------------------------

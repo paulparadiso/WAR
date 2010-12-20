@@ -40,6 +40,11 @@ class TextObject : public VisibleObject{
 	
 		void setFontSize(int _s);
 	
+		void updateShape();
+		void updateActualShape();
+		void drawShape();
+		void resetState();
+	
 	private:
 		ofTrueTypeFont font;
 		ofxVec3f trans;

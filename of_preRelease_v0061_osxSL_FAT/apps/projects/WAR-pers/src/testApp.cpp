@@ -11,6 +11,7 @@ void testApp::setup(){
 	ofSetVerticalSync(true);
 	ofEnableSmoothing();
 	//ofSetFullscreen(true);
+	ofHideCursor();
 	
 	w = 0;
 	h = 0;	// set in update()
@@ -34,7 +35,7 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
 	// check for waiting messages
-	//vom.update(wiiX,wiiY);
+	vom.update(wiiX,wiiY);
 	while( receiver.hasWaitingMessages() )
 	{
 		if(w == 0 || h == 0){
@@ -80,6 +81,11 @@ void testApp::draw(){
 	//vom.draw();
 	this->drawRoom();
 	vom.draw();
+	ofFill();
+	ofSetColor(255, 255, 255);
+	ofEllipse(wiiX, wiiY, 10, 10);
+	ofNoFill();
+	ofSetColor(255, 255, 255);
 }
 
 void testApp::drawRoom(){
@@ -90,7 +96,7 @@ void testApp::drawRoom(){
 	ofRotateY(-45.0);
 	ofRotateX(90);
 	//ceiling.draw(0,0);
-	ofRect(0, 0, ofGetWidth(), ofGetHeight());
+	ofRect(0, 0, ofGetWidth() * 2, ofGetHeight() * 2);
 	ofPopMatrix();
 	ofPushMatrix();
 	//ofSetColor(255, 255, 255);
@@ -110,7 +116,7 @@ void testApp::drawRoom(){
 	ofRotateY(-45.0);
 	ofRotateX(90);
 	//floor.draw(0,0);
-	ofRect(0, 0, ofGetWidth(), ofGetHeight());
+	ofRect(0, 0, ofGetWidth() * 2, ofGetHeight() * 2);
 	ofPopMatrix();
 }
 

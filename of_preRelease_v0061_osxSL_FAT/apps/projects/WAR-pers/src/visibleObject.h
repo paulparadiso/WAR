@@ -38,10 +38,20 @@ public:
 	virtual void resizeByWidth(float _w) = 0;
 	virtual void adjustPosition() = 0;
 	
+	virtual void updateShape() = 0;
+	virtual void drawShape() = 0;
+	virtual void resetState() = 0;
+	virtual void updateActualShape() = 0;
+	
 	VisibleObject(){
 	};
 	
 	ofxVec2f pos;
+	ofxVec3f abPos;
+	
+	vector<ofxVec2f*>shape;
+	vector<ofxVec3f*>abShape;
+	
 	ofxVec2f posVel;
 	ofxVec2f posAcc;
 	float rot;
@@ -54,6 +64,8 @@ public:
 	int state;
 	int isLeft;
 	int theme;
+	
+	int isHovering;
 };
 
 #endif
