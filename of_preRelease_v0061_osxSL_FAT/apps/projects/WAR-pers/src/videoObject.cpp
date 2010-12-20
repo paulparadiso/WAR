@@ -140,6 +140,7 @@ int VideoObject::isInside(int _x, int _y){
 //	glGetDoublev(GL_MODELVIEW_MATRIX, mvmatrix);
 //	glGetDoublev(GL_PROJECTION_MATRIX, projmatrix);
 	
+		
 	isHovering = 0;
 	int inside = 0;
 	vector<ofxVec3f*>::iterator vi, vj;
@@ -151,13 +152,15 @@ int VideoObject::isInside(int _x, int _y){
 //		if(this->id == 1){
 //			cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
 //		}
-		if(((*vi)->y  <= _y && _y < (*vi)->y || (*vi)->y <= _y && _y < (*vi)->y) &&
-		   _x < ((*vi)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vi)->y - (*vi)->y) + (*vi)->x){
+		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
+		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 			inside = !inside;
 		}
 	}
-	if(inside)
+	if(inside){
 		isHovering = 1;
+		cout << "BANG!" <<endl;
+	}
 	return inside;
 }
 
