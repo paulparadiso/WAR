@@ -257,10 +257,10 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 		}
 		count++;
 	}
-	//if(playing > -1){
-//		videoObjects.push_back(playObject);
-//		videoObjects.erase(videoObjects.begin() + playing);
-//	}
+	if(playing > -1){
+		videoObjects.erase(videoObjects.begin() + playing);
+		videoObjects.push_back(playObject);
+	}
 	if(remove > -1){
 		if(tmpObject->id == lastHoverId){
 			if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
@@ -272,10 +272,6 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			lastHoverId = tmpObject->id;
 			hoverTime = ofGetElapsedTimeMillis();
 		}
-	}
-	if(playing > -1){
-		videoObjects.erase(videoObjects.begin() + playing);
-		videoObjects.push_back(playObject);
 	}
 	for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
 		(*vi)->isInside(_x,_y);

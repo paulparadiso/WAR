@@ -26,7 +26,20 @@ void TextObject::setup(string _text){
 }
 
 int TextObject::isInside(int _x, int _y){
-	
+	isHovering = 0;
+	int inside = 0;
+	vector<ofxVec3f*>::iterator vi, vj;
+	for(vi = abShape.begin(), vj = abShape.end() - 1; vi < abShape.end(); vj = vi++){
+		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
+		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
+			inside = !inside;
+		}
+	}
+	if(inside){
+		isHovering = 1;
+		cout << "BANG!" <<endl;
+	}
+	return inside;
 }
 
 void TextObject::draw(){

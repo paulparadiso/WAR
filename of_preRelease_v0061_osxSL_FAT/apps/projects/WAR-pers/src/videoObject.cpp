@@ -156,6 +156,10 @@ int VideoObject::isInside(int _x, int _y){
 		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 			inside = !inside;
 		}
+		//if((gly  <= _y && _y < gly || gly <= _y && _y < gly) &&
+//		   _x < (glx - glx) * (_y - gly) / (gly - gly) + glx){
+//			inside = !inside;
+//		}
 	}
 	if(inside){
 		isHovering = 1;
