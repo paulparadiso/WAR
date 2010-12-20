@@ -37,7 +37,7 @@ int TextObject::isInside(int _x, int _y){
 	}
 	if(inside){
 		isHovering = 1;
-		cout << "BANG!" <<endl;
+		cout << "TEXT BANG!" <<endl;
 	}
 	return inside;
 }

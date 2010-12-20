@@ -233,29 +233,31 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	int remove =  -1;
 	int playing = -1;
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
-		if((*vi)->id > 8){
-			if(playingRight){
-				return;
-			} 
-		} else {
-			if(playingLeft){
-				return;
+		if(themes[(*vi)->theme]==1){
+			if((*vi)->id > 8){
+				if(playingRight){
+					return;
+				} 
+			} else {
+				if(playingLeft){
+					return;
+				}
 			}
-		}
 		
 		//if(themes[(*vi)->theme] == 0){
 //			return;
 //		}
 
-		if((*vi)->isInside(_x,_y)){
-			tmpObject = (*vi);
-			remove = count;
+			if((*vi)->isInside(_x,_y)){
+				tmpObject = (*vi);
+				remove = count;
+			}
+			if((*vi)->state == STATE_PLAY){
+				playObject = (*vi);
+				playing = count;
+			}
+			count++;
 		}
-		if((*vi)->state == STATE_PLAY){
-			playObject = (*vi);
-			playing = count;
-		}
-		count++;
 	}
 	if(playing > -1){
 		videoObjects.erase(videoObjects.begin() + playing);

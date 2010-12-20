@@ -163,7 +163,6 @@ int VideoObject::isInside(int _x, int _y){
 	}
 	if(inside){
 		isHovering = 1;
-		cout << "BANG!" <<endl;
 	}
 	return inside;
 }
