@@ -38,7 +38,7 @@ class testApp : public ofBaseApp{
 		VisibleObjectManager vom;
 		ofxDirList dir;
 		ofImage flashLightImage;
-		//ofVideoPlayer video;
+		ofVideoPlayer video;
 		VideoObject vo;
 		ofImage wall;
 		ofImage floor;

@@ -21,6 +21,9 @@ void testApp::setup(){
 	showMsg = 1;
 	flashDelay = 100;
 	
+	//video.loadMovie("video/N4puCtdG3Mk.flv");
+	//video.play();
+	
 	// listen on the given port
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
@@ -29,7 +32,7 @@ void testApp::setup(){
 	floor.loadImage("floor2.jpg");
 	ceiling.loadImage("ceiling.gif");
 	
-	//flashLightImage.loadImage("flashlight-mask-invert-rings.png");
+	flashLightImage.loadImage("flashlight-mask-invert-rings.png");
 }
 
 //--------------------------------------------------------------
@@ -70,20 +73,12 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	
-	//glEnable(GL_BLEND);
-//	glColorMask(false,false,false,true);
-//	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
-//	flashLightImage.draw(wiiX - 250, wiiY - 250);
-//	glColorMask(true,true,true,true);
-//	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
-//	glColor4f(1.0,1.0,1.0,1.0);
-	//video.draw(50,50,ofGetWidth(), ofGetHeight());
-	//vom.draw();
 	this->drawRoom();
 	vom.draw();
+	ofEnableAlphaBlending();
 	ofFill();
-	ofSetColor(255, 255, 255);
-	ofEllipse(wiiX, wiiY, 10, 10);
+	ofSetColor(255, 255, 255, 128);
+	ofEllipse(wiiX, wiiY, 200, 200);
 	ofNoFill();
 	ofSetColor(255, 255, 255);
 }

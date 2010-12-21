@@ -129,37 +129,45 @@ int VideoObject::react(int _lvl){
 }
 	
 int VideoObject::isInside(int _x, int _y){
-	//GLdouble glx = 0;
-//	GLdouble gly = 0;
-//	GLdouble glz = 0;
-//	
-//	GLint viewport[4];
-//	GLdouble mvmatrix[16], projmatrix[16];
-//	
-//	glGetIntegerv(GL_VIEWPORT, viewport);
-//	glGetDoublev(GL_MODELVIEW_MATRIX, mvmatrix);
-//	glGetDoublev(GL_PROJECTION_MATRIX, projmatrix);
+	GLdouble glx = 0;
+	GLdouble gly = 0;
+	GLdouble glz = 0;
 	
+	GLdouble glx2 = 0;
+	GLdouble gly2 = 0;
+	GLdouble glz2 = 0;	
+	
+	GLint viewport[4];
+	GLdouble mvmatrix[16], projmatrix[16];
+	
+	glGetIntegerv(GL_VIEWPORT, viewport);
+	glGetDoublev(GL_MODELVIEW_MATRIX, mvmatrix);
+	glGetDoublev(GL_PROJECTION_MATRIX, projmatrix);	
 		
 	isHovering = 0;
 	int inside = 0;
 	vector<ofxVec3f*>::iterator vi, vj;
 	for(vi = abShape.begin(), vj = abShape.end() - 1; vi < abShape.end(); vj = vi++){
-		//gluProject((*vi)->x, (*vi)->y, (*vi)->z,
-//				   mvmatrix, projmatrix, viewport,
-//				   &glx, &gly, &glz);
-//		gly = ofGetHeight() - gly;
+		gluProject((*vi)->x, (*vi)->y, (*vi)->z,
+				   mvmatrix, projmatrix, viewport,
+				   &glx, &gly, &glz);
+		gluProject((*vj)->x, (*vj)->y, (*vj)->z,
+				   mvmatrix, projmatrix, viewport,
+				   &glx2, &gly2, &glz2);
+		gly = ofGetHeight() - gly;
+		gly2 = ofGetHeight() - gly2;
 //		if(this->id == 1){
 //			cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
 //		}
-		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
-		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
-			inside = !inside;
-		}
-		//if((gly  <= _y && _y < gly || gly <= _y && _y < gly) &&
-//		   _x < (glx - glx) * (_y - gly) / (gly - gly) + glx){
+		//if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
+//		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 //			inside = !inside;
 //		}
+		if((gly  <= _y && _y < gly2 || gly2 <= _y && _y < gly) &&
+		   _x < (glx2 - glx) * (_y - gly) / (gly2 - gly) + glx){
+			inside = !inside;
+		}
+		
 	}
 	if(inside){
 		isHovering = 1;
@@ -232,17 +240,44 @@ void VideoObject::updateActualShape(){
 }
 
 void VideoObject::drawShape(){
+	GLdouble glx = 0;
+	GLdouble gly = 0;
+	GLdouble glz = 0;
+	GLdouble glx2 = 0;
+	GLdouble gly2 = 0;
+	GLdouble glz2 = 0;
+		
+	GLint viewport[4];
+	GLdouble mvmatrix[16], projmatrix[16];
+		
+	glGetIntegerv(GL_VIEWPORT, viewport);
+	glGetDoublev(GL_MODELVIEW_MATRIX, mvmatrix);
+	glGetDoublev(GL_PROJECTION_MATRIX, projmatrix);
+	
 	if(!isHovering)
 		return;
 	vector<ofxVec3f*>::iterator vi, vj;
 	ofSetColor(255, 0, 0);
 	for(vi = abShape.begin(), vj = abShape.end() - 1; vi < abShape.end(); vj = vi++){
 		//ofEllipse((*vi)->x, (*vi)->y, 10, 10);
+		gluProject((*vi)->x, (*vi)->y, (*vi)->z,
+						   mvmatrix, projmatrix, viewport,
+						   &glx, &gly, &glz);
+		gluProject((*vj)->x, (*vj)->y, (*vj)->z,
+				   mvmatrix, projmatrix, viewport,
+				   &glx2, &gly2, &glz2);
+		gly = ofGetHeight() - gly;
+		gly2 = ofGetHeight() - gly2;
+				if(this->id == 1){
+					cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
+				}
 		cout<<"drawing line at:  "<<(*vj)->x<<": "<<(*vj)->y<<": "<<(*vj)->z<<endl;
 		//ofLine((*vj)->x, (*vj)->y, (*vi)->x, (*vi)->y);
 		glBegin(GL_LINES);
-		glVertex3f((*vj)->x,(*vj)->y,(*vj)->z);
-		glVertex3f((*vi)->x,(*vi)->y,(*vi)->z);
+		//glVertex3f((*vj)->x,(*vj)->y,(*vj)->z);
+		//glVertex3f((*vi)->x,(*vi)->y,(*vi)->z);
+		glVertex3d(glx2,gly2,glz2);
+		glVertex3d(glx,gly,glz);
 		glEnd();
 		
 	}
@@ -255,7 +290,7 @@ void VideoObject::resetState(){
 		case STATE_REST:
 			vp.setPosition(0.2);
 			vp.stop();
-			this->resizeByWidth(225);
+			//this->resizeByWidth(225);
 			break;
 		case STATE_HOVER:
 			break;
@@ -265,6 +300,7 @@ void VideoObject::resetState(){
 			twPercent = tw / size.x;
 			playSize.set(tw, size.y * twPercent);
 			vp.setPosition(0.0);
+			vp.setLoopState(false);
 			vp.play();
 			if(isLeft){
 				vp.setPan(0.0);

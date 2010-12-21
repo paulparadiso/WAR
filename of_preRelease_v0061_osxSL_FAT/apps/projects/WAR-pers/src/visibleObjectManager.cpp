@@ -275,9 +275,9 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			hoverTime = ofGetElapsedTimeMillis();
 		}
 	}
-	for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
-		(*vi)->isInside(_x,_y);
-	}
+	//for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
+//		(*vi)->isInside(_x,_y);
+//	}
 }
 
 
