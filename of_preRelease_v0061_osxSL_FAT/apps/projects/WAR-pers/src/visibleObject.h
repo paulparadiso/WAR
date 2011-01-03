@@ -40,6 +40,7 @@ public:
 	
 	virtual void updateShape() = 0;
 	virtual void drawShape() = 0;
+	virtual void stopVideo() = 0;
 	virtual void resetState() = 0;
 	virtual void updateActualShape() = 0;
 	
@@ -66,6 +67,8 @@ public:
 	int theme;
 	
 	int isHovering;
+	
+	int isPlaying;
 };
 
 #endif

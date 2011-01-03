@@ -21,7 +21,7 @@ void VideoObject::setup(string _path){
 	size.set(vp.getWidth(),vp.getHeight());
 	drawSize.set(size);
 	vp.setPosition(0.2);
-	vp.setLoopState(false);
+	vp.setLoopState(OF_LOOP_NONE);
 	//rot = ofRandom(-30.0,30.0);
 	rot = 0;
 	state = STATE_REST;
@@ -30,10 +30,10 @@ void VideoObject::setup(string _path){
 	artFont.loadFont("HelveticaNeue.dfont", 8);
 	this->updateShape();
 	oldWidth = 0;
-	artistFont.loadFont("SpartanLTStd-HeavyClass.otf",16);
-	themeFont.loadFont("SpartanLTStd-BookClass.otf",12);
-	tagsFont.loadFont("SpartanLTStd-HeavyClass.otf",12);
-	uploadFont.loadFont("SpartanLTStd-BookClass.otf",10);
+	artistFont.loadFont("SpartanLTStd-HeavyClass.otf",14);
+	themeFont.loadFont("SpartanLTStd-BookClass.otf",10);
+	tagsFont.loadFont("SpartanLTStd-HeavyClass.otf",10);
+	uploadFont.loadFont("SpartanLTStd-BookClass.otf",8);
 }
 
 void VideoObject::update(){
@@ -47,71 +47,61 @@ void VideoObject::update(){
 }
 
 void VideoObject::draw(){
+	ofEnableAlphaBlending();
 	if(this->isLeft){
 		if(state != STATE_PLAY){
-			ofEnableAlphaBlending();
 			ofPushMatrix();
 			ofSetColor(255, 255, 255, 255);
 			ofTranslate(ofGetWidth()/2, 0, -600);
 			ofRotateY(-45.0);
 			ofRotateY(90);
 			ofTranslate(-ofGetWidth(), 0, 0);
-			//ofRotateY(-180);
 			vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
-				ofPopMatrix();
+			ofPopMatrix();
 			//(*ti)->drawShape();
 			if(isHovering)
 				this->drawShape();
-			ofDisableAlphaBlending();
 		} else {
 			//vp.draw(75, (ofGetHeight()/2) - (playSize.y /2), playSize.x, playSize.y);
-			ofEnableAlphaBlending();
 			int topX = 25;
 			int topY = ofGetHeight() / 2 - playSize.y / 2;
 			ofFill();
 			ofSetColor(0, 0, 0, 128);
-			ofRect(0,topY - 100, ofGetWidth()/2, ofGetHeight()/2 + topY + 100);
+			ofRect(0,topY - 100, ofGetWidth()/3, (ofGetHeight()/2) + 160);
 			ofSetColor(255, 255, 255,255);
 			vp.draw(topX, topY, playSize.x, playSize.y);
 			artistFont.drawString("JANE DOE 1985",topX, topY - 50);
 			themeFont.drawString("IDENTITY",topX, topY - 20);
 			tagsFont.drawString("TAGS: music, new york, performance",topX, ofGetHeight()/2 + topY + 10);
 			uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight()/2 + topY + 30);
-			ofDisableAlphaBlending();
-			return;
 		}
 	} else {
 		if(state != STATE_PLAY){
-			ofEnableAlphaBlending();
 			ofPushMatrix();
 			ofSetColor(255, 255, 255, 255);
 			ofTranslate(ofGetWidth()/2, 0, -600);
 			ofRotateY(-45.0);
 			vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
 			ofPopMatrix();
-			ofSetColor(0, 255, 0);
-			//(*ti)->drawShape();
 			if(isHovering)
 				this->drawShape();
-			ofDisableAlphaBlending();
-			return;
+			
 		} else {
-			ofEnableAlphaBlending();
-			int topX = ofGetWidth() / 2 + 25;
+			int topX = (ofGetWidth() / 3 * 2) + 25;
 			int topY = (ofGetHeight()/2) - (playSize.y/2);
 			ofFill();
 			ofSetColor(0, 0, 0, 128);
-			ofRect(ofGetWidth()/2,topY - 100, ofGetWidth(), ofGetHeight()/2 + topY + 100);
+			ofRect(ofGetWidth()/3 * 2,topY - 100, ofGetWidth(), (ofGetHeight()/2) + 160);
 			ofSetColor(255, 255, 255, 255);
-			vp.draw(ofGetWidth()/2 + 25, topY, playSize.x, playSize.y);
+			vp.draw((ofGetWidth()/3 * 2 + 25), topY, playSize.x, playSize.y);
 			artistFont.drawString("JANE DOE 1979",topX, topY - 50);
 			themeFont.drawString("CONSCIOUSNESS RAISING",topX, topY - 20);
 			tagsFont.drawString("TAGS: war, art, new york",topX, ofGetHeight()/2 + topY + 10);
-			uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight()/2 + topY + 30);
-			ofDisableAlphaBlending();
+			uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight()/2 + topY + 30);\
 			//vp.draw(ofGetWidth()/2,0);
 		}
 	}
+	ofDisableAlphaBlending();
 }
 	
 int VideoObject::react(int _lvl){
@@ -126,6 +116,11 @@ int VideoObject::react(int _lvl){
 		this->resetState();
 		return state;
 	}
+}
+
+void VideoObject::stopVideo(){
+	state = STATE_REST;
+	this->resetState();
 }
 	
 int VideoObject::isInside(int _x, int _y){
@@ -156,13 +151,6 @@ int VideoObject::isInside(int _x, int _y){
 				   &glx2, &gly2, &glz2);
 		gly = ofGetHeight() - gly;
 		gly2 = ofGetHeight() - gly2;
-//		if(this->id == 1){
-//			cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
-//		}
-		//if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
-//		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
-//			inside = !inside;
-//		}
 		if((gly  <= _y && _y < gly2 || gly2 <= _y && _y < gly) &&
 		   _x < (glx2 - glx) * (_y - gly) / (gly2 - gly) + glx){
 			inside = !inside;
@@ -271,7 +259,7 @@ void VideoObject::drawShape(){
 				if(this->id == 1){
 					cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
 				}
-		cout<<"drawing line at:  "<<(*vj)->x<<": "<<(*vj)->y<<": "<<(*vj)->z<<endl;
+		//cout<<"drawing line at:  "<<(*vj)->x<<": "<<(*vj)->y<<": "<<(*vj)->z<<endl;
 		//ofLine((*vj)->x, (*vj)->y, (*vi)->x, (*vi)->y);
 		glBegin(GL_LINES);
 		//glVertex3f((*vj)->x,(*vj)->y,(*vj)->z);
@@ -279,7 +267,6 @@ void VideoObject::drawShape(){
 		glVertex3d(glx2,gly2,glz2);
 		glVertex3d(glx,gly,glz);
 		glEnd();
-		
 	}
 }
 
@@ -296,12 +283,12 @@ void VideoObject::resetState(){
 			break;
 		case STATE_PLAY:
 			oldWidth = vp.width;
-			tw = ofGetWidth()/2 - 50;
+			tw = ofGetWidth()/3 - 50;
 			twPercent = tw / size.x;
 			playSize.set(tw, size.y * twPercent);
-			vp.setPosition(0.0);
-			vp.setLoopState(false);
 			vp.play();
+			vp.setPosition(0.0);
+			vp.setLoopState(OF_LOOP_NONE);
 			if(isLeft){
 				vp.setPan(0.0);
 			} else {

@@ -5,8 +5,8 @@ void testApp::setup(){
 	ofSetCircleResolution(50);
 	ofSetFrameRate(60);
 	ofSetWindowTitle("!WAR");
-	//ofSetWindowShape(1920, 1200);
-	ofSetWindowShape(1024, 768);
+//	ofSetWindowShape(1360, 768);
+	ofSetWindowShape(1366, 768);
 	ofBackground(0, 0, 0);
 	ofSetVerticalSync(true);
 	ofEnableSmoothing();
@@ -28,8 +28,9 @@ void testApp::setup(){
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
 	
-	wall.loadImage("wallpaper.jpg");
-	floor.loadImage("floor2.jpg");
+	rightWall.loadImage("right1366.png");
+	leftWall.loadImage("left1366.png");
+	floor.loadImage("oldwood2.jpg");
 	ceiling.loadImage("ceiling.gif");
 	
 	flashLightImage.loadImage("flashlight-mask-invert-rings.png");
@@ -80,6 +81,7 @@ void testApp::draw(){
 	ofSetColor(255, 255, 255, 128);
 	ofEllipse(wiiX, wiiY, 200, 200);
 	ofNoFill();
+	ofDisableAlphaBlending();
 	ofSetColor(255, 255, 255);
 }
 
@@ -90,7 +92,7 @@ void testApp::drawRoom(){
 	ofTranslate(ofGetWidth()/2, 0, -600);
 	ofRotateY(-45.0);
 	ofRotateX(90);
-	//ceiling.draw(0,0);
+	ceiling.draw(0,0);
 	ofRect(0, 0, ofGetWidth() * 2, ofGetHeight() * 2);
 	ofPopMatrix();
 	ofPushMatrix();
@@ -98,19 +100,32 @@ void testApp::drawRoom(){
 	ofTranslate(ofGetWidth()/2, 0, -600);
 	ofRotateY(-45.0);
 	//ofRect(0,0,ofGetWidth(),ofGetHeight());
-	//wall.draw(0,0);
+	rightWall.draw(0,0);
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 	ofRotateY(90.0);
 	ofTranslate(-ofGetWidth(), 0, 0);
 	ofRotateY(180);
-	//wall.draw(0,0,-ofGetWidth(),ofGetHeight());
+	leftWall.draw(0,0,-ofGetWidth(),ofGetHeight());
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 	ofPopMatrix();
 	ofPushMatrix();
 	ofTranslate(ofGetWidth()/2, ofGetHeight(), -600);
 	ofRotateY(-45.0);
 	ofRotateX(90);
-	//floor.draw(0,0);
+	floor.draw(0,0);
+	floor.draw(189,0);
+	floor.draw(0,128);
+	floor.draw(189,128);
+	floor.draw(378,0);
+	floor.draw(567,0);
+	floor.draw(0,256);
+	floor.draw(378,128);
+	floor.draw(189,384);
+	floor.draw(0,384);
+	floor.draw(0,512);
+	floor.draw(0,768);
+	
+	//floor.draw(189,128);
 	ofRect(0, 0, ofGetWidth() * 2, ofGetHeight() * 2);
 	ofPopMatrix();
 }
@@ -131,6 +146,10 @@ void testApp::keyPressed(int key){
 		ofToggleFullscreen();
 	if(key == 'p')
 		vom.togglePlay();
+	if(key == 'r')
+		vom.stopVideo(0);
+	if(key == 'l')
+		vom.stopVideo(1);
 }
 
 //--------------------------------------------------------------

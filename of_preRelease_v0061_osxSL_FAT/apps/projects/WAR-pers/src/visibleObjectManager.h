@@ -11,7 +11,7 @@
 #define _VISIBLE_OBJECT_MANAGER_H_
 
 #include "visibleObject.h"
-#include "textObject.h"
+#include "navObject.h"
 #include "videoObject.h"
 #include "ofxDirList.h"
 #include "ofMain.h"
@@ -40,6 +40,7 @@ public:
 	void resetById(int _id);
 	void toggleTheme(int _t);
 	void togglePlay();
+	void stopVideo(int _side);
 	//void addObject(VisibleObject _vo);
 private:
 	vector<VisibleObject*>videoObjects;

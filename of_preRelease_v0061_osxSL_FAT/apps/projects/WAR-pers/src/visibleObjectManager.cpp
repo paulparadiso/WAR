@@ -30,70 +30,74 @@ VisibleObjectManager::VisibleObjectManager(){
 }
 
 void VisibleObjectManager::makeThemes(){
-	TextObject *tmpTheme = new TextObject("THE BODY POLITIC");
+	//The Body Politic
+	NavObject *tmpTheme = new NavObject("nav/body_politic.png");
 	tmpTheme->isLeft = 1;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(306,THEME_PLUS);
+	tmpTheme->setPos(506,THEME_PLUS);
+	tmpTheme->id = -5;
 	themeObjects.push_back(tmpTheme);
-	tmpTheme = new TextObject("MEDIA");
+	//Consciousness Raising
+	tmpTheme = new NavObject("nav/consciousness.png");
 	tmpTheme->isLeft = 1;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(610,THEME_PLUS);
+	tmpTheme->setPos(910,THEME_PLUS);
+	tmpTheme->id = -6;
 	themeObjects.push_back(tmpTheme);
-	tmpTheme = new TextObject("IDENTITY");
-	tmpTheme->isLeft = 1;
-	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(800,THEME_PLUS);
-	themeObjects.push_back(tmpTheme);
-	tmpTheme = new TextObject("CONSCIOUSNESS RAISING");
+	//Identity
+	tmpTheme = new NavObject("nav/identity.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(60,THEME_PLUS);
+	tmpTheme->setPos(50,THEME_PLUS);
+	tmpTheme->id = -7;
 	themeObjects.push_back(tmpTheme);
-	tmpTheme = new TextObject("ACTIVISM & SOCIAL PROTEST");
+	//Media
+	tmpTheme = new NavObject("nav/media.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(390,THEME_PLUS);
+	tmpTheme->setPos(215,THEME_PLUS);
+	tmpTheme->id = -8;
+	themeObjects.push_back(tmpTheme);
+	//Activism and Social Protest
+	tmpTheme = new NavObject("nav/activism.png");
+	tmpTheme->isLeft = 0;
+	tmpTheme->state = STATE_REST;
+	tmpTheme->setPos(350,THEME_PLUS);
+	tmpTheme->id = -9;
 	themeObjects.push_back(tmpTheme);
 	
 }
 
 void VisibleObjectManager::makeDates(){
-	TextObject *tmpDate = new TextObject("1950");
+	NavObject *tmpDate = new NavObject("1950s.png");
 	tmpDate->isLeft = 1;
 	tmpDate->state = STATE_REST;
 	tmpDate->setPos(306,ofGetHeight() - DATE_MINUS);
-	tmpDate->setFontSize(DATE_SIZE);
 	dateObjects.push_back(tmpDate);
-	tmpDate = new TextObject("1960");
+	tmpDate = new NavObject("1960s.png");
 	tmpDate->isLeft = 1;
 	tmpDate->state = STATE_REST;
 	tmpDate->setPos(516,ofGetHeight() - DATE_MINUS);
-	tmpDate->setFontSize(DATE_SIZE);
 	dateObjects.push_back(tmpDate);
-	tmpDate = new TextObject("1970");
+	tmpDate = new NavObject("1970s.png");
 	tmpDate->isLeft = 1;
 	tmpDate->state = STATE_REST;
 	tmpDate->setPos(736,ofGetHeight() - DATE_MINUS);
-	tmpDate->setFontSize(DATE_SIZE);
 	dateObjects.push_back(tmpDate);
-	tmpDate = new TextObject("1980");
+	tmpDate = new NavObject("1980s.png");
 	tmpDate->isLeft = 0;
 	tmpDate->state = STATE_REST;
 	tmpDate->setPos(156,ofGetHeight() - DATE_MINUS);
-	tmpDate->setFontSize(DATE_SIZE);
 	dateObjects.push_back(tmpDate);
-	tmpDate = new TextObject("1990");
+	tmpDate = new NavObject("1990s.png");
 	tmpDate->isLeft = 0;
 	tmpDate->state = STATE_REST;
 	tmpDate->setPos(396,ofGetHeight() - DATE_MINUS);
-	tmpDate->setFontSize(DATE_SIZE);
 	dateObjects.push_back(tmpDate);
-	tmpDate = new TextObject("2000");
+	tmpDate = new NavObject("2000s.png");
 	tmpDate->isLeft = 0;
 	tmpDate->state = STATE_REST;
 	tmpDate->setPos(606,ofGetHeight() - DATE_MINUS);
-	tmpDate->setFontSize(DATE_SIZE);
 	dateObjects.push_back(tmpDate);
 }
 
@@ -113,7 +117,7 @@ void VisibleObjectManager::makeVideos(){
 		tmpVideo->id = i;
 		if(i < 9){
 			tmpVideo->isLeft = 1;
-			tmpVideo->setPos(256 * (i / 3) + 256, 190 * (i % 3) + 100);
+			tmpVideo->setPos(256 * (i / 3) + 556, 190 * (i % 3) + 100);
 		} else {
 			tmpVideo->isLeft = 0;
 			tmpVideo->setPos(256 * ((i - 9) / 3) + 20, 190 * (i  % 3) + 100);
@@ -159,36 +163,14 @@ void VisibleObjectManager::draw(){
 	this->drawThemes();
 	this->drawDates();
 	this->drawVideos();
-	if(isPlaying){
-		ofEnableAlphaBlending();
-		int topX = ofGetWidth()/2 - tester.getSizeX()/2;
-		int topY = ofGetHeight()/2 -  tester.getSizeY()/2;
-		ofFill();
-		ofSetColor(0, 0, 0, 127);
-		ofRect(0, 0, ofGetWidth(), ofGetHeight());
-		ofSetColor(255, 255, 255,255);
-		tester.draw();
-		ofDisableAlphaBlending();
-	}
-	//vector<VisibleObject*>::iterator vi;
-//	int haveDrawing = 0; 
-//	VisibleObject* playing;
-//	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
-//		if((*vi)->id != currentlyPlaying){
-//			(*vi)->draw();
-//		} else {
-//			haveDrawing = 1;
-//			playing = (*vi);
-//		}
-//	}
-//	if(haveDrawing)
-//		playing->draw();
 }
 
 void VisibleObjectManager::drawThemes(){
+	//cout<<"running draw themes loop"<<endl;
 	vector<VisibleObject*>::iterator ti;
 	for(ti = themeObjects.begin(); ti < themeObjects.end(); ti++){
 		(*ti)->draw();
+		//cout<<"drawing theme"<<endl;
 	}
 }
 
@@ -200,10 +182,27 @@ void VisibleObjectManager::drawDates(){
 }
 	
 void VisibleObjectManager::drawVideos(){
+	int count = 0;
 	vector<VisibleObject*>::iterator ti;
 	for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
 		if(themes[(*ti)->theme] == 1){
 			(*ti)->draw();
+		}
+		if((*ti)->isPlaying)
+			cout<<count<<" is playing"<<endl;
+		count++;
+	}	
+}
+
+void VisibleObjectManager::stopVideo(int _side){
+	vector<VisibleObject*>::iterator ti;
+	for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
+		if(_side){
+			if(((*ti)->id > 0) && ((*ti)->id < 9) && (*ti)->isPlaying)
+				(*ti)->stopVideo();
+		} else {
+			if(((*ti)->id >= 9) && ((*ti)->id < 18) && (*ti)->isPlaying)
+				(*ti)->stopVideo();
 		}
 	}
 }
@@ -234,20 +233,6 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	int playing = -1;
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
 		if(themes[(*vi)->theme]==1){
-			if((*vi)->id > 8){
-				if(playingRight){
-					return;
-				} 
-			} else {
-				if(playingLeft){
-					return;
-				}
-			}
-		
-		//if(themes[(*vi)->theme] == 0){
-//			return;
-//		}
-
 			if((*vi)->isInside(_x,_y)){
 				tmpObject = (*vi);
 				remove = count;
@@ -255,12 +240,13 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			if((*vi)->state == STATE_PLAY){
 				playObject = (*vi);
 				playing = count;
+				cout<<"removing "<<count<<endl;
 			}
-			count++;
 		}
+		count++;
 	}
 	if(playing > -1){
-		videoObjects.erase(videoObjects.begin() + playing);
+		videoObjects.erase(videoObjects.begin() + playing - 1);
 		videoObjects.push_back(playObject);
 	}
 	if(remove > -1){
@@ -275,9 +261,25 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			hoverTime = ofGetElapsedTimeMillis();
 		}
 	}
-	//for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
-//		(*vi)->isInside(_x,_y);
-//	}
+	for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
+		if((*vi)->isInside(_x,_y)){
+			if((*vi)->id == lastHoverId){
+				if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+					int result = (*vi)->react(1);
+					hoverTime = ofGetElapsedTimeMillis();
+					lastHoverId = -1;
+				}
+			} else {
+				lastHoverId = (*vi)->id;
+				hoverTime = ofGetElapsedTimeMillis();
+			}
+			if((*vi)->isPlaying){
+				themes[abs((*vi)->id) - 5] = 1;
+			} else {
+				themes[abs((*vi)->id) - 5] = 0;
+			}
+		}
+	}
 }
 
 

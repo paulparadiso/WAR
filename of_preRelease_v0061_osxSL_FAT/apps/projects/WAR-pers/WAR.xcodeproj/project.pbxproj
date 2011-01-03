@@ -46,7 +46,7 @@
 		EE2A6D2112970BE300CD2C2F /* ofxMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6D1512970BE300CD2C2F /* ofxMatrix4x4.cpp */; };
 		EE2A6D2212970BE300CD2C2F /* ofxQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6D1A12970BE300CD2C2F /* ofxQuaternion.cpp */; };
 		EE49A10E1292CBD400705987 /* ofxDirList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE49A10C1292CBD400705987 /* ofxDirList.cpp */; };
-		EE8BA05312BC1247005740AD /* textObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8BA05212BC1247005740AD /* textObject.cpp */; };
+		EE8BA05312BC1247005740AD /* navObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8BA05212BC1247005740AD /* navObject.cpp */; };
 		EEFD2A0B1292CC6D006458F6 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD29A81292CC6D006458F6 /* b2BroadPhase.cpp */; };
 		EEFD2A0C1292CC6D006458F6 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD29AA1292CC6D006458F6 /* b2CollideCircle.cpp */; };
 		EEFD2A0D1292CC6D006458F6 /* b2CollidePoly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD29AB1292CC6D006458F6 /* b2CollidePoly.cpp */; };
@@ -218,8 +218,8 @@
 		EE49A10A1292CBD400705987 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EE49A10C1292CBD400705987 /* ofxDirList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxDirList.cpp; sourceTree = "<group>"; };
 		EE49A10D1292CBD400705987 /* ofxDirList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxDirList.h; sourceTree = "<group>"; };
-		EE8BA05112BC1247005740AD /* textObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textObject.h; sourceTree = "<group>"; };
-		EE8BA05212BC1247005740AD /* textObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textObject.cpp; sourceTree = "<group>"; };
+		EE8BA05112BC1247005740AD /* navObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navObject.h; sourceTree = "<group>"; };
+		EE8BA05212BC1247005740AD /* navObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = navObject.cpp; sourceTree = "<group>"; };
 		EEFD29A01292CC6D006458F6 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EEFD29A51292CC6D006458F6 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		EEFD29A81292CC6D006458F6 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -660,8 +660,8 @@
 				EE2A6CAD1295F00000CD2C2F /* videoObject.cpp */,
 				EE2A6CD41296E8A800CD2C2F /* visibleObjectManager.h */,
 				EE2A6CD51296E8A800CD2C2F /* visibleObjectManager.cpp */,
-				EE8BA05112BC1247005740AD /* textObject.h */,
-				EE8BA05212BC1247005740AD /* textObject.cpp */,
+				EE8BA05112BC1247005740AD /* navObject.h */,
+				EE8BA05212BC1247005740AD /* navObject.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1134,7 +1134,7 @@
 				EE2A6D2012970BE300CD2C2F /* ofxMatrix3x3.cpp in Sources */,
 				EE2A6D2112970BE300CD2C2F /* ofxMatrix4x4.cpp in Sources */,
 				EE2A6D2212970BE300CD2C2F /* ofxQuaternion.cpp in Sources */,
-				EE8BA05312BC1247005740AD /* textObject.cpp in Sources */,
+				EE8BA05312BC1247005740AD /* navObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

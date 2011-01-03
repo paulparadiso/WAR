@@ -44,18 +44,21 @@ public:
 	void resizeByWidth(float _w);
 	void resizeByPercent(float _p);
 	void adjustPosition();
-	PanningVideoPlayer vp;
-	int getSizeX();
-	int getSizeY();
 	void updateShape();
 	void updateActualShape();
 	void drawShape();
 	void resetState();
+	void stopVideo();
+	
+	PanningVideoPlayer vp;
+	int getSizeX();
+	int getSizeY();
+	
+	int hoverTime;
 	
 private:
 	ofxVec2f drawSize;
 	ofxVec2f playSize;
-	int isPlaying;	
 	ofxVec2f restPos;
 	ofxVec2f restSize;
 	float xAdd, yAdd;

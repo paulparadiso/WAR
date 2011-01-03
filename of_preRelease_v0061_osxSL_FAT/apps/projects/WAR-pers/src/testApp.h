@@ -5,7 +5,7 @@
 #include "ofxOsc.h"
 #include "ofxDirList.h"
 #include "videoObject.h"
-#include "textObject.h"
+#include "navObject.h"
 #include "visibleObjectManager.h"
 
 #define PORT 9000
@@ -40,10 +40,11 @@ class testApp : public ofBaseApp{
 		ofImage flashLightImage;
 		ofVideoPlayer video;
 		VideoObject vo;
-		ofImage wall;
+		ofImage rightWall;
+		ofImage leftWall;
 		ofImage floor;
 		ofImage ceiling;
-		TextObject to;
+		NavObject to;
 	
 };
 
