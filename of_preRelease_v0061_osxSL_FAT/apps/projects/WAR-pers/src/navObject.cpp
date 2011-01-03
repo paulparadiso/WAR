@@ -16,6 +16,10 @@ NavObject::NavObject(string _text): VisibleObject(){
 	this->setup(_text);
 }
 
+void NavObject::addFp(FrontPlayer *_fp){
+	fp = _fp;
+}
+
 void NavObject::setup(string _text){
 	//font.loadFont(FONT,16);
 //	text = _text;
@@ -71,6 +75,22 @@ int NavObject::isInside(int _x, int _y){
 	return inside;
 }
 
+int NavObject::isInsideFlat(int _x, int _y){
+	int inside = 0;
+	isHovering = 0;
+	vector<ofxVec2f*>::iterator vi, vj;
+	for(vi = shape.begin(), vj = shape.end() - 1; vi < shape.end(); vj = vi++){
+		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
+		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
+			inside = !inside;
+		}
+	}
+	if(inside){
+		isHovering = 1;
+	}
+	return inside;
+}
+
 void NavObject::draw(){
 	ofEnableAlphaBlending();
 	ofPushMatrix();
@@ -101,6 +121,25 @@ void NavObject::draw(){
 		}
 	}
 	ofPopMatrix();
+	ofDisableAlphaBlending();
+}
+
+void NavObject::drawFlat(){
+	cout<<"drawing flat at "<<pos.x<<", "<<pos.y<<endl;
+	ofEnableAlphaBlending();
+	if(isHovering){
+		if(isPlaying){
+			navImageGlow.draw(pos.x,pos.y);
+		} else {
+			navImage.draw(pos.x,pos.y);
+		}
+	} else {
+		if(isPlaying){
+			navImageGlow.draw(pos.x,pos.y);
+		} else {
+			navImage.draw(pos.x,pos.y);
+		}
+	}
 	ofDisableAlphaBlending();
 }
 

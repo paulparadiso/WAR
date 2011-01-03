@@ -14,6 +14,7 @@
 #include "ofMain.h"
 #include "ofxVectorMath.h"
 #include <vector>
+#include "frontPlayer.h"
 
 #define GROW_TIME 500.0
 #define FONT "SpartanLTStd-HeavyClass.otf"
@@ -45,6 +46,14 @@ class NavObject : public VisibleObject{
 		void drawShape();
 		void resetState();
 		void stopVideo();
+	
+		void addFp(FrontPlayer *_fp);
+	
+		int isInsideFlat(int _x, int _y);
+	
+		void drawFlat();
+	
+		FrontPlayer *fp;
 	
 	private:
 		ofxVec2f drawSize;

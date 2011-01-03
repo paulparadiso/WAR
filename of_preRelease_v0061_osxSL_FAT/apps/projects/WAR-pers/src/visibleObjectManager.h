@@ -41,6 +41,9 @@ public:
 	void toggleTheme(int _t);
 	void togglePlay();
 	void stopVideo(int _side);
+	void drawCloseBoxes(int _side);
+	
+	FrontPlayer fp;
 	//void addObject(VisibleObject _vo);
 private:
 	vector<VisibleObject*>videoObjects;
@@ -64,6 +67,8 @@ private:
 	void makeVideos();
 	
 	int playingLeft, playingRight;
+	
+	NavObject rightClose, leftClose;
 	
 	
 };

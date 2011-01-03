@@ -16,6 +16,7 @@
 #define _VISIBLE_OBJECT_H_
 
 #include "ofxVectorMath.h"
+#include "frontPlayer.h"
 
 #define MARGIN 100
 #define STATE_REST 0
@@ -43,6 +44,9 @@ public:
 	virtual void stopVideo() = 0;
 	virtual void resetState() = 0;
 	virtual void updateActualShape() = 0;
+	
+	virtual void addFp(FrontPlayer *_fp) = 0;
+
 	
 	VisibleObject(){
 	};

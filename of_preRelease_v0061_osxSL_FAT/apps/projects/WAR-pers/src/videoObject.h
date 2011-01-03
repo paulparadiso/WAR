@@ -14,15 +14,10 @@
 #include "ofMain.h"
 #include "ofxVectorMath.h"
 #include <vector>
+#include "frontPlayer.h"
+#include "panningVideoPlayer.h"
 
 #define GROW_TIME 500.0
-
-class PanningVideoPlayer : public ofVideoPlayer{
-public:
-	void setPan(float _pan){
-		SetMovieAudioBalance(moviePtr, _pan, 0);
-	}
-};
 
 class VideoObject : public VisibleObject{
 public:
@@ -50,6 +45,8 @@ public:
 	void resetState();
 	void stopVideo();
 	
+	void addFp(FrontPlayer *_fp);
+	
 	PanningVideoPlayer vp;
 	int getSizeX();
 	int getSizeY();
@@ -65,6 +62,10 @@ private:
 	int stopTime;
 	ofTrueTypeFont artFont;
 	int oldWidth;
+	
+	FrontPlayer *fp;
+	
+	string media;
 	
 	ofTrueTypeFont artistFont;
 	ofTrueTypeFont themeFont;

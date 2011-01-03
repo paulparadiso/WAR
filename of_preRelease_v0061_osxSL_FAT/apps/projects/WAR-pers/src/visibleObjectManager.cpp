@@ -24,8 +24,11 @@ VisibleObjectManager::VisibleObjectManager(){
 		themes[i] = 0;
 	}
 	isPlaying = 0;
+	rightClose.setup("nav/close_button.png");
+	leftClose.setup("nav/close_button.png");
+	rightClose.id = -20;
+	leftClose.id = -21;
 	cout<<"finished setup"<<endl;
-	
 	playingLeft = playingRight = 0;
 }
 
@@ -129,6 +132,7 @@ void VisibleObjectManager::makeVideos(){
 
 void VisibleObjectManager::addObject(VisibleObject *_vo){
 	_vo->resizeByWidth(250.0);
+	_vo->addFp(&fp);
 	_vo->id = idAssign++;
 	videoObjects.push_back(_vo);
 }
@@ -138,6 +142,7 @@ void VisibleObjectManager::update(){
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
 		(*vi)->update();
 	}
+	fp.update();
 }
 
 void VisibleObjectManager::update(int _x, int _y){
@@ -163,6 +168,23 @@ void VisibleObjectManager::draw(){
 	this->drawThemes();
 	this->drawDates();
 	this->drawVideos();
+	fp.draw();
+	if(fp.haveRight)
+		this->drawCloseBoxes(0);
+	if(fp.haveLeft)
+		this->drawCloseBoxes(1);
+}
+
+void VisibleObjectManager::drawCloseBoxes(int _side){
+	if(_side){
+		ofxVec4f box = fp.getBoxSize(1);
+		rightClose.setPos(box.z - 30, box.y + 10);
+		rightClose.drawFlat();
+	} else {
+		ofxVec4f box = fp.getBoxSize(0);
+		leftClose.setPos(box.x + 10, box.y + 10);
+		leftClose.drawFlat();
+	}
 }
 
 void VisibleObjectManager::drawThemes(){
@@ -189,22 +211,13 @@ void VisibleObjectManager::drawVideos(){
 			(*ti)->draw();
 		}
 		if((*ti)->isPlaying)
-			cout<<count<<" is playing"<<endl;
+			//cout<<count<<" is playing"<<endl;
 		count++;
 	}	
 }
 
 void VisibleObjectManager::stopVideo(int _side){
-	vector<VisibleObject*>::iterator ti;
-	for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
-		if(_side){
-			if(((*ti)->id > 0) && ((*ti)->id < 9) && (*ti)->isPlaying)
-				(*ti)->stopVideo();
-		} else {
-			if(((*ti)->id >= 9) && ((*ti)->id < 18) && (*ti)->isPlaying)
-				(*ti)->stopVideo();
-		}
-	}
+	fp.stop(_side);
 }
 
 void VisibleObjectManager::randomPositions(){
@@ -240,7 +253,7 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			if((*vi)->state == STATE_PLAY){
 				playObject = (*vi);
 				playing = count;
-				cout<<"removing "<<count<<endl;
+				//cout<<"removing "<<count<<endl;
 			}
 		}
 		count++;
@@ -279,6 +292,12 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 				themes[abs((*vi)->id) - 5] = 0;
 			}
 		}
+	}
+	if(fp.haveRight){
+		rightClose.isInsideFlat(_x,_y);
+	}
+	if(fp.haveLeft){
+		leftClose.isInsideFlat(_x,_y);
 	}
 }
 

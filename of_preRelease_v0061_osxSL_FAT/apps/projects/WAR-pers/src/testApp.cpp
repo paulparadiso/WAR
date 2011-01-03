@@ -16,7 +16,7 @@ void testApp::setup(){
 	w = 0;
 	h = 0;	// set in update()
 	
-	msgFont.loadFont("Helvetica.dfont",64);
+	msgFont.loadFont("fonts/Helvetica.dfont",64);
 	timeOfLastFlash = 0;
 	showMsg = 1;
 	flashDelay = 100;
@@ -28,10 +28,10 @@ void testApp::setup(){
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
 	
-	rightWall.loadImage("right1366.png");
-	leftWall.loadImage("left1366.png");
-	floor.loadImage("oldwood2.jpg");
-	ceiling.loadImage("ceiling.gif");
+	rightWall.loadImage("room/right1366.png");
+	leftWall.loadImage("room/left1366.png");
+	floor.loadImage("room/oldwood2.jpg");
+	ceiling.loadImage("room/ceiling.gif");
 	
 	flashLightImage.loadImage("flashlight-mask-invert-rings.png");
 }

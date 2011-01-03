@@ -40,6 +40,7 @@
 		E4C242CD10CC650E004149E2 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C242CC10CC650E004149E2 /* libfmodex.dylib */; };
 		E4C2443910CC7693004149E2 /* openFrameworks-Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */; };
 		E4C246DA10CCAE22004149E2 /* freeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C246D910CCAE22004149E2 /* freeimage.a */; };
+		EE12503112D1FB3F00C19861 /* frontPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE12503012D1FB3F00C19861 /* frontPlayer.cpp */; };
 		EE2A6CAE1295F00000CD2C2F /* videoObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6CAD1295F00000CD2C2F /* videoObject.cpp */; };
 		EE2A6CD61296E8A800CD2C2F /* visibleObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6CD51296E8A800CD2C2F /* visibleObjectManager.cpp */; };
 		EE2A6D2012970BE300CD2C2F /* ofxMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6D1312970BE300CD2C2F /* ofxMatrix3x3.cpp */; };
@@ -196,6 +197,9 @@
 		E4C2429310CC5C38004149E2 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../../../libs/freetype/lib/osx/freetype.a; sourceTree = SOURCE_ROOT; };
 		E4C242CC10CC650E004149E2 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../../libs/fmodex/lib/osx/libfmodex.dylib; sourceTree = SOURCE_ROOT; };
 		E4C246D910CCAE22004149E2 /* freeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freeimage.a; path = ../../../libs/FreeImage/lib/osx/freeimage.a; sourceTree = SOURCE_ROOT; };
+		EE12502F12D1FB3F00C19861 /* frontPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frontPlayer.h; sourceTree = "<group>"; };
+		EE12503012D1FB3F00C19861 /* frontPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frontPlayer.cpp; sourceTree = "<group>"; };
+		EE12503B12D201A900C19861 /* panningVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panningVideoPlayer.h; sourceTree = "<group>"; };
 		EE2A6CA91295EEC100CD2C2F /* visibleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visibleObject.h; sourceTree = "<group>"; };
 		EE2A6CAC1295F00000CD2C2F /* videoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoObject.h; sourceTree = "<group>"; };
 		EE2A6CAD1295F00000CD2C2F /* videoObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = videoObject.cpp; sourceTree = "<group>"; };
@@ -662,6 +666,9 @@
 				EE2A6CD51296E8A800CD2C2F /* visibleObjectManager.cpp */,
 				EE8BA05112BC1247005740AD /* navObject.h */,
 				EE8BA05212BC1247005740AD /* navObject.cpp */,
+				EE12502F12D1FB3F00C19861 /* frontPlayer.h */,
+				EE12503012D1FB3F00C19861 /* frontPlayer.cpp */,
+				EE12503B12D201A900C19861 /* panningVideoPlayer.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1135,6 +1142,7 @@
 				EE2A6D2112970BE300CD2C2F /* ofxMatrix4x4.cpp in Sources */,
 				EE2A6D2212970BE300CD2C2F /* ofxQuaternion.cpp in Sources */,
 				EE8BA05312BC1247005740AD /* navObject.cpp in Sources */,
+				EE12503112D1FB3F00C19861 /* frontPlayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
