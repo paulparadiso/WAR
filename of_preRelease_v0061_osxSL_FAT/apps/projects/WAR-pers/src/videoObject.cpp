@@ -35,6 +35,10 @@ void VideoObject::setup(string _path){
 	themeFont.loadFont("SpartanLTStd-BookClass.otf",10);
 	tagsFont.loadFont("SpartanLTStd-HeavyClass.otf",10);
 	uploadFont.loadFont("SpartanLTStd-BookClass.otf",8);
+	//These numbers were determined by the testShape() function.  
+	//There is likely a far better way of handling this. 
+	trans_x = -279;
+	trans_z = 370;
 }
 
 void VideoObject::addFp(FrontPlayer *_fp){
@@ -42,17 +46,21 @@ void VideoObject::addFp(FrontPlayer *_fp){
 }
 
 void VideoObject::update(){
-	if(state == STATE_PLAY){
-		vp.idleMovie();
-		if(vp.getIsMovieDone()){
-			state = STATE_REST;
-			this->resetState();
-		}
+	if((isLeft && !fp->haveLeft) && state == STATE_PLAY){
+		cout<<"UPDATE reset"<<endl;
+		state = STATE_REST;
+		resetState();
+	}
+	if((!isLeft && !fp->haveRight) && state == STATE_PLAY){
+		cout<<"UPDATE reset"<<endl;
+		state = STATE_REST;
+		resetState();
 	}
 }
 
 void VideoObject::draw(){
 	ofEnableAlphaBlending();
+	ofEnableSmoothing();
 	if(this->isLeft){
 		if(state != STATE_PLAY){
 			ofPushMatrix();
@@ -66,24 +74,7 @@ void VideoObject::draw(){
 			//(*ti)->drawShape();
 			if(isHovering)
 				this->drawShape();
-		} else {
-			if(!fp->haveLeft){
-				state = STATE_REST;
-				resetState();
-			}
-//			//vp.draw(75, (ofGetHeight()/2) - (playSize.y /2), playSize.x, playSize.y);
-//			int topX = 25;
-//			int topY = ofGetHeight() / 2 - playSize.y / 2;
-//			ofFill();
-//			ofSetColor(0, 0, 0, 128);
-//			ofRect(0,topY - 100, ofGetWidth()/3, (ofGetHeight()/2) + 160);
-//			ofSetColor(255, 255, 255,255);
-//			vp.draw(topX, topY, playSize.x, playSize.y);
-//			artistFont.drawString("JANE DOE 1985",topX, topY - 50);
-//			themeFont.drawString("IDENTITY",topX, topY - 20);
-//			tagsFont.drawString("TAGS: music, new york, performance",topX, ofGetHeight()/2 + topY + 10);
-//			uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight()/2 + topY + 30);
-		}
+		} 
 	} else {
 		if(state != STATE_PLAY){
 			ofPushMatrix();
@@ -95,24 +86,10 @@ void VideoObject::draw(){
 			if(isHovering)
 				this->drawShape();
 			} else {
-			if(!fp->haveLeft){
-				state = STATE_REST;
-				resetState();
-			}
-//			int topX = (ofGetWidth() / 3 * 2) + 25;
-//			int topY = (ofGetHeight()/2) - (playSize.y/2);
-//			ofFill();
-//			ofSetColor(0, 0, 0, 128);
-//			ofRect(ofGetWidth()/3 * 2,topY - 100, ofGetWidth(), (ofGetHeight()/2) + 160);
-//			ofSetColor(255, 255, 255, 255);
-//			vp.draw((ofGetWidth()/3 * 2 + 25), topY, playSize.x, playSize.y);
-//			artistFont.drawString("JANE DOE 1979",topX, topY - 50);
-//			themeFont.drawString("CONSCIOUSNESS RAISING",topX, topY - 20);
-//			tagsFont.drawString("TAGS: war, art, new york",topX, ofGetHeight()/2 + topY + 10);
-//			uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight()/2 + topY + 30);
-//			//vp.draw(ofGetWidth()/2,0);
+			
 		}
 	}
+	ofDisableSmoothing();
 	ofDisableAlphaBlending();
 }
 	
@@ -125,17 +102,56 @@ int VideoObject::react(int _lvl){
 		return state;
 	} else {
 		state = STATE_REST;
+		cout<<"REACT reset"<<endl;
 		this->resetState();
 		return state;
 	}
 }
 
+void VideoObject::resetState(){
+	float tw;
+	float twPercent;
+	switch(state){
+		case STATE_REST:
+			vp.setPosition(0.2);
+			vp.stop();
+			//this->resizeByWidth(225);
+			break;
+		case STATE_HOVER:
+			break;
+		case STATE_PLAY:
+			oldWidth = vp.width;
+			tw = ofGetWidth()/3 - 50;
+			twPercent = tw / size.x;
+			playSize.set(tw, size.y * twPercent);
+			if(isLeft){
+				if(!fp->haveLeft){
+					fp->vpLeft = &vp;
+					fp->playSize = &playSize;
+					fp->haveNewLeft = 1;
+				}
+			} else {
+				if(!fp->haveRight){
+					fp->vpRight = &vp;
+					fp->playSize = &playSize;
+					fp->haveNewRight = 1;
+				}
+			}
+			break;
+		default:
+			break;
+	}
+}
+
 void VideoObject::stopVideo(){
-	state = STATE_REST;
-	this->resetState();
+	//state = STATE_REST;
+	//this->resetState();
 }
 	
 int VideoObject::isInside(int _x, int _y){
+	if(state == STATE_PLAY){
+		return 0;
+	}
 	GLdouble glx = 0;
 	GLdouble gly = 0;
 	GLdouble glz = 0;
@@ -213,17 +229,32 @@ void VideoObject::updateShape(){
 	this->updateActualShape();
 }
 
+void VideoObject::testShape(int _which){
+	if(_which == 0)
+		trans_x++;
+	if(_which == 1)
+		trans_x--;
+	if(_which == 2)
+		trans_z++;
+	if(_which == 3)
+		trans_z--;
+	this->updateShape();
+}
+
 void VideoObject::updateActualShape(){
 	abShape.clear();
 	vector<ofxVec2f*>::iterator vi;
 	ofxVec3f translation;
+	//ofxVec3f translationBack;
 	ofxVec3f rotation;
 	ofPushMatrix();
+	cout<<"trans_x = "<<trans_x<<", trans_z = "<<trans_z<<endl;
 	if(isLeft){
-		translation.set(-210,0,140);
+		translation.set(trans_x,0,trans_z);
 		rotation.set(0,1,0);
 	} else {
 		translation.set(ofGetWidth()/2, 0, -600.0);
+		//translationBack.set(0,0,-600);
 		rotation.set(0,1,0);
 	}
 	for(vi = shape.begin(); vi < shape.end(); vi++){
@@ -276,49 +307,6 @@ void VideoObject::drawShape(){
 		glVertex3d(glx2,gly2,glz2);
 		glVertex3d(glx,gly,glz);
 		glEnd();
-	}
-}
-
-void VideoObject::resetState(){
-	float tw;
-	float twPercent;
-	switch(state){
-		case STATE_REST:
-			vp.setPosition(0.2);
-			vp.stop();
-			//this->resizeByWidth(225);
-			break;
-		case STATE_HOVER:
-			break;
-		case STATE_PLAY:
-			oldWidth = vp.width;
-			tw = ofGetWidth()/3 - 50;
-			twPercent = tw / size.x;
-			playSize.set(tw, size.y * twPercent);
-			if(isLeft){
-				//vp.setPan(0.0);
-				if(!fp->haveLeft){
-					vp.play();
-					vp.setPosition(0.0);
-					vp.setLoopState(OF_LOOP_NONE);
-					fp->vpLeft = &vp;
-					fp->playSize = &playSize;
-					fp->haveLeft = 1;
-				}
-			} else {
-				if(!fp->haveRight){
-					vp.play();
-					vp.setPosition(0.0);
-					vp.setLoopState(OF_LOOP_NONE);
-					vp.setPan(1.0);
-					fp->vpRight = &vp;
-					fp->playSize = &playSize;
-					fp->haveRight = 1;
-				}
-			}
-			break;
-		default:
-			break;
 	}
 }
 

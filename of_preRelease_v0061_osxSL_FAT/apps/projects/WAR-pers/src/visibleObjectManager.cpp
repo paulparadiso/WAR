@@ -26,8 +26,8 @@ VisibleObjectManager::VisibleObjectManager(){
 	isPlaying = 0;
 	rightClose.setup("nav/close_button.png");
 	leftClose.setup("nav/close_button.png");
-	rightClose.id = -20;
-	leftClose.id = -21;
+	rightClose.id = RIGHT_CLOSE_ID;
+	leftClose.id = LEFT_CLOSE_ID;
 	cout<<"finished setup"<<endl;
 	playingLeft = playingRight = 0;
 }
@@ -138,11 +138,12 @@ void VisibleObjectManager::addObject(VisibleObject *_vo){
 }
 
 void VisibleObjectManager::update(){
+	//FrontPlayer must be updated first.
+	fp.update();
 	vector<VisibleObject*>::iterator vi;
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
 		(*vi)->update();
 	}
-	fp.update();
 }
 
 void VisibleObjectManager::update(int _x, int _y){
@@ -176,13 +177,13 @@ void VisibleObjectManager::draw(){
 }
 
 void VisibleObjectManager::drawCloseBoxes(int _side){
-	if(_side){
-		ofxVec4f box = fp.getBoxSize(1);
-		rightClose.setPos(box.z - 30, box.y + 10);
+	if(!_side){
+		ofxVec4f box = fp.getBoxSize(0);
+		rightClose.setPos(box.x, box.y);
 		rightClose.drawFlat();
 	} else {
-		ofxVec4f box = fp.getBoxSize(0);
-		leftClose.setPos(box.x + 10, box.y + 10);
+		ofxVec4f box = fp.getBoxSize(1);
+		leftClose.setPos(box.z - 40, box.y);
 		leftClose.drawFlat();
 	}
 }
@@ -238,6 +239,56 @@ void VisibleObjectManager::resetById(int _id){
 }
 
 void VisibleObjectManager::checkInsides(int _x, int _y){
+	int leave = 0;
+	if(fp.haveRight){
+		if(fp.isInside(_x,_y)){
+			ofxVec4f box = fp.getBoxSize(0);
+			rightClose.setPos(box.x, box.y);
+			if(rightClose.isInsideFlat(_x,_y)){
+				if(rightClose.id == lastHoverId){
+					if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+						rightClose.react(1);
+						hoverTime = ofGetElapsedTimeMillis();
+						lastHoverId = -1;
+					}
+				} else {
+					lastHoverId = rightClose.id;
+					hoverTime = ofGetElapsedTimeMillis();
+				}
+			} 
+			if(rightClose.isPlaying){
+				fp.stop(0);
+				rightClose.react(0);
+			}
+			leave = 1;
+		}
+	}
+	if(fp.haveLeft){
+		if(fp.isInside(_x,_y)){
+			ofxVec4f box = fp.getBoxSize(1);
+			leftClose.setPos(box.z - 40, box.y);
+			if(leftClose.isInsideFlat(_x,_y)){
+				if(leftClose.id == lastHoverId){
+					if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+						int result = leftClose.react(1);
+						hoverTime = ofGetElapsedTimeMillis();
+						lastHoverId = -1;
+					}
+				} else {
+					lastHoverId = leftClose.id;
+					hoverTime = ofGetElapsedTimeMillis();
+				}
+			}
+			if(leftClose.isPlaying){
+				fp.stop(1);
+				leftClose.react(0);
+			}
+			leave = 1;
+		}
+	}
+	if(leave){
+		return;
+	}
 	VisibleObject* tmpObject;
 	VisibleObject* playObject;
 	vector<VisibleObject*>::iterator vi;
@@ -250,17 +301,8 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 				tmpObject = (*vi);
 				remove = count;
 			}
-			if((*vi)->state == STATE_PLAY){
-				playObject = (*vi);
-				playing = count;
-				//cout<<"removing "<<count<<endl;
-			}
 		}
 		count++;
-	}
-	if(playing > -1){
-		videoObjects.erase(videoObjects.begin() + playing - 1);
-		videoObjects.push_back(playObject);
 	}
 	if(remove > -1){
 		if(tmpObject->id == lastHoverId){
@@ -293,13 +335,14 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			}
 		}
 	}
-	if(fp.haveRight){
-		rightClose.isInsideFlat(_x,_y);
-	}
-	if(fp.haveLeft){
-		leftClose.isInsideFlat(_x,_y);
-	}
 }
 
-
+void VisibleObjectManager::updateShapes(int _which){
+	vector<VisibleObject*>::iterator vi;
+	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
+		if((*vi)->isLeft){
+			(*vi)->testShape(_which);
+		}
+	}
+}
 

@@ -53,6 +53,8 @@ public:
 	
 	int hoverTime;
 	
+	void testShape(int _which);
+	
 private:
 	ofxVec2f drawSize;
 	ofxVec2f playSize;

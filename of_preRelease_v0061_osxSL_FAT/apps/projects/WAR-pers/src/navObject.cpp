@@ -80,6 +80,7 @@ int NavObject::isInsideFlat(int _x, int _y){
 	isHovering = 0;
 	vector<ofxVec2f*>::iterator vi, vj;
 	for(vi = shape.begin(), vj = shape.end() - 1; vi < shape.end(); vj = vi++){
+		cout<<"Point = "<<(*vi)->x<<", "<<(*vi)->y<<endl;	
 		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
 		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 			inside = !inside;
@@ -87,6 +88,7 @@ int NavObject::isInsideFlat(int _x, int _y){
 	}
 	if(inside){
 		isHovering = 1;
+		cout<<"inside"<<endl;
 	}
 	return inside;
 }
@@ -128,17 +130,9 @@ void NavObject::drawFlat(){
 	cout<<"drawing flat at "<<pos.x<<", "<<pos.y<<endl;
 	ofEnableAlphaBlending();
 	if(isHovering){
-		if(isPlaying){
-			navImageGlow.draw(pos.x,pos.y);
-		} else {
-			navImage.draw(pos.x,pos.y);
-		}
+		navImageGlow.draw(pos.x,pos.y);
 	} else {
-		if(isPlaying){
-			navImageGlow.draw(pos.x,pos.y);
-		} else {
-			navImage.draw(pos.x,pos.y);
-		}
+		navImage.draw(pos.x,pos.y);
 	}
 	ofDisableAlphaBlending();
 }
@@ -200,16 +194,6 @@ void NavObject::adjustPosition(){
 }
 
 void NavObject::updateShape(){
-	//shape.clear();
-//	ofRectangle r = font.getStringBoundingBox(text,pos.x,pos.y);
-//	//calculate bottom left corner
-//	ofxVec2f tl = ofxVec2f(pos.x + cos(ofDegToRad(90.0 + rot)) * (r.y-r.height), pos.y + sin(ofDegToRad(90.0 + rot)) * (r.y-r.height));
-//	//fill shape vector with rotated values.  The order is intentional.
-//	shape.push_back(new ofxVec2f(tl.x,tl.y));
-//	shape.push_back(new ofxVec2f(tl.x + cos(ofDegToRad(rot)) * (r.x + r.width), tl.y + sin(ofDegToRad(rot)) * (r.x+r.width)));
-//	shape.push_back(new ofxVec2f(r.x + cos(ofDegToRad(rot)) * (r.x+r.width), r.y + sin(ofDegToRad(rot)) * (r.x+r.width)));
-//	shape.push_back(new ofxVec2f(r.x,r.y));
-//	this->updateActualShape();
 	shape.clear();
 	//calculate bottom left corner
 	ofxVec2f bl = ofxVec2f(pos.x + cos(ofDegToRad(90.0 + rot)) * drawSize.y, pos.y + sin(ofDegToRad(90.0 + rot)) * drawSize.y);
@@ -218,6 +202,7 @@ void NavObject::updateShape(){
 	shape.push_back(new ofxVec2f(pos.x + cos(ofDegToRad(rot)) * drawSize.x, pos.y + sin(ofDegToRad(rot)) * drawSize.x));
 	shape.push_back(new ofxVec2f(bl.x + cos(ofDegToRad(rot)) * drawSize.x, bl.y + sin(ofDegToRad(rot)) * drawSize.x));
 	shape.push_back(new ofxVec2f(bl.x,bl.y));
+	
 	this->updateActualShape();
 }
 
@@ -313,4 +298,16 @@ void NavObject::resetState(){
 	if(state == STATE_REST){
 		isPlaying = 0;
 	}
+}
+
+void NavObject::testShape(int _which){
+	if(_which == 0)
+		trans_x++;
+	if(_which == 1)
+		trans_x--;
+	if(_which == 2)
+		trans_z++;
+	if(_which == 3)
+		trans_z--;
+	this->updateShape();
 }

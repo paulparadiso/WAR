@@ -9,7 +9,6 @@ void testApp::setup(){
 	ofSetWindowShape(1366, 768);
 	ofBackground(0, 0, 0);
 	ofSetVerticalSync(true);
-	ofEnableSmoothing();
 	//ofSetFullscreen(true);
 	ofHideCursor();
 	
@@ -150,6 +149,15 @@ void testApp::keyPressed(int key){
 		vom.stopVideo(0);
 	if(key == 'l')
 		vom.stopVideo(1);
+	if(key == 't')
+		vom.updateShapes(0);
+	if(key == 'g')
+		vom.updateShapes(1);
+	if(key == 'y')
+		vom.updateShapes(2);
+	if(key == 'h')
+		vom.updateShapes(3);
+	
 }
 
 //--------------------------------------------------------------

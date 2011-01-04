@@ -22,6 +22,8 @@
 #define DATE_MINUS 50
 #define THEME_PLUS 50
 #define VIDEO_WIDTH 90
+#define RIGHT_CLOSE_ID -20
+#define LEFT_CLOSE_ID -21
 
 using namespace std;
 
@@ -44,6 +46,7 @@ public:
 	void drawCloseBoxes(int _side);
 	
 	FrontPlayer fp;
+	void updateShapes(int _which);
 	//void addObject(VisibleObject _vo);
 private:
 	vector<VisibleObject*>videoObjects;

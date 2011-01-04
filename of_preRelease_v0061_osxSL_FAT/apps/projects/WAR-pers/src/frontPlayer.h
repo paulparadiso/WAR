@@ -27,9 +27,12 @@ public:
 	PanningVideoPlayer *vpLeft;
 	
 	int haveRight, haveLeft;
+	int haveNewRight, haveNewLeft;
 	
 	ofxVec2f *playSize;
 	ofxVec4f getBoxSize(int _side);
+	
+	int isInside(int _x, int _y);
 private:
 
 	ofTrueTypeFont artistFont;
@@ -38,6 +41,8 @@ private:
 	ofTrueTypeFont uploadFont;
 	
 	ofxVec4f leftBox, rightBox;
+	
+	int isStopping;
 };
 
 #endif

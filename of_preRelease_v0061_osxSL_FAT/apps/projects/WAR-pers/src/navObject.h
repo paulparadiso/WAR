@@ -53,6 +53,8 @@ class NavObject : public VisibleObject{
 	
 		void drawFlat();
 	
+		void testShape(int _which);
+	
 		FrontPlayer *fp;
 	
 	private:

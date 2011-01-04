@@ -73,6 +73,11 @@ public:
 	int isHovering;
 	
 	int isPlaying;
+	
+	int trans_x;
+	int trans_z;
+	
+	virtual void testShape(int _which) = 0;
 };
 
 #endif
