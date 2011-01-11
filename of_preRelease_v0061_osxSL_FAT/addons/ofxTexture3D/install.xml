@@ -1,0 +1,30 @@
+<install>
+	
+	<version></version>
+	<author></author>
+	<url></url>
+	
+	<add>
+		
+		<!-- 	=====================================================================	-->
+		<!--	========================== add per project using this addon =========	-->
+		<!-- 	=====================================================================	-->
+	
+		<src>
+			<folder name="addons/ofxTexture3D/src">
+				<file>../../../addons/ofx3DUtils/src/ofxTexture3D.h</file>
+				<file>../../../addons/ofx3DUtils/src/ofxTexture3D.cpp</file>
+			</folder>
+		</src>
+		
+		<include>
+			<path>../../../addons/ofxTexture3D/src</path>
+		</include>
+		
+	</add>
+	 
+</install>
+
+
+
+

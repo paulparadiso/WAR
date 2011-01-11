@@ -47,7 +47,12 @@
 		EE2A6D2112970BE300CD2C2F /* ofxMatrix4x4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6D1512970BE300CD2C2F /* ofxMatrix4x4.cpp */; };
 		EE2A6D2212970BE300CD2C2F /* ofxQuaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6D1A12970BE300CD2C2F /* ofxQuaternion.cpp */; };
 		EE49A10E1292CBD400705987 /* ofxDirList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE49A10C1292CBD400705987 /* ofxDirList.cpp */; };
+		EE52369312DA733100C14F4A /* ofxFBOTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE52369112DA733100C14F4A /* ofxFBOTexture.cpp */; };
+		EE5236A812DAC3D500C14F4A /* AlphaVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5236A612DAC3D500C14F4A /* AlphaVideoPlayer.cpp */; };
 		EE8BA05312BC1247005740AD /* navObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8BA05212BC1247005740AD /* navObject.cpp */; };
+		EECF76A012D9083400B46498 /* ofx3DGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769612D9083400B46498 /* ofx3DGraphics.cpp */; };
+		EECF76A112D9083400B46498 /* ofxCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769912D9083400B46498 /* ofxCamera.cpp */; };
+		EECF76A212D9083400B46498 /* ofxLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769C12D9083400B46498 /* ofxLight.cpp */; };
 		EEFD2A0B1292CC6D006458F6 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD29A81292CC6D006458F6 /* b2BroadPhase.cpp */; };
 		EEFD2A0C1292CC6D006458F6 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD29AA1292CC6D006458F6 /* b2CollideCircle.cpp */; };
 		EEFD2A0D1292CC6D006458F6 /* b2CollidePoly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD29AB1292CC6D006458F6 /* b2CollidePoly.cpp */; };
@@ -222,8 +227,22 @@
 		EE49A10A1292CBD400705987 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EE49A10C1292CBD400705987 /* ofxDirList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxDirList.cpp; sourceTree = "<group>"; };
 		EE49A10D1292CBD400705987 /* ofxDirList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxDirList.h; sourceTree = "<group>"; };
+		EE52369112DA733100C14F4A /* ofxFBOTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFBOTexture.cpp; sourceTree = "<group>"; };
+		EE52369212DA733100C14F4A /* ofxFBOTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFBOTexture.h; sourceTree = "<group>"; };
+		EE5236A612DAC3D500C14F4A /* AlphaVideoPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlphaVideoPlayer.cpp; sourceTree = "<group>"; };
+		EE5236A712DAC3D500C14F4A /* AlphaVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaVideoPlayer.h; sourceTree = "<group>"; };
+		EE61AFBA12DA282C00B5D30D /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EE8BA05112BC1247005740AD /* navObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navObject.h; sourceTree = "<group>"; };
 		EE8BA05212BC1247005740AD /* navObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = navObject.cpp; sourceTree = "<group>"; };
+		EECF769412D9083400B46498 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		EECF769612D9083400B46498 /* ofx3DGraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofx3DGraphics.cpp; sourceTree = "<group>"; };
+		EECF769712D9083400B46498 /* ofx3DGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofx3DGraphics.h; sourceTree = "<group>"; };
+		EECF769812D9083400B46498 /* ofx3DUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofx3DUtils.h; sourceTree = "<group>"; };
+		EECF769912D9083400B46498 /* ofxCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCamera.cpp; sourceTree = "<group>"; };
+		EECF769A12D9083400B46498 /* ofxCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCamera.h; sourceTree = "<group>"; };
+		EECF769B12D9083400B46498 /* ofxEasyCam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasyCam.h; sourceTree = "<group>"; };
+		EECF769C12D9083400B46498 /* ofxLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLight.cpp; sourceTree = "<group>"; };
+		EECF769D12D9083400B46498 /* ofxLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLight.h; sourceTree = "<group>"; };
 		EEFD29A01292CC6D006458F6 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EEFD29A51292CC6D006458F6 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		EEFD29A81292CC6D006458F6 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -360,6 +379,8 @@
 		120B6F1B1288B49B00962100 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EE61AFB912DA282C00B5D30D /* ofxTexture3D */,
+				EECF768F12D9083400B46498 /* ofx3DUtils */,
 				EE2A6D1012970BE200CD2C2F /* ofxVectorMath */,
 				EEFD299F1292CC6D006458F6 /* ofxBox2d */,
 				EE49A1071292CBD400705987 /* ofxDirList */,
@@ -656,6 +677,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EE5236A612DAC3D500C14F4A /* AlphaVideoPlayer.cpp */,
+				EE5236A712DAC3D500C14F4A /* AlphaVideoPlayer.h */,
+				EE52369112DA733100C14F4A /* ofxFBOTexture.cpp */,
+				EE52369212DA733100C14F4A /* ofxFBOTexture.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
@@ -802,6 +827,40 @@
 			children = (
 				EE49A10C1292CBD400705987 /* ofxDirList.cpp */,
 				EE49A10D1292CBD400705987 /* ofxDirList.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EE61AFB912DA282C00B5D30D /* ofxTexture3D */ = {
+			isa = PBXGroup;
+			children = (
+				EE61AFBA12DA282C00B5D30D /* install.xml */,
+			);
+			name = ofxTexture3D;
+			path = ../../../addons/ofxTexture3D;
+			sourceTree = SOURCE_ROOT;
+		};
+		EECF768F12D9083400B46498 /* ofx3DUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EECF769412D9083400B46498 /* install.xml */,
+				EECF769512D9083400B46498 /* src */,
+			);
+			name = ofx3DUtils;
+			path = ../../../addons/ofx3DUtils;
+			sourceTree = SOURCE_ROOT;
+		};
+		EECF769512D9083400B46498 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EECF769612D9083400B46498 /* ofx3DGraphics.cpp */,
+				EECF769712D9083400B46498 /* ofx3DGraphics.h */,
+				EECF769812D9083400B46498 /* ofx3DUtils.h */,
+				EECF769912D9083400B46498 /* ofxCamera.cpp */,
+				EECF769A12D9083400B46498 /* ofxCamera.h */,
+				EECF769B12D9083400B46498 /* ofxEasyCam.h */,
+				EECF769C12D9083400B46498 /* ofxLight.cpp */,
+				EECF769D12D9083400B46498 /* ofxLight.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -1143,6 +1202,11 @@
 				EE2A6D2212970BE300CD2C2F /* ofxQuaternion.cpp in Sources */,
 				EE8BA05312BC1247005740AD /* navObject.cpp in Sources */,
 				EE12503112D1FB3F00C19861 /* frontPlayer.cpp in Sources */,
+				EECF76A012D9083400B46498 /* ofx3DGraphics.cpp in Sources */,
+				EECF76A112D9083400B46498 /* ofxCamera.cpp in Sources */,
+				EECF76A212D9083400B46498 /* ofxLight.cpp in Sources */,
+				EE52369312DA733100C14F4A /* ofxFBOTexture.cpp in Sources */,
+				EE5236A812DAC3D500C14F4A /* AlphaVideoPlayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

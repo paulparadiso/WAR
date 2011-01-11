@@ -17,7 +17,7 @@
 #include "ofMain.h"
 #include <vector>
 
-#define HOVER_CLICK_TIME 1000
+#define HOVER_CLICK_TIME 2000
 #define DATE_SIZE 28
 #define DATE_MINUS 50
 #define THEME_PLUS 50
@@ -32,9 +32,9 @@ public:
 	void update();
 	void update(int _x, int _y);
 	void draw();
-	void drawThemes();
+	void drawThemes(int _which);
 	void drawDates();
-	void drawVideos();
+	void drawVideos(int _which);
 	VisibleObjectManager();
 	void addObject(VisibleObject *_vo);
 	void checkInsides(int _x, int _y);
@@ -47,6 +47,8 @@ public:
 	
 	FrontPlayer fp;
 	void updateShapes(int _which);
+	
+	void drawPlayer();
 	//void addObject(VisibleObject _vo);
 private:
 	vector<VisibleObject*>videoObjects;

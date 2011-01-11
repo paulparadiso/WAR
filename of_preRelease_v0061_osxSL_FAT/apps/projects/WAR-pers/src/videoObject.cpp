@@ -19,7 +19,10 @@ VideoObject::VideoObject(string _path):VisibleObject(){
 void VideoObject::setup(string _path){
 	vp.loadMovie(_path);
 	size.set(vp.getWidth(),vp.getHeight());
+	//cout<<vp.getDuration()<<endl;
 	drawSize.set(size);
+	
+	cout<<"size = "<<drawSize.x<<endl;
 	vp.setPosition(0.2);
 	vp.setLoopState(OF_LOOP_NONE);
 	//rot = ofRandom(-30.0,30.0);
@@ -47,50 +50,89 @@ void VideoObject::addFp(FrontPlayer *_fp){
 
 void VideoObject::update(){
 	if((isLeft && !fp->haveLeft) && state == STATE_PLAY){
-		cout<<"UPDATE reset"<<endl;
+		//cout<<"UPDATE reset"<<endl;
 		state = STATE_REST;
 		resetState();
 	}
 	if((!isLeft && !fp->haveRight) && state == STATE_PLAY){
-		cout<<"UPDATE reset"<<endl;
+		//cout<<"UPDATE reset"<<endl;
 		state = STATE_REST;
 		resetState();
 	}
 }
 
+void VideoObject::draw(int _id, int _time){
+	if(id == _id){
+		alpha = DEFAULT_ALPHA + (((255 - DEFAULT_ALPHA) / HOVER_CLICK_TIME) * _time);
+		trigger = (int)(float)drawSize.x * ((float)_time / (float)HOVER_CLICK_TIME);
+		cout<<"Trigger = "<<trigger<<endl;
+	} else {
+		alpha = DEFAULT_ALPHA;
+		trigger = 0;
+	}
+	this->draw();
+}
+
 void VideoObject::draw(){
-	ofEnableAlphaBlending();
-	ofEnableSmoothing();
+	//ofEnableAlphaBlending();
+	//ofEnableSmoothing();
 	if(this->isLeft){
 		if(state != STATE_PLAY){
 			ofPushMatrix();
 			ofSetColor(255, 255, 255, 255);
-			ofTranslate(ofGetWidth()/2, 0, -600);
-			ofRotateY(-45.0);
-			ofRotateY(90);
-			ofTranslate(-ofGetWidth(), 0, 0);
-			vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
+			//ofTranslate(ofGetWidth()/2, 0, -600);
+			//ofRotateY(-45.0);
+			//ofRotateY(90);
+			//ofTranslate(ofGetWidth() * 2, 0, 0);
+			resizeByWidth(200);
+			if(isHovering){
+				//this->drawShape();
+				ofFill();
+				ofSetColor(0, 0, 0,200);
+				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 60);
+				uploadFont.drawString("Jane Doe - 1971", pos.x, pos.y + drawSize.y + 20);
+				if(state == STATE_HOVER){
+					ofDisableAlphaBlending();
+					ofSetColor(0, 255, 0);
+					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
+					ofEnableAlphaBlending();
+				}
+				ofNoFill();
+			}
+			ofSetColor(255, 255, 255,alpha);
+			vp.draw(pos.x,pos.y, drawSize.x
+					, drawSize.y);
+			ofSetColor(255,255,255,255);
 			ofPopMatrix();
 			//(*ti)->drawShape();
-			if(isHovering)
-				this->drawShape();
 		} 
 	} else {
 		if(state != STATE_PLAY){
-			ofPushMatrix();
+			//ofPushMatrix();
 			ofSetColor(255, 255, 255, 255);
-			ofTranslate(ofGetWidth()/2, 0, -600);
-			ofRotateY(-45.0);
+			//ofTranslate(ofGetWidth()/2, 0, -600);
+			//ofRotateY(-45.0);
+			//ofTranslate(ofGetWidth()*2, ofGetHeight()*2, 0);
+			resizeByWidth(200);
+			if(isHovering){
+				//this->drawShape();
+				ofFill();
+				ofSetColor(0, 0, 0,200);
+				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 60);
+				uploadFont.drawString("Jane Doe - 1971", pos.x, pos.y + drawSize.y + 20);
+				if(state == STATE_HOVER){
+					ofDisableAlphaBlending();
+					ofSetColor(0, 255, 0);
+					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
+					ofEnableAlphaBlending();
+				}
+				ofNoFill();
+			}
+			ofSetColor(255, 255, 255,alpha);
 			vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
-			ofPopMatrix();
-			if(isHovering)
-				this->drawShape();
-			} else {
-			
+			ofSetColor(255,255,255,255);
 		}
 	}
-	ofDisableSmoothing();
-	ofDisableAlphaBlending();
 }
 	
 int VideoObject::react(int _lvl){
@@ -102,7 +144,7 @@ int VideoObject::react(int _lvl){
 		return state;
 	} else {
 		state = STATE_REST;
-		cout<<"REACT reset"<<endl;
+		//cout<<"REACT reset"<<endl;
 		this->resetState();
 		return state;
 	}
@@ -248,12 +290,12 @@ void VideoObject::updateActualShape(){
 	//ofxVec3f translationBack;
 	ofxVec3f rotation;
 	ofPushMatrix();
-	cout<<"trans_x = "<<trans_x<<", trans_z = "<<trans_z<<endl;
+	//cout<<"trans_x = "<<trans_x<<", trans_z = "<<trans_z<<endl;
 	if(isLeft){
 		translation.set(trans_x,0,trans_z);
 		rotation.set(0,1,0);
 	} else {
-		translation.set(ofGetWidth()/2, 0, -600.0);
+		translation.set(ofGetWidth()/2, 0, -800.0);
 		//translationBack.set(0,0,-600);
 		rotation.set(0,1,0);
 	}

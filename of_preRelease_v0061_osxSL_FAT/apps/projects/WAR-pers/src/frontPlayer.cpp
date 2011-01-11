@@ -23,19 +23,19 @@ void FrontPlayer::setup(){
 }
 
 void FrontPlayer::update(){
-	if(haveRight){
-		vpRight->idleMovie();
-		if(vpRight->getIsMovieDone()){
-			cout<<"Movie Finished"<<endl;
-			haveRight = 0;
-		}
-	}
-	if(haveLeft){
-		vpLeft->idleMovie();
-		if(vpLeft->getIsMovieDone()){
-			haveLeft = 0;
-		}
-	}
+	//if(haveRight){
+//		vpRight->idleMovie();
+//		if(vpRight->getIsMovieDone()){
+//			cout<<"Movie Finished"<<endl;
+//			haveRight = 0;
+//		}
+//	}
+//	if(haveLeft){
+//		vpLeft->idleMovie();
+//		if(vpLeft->getIsMovieDone()){
+//			haveLeft = 0;
+//		}
+//	}
 	if(haveNewRight){
 		vpRight->play();
 		vpRight->setPosition(0.0);
@@ -55,7 +55,7 @@ void FrontPlayer::update(){
 }
 
 void FrontPlayer::draw(){
-	ofEnableAlphaBlending();
+	//ofEnableAlphaBlending();
 	if(haveRight){
 		int topX = (ofGetWidth() / 3 * 2) + 25;
 		int topY = (ofGetHeight()/2) - (playSize->y/2);
@@ -84,7 +84,7 @@ void FrontPlayer::draw(){
 		tagsFont.drawString("TAGS: music, new york, performance",topX, ofGetHeight() - topY + 20);
 		uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight() + topY + 40);
 	}
-	ofDisableAlphaBlending();
+	//ofDisableAlphaBlending();
 }
 
 int FrontPlayer::isInside(int _x, int _y){

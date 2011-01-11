@@ -10,6 +10,7 @@
 #define _PANNING_VIDEO_PLAYER_H_
 
 #include "ofMain.h"
+#include "AlphaVideoPlayer.h"
 
 class PanningVideoPlayer : public ofVideoPlayer{
 public:

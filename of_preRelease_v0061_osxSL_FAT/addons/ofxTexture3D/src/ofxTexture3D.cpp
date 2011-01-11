@@ -1,4 +1,4 @@
-#include "ofTexture.h"
+#include "ofxTexture3D.h"
 #include "ofUtils.h"		// for nextPow2()
 #include "ofAppRunner.h"	// for getWidth()
 
@@ -15,7 +15,7 @@ void ofDisableTextureEdgeHack(){
 }
 
 //----------------------------------------------------------
-ofTexture::ofTexture(){
+ofxTexture3D::ofxTexture3D(){
 	texData.bAllocated		= false;
 	texData.textureID		= 0;
 	texData.bFlipTexture	= false;
@@ -34,23 +34,23 @@ ofTexture::ofTexture(){
 }
 
 //----------------------------------------------------------
-bool ofTexture::bAllocated(){
+bool ofxTexture3D::bAllocated(){
 	return texData.bAllocated;
 }
 
 //----------------------------------------------------------
-ofTexture::ofTexture(const ofTexture& mom){
-	ofLog(OF_LOG_WARNING, "overloaded ofTexture copy constructor to do nothing. please use FBO or other means to copy textures");
+ofxTexture3D::ofxTexture3D(const ofxTexture3D& mom){
+	ofLog(OF_LOG_WARNING, "overloaded ofxTexture3D copy constructor to do nothing. please use FBO or other means to copy textures");
 }
 
 //----------------------------------------------------------
-ofTexture& ofTexture::operator=(const ofTexture& mom){
-	ofLog(OF_LOG_WARNING, "overloaded ofTexture = operator to do nothing. please use FBO or other means to copy textures");
+ofxTexture3D& ofxTexture3D::operator=(const ofxTexture3D& mom){
+	ofLog(OF_LOG_WARNING, "overloaded ofxTexture3D = operator to do nothing. please use FBO or other means to copy textures");
 	return *this;
 }
 
 //----------------------------------------------------------
-ofTextureData ofTexture::getTextureData(){
+ofxTexture3DData ofxTexture3D::getTextureData(){
 	if(!texData.bAllocated){
 		ofLog(OF_LOG_ERROR, "getTextureData() - texture has not been allocated");
 	}
@@ -58,12 +58,12 @@ ofTextureData ofTexture::getTextureData(){
 }
 
 //----------------------------------------------------------
-ofTexture::~ofTexture(){
+ofxTexture3D::~ofxTexture3D(){
 	clear();
 }
 
 //----------------------------------------------------------
-void ofTexture::clear(){
+void ofxTexture3D::clear(){
 	// try to free up the texture memory so we don't reallocate
 	// http://www.opengl.org/documentation/specs/man_pages/hardcopy/GL/html/gl/deletetextures.html
 	if (texData.textureID != 0){
@@ -74,12 +74,12 @@ void ofTexture::clear(){
 }
 
 //----------------------------------------------------------
-void ofTexture::allocate(int w, int h, int internalGlDataType){
+void ofxTexture3D::allocate(int w, int h, int internalGlDataType){
 	allocate(w, h, internalGlDataType, ofGetUsingArbTex());
 }
 
 //----------------------------------------------------------
-void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExtention){
+void ofxTexture3D::allocate(int w, int h, int internalGlDataType, bool bUseARBExtention){
 
 	//our graphics card might not support arb so we have to see if it is supported.
 	#ifndef TARGET_OPENGLES
@@ -167,17 +167,17 @@ void ofTexture::allocate(int w, int h, int internalGlDataType, bool bUseARBExten
 }
 
 //----------------------------------------------------------
-void ofTexture::loadData(unsigned char * data, int w, int h, int glDataType){
+void ofxTexture3D::loadData(unsigned char * data, int w, int h, int glDataType){
 	loadData( (void *)data, w, h, glDataType);
 }
 
 //----------------------------------------------------------
-void ofTexture::loadData(float * data, int w, int h, int glDataType){
+void ofxTexture3D::loadData(float * data, int w, int h, int glDataType){
 	loadData( (void *)data, w, h, glDataType);
 }
 
 //----------------------------------------------------------
-void ofTexture::loadData(void * data, int w, int h, int glDataType){
+void ofxTexture3D::loadData(void * data, int w, int h, int glDataType){
 
 	//	can we allow for uploads bigger then texture and
 	//	just take as much as the texture can?
@@ -256,7 +256,7 @@ void ofTexture::loadData(void * data, int w, int h, int glDataType){
 
 
 //----------------------------------------------------------
-void ofTexture::loadScreenData(int x, int y, int w, int h){
+void ofxTexture3D::loadScreenData(int x, int y, int w, int h){
 
 	int screenHeight = ofGetHeight();
 	y = screenHeight - y;
@@ -297,7 +297,7 @@ void ofTexture::loadScreenData(int x, int y, int w, int h){
 //to be able to set anchor points outside the image
 
 //----------------------------------------------------------
-void ofTexture::setAnchorPercent(float xPct, float yPct){
+void ofxTexture3D::setAnchorPercent(float xPct, float yPct){
     anchor.x  = xPct;
     anchor.y  = yPct;
 
@@ -305,7 +305,7 @@ void ofTexture::setAnchorPercent(float xPct, float yPct){
 }
 
 //----------------------------------------------------------
-void ofTexture::setAnchorPoint(float x, float y){
+void ofxTexture3D::setAnchorPoint(float x, float y){
     anchor.x = x;
     anchor.y = y;
 
@@ -313,26 +313,26 @@ void ofTexture::setAnchorPoint(float x, float y){
 }
 
 //----------------------------------------------------------
-void ofTexture::resetAnchor(){
+void ofxTexture3D::resetAnchor(){
     anchor       = 0;
     bAnchorIsPct = false;
 }
 
 //----------------------------------------------------------
-void ofTexture::bind(){
+void ofxTexture3D::bind(){
 	//we could check if it has been allocated - but we don't do that in draw() 
 	glEnable(texData.textureTarget);
 	glBindTexture( texData.textureTarget, (GLuint)texData.textureID);
 }
 
 //----------------------------------------------------------
-void ofTexture::unbind(){
+void ofxTexture3D::unbind(){
 	glDisable(texData.textureTarget);
 }
 
 
 //----------------------------------------------------------
-ofPoint ofTexture::getCoordFromPoint(float xPos, float yPos){
+ofPoint ofxTexture3D::getCoordFromPoint(float xPos, float yPos){
 	
 	ofPoint temp;
 	
@@ -365,7 +365,7 @@ ofPoint ofTexture::getCoordFromPoint(float xPos, float yPos){
 }
 
 //----------------------------------------------------------
-ofPoint ofTexture::getCoordFromPercent(float xPct, float yPct){
+ofPoint ofxTexture3D::getCoordFromPercent(float xPct, float yPct){
 	
 	ofPoint temp;
 	
@@ -389,7 +389,7 @@ ofPoint ofTexture::getCoordFromPercent(float xPct, float yPct){
 
 
 //----------------------------------------------------------
-void ofTexture::setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical) {
+void ofxTexture3D::setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical) {
 	bind();
 	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_S, wrapModeHorizontal);
 	glTexParameterf(texData.textureTarget, GL_TEXTURE_WRAP_T, wrapModeVertical);
@@ -397,7 +397,7 @@ void ofTexture::setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical)
 }
 
 //----------------------------------------------------------
-void ofTexture::setTextureMinMagFilter(GLint minFilter, GLint maxFilter){
+void ofxTexture3D::setTextureMinMagFilter(GLint minFilter, GLint maxFilter){
 	bind();
 	glTexParameteri(texData.textureTarget, GL_TEXTURE_MAG_FILTER, maxFilter);
 	glTexParameteri(texData.textureTarget, GL_TEXTURE_MIN_FILTER, minFilter);
@@ -407,7 +407,7 @@ void ofTexture::setTextureMinMagFilter(GLint minFilter, GLint maxFilter){
 
 
 //----------------------------------------------------------
-void ofTexture::draw(float x, float y, float w, float h){
+void ofxTexture3D::draw(float x, float y, float w, float h){
 
 	glEnable(texData.textureTarget);
 
@@ -491,7 +491,7 @@ void ofTexture::draw(float x, float y, float w, float h){
 			px1,py1,
 			px0,py1
 		};
-	
+		
 		glEnableClientState( GL_TEXTURE_COORD_ARRAY );
 			glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
 			glEnableClientState(GL_VERTEX_ARRAY);		
@@ -504,7 +504,7 @@ void ofTexture::draw(float x, float y, float w, float h){
 }
 
 //----------------------------------------------------------
-void ofTexture::draw3D(float x, float y, float oZ, float w, float h, float eZ, float *n){
+void ofxTexture3D::draw3D(float x, float y, float w, float h, float oZ, float eZ){
 	
 	glEnable(texData.textureTarget);
 	
@@ -574,266 +574,44 @@ void ofTexture::draw3D(float x, float y, float oZ, float w, float h, float eZ, f
 	
 	glPushMatrix(); 
 	
-	//glTranslatef(x,y,0.0f);
+	glTranslatef(x,y,0.0f);
 	
 	GLfloat tex_coords[] = {
-		tx0,ty0,
-		tx1,ty0,
-		tx1,ty1,
-		tx0,ty1
+		tx0,ty0,oZ,
+		tx1,ty0,eZ,
+		tx1,ty1,eZ,
+		tx0,ty1,oZ
 	};
 	GLfloat verts[] = {
-		x,y+h,oZ,
-		x+w,y+h,eZ,
-		x+w,y,eZ,
-		x,y,oZ
+		px0,py0,oZ,
+		px1,py0,eZ,
+		px1,py1,eZ,
+		px0,py1,oZ
 	};
 	
-	glEnableClientState(GL_NORMAL_ARRAY);
 	glEnableClientState( GL_TEXTURE_COORD_ARRAY );
-	glNormalPointer(GL_FLOAT,0,(char *)n);
-	glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
+	glTexCoordPointer(3, GL_FLOAT, 0, tex_coords );
 	glEnableClientState(GL_VERTEX_ARRAY);		
 	glVertexPointer(3, GL_FLOAT, 0, verts );
 	glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
 	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
-	glDisableClientState(GL_NORMAL_ARRAY);
 	
 	glPopMatrix();
 	glDisable(texData.textureTarget);
 }
 
-//----------------------------------------------------------
-void ofTexture::draw3DTop(float x, float y, float oZ, float w, float h, float eZ, float *n){
-	
-	glEnable(texData.textureTarget);
-	
-	// bind the texture
-	glBindTexture( texData.textureTarget, (GLuint)texData.textureID );
-	
-	GLfloat px0 = 0;		// up to you to get the aspect ratio right
-	GLfloat py0 = 0;
-	GLfloat px1 = w;
-	GLfloat py1 = h;
-	
-	if (texData.bFlipTexture == true){
-		GLint temp = (GLint)py0;
-		py0 = py1;
-		py1 = temp;
-	}
-	
-	// for rect mode center, let's do this:
-	if (ofGetRectMode() == OF_RECTMODE_CENTER){
-		px0 = -w/2;
-		py0 = -h/2;
-		px1 = +w/2;
-		py1 = +h/2;
-	}
-	
-	//we translate our drawing points by our anchor point.
-	//we still respect ofRectMode so if you have rect mode set to
-	//OF_RECTMODE_CENTER your anchor will be relative to that.
-	GLfloat anchorX;
-	GLfloat anchorY;
-	
-	if(bAnchorIsPct){
-		anchorX = anchor.x * w;
-		anchorY = anchor.y * h;
-	}else{
-		anchorX = anchor.x;
-		anchorY = anchor.y;
-	}
-	
-	px0 -= anchorX;
-	py0 -= anchorY;
-	px1 -= anchorX;
-	py1 -= anchorY;
-	
-	
-	// -------------------------------------------------
-	// complete hack to remove border artifacts.
-	// slightly, slightly alters an image, scaling...
-	// to remove the border.
-	// we need a better solution for this, but
-	// to constantly add a 2 pixel border on all uploaded images
-	// is insane..
-	
-	GLfloat offsetw = 0;
-	GLfloat offseth = 0;
-	
-	if (texData.textureTarget == GL_TEXTURE_2D && bTexHackEnabled) {
-		offsetw = 1.0f / (texData.tex_w);
-		offseth = 1.0f / (texData.tex_h);
-	}
-	// -------------------------------------------------
-	
-	GLfloat tx0 = 0+offsetw;
-	GLfloat ty0 = 0+offseth;
-	GLfloat tx1 = texData.tex_t - offsetw;
-	GLfloat ty1 = texData.tex_u - offseth;
-	
-	glPushMatrix(); 
-	
-	//glTranslatef(x,y,0.0f);
-	
-	GLfloat tex_coords[] = {
-		tx0,ty0,
-		tx1,ty0,
-		tx1,ty1,
-		tx0,ty1
-	};
-	
-	//ofGetWidth()/2,0,-600,ceiling.getHeight(),0,ceiling.getWidth() * 1.414,topN
-	
-	//GLfloat verts[] = {
-//		px0,py0,oZ,
-//		px1,py0,eZ,
-//		px1,py1,eZ,
-//		px0,py1,oZ
-//	};
-	
-	GLfloat verts[] = {
-		ofGetWidth()/2,0,-800,
-		ofGetWidth() + ofGetWidth() / 2,0,ofGetWidth() - 800,
-		ofGetWidth()/2,0,ofGetWidth() * 1.414,
-		-ofGetWidth()/2,0,ofGetWidth() - 800
-	};
-	
-	glEnableClientState(GL_NORMAL_ARRAY);
-	glEnableClientState( GL_TEXTURE_COORD_ARRAY );
-	glNormalPointer(GL_FLOAT,0,(char *)n);
-	glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
-	glEnableClientState(GL_VERTEX_ARRAY);		
-	glVertexPointer(3, GL_FLOAT, 0, verts );
-	glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
-	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
-	glDisableClientState(GL_NORMAL_ARRAY);
-	
-	glPopMatrix();
-	glDisable(texData.textureTarget);
-}
 
 //----------------------------------------------------------
-void ofTexture::draw3DBottom(float x, float y, float oZ, float w, float h, float eZ, float *n){
-	
-	glEnable(texData.textureTarget);
-	
-	// bind the texture
-	glBindTexture( texData.textureTarget, (GLuint)texData.textureID );
-	
-	GLfloat px0 = 0;		// up to you to get the aspect ratio right
-	GLfloat py0 = 0;
-	GLfloat px1 = w;
-	GLfloat py1 = h;
-	
-	if (texData.bFlipTexture == true){
-		GLint temp = (GLint)py0;
-		py0 = py1;
-		py1 = temp;
-	}
-	
-	// for rect mode center, let's do this:
-	if (ofGetRectMode() == OF_RECTMODE_CENTER){
-		px0 = -w/2;
-		py0 = -h/2;
-		px1 = +w/2;
-		py1 = +h/2;
-	}
-	
-	//we translate our drawing points by our anchor point.
-	//we still respect ofRectMode so if you have rect mode set to
-	//OF_RECTMODE_CENTER your anchor will be relative to that.
-	GLfloat anchorX;
-	GLfloat anchorY;
-	
-	if(bAnchorIsPct){
-		anchorX = anchor.x * w;
-		anchorY = anchor.y * h;
-	}else{
-		anchorX = anchor.x;
-		anchorY = anchor.y;
-	}
-	
-	px0 -= anchorX;
-	py0 -= anchorY;
-	px1 -= anchorX;
-	py1 -= anchorY;
-	
-	
-	// -------------------------------------------------
-	// complete hack to remove border artifacts.
-	// slightly, slightly alters an image, scaling...
-	// to remove the border.
-	// we need a better solution for this, but
-	// to constantly add a 2 pixel border on all uploaded images
-	// is insane..
-	
-	GLfloat offsetw = 0;
-	GLfloat offseth = 0;
-	
-	if (texData.textureTarget == GL_TEXTURE_2D && bTexHackEnabled) {
-		offsetw = 1.0f / (texData.tex_w);
-		offseth = 1.0f / (texData.tex_h);
-	}
-	// -------------------------------------------------
-	
-	GLfloat tx0 = 0+offsetw;
-	GLfloat ty0 = 0+offseth;
-	GLfloat tx1 = texData.tex_t - offsetw;
-	GLfloat ty1 = texData.tex_u - offseth;
-	
-	glPushMatrix(); 
-	
-	//glTranslatef(x,y,0.0f);
-	
-	GLfloat tex_coords[] = {
-		tx0,ty0,
-		tx1,ty0,
-		tx1,ty1,
-		tx0,ty1
-	};
-	
-	//ofGetWidth()/2,0,-600,ceiling.getHeight(),0,ceiling.getWidth() * 1.414,topN
-	
-	//GLfloat verts[] = {
-	//		px0,py0,oZ,
-	//		px1,py0,eZ,
-	//		px1,py1,eZ,
-	//		px0,py1,oZ
-	//	};
-	
-	GLfloat verts[] = {
-		ofGetWidth()/2,ofGetHeight(),-800,
-		ofGetWidth() + ofGetWidth() / 2,ofGetHeight(),ofGetWidth() - 800,
-		ofGetWidth()/2,ofGetHeight(),ofGetWidth() * 1.414,
-		-ofGetWidth()/2,ofGetHeight(),ofGetWidth() - 800
-	};
-	
-	glEnableClientState(GL_NORMAL_ARRAY);
-	glEnableClientState( GL_TEXTURE_COORD_ARRAY );
-	glNormalPointer(GL_FLOAT,0,(char *)n);
-	glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
-	glEnableClientState(GL_VERTEX_ARRAY);		
-	glVertexPointer(3, GL_FLOAT, 0, verts );
-	glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
-	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
-	glDisableClientState(GL_NORMAL_ARRAY);
-	
-	glPopMatrix();
-	glDisable(texData.textureTarget);
-}
-
-//----------------------------------------------------------
-void ofTexture::draw(float x, float y){
+void ofxTexture3D::draw(float x, float y){
 	draw(x,y,texData.width, texData.height);
 }
 
 //----------------------------------------------------------
-float ofTexture::getHeight(){
+float ofxTexture3D::getHeight(){
 	return texData.height;
 }
 
 //----------------------------------------------------------
-float ofTexture::getWidth(){
+float ofxTexture3D::getWidth(){
 	return texData.width;
 }

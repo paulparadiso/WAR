@@ -18,6 +18,8 @@
 #include "panningVideoPlayer.h"
 
 #define GROW_TIME 500.0
+#define DEFAULT_ALPHA 225
+#define HOVER_CLICK_TIME 2000
 
 class VideoObject : public VisibleObject{
 public:
@@ -26,6 +28,7 @@ public:
 	VideoObject(string _path);
 	void setup(string _path);
 	void draw();
+	void draw(int _id, int _time);
 	void update();
 	int react(int _lvl);
 	int isInside(int _x, int _y);
@@ -73,6 +76,9 @@ private:
 	ofTrueTypeFont themeFont;
 	ofTrueTypeFont tagsFont;
 	ofTrueTypeFont uploadFont;
+	
+	int alpha;
+	int trigger;
 };
 
 #endif

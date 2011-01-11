@@ -27,6 +27,7 @@ class NavObject : public VisibleObject{
 		void setup(string _text);
 		int isInside(int _x, int _y);
 		void draw();
+		void draw(int _id, int _time);
 		void update();
 		int react(int _lvl);
 		void setPos(float _x, float _y);

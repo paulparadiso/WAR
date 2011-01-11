@@ -22,19 +22,19 @@ typedef struct{
 	unsigned int textureID;
 
 		
-}ofTextureData;
+}ofxTexture3DData;
 
-//enable / disable the slight offset we add to ofTexture's texture coords to compensate for bad edge artifiacts
+//enable / disable the slight offset we add to ofxTexture3D's texture coords to compensate for bad edge artifiacts
 //enabled by default
 void ofEnableTextureEdgeHack();
 void ofDisableTextureEdgeHack();
 
-class ofTexture : public ofBaseDraws{
+class ofxTexture3D : public ofBaseDraws{
 
 	public :
 
-	ofTexture();
-	virtual ~ofTexture();
+	ofxTexture3D();
+	virtual ~ofxTexture3D();
 
 	// -----------------------------------------------------------------------
 	// we allow pass by copy and assignment operator
@@ -42,8 +42,8 @@ class ofTexture : public ofBaseDraws{
 	// so this means that your texture and mom's texture are the same thing
 	// so in other words be careful! calling clear on your texture will trash mom's
 	// texture and vice versa.
-	ofTexture(const ofTexture& mom);
-	ofTexture& operator=(const ofTexture& mom);
+	ofxTexture3D(const ofxTexture3D& mom);
+	ofxTexture3D& operator=(const ofxTexture3D& mom);
 	// -----------------------------------------------------------------------
 
 	void allocate(int w, int h, int internalGlDataType); //uses the currently set OF texture type - default ARB texture
@@ -63,12 +63,11 @@ class ofTexture : public ofBaseDraws{
 
 	void draw(float x, float y, float w, float h);
 	void draw(float x, float y);
-
-	//3D draw function
-	void draw3D(float x, float y, float oZ, float w, float h, float eZ, float *n);
-	void draw3DTop(float x, float y, float oZ, float w, float h, float eZ, float *n);
-	void draw3DBottom(float x, float y, float oZ, float w, float h, float eZ, float *n);
 	
+	
+	//added 3D draw
+	void draw3D(float x, float y, float oZ, float w, float h, float eZ);
+
 	//for the advanced user who wants to draw textures in their own way
 	void bind();
 	void unbind();
@@ -84,12 +83,12 @@ class ofTexture : public ofBaseDraws{
 
 	bool bAllocated();
 
-	ofTextureData getTextureData();
+	ofxTexture3DData getTextureData();
 
 	float getHeight();
 	float getWidth();
 
-	ofTextureData texData;
+	ofxTexture3DData texData;
 protected:
 	void loadData(void * data, int w, int h, int glDataType);
 

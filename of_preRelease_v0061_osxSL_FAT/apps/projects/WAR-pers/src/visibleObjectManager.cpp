@@ -37,35 +37,35 @@ void VisibleObjectManager::makeThemes(){
 	NavObject *tmpTheme = new NavObject("nav/body_politic.png");
 	tmpTheme->isLeft = 1;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(506,THEME_PLUS);
+	tmpTheme->setPos(651,THEME_PLUS);
 	tmpTheme->id = -5;
 	themeObjects.push_back(tmpTheme);
 	//Consciousness Raising
 	tmpTheme = new NavObject("nav/consciousness.png");
 	tmpTheme->isLeft = 1;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(910,THEME_PLUS);
+	tmpTheme->setPos(972,THEME_PLUS);
 	tmpTheme->id = -6;
 	themeObjects.push_back(tmpTheme);
 	//Identity
 	tmpTheme = new NavObject("nav/identity.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(50,THEME_PLUS);
+	tmpTheme->setPos(10,THEME_PLUS);
 	tmpTheme->id = -7;
 	themeObjects.push_back(tmpTheme);
 	//Media
 	tmpTheme = new NavObject("nav/media.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(215,THEME_PLUS);
+	tmpTheme->setPos(275,THEME_PLUS);
 	tmpTheme->id = -8;
 	themeObjects.push_back(tmpTheme);
 	//Activism and Social Protest
-	tmpTheme = new NavObject("nav/activism.png");
+	tmpTheme = new NavObject("nav/social_protest.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(350,THEME_PLUS);
+	tmpTheme->setPos(430,THEME_PLUS);
 	tmpTheme->id = -9;
 	themeObjects.push_back(tmpTheme);
 	
@@ -120,10 +120,10 @@ void VisibleObjectManager::makeVideos(){
 		tmpVideo->id = i;
 		if(i < 9){
 			tmpVideo->isLeft = 1;
-			tmpVideo->setPos(256 * (i / 3) + 556, 190 * (i % 3) + 100);
+			tmpVideo->setPos(220 * (i / 3) + 700, 210 * (i % 3) + 100);
 		} else {
 			tmpVideo->isLeft = 0;
-			tmpVideo->setPos(256 * ((i - 9) / 3) + 20, 190 * (i  % 3) + 100);
+			tmpVideo->setPos(220* ((i - 9) / 3) + 20, 210 * (i  % 3) + 110);
 		}
 		this->addObject(tmpVideo);
 	}
@@ -166,9 +166,12 @@ void VisibleObjectManager::togglePlay(){
 }
 
 void VisibleObjectManager::draw(){
-	this->drawThemes();
+	this->drawThemes(0);
 	this->drawDates();
-	this->drawVideos();
+	this->drawVideos(0);
+}
+
+void VisibleObjectManager::drawPlayer(){
 	fp.draw();
 	if(fp.haveRight)
 		this->drawCloseBoxes(0);
@@ -188,12 +191,13 @@ void VisibleObjectManager::drawCloseBoxes(int _side){
 	}
 }
 
-void VisibleObjectManager::drawThemes(){
+void VisibleObjectManager::drawThemes(int _which){
 	//cout<<"running draw themes loop"<<endl;
 	vector<VisibleObject*>::iterator ti;
 	for(ti = themeObjects.begin(); ti < themeObjects.end(); ti++){
-		(*ti)->draw();
-		//cout<<"drawing theme"<<endl;
+		if((*ti)->isLeft == _which){
+			(*ti)->draw(lastHoverId,hoverTime);
+		}
 	}
 }
 
@@ -204,17 +208,19 @@ void VisibleObjectManager::drawDates(){
 	}
 }
 	
-void VisibleObjectManager::drawVideos(){
+void VisibleObjectManager::drawVideos(int _which){
 	int count = 0;
 	vector<VisibleObject*>::iterator ti;
 	for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
-		if(themes[(*ti)->theme] == 1){
-			(*ti)->draw();
-		}
-		if((*ti)->isPlaying)
-			//cout<<count<<" is playing"<<endl;
-		count++;
-	}	
+		if((*ti)->isLeft == _which){
+			if(themes[(*ti)->theme] == 1){
+				(*ti)->draw(lastHoverId,ofGetElapsedTimeMillis() - hoverTime);
+			}
+			if((*ti)->isPlaying)
+				//cout<<count<<" is playing"<<endl;
+				count++;
+		} 
+	}
 }
 
 void VisibleObjectManager::stopVideo(int _side){
@@ -239,6 +245,8 @@ void VisibleObjectManager::resetById(int _id){
 }
 
 void VisibleObjectManager::checkInsides(int _x, int _y){
+	
+	int changed = 0;
 	int leave = 0;
 	if(fp.haveRight){
 		if(fp.isInside(_x,_y)){
@@ -273,10 +281,12 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 						int result = leftClose.react(1);
 						hoverTime = ofGetElapsedTimeMillis();
 						lastHoverId = -1;
+						changed = 1;
 					}
 				} else {
 					lastHoverId = leftClose.id;
 					hoverTime = ofGetElapsedTimeMillis();
+					changed = 1;
 				}
 			}
 			if(leftClose.isPlaying){
@@ -327,6 +337,7 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			} else {
 				lastHoverId = (*vi)->id;
 				hoverTime = ofGetElapsedTimeMillis();
+				changed = 1;
 			}
 			if((*vi)->isPlaying){
 				themes[abs((*vi)->id) - 5] = 1;
@@ -334,6 +345,10 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 				themes[abs((*vi)->id) - 5] = 0;
 			}
 		}
+	}
+	if(!changed){
+		//lastHoverId = -1;
+		//hoverTime = 0;
 	}
 }
 

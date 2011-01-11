@@ -27,6 +27,7 @@ class VisibleObject{
 public:
 	virtual int isInside(int _x, int _y) = 0;
 	virtual void draw() = 0;
+	virtual void draw(int _id, int _time) = 0;
 	virtual void update() = 0;
 	virtual int react(int _lvl) = 0;
 	virtual void setPos(float _x, float _y) = 0;

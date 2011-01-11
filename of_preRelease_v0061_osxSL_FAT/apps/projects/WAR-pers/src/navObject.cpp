@@ -94,24 +94,18 @@ int NavObject::isInsideFlat(int _x, int _y){
 }
 
 void NavObject::draw(){
-	ofEnableAlphaBlending();
-	ofPushMatrix();
-	if(this->isLeft){
-		ofTranslate(ofGetWidth()/2, 0, -600);
-		ofRotateY(-45.0);
-		ofRotateY(90);
-		ofTranslate(-ofGetWidth(), 0, 0);
-	} else {
-		ofTranslate(ofGetWidth()/2, 0, -600);
-		ofRotateY(-45.0);
-	}
+}
+
+void NavObject::draw(int _id, int _time){
 	if(isHovering){
 		if(isPlaying){
 			ofSetColor(255, 255, 255, 255);
 			navImageGlow.draw(pos.x,pos.y);
+			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
 		} else {
 			ofSetColor(255, 255, 255, 255);
 			navImage.draw(pos.x,pos.y);
+			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
 		}
 	} else {
 		if(isPlaying){
@@ -122,19 +116,15 @@ void NavObject::draw(){
 			navImage.draw(pos.x,pos.y);
 		}
 	}
-	ofPopMatrix();
-	ofDisableAlphaBlending();
 }
 
 void NavObject::drawFlat(){
 	cout<<"drawing flat at "<<pos.x<<", "<<pos.y<<endl;
-	ofEnableAlphaBlending();
 	if(isHovering){
 		navImageGlow.draw(pos.x,pos.y);
 	} else {
 		navImage.draw(pos.x,pos.y);
 	}
-	ofDisableAlphaBlending();
 }
 
 void NavObject::stopVideo(){
@@ -276,9 +266,9 @@ void NavObject::drawShape(){
 		gly = ofGetHeight() - gly;
 		gly2 = ofGetHeight() - gly2;
 		if(this->id == 1){
-			cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
+			//cout<<"Have coors of "<<glx<<": "<<gly<<": "<<glz<<endl;
 		}
-		cout<<"drawing line at:  "<<(*vj)->x<<": "<<(*vj)->y<<": "<<(*vj)->z<<endl;
+		//cout<<"drawing line at:  "<<(*vj)->x<<": "<<(*vj)->y<<": "<<(*vj)->z<<endl;
 		//ofLine((*vj)->x, (*vj)->y, (*vi)->x, (*vi)->y);
 		glBegin(GL_LINES);
 		//glVertex3f((*vj)->x,(*vj)->y,(*vj)->z);
