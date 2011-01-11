@@ -26,6 +26,7 @@
 class VisibleObject{
 public:
 	virtual int isInside(int _x, int _y) = 0;
+	virtual int isInsideFlat(int _x, int _y) = 0;
 	virtual void draw() = 0;
 	virtual void draw(int _id, int _time) = 0;
 	virtual void update() = 0;

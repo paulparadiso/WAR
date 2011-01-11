@@ -101,11 +101,11 @@ void NavObject::draw(int _id, int _time){
 		if(isPlaying){
 			ofSetColor(255, 255, 255, 255);
 			navImageGlow.draw(pos.x,pos.y);
-			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
+			//ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
 		} else {
 			ofSetColor(255, 255, 255, 255);
 			navImage.draw(pos.x,pos.y);
-			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
+			//ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
 		}
 	} else {
 		if(isPlaying){
@@ -119,7 +119,7 @@ void NavObject::draw(int _id, int _time){
 }
 
 void NavObject::drawFlat(){
-	cout<<"drawing flat at "<<pos.x<<", "<<pos.y<<endl;
+	//cout<<"drawing flat at "<<pos.x<<", "<<pos.y<<endl;
 	if(isHovering){
 		navImageGlow.draw(pos.x,pos.y);
 	} else {

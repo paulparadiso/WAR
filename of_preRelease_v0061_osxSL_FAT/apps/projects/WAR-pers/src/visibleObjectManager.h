@@ -18,6 +18,7 @@
 #include <vector>
 
 #define HOVER_CLICK_TIME 2000
+#define THEME_HOVER_CLICK_TIME 500
 #define DATE_SIZE 28
 #define DATE_MINUS 50
 #define THEME_PLUS 50
@@ -33,6 +34,7 @@ public:
 	void update(int _x, int _y);
 	void draw();
 	void drawThemes(int _which);
+	void drawThemes2D();
 	void drawDates();
 	void drawVideos(int _which);
 	VisibleObjectManager();

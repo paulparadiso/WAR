@@ -90,12 +90,11 @@ void VideoObject::draw(){
 				ofFill();
 				ofSetColor(0, 0, 0,200);
 				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 60);
+				ofSetColor(255, 255, 255);
 				uploadFont.drawString("Jane Doe - 1971", pos.x, pos.y + drawSize.y + 20);
 				if(state == STATE_HOVER){
-					ofDisableAlphaBlending();
 					ofSetColor(0, 255, 0);
 					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
-					ofEnableAlphaBlending();
 				}
 				ofNoFill();
 			}
@@ -119,12 +118,11 @@ void VideoObject::draw(){
 				ofFill();
 				ofSetColor(0, 0, 0,200);
 				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 60);
+				ofSetColor(255, 255, 255);
 				uploadFont.drawString("Jane Doe - 1971", pos.x, pos.y + drawSize.y + 20);
 				if(state == STATE_HOVER){
-					ofDisableAlphaBlending();
 					ofSetColor(0, 255, 0);
 					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
-					ofEnableAlphaBlending();
 				}
 				ofNoFill();
 			}
@@ -143,10 +141,12 @@ int VideoObject::react(int _lvl){
 		this->resetState();
 		return state;
 	} else {
-		state = STATE_REST;
-		//cout<<"REACT reset"<<endl;
-		this->resetState();
-		return state;
+		if(state == STATE_HOVER){
+			state = STATE_REST;
+			//cout<<"REACT reset"<<endl;
+			this->resetState();
+			return state;
+		}
 	}
 }
 
@@ -231,6 +231,9 @@ int VideoObject::isInside(int _x, int _y){
 		isHovering = 1;
 	}
 	return inside;
+}
+
+int VideoObject::isInsideFlat(int _x, int _y){
 }
 
 void VideoObject::setPos(float _x, float _y){

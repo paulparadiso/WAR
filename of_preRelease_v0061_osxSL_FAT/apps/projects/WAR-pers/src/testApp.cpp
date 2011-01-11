@@ -36,7 +36,7 @@ void testApp::setup(){
 	ofImage ceilingImage;
 	ofImage woodtestImage;
 	
-	//lightImage.loadImage("room/flashlight-mask-invert-rings.png");
+	lightImage.loadImage("room/flashlight-mask-invert-rings.png");
 	//light.allocate(512,512,GL_RGBA);
 	//light.loadData(lightImage.getPixels(),512,512,GL_RGBA);
 	
@@ -222,43 +222,51 @@ void testApp::makeNormals(ofxVec3f a,ofxVec3f b,ofxVec3f c,ofxVec3f *_d){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	glEnable(GL_DEPTH_TEST);
-	camera.place();
-	ofEnableAlphaBlending();
-	ofxLightsOn(); //turn lights on
-	ofSetColor(255, 255, 255);
-	//ofxSphere(ofGetWidth()/2, ofGetHeight()/2, -600, 100);
 	rightFBO.begin();
 	rightWallImage.draw(0,0);
 	vom.drawVideos(0);
-	vom.drawThemes(0);
 	rightFBO.end();
 	leftFBO.begin();
 	leftWallImage.draw(0,0);
 	vom.drawVideos(1);
-	vom.drawThemes(1);
 	leftFBO.end();
+	glEnable(GL_BLEND);
+	glColorMask(false, false, false, true);
+	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
+	lightImage.draw(wiiX-256, wiiY-256);
+	glColorMask(true,true,true,true);
+	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
+	//ofSetColor(0xff0000);
+	glColor4f(1.0,1.0,1.0,1.0f);
+	glEnable(GL_DEPTH_TEST);
+	//camera.place();
+	//ofEnableAlphaBlending();
+	ofxLightsOn(); //turn lights on
+	ofSetColor(255, 255, 255);
+	//ofxSphere(ofGetWidth()/2, ofGetHeight()/2, -600, 100);
 	this->draw3D();
 	glDisable(GL_DEPTH_TEST);
 	ofxLightsOff(); //turn lights off to draw text
+	ofDisableAlphaBlending();
+	ofEnableAlphaBlending();
+	vom.drawThemes2D();
 	vom.drawPlayer();
+	ofDisableAlphaBlending();
 	ofFill();
 	ofSetColor(255, 255, 255, 128);
-	ofEllipse(wiiX, wiiY, 200, 200);
+	//ofEllipse(wiiX, wiiY, 200, 200);
+	//lightImage.draw(wiiX-256,wiiY-256);
 	ofNoFill();
 	ofSetColor(255, 255, 255);
-	ofDisableAlphaBlending();
+	//ofDisableAlphaBlending();
 }
 
 void testApp::draw3D(){
-	ofSetColor(255, 0, 0);
-	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 	ofSetColor(255, 255, 255);
 	//ofTranslate(ofGetWidth()/2, 0, -600);
 	
 	//ofRotateX(10);	
 	//ofRotateY(-45);
-	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 	//glBegin(GL_QUADS);
 //	glNormal3f(0.0,0.0,-1.0);
 //	glEnd();

@@ -32,6 +32,7 @@ public:
 	void update();
 	int react(int _lvl);
 	int isInside(int _x, int _y);
+	int isInsideFlat(int _x, int _y);
 	void setPos(float _x, float _y);
 	void setPosVel(float _xV, float _yV);
 	void setPosAcc(float _xA, float _yA);
