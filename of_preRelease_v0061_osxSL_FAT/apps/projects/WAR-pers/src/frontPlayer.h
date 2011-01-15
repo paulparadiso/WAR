@@ -12,6 +12,8 @@
 #include "panningVideoPlayer.h"
 #include "ofMain.h"
 #include "ofxVectorMath.h"
+#include "defines.h"
+#include "videoObject.h"
 
 class FrontPlayer{
 

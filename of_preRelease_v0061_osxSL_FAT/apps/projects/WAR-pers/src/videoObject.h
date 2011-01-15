@@ -14,12 +14,8 @@
 #include "ofMain.h"
 #include "ofxVectorMath.h"
 #include <vector>
-#include "frontPlayer.h"
 #include "panningVideoPlayer.h"
-
-#define GROW_TIME 500.0
-#define DEFAULT_ALPHA 225
-#define HOVER_CLICK_TIME 2000
+#include "defines.h"
 
 class VideoObject : public VisibleObject{
 public:
@@ -49,15 +45,35 @@ public:
 	void resetState();
 	void stopVideo();
 	
-	void addFp(FrontPlayer *_fp);
+	//void addFp(FrontPlayer *_fp);
 	
 	PanningVideoPlayer vp;
+	PanningVideoPlayer vpFront;
 	int getSizeX();
 	int getSizeY();
 	
 	int hoverTime;
 	
 	void testShape(int _which);
+	
+	string getThemeString();
+	string getUploadString();
+	string getLocationString();
+	string getFrontTitle();
+	void drawFront();
+	
+	vector<string>themes;
+	int textureSet;
+	
+	int fontsLoaded;
+	
+	int dateInt;
+	
+	int numPlays, timeStarted;
+	
+	ofTexture drawTexture;
+	
+	string artist, title, date, description, uploader, uploadDate, uploaderLocale;
 	
 private:
 	ofxVec2f drawSize;
@@ -68,8 +84,6 @@ private:
 	int stopTime;
 	ofTrueTypeFont artFont;
 	int oldWidth;
-	
-	FrontPlayer *fp;
 	
 	string media;
 	

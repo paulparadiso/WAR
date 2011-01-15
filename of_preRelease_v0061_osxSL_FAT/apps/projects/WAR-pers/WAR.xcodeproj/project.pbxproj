@@ -40,7 +40,6 @@
 		E4C242CD10CC650E004149E2 /* libfmodex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C242CC10CC650E004149E2 /* libfmodex.dylib */; };
 		E4C2443910CC7693004149E2 /* openFrameworks-Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */; };
 		E4C246DA10CCAE22004149E2 /* freeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C246D910CCAE22004149E2 /* freeimage.a */; };
-		EE12503112D1FB3F00C19861 /* frontPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE12503012D1FB3F00C19861 /* frontPlayer.cpp */; };
 		EE2A6CAE1295F00000CD2C2F /* videoObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6CAD1295F00000CD2C2F /* videoObject.cpp */; };
 		EE2A6CD61296E8A800CD2C2F /* visibleObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6CD51296E8A800CD2C2F /* visibleObjectManager.cpp */; };
 		EE2A6D2012970BE300CD2C2F /* ofxMatrix3x3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE2A6D1312970BE300CD2C2F /* ofxMatrix3x3.cpp */; };
@@ -49,6 +48,12 @@
 		EE49A10E1292CBD400705987 /* ofxDirList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE49A10C1292CBD400705987 /* ofxDirList.cpp */; };
 		EE52369312DA733100C14F4A /* ofxFBOTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE52369112DA733100C14F4A /* ofxFBOTexture.cpp */; };
 		EE5236A812DAC3D500C14F4A /* AlphaVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5236A612DAC3D500C14F4A /* AlphaVideoPlayer.cpp */; };
+		EE73AE1212DF9E2B00B12D85 /* threadedVideoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73AE1112DF9E2B00B12D85 /* threadedVideoLoader.cpp */; };
+		EE73AE4612DF9ED200B12D85 /* ofxThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73AE4412DF9ED200B12D85 /* ofxThread.cpp */; };
+		EE73AE6112DFA1D800B12D85 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73AE5C12DFA1D800B12D85 /* json_reader.cpp */; };
+		EE73AE6212DFA1D800B12D85 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73AE5E12DFA1D800B12D85 /* json_value.cpp */; };
+		EE73AE6312DFA1D800B12D85 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73AE6012DFA1D800B12D85 /* json_writer.cpp */; };
+		EE73B14912E0C4F700B12D85 /* videoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73B14812E0C4F700B12D85 /* videoLoader.cpp */; };
 		EE8BA05312BC1247005740AD /* navObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8BA05212BC1247005740AD /* navObject.cpp */; };
 		EECF76A012D9083400B46498 /* ofx3DGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769612D9083400B46498 /* ofx3DGraphics.cpp */; };
 		EECF76A112D9083400B46498 /* ofxCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769912D9083400B46498 /* ofxCamera.cpp */; };
@@ -202,8 +207,6 @@
 		E4C2429310CC5C38004149E2 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../../../libs/freetype/lib/osx/freetype.a; sourceTree = SOURCE_ROOT; };
 		E4C242CC10CC650E004149E2 /* libfmodex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodex.dylib; path = ../../../libs/fmodex/lib/osx/libfmodex.dylib; sourceTree = SOURCE_ROOT; };
 		E4C246D910CCAE22004149E2 /* freeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freeimage.a; path = ../../../libs/FreeImage/lib/osx/freeimage.a; sourceTree = SOURCE_ROOT; };
-		EE12502F12D1FB3F00C19861 /* frontPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frontPlayer.h; sourceTree = "<group>"; };
-		EE12503012D1FB3F00C19861 /* frontPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frontPlayer.cpp; sourceTree = "<group>"; };
 		EE12503B12D201A900C19861 /* panningVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panningVideoPlayer.h; sourceTree = "<group>"; };
 		EE2A6CA91295EEC100CD2C2F /* visibleObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visibleObject.h; sourceTree = "<group>"; };
 		EE2A6CAC1295F00000CD2C2F /* videoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoObject.h; sourceTree = "<group>"; };
@@ -232,6 +235,27 @@
 		EE5236A612DAC3D500C14F4A /* AlphaVideoPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AlphaVideoPlayer.cpp; sourceTree = "<group>"; };
 		EE5236A712DAC3D500C14F4A /* AlphaVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaVideoPlayer.h; sourceTree = "<group>"; };
 		EE61AFBA12DA282C00B5D30D /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		EE73AE1012DF9E2B00B12D85 /* threadedVideoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threadedVideoLoader.h; sourceTree = "<group>"; };
+		EE73AE1112DF9E2B00B12D85 /* threadedVideoLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threadedVideoLoader.cpp; sourceTree = "<group>"; };
+		EE73AE4212DF9ED200B12D85 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		EE73AE4412DF9ED200B12D85 /* ofxThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxThread.cpp; sourceTree = "<group>"; };
+		EE73AE4512DF9ED200B12D85 /* ofxThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxThread.h; sourceTree = "<group>"; };
+		EE73AE5112DFA1D700B12D85 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		EE73AE5212DFA1D700B12D85 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		EE73AE5312DFA1D700B12D85 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		EE73AE5412DFA1D700B12D85 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		EE73AE5512DFA1D700B12D85 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		EE73AE5612DFA1D700B12D85 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		EE73AE5712DFA1D700B12D85 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		EE73AE5812DFA1D700B12D85 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		EE73AE5912DFA1D800B12D85 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_batchallocator.h; path = src/json/json_batchallocator.h; sourceTree = SOURCE_ROOT; };
+		EE73AE5C12DFA1D800B12D85 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_reader.cpp; path = json/json_reader.cpp; sourceTree = "<group>"; };
+		EE73AE5D12DFA1D800B12D85 /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_tool.h; path = src/json/json_tool.h; sourceTree = SOURCE_ROOT; };
+		EE73AE5E12DFA1D800B12D85 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_value.cpp; path = json/json_value.cpp; sourceTree = "<group>"; };
+		EE73AE6012DFA1D800B12D85 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_writer.cpp; path = json/json_writer.cpp; sourceTree = "<group>"; };
+		EE73AF9512E008C500B12D85 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		EE73B14712E0C4F700B12D85 /* videoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoLoader.h; sourceTree = "<group>"; };
+		EE73B14812E0C4F700B12D85 /* videoLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = videoLoader.cpp; sourceTree = "<group>"; };
 		EE8BA05112BC1247005740AD /* navObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navObject.h; sourceTree = "<group>"; };
 		EE8BA05212BC1247005740AD /* navObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = navObject.cpp; sourceTree = "<group>"; };
 		EECF769412D9083400B46498 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
@@ -379,6 +403,7 @@
 		120B6F1B1288B49B00962100 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EE73AE3F12DF9ED200B12D85 /* ofxThread */,
 				EE61AFB912DA282C00B5D30D /* ofxTexture3D */,
 				EECF768F12D9083400B46498 /* ofx3DUtils */,
 				EE2A6D1012970BE200CD2C2F /* ofxVectorMath */,
@@ -677,6 +702,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EE73AE5C12DFA1D800B12D85 /* json_reader.cpp */,
+				EE73AE5E12DFA1D800B12D85 /* json_value.cpp */,
+				EE73AE6012DFA1D800B12D85 /* json_writer.cpp */,
+				EE73AE5012DFA1D700B12D85 /* json */,
 				EE5236A612DAC3D500C14F4A /* AlphaVideoPlayer.cpp */,
 				EE5236A712DAC3D500C14F4A /* AlphaVideoPlayer.h */,
 				EE52369112DA733100C14F4A /* ofxFBOTexture.cpp */,
@@ -691,9 +720,12 @@
 				EE2A6CD51296E8A800CD2C2F /* visibleObjectManager.cpp */,
 				EE8BA05112BC1247005740AD /* navObject.h */,
 				EE8BA05212BC1247005740AD /* navObject.cpp */,
-				EE12502F12D1FB3F00C19861 /* frontPlayer.h */,
-				EE12503012D1FB3F00C19861 /* frontPlayer.cpp */,
 				EE12503B12D201A900C19861 /* panningVideoPlayer.h */,
+				EE73AE1012DF9E2B00B12D85 /* threadedVideoLoader.h */,
+				EE73AE1112DF9E2B00B12D85 /* threadedVideoLoader.cpp */,
+				EE73AF9512E008C500B12D85 /* defines.h */,
+				EE73B14712E0C4F700B12D85 /* videoLoader.h */,
+				EE73B14812E0C4F700B12D85 /* videoLoader.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -839,6 +871,43 @@
 			name = ofxTexture3D;
 			path = ../../../addons/ofxTexture3D;
 			sourceTree = SOURCE_ROOT;
+		};
+		EE73AE3F12DF9ED200B12D85 /* ofxThread */ = {
+			isa = PBXGroup;
+			children = (
+				EE73AE4212DF9ED200B12D85 /* install.xml */,
+				EE73AE4312DF9ED200B12D85 /* src */,
+			);
+			name = ofxThread;
+			path = ../../../addons/ofxThread;
+			sourceTree = SOURCE_ROOT;
+		};
+		EE73AE4312DF9ED200B12D85 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EE73AE4412DF9ED200B12D85 /* ofxThread.cpp */,
+				EE73AE4512DF9ED200B12D85 /* ofxThread.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EE73AE5012DFA1D700B12D85 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				EE73AE5912DFA1D800B12D85 /* json_batchallocator.h */,
+				EE73AE5D12DFA1D800B12D85 /* json_tool.h */,
+				EE73AE5112DFA1D700B12D85 /* autolink.h */,
+				EE73AE5212DFA1D700B12D85 /* config.h */,
+				EE73AE5312DFA1D700B12D85 /* features.h */,
+				EE73AE5412DFA1D700B12D85 /* forwards.h */,
+				EE73AE5512DFA1D700B12D85 /* json.h */,
+				EE73AE5612DFA1D700B12D85 /* reader.h */,
+				EE73AE5712DFA1D700B12D85 /* value.h */,
+				EE73AE5812DFA1D700B12D85 /* writer.h */,
+			);
+			name = json;
+			path = json/json;
+			sourceTree = "<group>";
 		};
 		EECF768F12D9083400B46498 /* ofx3DUtils */ = {
 			isa = PBXGroup;
@@ -1201,12 +1270,17 @@
 				EE2A6D2112970BE300CD2C2F /* ofxMatrix4x4.cpp in Sources */,
 				EE2A6D2212970BE300CD2C2F /* ofxQuaternion.cpp in Sources */,
 				EE8BA05312BC1247005740AD /* navObject.cpp in Sources */,
-				EE12503112D1FB3F00C19861 /* frontPlayer.cpp in Sources */,
 				EECF76A012D9083400B46498 /* ofx3DGraphics.cpp in Sources */,
 				EECF76A112D9083400B46498 /* ofxCamera.cpp in Sources */,
 				EECF76A212D9083400B46498 /* ofxLight.cpp in Sources */,
 				EE52369312DA733100C14F4A /* ofxFBOTexture.cpp in Sources */,
 				EE5236A812DAC3D500C14F4A /* AlphaVideoPlayer.cpp in Sources */,
+				EE73AE1212DF9E2B00B12D85 /* threadedVideoLoader.cpp in Sources */,
+				EE73AE4612DF9ED200B12D85 /* ofxThread.cpp in Sources */,
+				EE73AE6112DFA1D800B12D85 /* json_reader.cpp in Sources */,
+				EE73AE6212DFA1D800B12D85 /* json_value.cpp in Sources */,
+				EE73AE6312DFA1D800B12D85 /* json_writer.cpp in Sources */,
+				EE73B14912E0C4F700B12D85 /* videoLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1246,6 +1320,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
+					./json,
 					"../../../libs/openFrameworks/**",
 					../../../libs/freetype/include/,
 					../../../libs/freetype/include/freetype2,
@@ -1335,6 +1410,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
+					./json,
 					"../../../libs/openFrameworks/**",
 					../../../libs/freetype/include/,
 					../../../libs/freetype/include/freetype2,
@@ -1372,6 +1448,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
+					./json,
 					"../../../libs/openFrameworks/**",
 					../../../libs/freetype/include/,
 					../../../libs/freetype/include/freetype2,

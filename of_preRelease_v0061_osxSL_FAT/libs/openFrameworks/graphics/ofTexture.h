@@ -66,7 +66,7 @@ class ofTexture : public ofBaseDraws{
 
 	//3D draw function
 	void draw3D(float x, float y, float oZ, float w, float h, float eZ, float *n);
-	void draw3DTop(float x, float y, float oZ, float w, float h, float eZ, float *n);
+	void draw3DTop(float *_a,float *_b,float *_c,float *_d, float w, float h);
 	void draw3DBottom(float x, float y, float oZ, float w, float h, float eZ, float *n);
 	
 	//for the advanced user who wants to draw textures in their own way

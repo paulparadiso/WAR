@@ -17,11 +17,14 @@ VisibleObjectManager::VisibleObjectManager(){
 	this->makeThemes();
 	cout<<"finished themes"<<endl;
 	this->makeDates();
-	cout<<"finished dated"<<endl;
-	this->makeVideos();
-	cout<<"finished videos"<<endl;
+	cout<<"finished dates"<<endl;
+	//this->makeVideos();
+	//cout<<"finished videos"<<endl;
 	for(int i = 0; i < 5; i++){
 		themes[i] = 0;
+	}
+	for(int i = 0; i < 6; i++){
+		dates[i] = 0;
 	}
 	isPlaying = 0;
 	rightClose.setup("nav/close_button.png");
@@ -30,6 +33,13 @@ VisibleObjectManager::VisibleObjectManager(){
 	leftClose.id = LEFT_CLOSE_ID;
 	cout<<"finished setup"<<endl;
 	playingLeft = playingRight = 0;
+	hadInside = 0;
+	loader.setup(&videoObjects);
+	rightOn = 0;
+	leftOn = 0;
+	haveActives[0] = 0;
+	haveActives[1] = 0;
+	//tester.setup("cache/rebecca_horn/west_berlin/O0uNnmAudmk.flv");
 }
 
 void VisibleObjectManager::makeThemes(){
@@ -37,109 +47,108 @@ void VisibleObjectManager::makeThemes(){
 	NavObject *tmpTheme = new NavObject("nav/body_politic.png");
 	tmpTheme->isLeft = 1;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(20,THEME_PLUS);
+	tmpTheme->setPos(25,THEME_PLUS);
 	tmpTheme->id = -5;
 	themeObjects.push_back(tmpTheme);
 	//Consciousness Raising
 	tmpTheme = new NavObject("nav/consciousness.png");
 	tmpTheme->isLeft = 1;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(325,THEME_PLUS);
+	tmpTheme->setPos(330,THEME_PLUS);
 	tmpTheme->id = -6;
 	themeObjects.push_back(tmpTheme);
 	//Identity
 	tmpTheme = new NavObject("nav/identity.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(700,THEME_PLUS);
+	tmpTheme->setPos(726,THEME_PLUS);
 	tmpTheme->id = -7;
 	themeObjects.push_back(tmpTheme);
 	//Media
 	tmpTheme = new NavObject("nav/media.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(915,THEME_PLUS);
+	tmpTheme->setPos(926,THEME_PLUS);
 	tmpTheme->id = -8;
 	themeObjects.push_back(tmpTheme);
 	//Activism and Social Protest
 	tmpTheme = new NavObject("nav/social_protest.png");
 	tmpTheme->isLeft = 0;
 	tmpTheme->state = STATE_REST;
-	tmpTheme->setPos(1080,THEME_PLUS);
+	tmpTheme->setPos(1085,THEME_PLUS);
 	tmpTheme->id = -9;
 	themeObjects.push_back(tmpTheme);
 	
 }
 
 void VisibleObjectManager::makeDates(){
-	NavObject *tmpDate = new NavObject("1950s.png");
+	NavObject *tmpDate = new NavObject("nav/1950s.png");
 	tmpDate->isLeft = 1;
 	tmpDate->state = STATE_REST;
-	tmpDate->setPos(306,ofGetHeight() - DATE_MINUS);
+	tmpDate->setPos(124,ofGetHeight() - DATE_MINUS);
+	tmpDate->id = -10;
 	dateObjects.push_back(tmpDate);
-	tmpDate = new NavObject("1960s.png");
+	tmpDate = new NavObject("nav/1960s.png");
 	tmpDate->isLeft = 1;
 	tmpDate->state = STATE_REST;
-	tmpDate->setPos(516,ofGetHeight() - DATE_MINUS);
+	tmpDate->setPos(331,ofGetHeight() - DATE_MINUS);
+	tmpDate->id = -11;
 	dateObjects.push_back(tmpDate);
-	tmpDate = new NavObject("1970s.png");
+	tmpDate = new NavObject("nav/1970s.png");
 	tmpDate->isLeft = 1;
 	tmpDate->state = STATE_REST;
-	tmpDate->setPos(736,ofGetHeight() - DATE_MINUS);
+	tmpDate->setPos(538,ofGetHeight() - DATE_MINUS);
+	tmpDate->id = -12;
 	dateObjects.push_back(tmpDate);
-	tmpDate = new NavObject("1980s.png");
+	tmpDate = new NavObject("nav/1980s.png");
 	tmpDate->isLeft = 0;
 	tmpDate->state = STATE_REST;
-	tmpDate->setPos(156,ofGetHeight() - DATE_MINUS);
+	tmpDate->setPos(745,ofGetHeight() - DATE_MINUS);
+	tmpDate->id = -13;
 	dateObjects.push_back(tmpDate);
-	tmpDate = new NavObject("1990s.png");
+	tmpDate = new NavObject("nav/1990s.png");
 	tmpDate->isLeft = 0;
 	tmpDate->state = STATE_REST;
-	tmpDate->setPos(396,ofGetHeight() - DATE_MINUS);
+	tmpDate->setPos(952,ofGetHeight() - DATE_MINUS);
+	tmpDate->id = -14;
 	dateObjects.push_back(tmpDate);
-	tmpDate = new NavObject("2000s.png");
+	tmpDate = new NavObject("nav/2000s.png");
 	tmpDate->isLeft = 0;
 	tmpDate->state = STATE_REST;
-	tmpDate->setPos(606,ofGetHeight() - DATE_MINUS);
+	tmpDate->setPos(1159,ofGetHeight() - DATE_MINUS);
+	tmpDate->id = -15;
 	dateObjects.push_back(tmpDate);
 }
 
 void VisibleObjectManager::makeVideos(){
 	int numVideos = dir.listDir("video");
 	int theme = 0;
-	for(int i = 0; i < 18; i++){
-		VideoObject *tmpVideo = new VideoObject(dir.getPath(i));
-		if(i == 5){
-			tester.setup(dir.getPath(i));
-			tester.resizeByWidth(600);
-			tester.setPos((ofGetWidth()/2) - (tester.getSizeX() / 2), (ofGetHeight() / 2) - (tester.getSizeY() /2));
-		}
-		tmpVideo->resizeByWidth(VIDEO_WIDTH);
-		tmpVideo->theme = theme;
-		theme = (theme + 1) % 5;
-		tmpVideo->id = i;
-		if(i < 9){
-			tmpVideo->isLeft = 1;
-			tmpVideo->setPos(220 * (i / 3) + 700, 210 * (i % 3) + 100);
-		} else {
-			tmpVideo->isLeft = 0;
-			tmpVideo->setPos(220* ((i - 9) / 3) + 20, 210 * (i  % 3) + 110);
-		}
-		this->addObject(tmpVideo);
-	}
+	//for(int i = 0; i < 18; i++){
+//		VideoObject *tmpVideo = new VideoObject(dir.getPath(i));
+//		tmpVideo->resizeByWidth(VIDEO_WIDTH);
+//		tmpVideo->theme = theme;
+//		theme = (theme + 1) % 5;
+//		tmpVideo->id = i;
+//		if(i < 9){
+//			tmpVideo->isLeft = 1;
+//			tmpVideo->setPos(220 * (i / 3) + 700, 210 * (i % 3) + 100);
+//		} else {
+//			tmpVideo->isLeft = 0;
+//			tmpVideo->setPos(220* ((i - 9) / 3) + 20, 210 * (i  % 3) + 110);
+//		}
+//		this->addObject(tmpVideo);
+//	}
 	
 }
 
 void VisibleObjectManager::addObject(VisibleObject *_vo){
 	_vo->resizeByWidth(250.0);
-	_vo->addFp(&fp);
 	_vo->id = idAssign++;
 	videoObjects.push_back(_vo);
 }
 
 void VisibleObjectManager::update(){
 	//FrontPlayer must be updated first.
-	fp.update();
 	vector<VisibleObject*>::iterator vi;
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
 		(*vi)->update();
@@ -149,6 +158,7 @@ void VisibleObjectManager::update(){
 void VisibleObjectManager::update(int _x, int _y){
 	this->update();
 	this->checkInsides(_x,_y);
+	loader.update();
 }
 
 void VisibleObjectManager::toggleTheme(int _t){
@@ -157,12 +167,6 @@ void VisibleObjectManager::toggleTheme(int _t){
 
 void VisibleObjectManager::togglePlay(){
 	isPlaying = !isPlaying;
-	if(isPlaying){
-		tester.vp.play();
-		tester.vp.setPosition(0.0);
-	} else {
-		tester.vp.stop();
-	}	
 }
 
 void VisibleObjectManager::draw(){
@@ -172,21 +176,26 @@ void VisibleObjectManager::draw(){
 }
 
 void VisibleObjectManager::drawPlayer(){
-	fp.draw();
-	if(fp.haveRight)
-		this->drawCloseBoxes(0);
-	if(fp.haveLeft)
-		this->drawCloseBoxes(1);
+	if(!loader.isThreadRunning()){
+		vector<VisibleObject*>::iterator ti;
+		for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
+			if((*ti)->state == STATE_PLAY){
+				haveActives[(*ti)->isLeft] = 1;
+				actives[(*ti)->isLeft] = (*ti);
+				(*ti)->drawFront();
+				drawCloseBoxes((*ti)->isLeft,(*ti));
+			} 
+		}
+	}
 }
 
-void VisibleObjectManager::drawCloseBoxes(int _side){
+void VisibleObjectManager::drawCloseBoxes(int _side,VisibleObject *_vo){
 	if(!_side){
-		ofxVec4f box = fp.getBoxSize(0);
-		rightClose.setPos(box.x, box.y);
+		rightClose.setPos(_vo->box.x, _vo->box.y);
 		rightClose.drawFlat();
 	} else {
-		ofxVec4f box = fp.getBoxSize(1);
-		leftClose.setPos(box.z - 40, box.y);
+		ofxVec4f box = _vo->box;
+		leftClose.setPos(_vo->box.x + _vo->box.z - 20, _vo->box.y);
 		leftClose.drawFlat();
 	}
 }
@@ -214,24 +223,28 @@ void VisibleObjectManager::drawDates(){
 		(*ti)->draw();
 	}
 }
-	
-void VisibleObjectManager::drawVideos(int _which){
-	int count = 0;
+
+void VisibleObjectManager::drawDates2D(){
 	vector<VisibleObject*>::iterator ti;
-	for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
-		if((*ti)->isLeft == _which){
-			if(themes[(*ti)->theme] == 1){
-				(*ti)->draw(lastHoverId,ofGetElapsedTimeMillis() - hoverTime);
-			}
-			if((*ti)->isPlaying)
-				//cout<<count<<" is playing"<<endl;
-				count++;
-		} 
+	for(ti = dateObjects.begin(); ti < dateObjects.end(); ti++){
+		(*ti)->draw(lastHoverId, hoverTime);
 	}
 }
+	
+void VisibleObjectManager::drawVideos(int _which){
+		vector<VisibleObject*>::iterator ti;
+		for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
+			if(!loader.isThreadRunning()){
+				if((*ti)->isLeft == _which){
+					if(themes[(*ti)->themesInt] == 1){
+						(*ti)->draw(lastHoverId,ofGetElapsedTimeMillis() - hoverTime);
+					}
+				}
+			} 
+		}
+	}
 
 void VisibleObjectManager::stopVideo(int _side){
-	fp.stop(_side);
 }
 
 void VisibleObjectManager::randomPositions(){
@@ -255,52 +268,84 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	
 	int changed = 0;
 	int leave = 0;
-	if(fp.haveRight){
-		if(fp.isInside(_x,_y)){
-			ofxVec4f box = fp.getBoxSize(0);
-			rightClose.setPos(box.x, box.y);
-			if(rightClose.isInsideFlat(_x,_y)){
-				if(rightClose.id == lastHoverId){
-					if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
-						rightClose.react(1);
-						hoverTime = ofGetElapsedTimeMillis();
-						lastHoverId = -1;
-					}
-				} else {
-					lastHoverId = rightClose.id;
+	//if(fp.haveRight){
+//		if(fp.isInside(_x,_y)){
+//			ofxVec4f box = fp.getBoxSize(0);
+//			rightClose.setPos(box.x, box.y);
+//			if(rightClose.isInsideFlat(_x,_y)){
+//				if(rightClose.id == lastHoverId){
+//					if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+//						rightClose.react(1);
+//						hoverTime = ofGetElapsedTimeMillis();
+//						lastHoverId = -1;
+//					}
+//				} else {
+//					lastHoverId = rightClose.id;
+//					hoverTime = ofGetElapsedTimeMillis();
+//				}
+//			} 
+//			if(rightClose.isPlaying){
+//				fp.stop(0);
+//				rightClose.react(0);
+//			}
+//			leave = 1;
+//		}
+//	}
+//	if(fp.haveLeft){
+//		if(fp.isInside(_x,_y)){
+//			ofxVec4f box = fp.getBoxSize(1);
+//			leftClose.setPos(box.z - 40, box.y);
+//			if(leftClose.isInsideFlat(_x,_y)){
+//				if(leftClose.id == lastHoverId){
+//					if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+//						int result = leftClose.react(1);
+//						hoverTime = ofGetElapsedTimeMillis();
+//						lastHoverId = -1;
+//						changed = 1;
+//					}
+//				} else {
+//					lastHoverId = leftClose.id;
+//					hoverTime = ofGetElapsedTimeMillis();
+//					changed = 1;
+//				}
+//			}
+//			if(leftClose.isPlaying){
+//				fp.stop(1);
+//				leftClose.react(0);
+//			}
+//			leave = 1;
+//		}
+//	}
+	if(haveActives[0]){
+		if(rightClose.isInsideFlat(_x,_y)){
+			if(rightClose.id == lastHoverId){
+				if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+					cout<<"right front calling react."<<endl;
+					rightClose.react(1);
 					hoverTime = ofGetElapsedTimeMillis();
+					lastHoverId = -1;
+					actives[0]->react(0);
 				}
-			} 
-			if(rightClose.isPlaying){
-				fp.stop(0);
-				rightClose.react(0);
+			} else {
+				lastHoverId = rightClose.id;
+				hoverTime = ofGetElapsedTimeMillis();
 			}
-			leave = 1;
 		}
 	}
-	if(fp.haveLeft){
-		if(fp.isInside(_x,_y)){
-			ofxVec4f box = fp.getBoxSize(1);
-			leftClose.setPos(box.z - 40, box.y);
-			if(leftClose.isInsideFlat(_x,_y)){
-				if(leftClose.id == lastHoverId){
-					if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
-						int result = leftClose.react(1);
-						hoverTime = ofGetElapsedTimeMillis();
-						lastHoverId = -1;
-						changed = 1;
-					}
-				} else {
-					lastHoverId = leftClose.id;
+	if(haveActives[1]){
+		if(leftClose.isInsideFlat(_x,_y)){
+			if(leftClose.id == lastHoverId){
+				if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+					cout<<"left front calling react."<<endl;
+					leftClose.react(1);
 					hoverTime = ofGetElapsedTimeMillis();
-					changed = 1;
+					lastHoverId = -1;
+					actives[1]->react(0);
 				}
+			} else {
+				lastHoverId = rightClose.id;
+				hoverTime = ofGetElapsedTimeMillis();
 			}
-			if(leftClose.isPlaying){
-				fp.stop(1);
-				leftClose.react(0);
-			}
-			leave = 1;
 		}
 	}
 	VisibleObject* tmpObject;
@@ -308,11 +353,12 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	vector<VisibleObject*>::iterator vi;
 	for(vi = themeObjects.begin(); vi < themeObjects.end(); vi++){
 		if((*vi)->isInsideFlat(_x,_y)){
-			if((*vi)->id == lastHoverId){
-				if(ofGetElapsedTimeMillis() - hoverTime > THEME_HOVER_CLICK_TIME){
+			if((*vi)->id == lastHoverId ){
+				if(ofGetElapsedTimeMillis() - hoverTime > THEME_HOVER_CLICK_TIME && !hadInside){
 					int result = (*vi)->react(1);
 					hoverTime = ofGetElapsedTimeMillis();
 					lastHoverId = -1;
+					hadInside = 1;
 				}
 			} else {
 				lastHoverId = (*vi)->id;
@@ -327,19 +373,40 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 			leave = 1;
 		}
 	}
+	for(vi = dateObjects.begin(); vi < dateObjects.end(); vi++){
+		if((*vi)->isInsideFlat(_x,_y)){
+			if((*vi)->id == lastHoverId ){
+				if(ofGetElapsedTimeMillis() - hoverTime > THEME_HOVER_CLICK_TIME && !hadInside){
+					int result = (*vi)->react(1);
+					hoverTime = ofGetElapsedTimeMillis();
+					lastHoverId = -1;
+					hadInside = 1;
+				}
+			} else {
+				lastHoverId = (*vi)->id;
+				hoverTime = ofGetElapsedTimeMillis();
+				changed = 1;
+			}
+			if((*vi)->isPlaying){
+				dates[abs((*vi)->id) - 10] = 1;
+			} else {
+				dates[abs((*vi)->id) - 10] = 0;
+			}
+			leave = 1;
+		}
+	}
 	if(leave){
 		return;
 	}
+	hadInside = 0;
 	int count = 0;
 	int remove =  -1;
 	int playing = -1;
 	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
-		if(themes[(*vi)->theme]==1){
+		if(themes[(*vi)->themesInt]==1){
 			if((*vi)->isInside(_x,_y)){
 				tmpObject = (*vi);
 				remove = count;
-			} else {
-				(*vi)->react(0);
 			}
 		}
 		count++;
@@ -348,6 +415,12 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 		if(tmpObject->id == lastHoverId){
 			if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
 				int result = tmpObject->react(1);
+				if(result == STATE_PLAY){
+					if(haveActives[tmpObject->isLeft]){
+						actives[tmpObject->isLeft]->react(0);
+						actives[tmpObject->isLeft] = tmpObject;
+					}
+				}
 				hoverTime = ofGetElapsedTimeMillis();
 				lastHoverId = -1;
 			}

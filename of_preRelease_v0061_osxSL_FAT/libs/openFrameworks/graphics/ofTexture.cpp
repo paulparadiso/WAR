@@ -604,7 +604,7 @@ void ofTexture::draw3D(float x, float y, float oZ, float w, float h, float eZ, f
 }
 
 //----------------------------------------------------------
-void ofTexture::draw3DTop(float x, float y, float oZ, float w, float h, float eZ, float *n){
+void ofTexture::draw3DTop(float *_a,float *_b,float *_c,float *_d, float w, float h){
 	
 	glEnable(texData.textureTarget);
 	
@@ -693,21 +693,20 @@ void ofTexture::draw3DTop(float x, float y, float oZ, float w, float h, float eZ
 //	};
 	
 	GLfloat verts[] = {
-		ofGetWidth()/2,0,-800,
-		ofGetWidth() + ofGetWidth() / 2,0,ofGetWidth() - 800,
-		ofGetWidth()/2,0,ofGetWidth() * 1.414,
-		-ofGetWidth()/2,0,ofGetWidth() - 800
+		_a[0],_a[1],_a[2],
+		_b[0],_b[1],_b[2],
+		_c[0],_c[1],_c[2],
+		_d[0],_d[1],_d[2]
 	};
-	
-	glEnableClientState(GL_NORMAL_ARRAY);
+	//glEnableClientState(GL_NORMAL_ARRAY);
 	glEnableClientState( GL_TEXTURE_COORD_ARRAY );
-	glNormalPointer(GL_FLOAT,0,(char *)n);
+	//glNormalPointer(GL_FLOAT,0,(char *)n);
 	glTexCoordPointer(2, GL_FLOAT, 0, tex_coords );
 	glEnableClientState(GL_VERTEX_ARRAY);		
 	glVertexPointer(3, GL_FLOAT, 0, verts );
 	glDrawArrays( GL_TRIANGLE_FAN, 0, 4 );
 	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
-	glDisableClientState(GL_NORMAL_ARRAY);
+	//glDisableClientState(GL_NORMAL_ARRAY);
 	
 	glPopMatrix();
 	glDisable(texData.textureTarget);

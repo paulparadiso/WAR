@@ -17,55 +17,71 @@ VideoObject::VideoObject(string _path):VisibleObject(){
 }
 
 void VideoObject::setup(string _path){
+	cout<<"Loading Movie at "<<_path<<endl;
+	vp.setUseTexture(false);
 	vp.loadMovie(_path);
 	size.set(vp.getWidth(),vp.getHeight());
 	//cout<<vp.getDuration()<<endl;
 	drawSize.set(size);
-	
 	cout<<"size = "<<drawSize.x<<endl;
-	vp.setPosition(0.2);
-	vp.setLoopState(OF_LOOP_NONE);
 	//rot = ofRandom(-30.0,30.0);
 	rot = 0;
 	state = STATE_REST;
 	stopTime = 0;
 	xAdd = 0.0;
-	artFont.loadFont("HelveticaNeue.dfont", 8);
+	//artFont.loadFont("fonts/HelveticaNeue.dfont", 8);
 	this->updateShape();
 	oldWidth = 0;
 	media = _path;
-	artistFont.loadFont("SpartanLTStd-HeavyClass.otf",14);
-	themeFont.loadFont("SpartanLTStd-BookClass.otf",10);
-	tagsFont.loadFont("SpartanLTStd-HeavyClass.otf",10);
-	uploadFont.loadFont("SpartanLTStd-BookClass.otf",8);
+	fontsLoaded = 0;
 	//These numbers were determined by the testShape() function.  
 	//There is likely a far better way of handling this. 
 	trans_x = -279;
 	trans_z = 370;
+	timeStarted = ofGetElapsedTimeMillis();
+	numPlays = 0;
+	textureSet = 0;
 }
 
-void VideoObject::addFp(FrontPlayer *_fp){
-	fp = _fp;
+string VideoObject::getLocationString(){
+	return uploaderLocale;
 }
 
+string VideoObject::getUploadString(){
+	return uploadDate;
+}
+
+string VideoObject::getThemeString(){
+	string out = "";
+	vector<string>::iterator si;
+	for(si = themes.begin(); si < themes.end(); si++){
+		out += (*si) + ", ";
+	}
+	return out;
+}
+
+string VideoObject::getFrontTitle(){
+	string out = artist + " - " + date;
+	return out;
+}
 void VideoObject::update(){
-	if((isLeft && !fp->haveLeft) && state == STATE_PLAY){
-		//cout<<"UPDATE reset"<<endl;
-		state = STATE_REST;
-		resetState();
-	}
-	if((!isLeft && !fp->haveRight) && state == STATE_PLAY){
-		//cout<<"UPDATE reset"<<endl;
-		state = STATE_REST;
-		resetState();
-	}
+	//if((isLeft && !fp->haveLeft) && state == STATE_PLAY){
+//		//cout<<"UPDATE reset"<<endl;
+//		state = STATE_REST;
+//		resetState();
+//	}
+//	if((!isLeft && !fp->haveRight) && state == STATE_PLAY){
+//		//cout<<"UPDATE reset"<<endl;
+//		state = STATE_REST;
+//		resetState();
+//	}
 }
 
 void VideoObject::draw(int _id, int _time){
 	if(id == _id){
 		alpha = DEFAULT_ALPHA + (((255 - DEFAULT_ALPHA) / HOVER_CLICK_TIME) * _time);
 		trigger = (int)(float)drawSize.x * ((float)_time / (float)HOVER_CLICK_TIME);
-		cout<<"Trigger = "<<trigger<<endl;
+		//cout<<"Trigger = "<<trigger<<endl;
 	} else {
 		alpha = DEFAULT_ALPHA;
 		trigger = 0;
@@ -76,50 +92,62 @@ void VideoObject::draw(int _id, int _time){
 void VideoObject::draw(){
 	//ofEnableAlphaBlending();
 	//ofEnableSmoothing();
+	if(state == STATE_PLAY){
+		return;
+	}
+	if(!textureSet){
+		//vp.tex.allocate(vp.width, vp.height, GL_RGB);
+		//vp.tex.loadData(vp.pixels, vp.width, vp.height, GL_RGB);
+		vp.play();
+		vp.setPosition(0.2);
+		vp.setLoopState(OF_LOOP_NONE);
+		vp.stop();
+		drawTexture.allocate(vp.getWidth(),vp.getHeight(),GL_RGB);
+		drawTexture.loadData(vp.getPixels(),vp.getWidth(),vp.getHeight(),GL_RGB);
+		textureSet = 1;
+	}
+	//ofTexture tex;
+	//tex.allocate(vp.getWidth(),vp.getHeight(),GL_RGB);
+	//tex.loadData(vp.getPixels(), vp.getWidth(), vp.getHeight(), GL_RGB);
 	if(this->isLeft){
 		if(state != STATE_PLAY){
-			ofPushMatrix();
+			//ofPushMatrix();
 			ofSetColor(255, 255, 255, 255);
-			//ofTranslate(ofGetWidth()/2, 0, -600);
-			//ofRotateY(-45.0);
-			//ofRotateY(90);
-			//ofTranslate(ofGetWidth() * 2, 0, 0);
-			resizeByWidth(200);
+			resizeByWidth(300);
 			if(isHovering){
 				//this->drawShape();
 				ofFill();
-				ofSetColor(0, 0, 0,200);
-				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 60);
+				ofSetColor(128, 128, 128,200);
+				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 20);
 				ofSetColor(255, 255, 255);
-				uploadFont.drawString("Jane Doe - 1971", pos.x, pos.y + drawSize.y + 20);
-				if(state == STATE_HOVER){
+				//uploadFont.drawString(artist + " - " + date, pos.x, pos.y + drawSize.y);
+				if(state == STATE_HOVER){	
 					ofSetColor(0, 255, 0);
 					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
 				}
 				ofNoFill();
 			}
 			ofSetColor(255, 255, 255,alpha);
-			vp.draw(pos.x,pos.y, drawSize.x
-					, drawSize.y);
+			//vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
+			drawTexture.draw(pos.x,pos.y, drawSize.x, drawSize.y);
+			if(isHovering){
+				this->drawShape();
+			}
 			ofSetColor(255,255,255,255);
-			ofPopMatrix();
-			//(*ti)->drawShape();
+			//ofPopMatrix();
 		} 
 	} else {
 		if(state != STATE_PLAY){
 			//ofPushMatrix();
 			ofSetColor(255, 255, 255, 255);
-			//ofTranslate(ofGetWidth()/2, 0, -600);
-			//ofRotateY(-45.0);
-			//ofTranslate(ofGetWidth()*2, ofGetHeight()*2, 0);
-			resizeByWidth(200);
+			resizeByWidth(300);
 			if(isHovering){
 				//this->drawShape();
 				ofFill();
-				ofSetColor(0, 0, 0,200);
-				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 60);
+				ofSetColor(128, 128, 128,200);
+				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 20);
 				ofSetColor(255, 255, 255);
-				uploadFont.drawString("Jane Doe - 1971", pos.x, pos.y + drawSize.y + 20);
+				//uploadFont.drawString(artist + " - " + date, pos.x, pos.y + drawSize.y);
 				if(state == STATE_HOVER){
 					ofSetColor(0, 255, 0);
 					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
@@ -127,12 +155,58 @@ void VideoObject::draw(){
 				ofNoFill();
 			}
 			ofSetColor(255, 255, 255,alpha);
-			vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
+			//vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
+			drawTexture.draw(pos.x,pos.y, drawSize.x, drawSize.y);
+			if(isHovering){
+				this->drawShape();
+			}
 			ofSetColor(255,255,255,255);
 		}
 	}
 }
-	
+
+void VideoObject::drawFront(){
+	//ofEnableAlphaBlending();
+	if(!isLeft){
+		//ofTexture texR;
+		//texR.allocate(vp.getWidth(), vp.getHeight(), GL_RGB);
+		drawTexture.loadData(vp.getPixels(), vp.getWidth(), vp.getHeight(), GL_RGB);
+		int topX = (ofGetWidth() / 3 * 2) + 25;
+		int topY = (ofGetHeight()/2) - (playSize.y/2);
+		ofFill();
+		ofSetColor(0, 0, 0, 128);
+		box.set(ofGetWidth()/3 * 2 - 50,topY - 80, playSize.x + 50, ofGetHeight() - topY - 80);
+		ofRect(box.x, box.y, box.z, box.w);
+		ofSetColor(255, 255, 255, 255);
+		//vpRight->draw((ofGetWidth()/3 * 2 + 25), topY, playSize->x, playSize->y);
+		drawTexture.draw((ofGetWidth()/3 * 2) - 25, topY, playSize.x, playSize.y);
+		artistFont.drawString(getFrontTitle(),topX - 50, topY - 30);
+		themeFont.drawString(getThemeString(),topX - 50, topY - 10);
+		//tagsFont.drawString("TAGS: war, art, new york",topX, ofGetHeight() - topY + 20);
+		uploadFont.drawString(getUploadString(),topX - 75, ofGetHeight() - topY + 30);
+	} 
+	if(isLeft){
+		//ofTexture texR;
+		//texR.allocate(vp.getWidth(), vp.getHeight(), GL_RGB);
+		drawTexture.loadData(vp.getPixels(), vp.getWidth(), vp.getHeight(), GL_RGB);		
+		int topX = 25;
+		int topY = (ofGetHeight()/2) - (playSize.y/2);
+		ofFill();
+		ofSetColor(0, 0, 0, 128);
+		box.set(topX,topY - 80, ofGetWidth()/3, ofGetHeight() - topY - 80);
+		ofRect(box.x, box.y, box.z, box.w);
+		ofSetColor(255, 255, 255,255);
+		//vpLeft->draw(topX, topY, playSize->x, playSize->y);
+		drawTexture.draw(topX*2, topY, playSize.x, playSize.y);
+		artistFont.drawString(getFrontTitle(),topX + 25, topY - 30);
+		themeFont.drawString(getThemeString(),topX + 25, topY - 10);
+		//tagsFont.drawString("TAGS: music, new york, performance",topX, ofGetHeight() - topY + 20);
+		uploadFont.drawString(getUploadString(),topX + 25, ofGetHeight() + topY + 30);
+	}
+	//ofDisableAlphaBlending();
+}
+
+
 int VideoObject::react(int _lvl){
 	if(_lvl){
 		if(state == STATE_PLAY)
@@ -147,6 +221,8 @@ int VideoObject::react(int _lvl){
 			this->resetState();
 			return state;
 		}
+		state = STATE_REST;
+		this->resetState();
 	}
 }
 
@@ -157,6 +233,7 @@ void VideoObject::resetState(){
 		case STATE_REST:
 			vp.setPosition(0.2);
 			vp.stop();
+			drawTexture.loadData(vp.getPixels(), vp.getWidth(), vp.getHeight(), GL_RGB);
 			//this->resizeByWidth(225);
 			break;
 		case STATE_HOVER:
@@ -166,19 +243,15 @@ void VideoObject::resetState(){
 			tw = ofGetWidth()/3 - 50;
 			twPercent = tw / size.x;
 			playSize.set(tw, size.y * twPercent);
+			isPlaying = 1;
+			numPlays++;
 			if(isLeft){
-				if(!fp->haveLeft){
-					fp->vpLeft = &vp;
-					fp->playSize = &playSize;
-					fp->haveNewLeft = 1;
-				}
+				vp.setPan(0.0);
 			} else {
-				if(!fp->haveRight){
-					fp->vpRight = &vp;
-					fp->playSize = &playSize;
-					fp->haveNewRight = 1;
-				}
+				vp.setPan(1.0);
 			}
+			vp.play();
+			vp.setLoopState(0);
 			break;
 		default:
 			break;
@@ -191,6 +264,13 @@ void VideoObject::stopVideo(){
 }
 	
 int VideoObject::isInside(int _x, int _y){
+	if(!fontsLoaded){
+		artistFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",14);
+		themeFont.loadFont("fonts/SpartanLTStd-BookClass.otf",10);
+		tagsFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",10);
+		uploadFont.loadFont("fonts/SpartanLTStd-BookClass.otf",8);
+		fontsLoaded = 1;
+	}
 	if(state == STATE_PLAY){
 		return 0;
 	}
@@ -292,13 +372,13 @@ void VideoObject::updateActualShape(){
 	ofxVec3f translation;
 	//ofxVec3f translationBack;
 	ofxVec3f rotation;
-	ofPushMatrix();
+	//ofPushMatrix();
 	//cout<<"trans_x = "<<trans_x<<", trans_z = "<<trans_z<<endl;
 	if(isLeft){
 		translation.set(trans_x,0,trans_z);
 		rotation.set(0,1,0);
 	} else {
-		translation.set(ofGetWidth()/2, 0, -800.0);
+		translation.set(ofGetWidth()/2, 0, -300.0);
 		//translationBack.set(0,0,-600);
 		rotation.set(0,1,0);
 	}
@@ -307,12 +387,12 @@ void VideoObject::updateActualShape(){
 		if(isLeft){
 			tmp->rotate(45,rotation);
 		} else {
-			tmp->rotate(-45,rotation);
+			tmp->rotate(-30,rotation);
 		}
 		*tmp += translation;
 		abShape.push_back(tmp);
 	}
-	ofPopMatrix();
+	//ofPopMatrix();
 }
 
 void VideoObject::drawShape(){

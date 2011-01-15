@@ -16,28 +16,23 @@
 #include "ofxDirList.h"
 #include "ofMain.h"
 #include <vector>
-
-#define HOVER_CLICK_TIME 2000
-#define THEME_HOVER_CLICK_TIME 500
-#define DATE_SIZE 28
-#define DATE_MINUS 50
-#define THEME_PLUS 50
-#define VIDEO_WIDTH 90
-#define RIGHT_CLOSE_ID -20
-#define LEFT_CLOSE_ID -21
+#include "videoLoader.h"
+#include "threadedVideoLoader.h"
+#include "defines.h"
 
 using namespace std;
 
 class VisibleObjectManager{
 public:
+	VisibleObjectManager();
 	void update();
 	void update(int _x, int _y);
 	void draw();
 	void drawThemes(int _which);
 	void drawThemes2D();
+	void drawDates2D();
 	void drawDates();
 	void drawVideos(int _which);
-	VisibleObjectManager();
 	void addObject(VisibleObject *_vo);
 	void checkInsides(int _x, int _y);
 	void randomPositions();
@@ -45,38 +40,44 @@ public:
 	void toggleTheme(int _t);
 	void togglePlay();
 	void stopVideo(int _side);
-	void drawCloseBoxes(int _side);
+	void drawCloseBoxes(int _side, VisibleObject *_vo);
 	
-	FrontPlayer fp;
+	ThreadedVideoLoader loader;
+	
+	//FrontPlayer fp;
 	void updateShapes(int _which);
 	
 	void drawPlayer();
 	//void addObject(VisibleObject _vo);
-private:
 	vector<VisibleObject*>videoObjects;
+private:
 	vector<VisibleObject*>themeObjects;
 	vector<VisibleObject*>dateObjects;
 	int themes[5];
+	int dates[6];
 	int counting;
 	int hoverTime;
 	int idAssign;
 	int currHoverId;
 	int lastHoverId;
 	int lastReactId;
+	int hadInside;
 	int currentlyPlaying;
 	int currentlyBig;
 	ofxDirList dir;
 	int isPlaying;
-	VideoObject tester;
 	
 	void makeThemes();
 	void makeDates();
 	void makeVideos();
 	
+	VisibleObject* actives[2];
+	int haveActives[2];
+	
 	int playingLeft, playingRight;
 	
 	NavObject rightClose, leftClose;
-	
+	int rightOn, leftOn;
 	
 };
 

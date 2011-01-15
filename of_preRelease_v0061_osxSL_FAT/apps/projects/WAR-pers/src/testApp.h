@@ -9,9 +9,7 @@
 #include "ofx3DUtils.h"
 #include "navObject.h"
 #include "visibleObjectManager.h"
-
-#define PORT 9000
-#define DEFAULT_LIGHT_LEVEL 35
+#include "defines.h"
 
 class testApp : public ofBaseApp{
 
@@ -37,10 +35,10 @@ class testApp : public ofBaseApp{
 		int timeOfLastFlash;
 		int flashDelay;
 	
-		ofxLight light1; //this will be a directional light
-		ofxLight light2; //this one a spot light
-		ofxLight light3; //and this one a point light
-		ofxLight ambientLight;
+		//ofxLight light1; //this will be a directional light
+//		ofxLight light2; //this one a spot light
+//		ofxLight light3; //and this one a point light
+//		ofxLight ambientLight;
 	
 		void loadGLTexture();
 	
@@ -80,14 +78,16 @@ class testApp : public ofBaseApp{
 	
 		ofxVec3f quad[4];
 	
-		ofxCamera camera;
+		//ofxCamera camera;
 	
-		ofxFBOTexture rightFBO, leftFBO;
+		ofxFBOTexture rightFBO, leftFBO, lightFBO;
 	
 		ofxVec3f target;
 		ofxVec3f source;
 		ofxVec3f direction;
-	ofxVec3f camPos;
+		ofxVec3f camPos;
+	
+		int frameToggle;
 	
 		int ambience;
 	

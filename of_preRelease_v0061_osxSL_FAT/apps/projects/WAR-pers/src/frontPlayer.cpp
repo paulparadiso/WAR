@@ -37,18 +37,18 @@ void FrontPlayer::update(){
 //		}
 //	}
 	if(haveNewRight){
-		vpRight->play();
-		vpRight->setPosition(0.0);
-		vpRight->setLoopState(OF_LOOP_NONE);
-		vpRight->setPan(1.0);
+		vpRight->vp.play();
+		vpRight->vp.setPosition(0.0);
+		vpRight->vp.setLoopState(OF_LOOP_NONE);
+		vpRight->vp.setPan(1.0);
 		haveRight = 1;
 		haveNewRight = 0;
 	}
 	if(haveNewLeft){
-		vpLeft->play();
-		vpLeft->setPosition(0.0);
-		vpLeft->setLoopState(OF_LOOP_NONE);
-		vpLeft->setPan(1.0);
+		vpLeft->vp.play();
+		vpLeft->vp.setPosition(0.0);
+		vpLeft->vp.setLoopState(OF_LOOP_NONE);
+		vpLeft->vp.setPan(1.0);
 		haveLeft = 1;
 		haveNewLeft = 0;
 	}
@@ -57,6 +57,9 @@ void FrontPlayer::update(){
 void FrontPlayer::draw(){
 	//ofEnableAlphaBlending();
 	if(haveRight){
+		ofTexture texR;
+		texR.allocate(vpRight->vp.getWidth(), vpRight->vp.getHeight(), GL_RGB);
+		texR.loadData(vpRight->vp.getPixels(), vpRight->vp.getWidth(), vpRight->vp.getHeight(), GL_RGB);
 		int topX = (ofGetWidth() / 3 * 2) + 25;
 		int topY = (ofGetHeight()/2) - (playSize->y/2);
 		ofFill();
@@ -64,13 +67,17 @@ void FrontPlayer::draw(){
 		rightBox.set(ofGetWidth()/3 * 2,topY - 80, ofGetWidth(), ofGetHeight() - topY - 80);
 		ofRect(rightBox.x, rightBox.y, rightBox.z, rightBox.w);
 		ofSetColor(255, 255, 255, 255);
-		vpRight->draw((ofGetWidth()/3 * 2 + 25), topY, playSize->x, playSize->y);
-		artistFont.drawString("JANE DOE 1979",topX, topY - 30);
-		themeFont.drawString("CONSCIOUSNESS RAISING",topX, topY - 10);
-		tagsFont.drawString("TAGS: war, art, new york",topX, ofGetHeight() - topY + 20);
-		uploadFont.drawString("Artwork added on 12.10.2010 at 8:30PM from Brooklyn, NY by lynn",topX, ofGetHeight() - topY + 40);
+		//vpRight->draw((ofGetWidth()/3 * 2 + 25), topY, playSize->x, playSize->y);
+		texR.draw((ofGetWidth()/3 * 2 + 25), topY, playSize->x, playSize->y);
+		artistFont.drawString(vpRight->getFrontTitle(),topX, topY - 30);
+		themeFont.drawString(vpRight->getThemeString(),topX, topY - 10);
+		//tagsFont.drawString("TAGS: war, art, new york",topX, ofGetHeight() - topY + 20);
+		uploadFont.drawString(vpRight->getUploadString(),topX, ofGetHeight() - topY + 40);
 	} 
 	if(haveLeft){
+		ofTexture texR;
+		texR.allocate(vpRight->vp.getWidth(), vpRight->vp.getHeight(), GL_RGB);
+		texR.loadData(vpRight->vp.getPixels(), vpRight->vp.getWidth(), vpRight->getHeight(), GL_RGB);		
 		int topX = 25;
 		int topY = (ofGetHeight()/2) - (playSize->y/2);
 		ofFill();
@@ -78,7 +85,8 @@ void FrontPlayer::draw(){
 		leftBox.set(0,topY - 80, ofGetWidth()/3, ofGetHeight() - topY - 80);
 		ofRect(leftBox.x, leftBox.y, leftBox.z, leftBox.w);
 		ofSetColor(255, 255, 255,255);
-		vpLeft->draw(topX, topY, playSize->x, playSize->y);
+		//vpLeft->draw(topX, topY, playSize->x, playSize->y);
+		texR.draw((ofGetWidth()/3 * 2 + 25), topY, playSize->x, playSize->y);
 		artistFont.drawString("JANE DOE 1985",topX, topY - 30);
 		themeFont.drawString("IDENTITY",topX, topY - 10);
 		tagsFont.drawString("TAGS: music, new york, performance",topX, ofGetHeight() - topY + 20);
@@ -102,16 +110,17 @@ int FrontPlayer::isInside(int _x, int _y){
 }
 
 void FrontPlayer::stop(int _player){
-	if(_player == 0 || _player == 2){
-		vpRight->setPosition(0.2);
-		vpRight->stop();
-		haveRight = 0;
-	}
-	if(_player == 1 || _player == 2){
-		vpLeft->setPosition(0.2);
-		vpLeft->stop();
-		haveLeft = 0;
-	}
+	//if(_player == 0 || _player == 2){
+//		
+//		vpRight->setPosition(0.2);
+//		vpRight->stop();
+//		haveRight = 0;
+//	}
+//	if(_player == 1 || _player == 2){
+//		vpLeft->setPosition(0.2);
+//		vpLeft->stop();
+//		haveLeft = 0;
+//	}
 }
 
 ofxVec4f FrontPlayer::getBoxSize(int _side){

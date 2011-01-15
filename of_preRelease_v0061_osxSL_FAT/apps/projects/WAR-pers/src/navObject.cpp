@@ -26,6 +26,7 @@ void NavObject::setup(string _text){
 	trans.set(ofGetWidth()/2,0,-600);
 	rot = 0;
 	isHovering = 0;
+	isPlaying = 0;
 	navImage.loadImage(_text);
 	string end = "_glow.png";
 	vector<string>splits = ofSplitString(_text, ".");
@@ -80,7 +81,7 @@ int NavObject::isInsideFlat(int _x, int _y){
 	isHovering = 0;
 	vector<ofxVec2f*>::iterator vi, vj;
 	for(vi = shape.begin(), vj = shape.end() - 1; vi < shape.end(); vj = vi++){
-		cout<<"Point = "<<(*vi)->x<<", "<<(*vi)->y<<endl;	
+		//cout<<"Point = "<<(*vi)->x<<", "<<(*vi)->y<<endl;	
 		if(((*vi)->y  <= _y && _y < (*vj)->y || (*vj)->y <= _y && _y < (*vi)->y) &&
 		   _x < ((*vj)->x - (*vi)->x) * (_y - (*vi)->y) / ((*vj)->y - (*vi)->y) + (*vi)->x){
 			inside = !inside;
@@ -88,7 +89,7 @@ int NavObject::isInsideFlat(int _x, int _y){
 	}
 	if(inside){
 		isHovering = 1;
-		cout<<"inside"<<endl;
+		//cout<<"inside"<<endl;
 	}
 	return inside;
 }
@@ -99,9 +100,10 @@ void NavObject::draw(){
 void NavObject::draw(int _id, int _time){
 	if(isHovering){
 		if(isPlaying){
+			ofSetColor(238, 0, 0, 255);
+			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
 			ofSetColor(255, 255, 255, 255);
-			navImageGlow.draw(pos.x,pos.y);
-			//ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
+			navImage.draw(pos.x,pos.y);
 		} else {
 			ofSetColor(255, 255, 255, 255);
 			navImage.draw(pos.x,pos.y);
@@ -109,8 +111,10 @@ void NavObject::draw(int _id, int _time){
 		}
 	} else {
 		if(isPlaying){
-			ofSetColor(255, 255, 255, 225);
-			navImageGlow.draw(pos.x,pos.y);
+			ofSetColor(238, 0, 0,200);
+			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
+			ofSetColor(255, 255, 255, 200);
+			navImage.draw(pos.x,pos.y);
 		} else {
 			ofSetColor(255, 255, 255, 200);
 			navImage.draw(pos.x,pos.y);
@@ -125,6 +129,9 @@ void NavObject::drawFlat(){
 	} else {
 		navImage.draw(pos.x,pos.y);
 	}
+}
+
+void NavObject::drawFront(){
 }
 
 void NavObject::stopVideo(){
@@ -283,9 +290,11 @@ void NavObject::drawShape(){
 
 void NavObject::resetState(){
 	if(state == STATE_PLAY){
+		cout<<"Nav setting state play."<<endl;
 		isPlaying = 1;
 	}
 	if(state == STATE_REST){
+		cout<<"Nav setting state rest."<<endl;
 		isPlaying = 0;
 	}
 }

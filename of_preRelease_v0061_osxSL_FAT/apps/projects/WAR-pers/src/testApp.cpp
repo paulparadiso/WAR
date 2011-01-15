@@ -5,17 +5,13 @@ void VectorDirection(ofxVec3f *a, ofxVec3f *b, ofxVec3f *vect);
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofSetCircleResolution(50);
-	ofSetFrameRate(60);
+	//ofSetFrameRate(60);
 	ofSetWindowTitle("!WAR");
-//	ofSetWindowShape(1360, 768);
 	ofSetWindowShape(1366, 768);
 	ofBackground(0, 0, 0);
 	ofSetVerticalSync(true);
-	//ofDisableArbTex();
-	//ofSetFullscreen(true);
 	ofHideCursor();
-	//glEnable(GL_DEPTH_TEST);
-	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+	//glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 	
 	w = 0;
 	h = 0;	// set in update()
@@ -23,11 +19,7 @@ void testApp::setup(){
 	msgFont.loadFont("fonts/Helvetica.dfont",64);
 	timeOfLastFlash = 0;
 	showMsg = 1;
-	flashDelay = 100;
-	
-	//video.loadMovie("video/N4puCtdG3Mk.flv");
-	//video.play();
-	
+	flashDelay = 100;	
 	// listen on the given port
 	cout << "listening for osc messages on port " << PORT << "\n";
 	receiver.setup( PORT );
@@ -36,10 +28,8 @@ void testApp::setup(){
 	ofImage ceilingImage;
 	ofImage woodtestImage;
 	
-	lightImage.loadImage("room/flashlight-mask-invert-rings.png");
-	//light.allocate(512,512,GL_RGBA);
-	//light.loadData(lightImage.getPixels(),512,512,GL_RGBA);
-	
+	lightImage.loadImage("room/flashlight-mask-invert-rings_big.png");
+
 	rightWallImage.loadImage("room/bg_right.png");
 	rightWall.allocate(1366,768,GL_RGB);
 	rightWall.loadData(rightWallImage.getPixels(),1366,768,GL_RGB);
@@ -64,49 +54,17 @@ void testApp::setup(){
 	
 	ofSetVerticalSync(true);
 	//glEnable(GL_DEPTH_TEST);
-	centerX = ofGetWidth()/2;
-	centerY = ofGetHeight()/2;
-	centerZ = 0;
-	
-	rotX = 0;
-	rotY = 0;
-	bSmoothLight = true;
-	
-	//loadGLTexture();
-	
-	//reflexions!!
-	ofxMaterialSpecular(240, 240, 240); //how much specular light will be reflect by the surface
-	ofxMaterialShininess(120); //how concentrated the reflexion will be (between 0 and 128
-	
-	//each light will emit white reflexions
-	light1.specular(255, 255, 255);
-	light2.specular(255, 255, 255);
-	light3.specular(255, 255, 255);
-	ambientLight.specular(255, 255, 255);
-	
-	camPos.set(ofGetWidth()/2,ofGetHeight()/2,10000);
-	//camPos.rotate(-45,ofxVec3f(0,1,0));
-	
-	camera.setOrigin(OF_ORIGIN_ZERO);
-	camera.position(camPos.x, camPos.y, 10000);
-	//camera.eye(ofGetWidth()/2,ofGetHeight()/2,100);
-	//camera.orbitAround(ofxVec3f(ofGetWidth()/2, ofGetHeight(),0),ofxVec3f(1,0,0), 22.5);
-	
-	ambience = DEFAULT_LIGHT_LEVEL;
+	frameToggle = 0;
+	lightFBO.allocate(ofGetWidth(),ofGetHeight(),GL_RGBA);
 
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-	// check for waiting messages
-
-	//glTexParameteri(rightFBO.texData.textureTarget, GL_GENERATE_MIPMAP, GL_TRUE);
-	//gluBuild2DMipmaps(GL_TEXTURE_2D, 3, ofGetWidth(), ofGetHeight(), GL_RGB, GL_UNSIGNED_BYTE, <#const void *data#>)
-	//glTexParameteri(leftFBO.texData.textureTarget, GL_GENERATE_MIPMAP, GL_TRUE);
-	
-	vom.update(wiiX,wiiY);
+	// check for waiting messages	
 	while( receiver.hasWaitingMessages() )
 	{
+		cout<<"Have messages."<<endl;
 		if(w == 0 || h == 0){
 			w = ofGetWidth();
 			h = ofGetHeight();			
@@ -120,79 +78,35 @@ void testApp::update(){
 		{
 			x = m.getArgAsFloat( 0 );
 			wiiX = x * w;
-			//cout << "x: " << wiiX << " y: " << wiiY << "\n";
+			cout << "x: " << wiiX << " y: " << wiiY << "\n";
 		}
 		else if ( m.getAddress() == "/wii/2/ir/1" )
 		{
 			y = 1 - m.getArgAsFloat( 0 );
 			wiiY = y * h;
-			//cout << "x: " << wiiX << " y: " << wiiY << "\n";
+			cout << "x: " << wiiX << " y: " << wiiY << "\n";
 		}
 		else
 		{
-			//cout << "unrecognized message: " << m.getAddress() << "\n";
+			cout << "unrecognized message: " << m.getAddress() << "\n";
 		}
 		
 	}
-	rotX += 1;
-	rotY += 2;
-	
-	//light1
-	float L1DirectionX = 1;
-	float L1DirectionY = 0;
-	float L1DirectionZ = 0;
-	
-	//light1.directionalLight(255, 255, 255, L1DirectionX, L1DirectionY, L1DirectionZ);
-	
-	//light2
-	float L2ConeAngle = 5;
-	float L2Concentration = 120;
-	float L2PosX = 0;
-	float L2PosY = ofGetHeight();
-	float L2PosZ = 100;
-	float L2DirectionX = 0;
-	float L2DirectionY = 0;
-	float L2DirectionZ = -1;
-	
-	if(wiiX > ofGetWidth()/2){
-		target.set(ofGetWidth()/4 * 3,wiiY,-400);
-	} else {
-		target.set(ofGetWidth()/4,wiiY,-400);
-	}
-	//cout<<"target z = "<<target.z<<endl;
-	source.set(wiiX,wiiY,scaleMouse());
-	direction.set(0,0,-1.0);
-	
-	VectorDirection(&target, &source, &direction);
-	//cout<<"direction = "<<direction.x<<", "<<direction.y<<", "<<direction.z<<endl;
-	
-	light2.spotLight(255, 255, 255, 
-					 source.x, source.y, source.z, 
-					 direction.x, direction.y, direction.z,
-					 10,
-					 100);
-	
-	//light2.directionalLight(255, 255, 255, direction.x, direction.y, direction.z);
-	light2.globalAmbientLight(ambience, ambience, ambience);
-	
-	//target.set(ofGetWidth()/2,ofGetHeight()/2,-600);
-	
-	//VectorDirection((float*)&target, (float*)&source, (float*)&direction);
-	
-	//light1.directionalLight(255, 255, 255, direction.x, direction.y, direction.z);
-	
-	//light3
-	float L3PosX = 900;
-	float L3PosY = 0;
-	float L3PosZ = 100;
-	light3.pointLight(255, 255, 255, L3PosX, L3PosY, L3PosZ);
-	//light2.pointLight(255,255,255,L3PosX, L3PosY, L3PosZ);
-	//camera.lerpPosition(0,0,500,0.1);
-	camPos.set(ofGetWidth()/2,ofGetHeight()/2,10000);
-	//camPos.rotate(-45,ofxVec3f(0,1,0));
-	
-	camera.setOrigin(OF_ORIGIN);
-	camera.position(camPos.x, camPos.y, 4000);
+	vom.update(wiiX,wiiY);
+	//lightFBO.begin();
+//	glEnable(GL_BLEND);
+//	glColorMask(false, false, false, true);
+//	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+//	glColor4f(1.0,1.0,1.0,0.95f);
+//	glClear(GL_COLOR_BUFFER_BIT);
+//	lightImage.draw(ofGetWidth()/2 - lightImage.getWidth()/2,ofGetHeight()/2 - lightImage.getHeight()/2);
+//	glColorMask(true,true,true,true);
+//	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
+//	glColor4f(1.0,1.0,1.0,1.0f);
+//	glEnable(GL_DEPTH_TEST);
+//	ofSetColor(255, 255, 255);
+//	lightImage.draw(wiiX - lightImage.getWidth()/2,wiiY - lightImage.getHeight()/2);
+//	lightFBO.end();	
 }
 
 float testApp::scaleMouse(){
@@ -233,43 +147,28 @@ void testApp::draw(){
 	glEnable(GL_BLEND);
 	glColorMask(false, false, false, true);
 	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
-	lightImage.draw(wiiX-256, wiiY-256);
+	glColor4f(1.0,1.0,1.0,0.95f);
+	glClear(GL_COLOR_BUFFER_BIT);
+	lightImage.draw(wiiX-lightImage.getHeight()/2, wiiY-lightImage.getWidth()/2);
+	//lightFBO.draw(0,0);
 	glColorMask(true,true,true,true);
 	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
-	//ofSetColor(0xff0000);
 	glColor4f(1.0,1.0,1.0,1.0f);
 	glEnable(GL_DEPTH_TEST);
-	//camera.place();
-	//ofEnableAlphaBlending();
-	ofxLightsOn(); //turn lights on
 	ofSetColor(255, 255, 255);
-	//ofxSphere(ofGetWidth()/2, ofGetHeight()/2, -600, 100);
 	this->draw3D();
 	glDisable(GL_DEPTH_TEST);
-	ofxLightsOff(); //turn lights off to draw text
 	ofDisableAlphaBlending();
 	ofEnableAlphaBlending();
 	vom.drawThemes2D();
+	vom.drawDates2D();
 	vom.drawPlayer();
 	ofDisableAlphaBlending();
-	ofFill();
-	ofSetColor(255, 255, 255, 128);
-	//ofEllipse(wiiX, wiiY, 200, 200);
-	//lightImage.draw(wiiX-256,wiiY-256);
-	ofNoFill();
-	ofSetColor(255, 255, 255);
-	//ofDisableAlphaBlending();
+	//ofSetColor(255, 255, 255);
 }
 
 void testApp::draw3D(){
 	ofSetColor(255, 255, 255);
-	//ofTranslate(ofGetWidth()/2, 0, -600);
-	
-	//ofRotateX(10);	
-	//ofRotateY(-45);
-	//glBegin(GL_QUADS);
-//	glNormal3f(0.0,0.0,-1.0);
-//	glEnd();
 	ofxVec3f rightns;
 	ofxVec3f leftns;
 	makeNormals(ofxVec3f(ofGetWidth()/2, ofGetHeight(), -600),
@@ -284,27 +183,37 @@ void testApp::draw3D(){
 	
 	//float rightN[3] = {rightns.x,rightns.y,rightns.z};
 	float rightN[3] = {-1.0,0.3,1.0};
-	//cout<<"right normals "<<rightns.x<<", "<<rightns.y<<", "<<rightns.z<<endl;
 	//float leftN[3] = {leftns.x,leftns.y,leftns.z};
 	float leftN[3] = {1.0,0.3,1.0};
-	//cout<<"left normals "<<leftns.x<<", "<<leftns.y<<", "<<leftns.z<<endl;
-	//rightFBO.draw3D(0,0,0,rightWall.getWidth(), ofGetHeight(),0,rightN);
-	rightFBO.draw3D(ofGetWidth()/2,0,-800,rightWall.getWidth(), ofGetHeight(),rightWall.getWidth() - 800,rightN);
-	//rightWallImage.draw(0,0);
-	//leftFBO.draw3D(0,0,ofGetWidth(),0,leftWall.getHeight(),0,leftN);
-	leftFBO.draw3D(-ofGetWidth()/2,0,ofGetWidth() -800,ofGetWidth(),leftWall.getHeight(),-800,leftN);
+	ofxVec3f rightEdge(rightWall.getWidth(),0,-600);
+	rightEdge.rotate(-30, ofxVec3f(0,1,0));
+	//cout<<"Right x and z = "<<rightEdge.x<<", "<<rightEdge.z<<endl;
+	rightFBO.draw3D(ofGetWidth()/2,0,-600,rightEdge.x, rightWall.getHeight(),rightEdge.z,rightN);
+	leftFBO.draw3D(ofGetWidth()/2 - rightEdge.x + 117,0,rightEdge.z,leftWall.getWidth(),leftWall.getHeight(),-600,leftN);
 	float topN[3] = {0.2,0.2,0.2};
 	float bottomN[3] = {0.2,0.2,0.2};
-	ceiling.draw3DTop(ofGetWidth()/2,0,-1000,ceiling.getHeight()-1000,0,0,topN);
-	floor.draw3DBottom(ofGetWidth()/2,0,-1000,ceiling.getHeight()-1000,0,0,bottomN);
+	float topF[3] = {ofGetWidth()/2,0,-600};
+	float topR[3] = {ofGetWidth()/2 + rightEdge.x,0,rightEdge.z};
+	float topB[3] = {ofGetWidth()/2,0,1200};
+	float topL[3] = {ofGetWidth()/2 - rightEdge.x + 117,0,rightEdge.z};
+	ceiling.draw3DTop((float*)&topF,
+					  (float*)&topR,
+					  (float*)&topB,
+					  (float*)&topL, ceiling.getWidth(),ceiling.getHeight());
+	topF[1] = rightWall.getHeight();
+	topR[1] = rightWall.getHeight();
+	topB[1] = rightWall.getHeight();
+	topL[1] = rightWall.getHeight();
+	floor.draw3DTop((float*)&topF,
+					(float*)&topR,
+					(float*)&topB,
+					(float*)&topL, floor.getWidth(),floor.getHeight());
+	
 	ofFill();
 	ofSetColor(255, 255, 255);
 }
 
 void testApp::loadGLTexture(){
-	//ofTexture aTex;
-	//aTex.allocate(512, 512, GL_RGB);
-	//aTex.loadData(woodtestImage.getPixels(), 512, 512, GL_RGB);
 	glGenTextures(1, &texture[0]);
 	glBindTexture(GL_TEXTURE_2D, texture[0]);	
 	glTexImage2D(GL_TEXTURE_2D, 0, 3, 512, 512, 0, GL_RGB, GL_UNSIGNED_BYTE, woodtestImage.getPixels());
@@ -331,15 +240,9 @@ void VectorDirection(ofxVec3f *a, ofxVec3f *b, ofxVec3f *vect)
     vect->y = a->y - b->y;
     vect->z = a->z - b->z;
 	
-	//cout<<"b "<<vect->z<<endl;
-    
-    float len = (sqrt(pow(vect->x, 2) + pow(vect->y, 2) + pow(vect->z, 2)));
+	float len = (sqrt(pow(vect->x, 2) + pow(vect->y, 2) + pow(vect->z, 2)));
     if(len == 0) len = 1.0f;
-    
-    //vect[0] /= len ;
-    //vect[1] /= len ;
-    //vect[2] /= len ;
-	//cout<<"a "<<vect->z<<endl;
+
 	vect->set(vect->x /= len,vect->y /= len,vect->z /= len);
 }
 
@@ -349,20 +252,16 @@ void testApp::drawRoom(){
 	ofSetColor(255, 255, 255);
 	ofTranslate(ofGetWidth()/2, 0, -600);
 	ofRotateY(-45.0);
-	//ofRotateY(180);
-	//ofTranslate(ofGetWidth(), 0, 0);
 	rightWall.draw(0,0,ofGetWidth(),ofGetHeight());
 	ofTranslate(-ofGetWidth(), 0, 0);
 	ofRotateY(180);
 	ofRotateY(90.0);
 	ofTranslate(-ofGetWidth(), 0, 0);
 	leftWall.draw(0,0,ofGetWidth(),ofGetHeight());
-	//ceiling.draw(0,0);
 	ofTranslate(ofGetWidth(), 0, 0);
 	ofRotateY(-90.0);
 	ofTranslate(0, ofGetHeight(), 0);
 	ofRotateX(90);
-	//leftWall.draw(0,0,ofGetWidth(),ofGetHeight());
 	floor.draw(0,0);
 	floor.draw(189,0);
 	floor.draw(0,128);
@@ -378,7 +277,6 @@ void testApp::drawRoom(){
 	ofRotateX(-90);
 	ofTranslate(0, -ofGetHeight(), ceiling.getHeight());
 	ofRotateX(-90);
-	//ofTranslate(0, -ofGetHeight(), 0);
 	ceiling.draw(0,0);
 	ofPopMatrix();
 }
@@ -400,9 +298,9 @@ void testApp::keyPressed(int key){
 	if(key == 'p')
 		vom.togglePlay();
 	if(key == 'r')
-		vom.stopVideo(0);
+		//vom.stopVideo(0);
 	if(key == 'l')
-		vom.stopVideo(1);
+		//vom.stopVideo(1);
 	if(key == 't')
 		vom.updateShapes(0);
 	if(key == 'g')

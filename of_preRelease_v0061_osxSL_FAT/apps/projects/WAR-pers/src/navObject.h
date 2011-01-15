@@ -47,6 +47,7 @@ class NavObject : public VisibleObject{
 		void drawShape();
 		void resetState();
 		void stopVideo();
+	    void drawFront();
 	
 		void addFp(FrontPlayer *_fp);
 	
