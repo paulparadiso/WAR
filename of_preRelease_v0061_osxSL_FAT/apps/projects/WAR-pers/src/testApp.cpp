@@ -29,7 +29,8 @@ void testApp::setup(){
 	ofImage woodtestImage;
 	
 	lightImage.loadImage("room/flashlight-mask-invert-rings_big.png");
-
+	lightMask.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA);
+	
 	rightWallImage.loadImage("room/bg_right.png");
 	rightWall.allocate(1366,768,GL_RGB);
 	rightWall.loadData(rightWallImage.getPixels(),1366,768,GL_RGB);
@@ -93,20 +94,7 @@ void testApp::update(){
 		
 	}
 	vom.update(wiiX,wiiY);
-	//lightFBO.begin();
-//	glEnable(GL_BLEND);
-//	glColorMask(false, false, false, true);
-//	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-//	glColor4f(1.0,1.0,1.0,0.95f);
-//	glClear(GL_COLOR_BUFFER_BIT);
-//	lightImage.draw(ofGetWidth()/2 - lightImage.getWidth()/2,ofGetHeight()/2 - lightImage.getHeight()/2);
-//	glColorMask(true,true,true,true);
-//	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
-//	glColor4f(1.0,1.0,1.0,1.0f);
-//	glEnable(GL_DEPTH_TEST);
-//	ofSetColor(255, 255, 255);
-//	lightImage.draw(wiiX - lightImage.getWidth()/2,wiiY - lightImage.getHeight()/2);
-//	lightFBO.end();	
+	makeMask(wiiX,wiiY,ofGetWidth()/2, ofGetHeight()/2);
 }
 
 float testApp::scaleMouse(){
@@ -149,7 +137,9 @@ void testApp::draw(){
 	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
 	glColor4f(1.0,1.0,1.0,0.95f);
 	glClear(GL_COLOR_BUFFER_BIT);
-	lightImage.draw(wiiX-lightImage.getHeight()/2, wiiY-lightImage.getWidth()/2);
+	lightMask.draw(0,0);
+	//lightImage.draw(wiiX - lightImage.getWidth()/2, wiiY - lightImage.getHeight()/2);
+	//lightImage.draw(ofGetWidth()/2 - lightImage.getWidth()/2, ofGetHeight()/2 - lightImage.getHeight()/2);
 	//lightFBO.draw(0,0);
 	glColorMask(true,true,true,true);
 	glBlendFunc(GL_ONE_MINUS_DST_ALPHA, GL_DST_ALPHA);
@@ -165,6 +155,31 @@ void testApp::draw(){
 	vom.drawPlayer();
 	ofDisableAlphaBlending();
 	//ofSetColor(255, 255, 255);
+}
+
+void testApp::makeMask(int _x1, int _y1, int _x2, int _y2){
+	unsigned char *screen = (unsigned char*)malloc(ofGetWidth() * ofGetHeight() * 4);
+	unsigned char *image = (unsigned char*)lightImage.getPixels();
+	int offsetX1 = lightImage.getWidth()/2 - _x1;
+	int offsetY1 = lightImage.getHeight()/2 - _y1;
+	int offsetX2 = lightImage.getWidth()/2 - _x2;
+	int offsetY2 = lightImage.getHeight()/2 - _y2;
+	for(int y = 0; y < ofGetHeight(); y++){
+		for(int x = 0; x < ofGetWidth(); x++){
+			int lightPixel1 = ((offsetX1 + x) + (offsetY1 + y) * lightImage.getWidth()) * 4; 
+			int lightPixel2 = ((offsetX2 + x) + (offsetY2 + y) * lightImage.getWidth()) * 4;
+			if(image[lightPixel1] == 255 && image[lightPixel2] == 255){
+				continue;
+			}
+			int screenPixel= (x + y * ofGetWidth()) * 4;
+			screen[screenPixel] = (image[lightPixel1] + image[lightPixel2]) / 2;
+			screen[screenPixel + 1] = (image[lightPixel1 + 1] + image[lightPixel2 + 1]) / 2;
+			screen[screenPixel + 2] = (image[lightPixel1 + 2] + image[lightPixel2 + 2]) / 2;
+			screen[screenPixel + 3] = (image[lightPixel1 + 3] + image[lightPixel2 + 3]) / 2;
+			//screen[screenPixel] = ((int)image[lightPixel1] + (int)image[lightPixel2]) / 2;
+		}
+	}
+	lightMask.loadData((unsigned char*)screen, ofGetWidth(), ofGetHeight(), GL_RGBA);
 }
 
 void testApp::draw3D(){

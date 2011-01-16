@@ -28,6 +28,10 @@ class testApp : public ofBaseApp{
 		void drawRoom();
 		void drawCubeRoom();
 		void draw3D();
+		void makeMask(int _x1, int _y1, int _x2, int _y2);
+	
+		ofTexture lightMask;
+		void makeMask();
 	
 		int w,h;
 		ofTrueTypeFont msgFont;
@@ -42,6 +46,8 @@ class testApp : public ofBaseApp{
 	
 		void loadGLTexture();
 	
+		unsigned char *screen;
+		
 		float centerX, centerY, centerZ;
 		float rotX, rotY;
 	

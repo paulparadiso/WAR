@@ -32,5 +32,6 @@
 #define VIDEO_CACHE_DIR cache/
 
 #define MOVIE_LOAD_TIME 10000
+#define MAX_VIDEOS 10
 
 #endif

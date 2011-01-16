@@ -39,6 +39,8 @@ public:
 	Value root;
 	string localResult;
 	vector<VisibleObject*>*videoObjects;
+	PanningVideoPlayer videos[MAX_VIDEOS];
+	int haveNewVideo;
 	
 	int lastMovieLoadedTime;	
 	int nextMovie;
