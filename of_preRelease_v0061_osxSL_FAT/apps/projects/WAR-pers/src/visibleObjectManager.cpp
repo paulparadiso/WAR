@@ -18,7 +18,7 @@ VisibleObjectManager::VisibleObjectManager(){
 	cout<<"finished themes"<<endl;
 	this->makeDates();
 	cout<<"finished dates"<<endl;
-	//this->makeVideos();
+	this->makeVideos();
 	//cout<<"finished videos"<<endl;
 	for(int i = 0; i < 5; i++){
 		themes[i] = 0;
@@ -34,12 +34,20 @@ VisibleObjectManager::VisibleObjectManager(){
 	cout<<"finished setup"<<endl;
 	playingLeft = playingRight = 0;
 	hadInside = 0;
-	loader.setup(&videoObjects);
+	loader.setup();
 	rightOn = 0;
 	leftOn = 0;
 	haveActives[0] = 0;
 	haveActives[1] = 0;
-	//tester.setup("cache/rebecca_horn/west_berlin/O0uNnmAudmk.flv");
+	for(int i = 0; i < MAX_VIDEOS; i++){
+		videos[i] = loader.videos[i];
+	}
+	//hoverTextBoxes[0].init("SpartanLTStd-BookClass.otf",12);
+	//hoverTextBoxes[0].wrapTextX(ofGetWidth()/2 - ((ofGetWidth()/3) - 25));
+	//hoverTextBoxes[1].init("SpartanLTStd-BookClass.otf",12);
+	//hoverTextBoxes[1].wrapTextX(ofGetWidth()/2 - ((ofGetWidth()/3) - 25));
+	haveMessage[0] = 0;
+	haveMessage[1] = 0;
 }
 
 void VisibleObjectManager::makeThemes(){
@@ -121,9 +129,9 @@ void VisibleObjectManager::makeDates(){
 }
 
 void VisibleObjectManager::makeVideos(){
-	int numVideos = dir.listDir("video");
-	int theme = 0;
-	//for(int i = 0; i < 18; i++){
+	//int numVideos = dir.listDir("video");
+	//int theme = 0;
+	//for(int i = 0; i < MAX_VIDEOS; i++){
 //		VideoObject *tmpVideo = new VideoObject(dir.getPath(i));
 //		tmpVideo->resizeByWidth(VIDEO_WIDTH);
 //		tmpVideo->theme = theme;
@@ -159,6 +167,17 @@ void VisibleObjectManager::update(int _x, int _y){
 	this->update();
 	this->checkInsides(_x,_y);
 	loader.update();
+	if(!loader.isThreadRunning()) {
+		if(loader.haveNewVideo){
+			if(!haveActives[0] || !haveActives[1]){
+				videos[loader.nextVideo].drawTexture.clear();
+				videos[loader.nextVideo] = loader.videos[loader.nextVideo];
+				loader.nextVideo = (loader.nextVideo + 1) % MAX_VIDEOS; 
+				loader.haveNewVideo = 0;
+		
+			}
+		}
+	}
 }
 
 void VisibleObjectManager::toggleTheme(int _t){
@@ -176,17 +195,26 @@ void VisibleObjectManager::draw(){
 }
 
 void VisibleObjectManager::drawPlayer(){
-	if(!loader.isThreadRunning()){
-		vector<VisibleObject*>::iterator ti;
-		for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
-			if((*ti)->state == STATE_PLAY){
-				haveActives[(*ti)->isLeft] = 1;
-				actives[(*ti)->isLeft] = (*ti);
-				(*ti)->drawFront();
-				drawCloseBoxes((*ti)->isLeft,(*ti));
-			} 
+	for(int i = 0; i < MAX_VIDEOS; i++){
+		if(videos[i].state == STATE_PLAY){
+			haveActives[videos[i].isLeft] = 1;
+			loader.haveActives[videos[i].isLeft] = videos[i].id;
+			actives[videos[i].isLeft] = &videos[i];
+			videos[i].drawFront();
+			drawCloseBoxes(videos[i].isLeft,&videos[i]);
 		}
 	}
+	//
+//	vector<VisibleObject*>::iterator ti;
+//		for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
+//			if((*ti)->state == STATE_PLAY){
+//				haveActives[(*ti)->isLeft] = 1;
+//				actives[(*ti)->isLeft] = (*ti);
+//				(*ti)->drawFront();
+//				drawCloseBoxes((*ti)->isLeft,(*ti));
+//			} 
+//		}
+//	}
 }
 
 void VisibleObjectManager::drawCloseBoxes(int _side,VisibleObject *_vo){
@@ -195,7 +223,7 @@ void VisibleObjectManager::drawCloseBoxes(int _side,VisibleObject *_vo){
 		rightClose.drawFlat();
 	} else {
 		ofxVec4f box = _vo->box;
-		leftClose.setPos(_vo->box.x + _vo->box.z - 20, _vo->box.y);
+		leftClose.setPos(_vo->box.x + _vo->box.z - 40, _vo->box.y);
 		leftClose.drawFlat();
 	}
 }
@@ -232,17 +260,25 @@ void VisibleObjectManager::drawDates2D(){
 }
 	
 void VisibleObjectManager::drawVideos(int _which){
-		vector<VisibleObject*>::iterator ti;
-		for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
-			if(!loader.isThreadRunning()){
-				if((*ti)->isLeft == _which){
-					if(themes[(*ti)->themesInt] == 1){
-						(*ti)->draw(lastHoverId,ofGetElapsedTimeMillis() - hoverTime);
-					}
-				}
-			} 
+	for(int i = 0; i < MAX_VIDEOS; i++){
+		if(videos[i].isLeft == _which){
+			if(themes[videos[i].themesInt] == 1 && dates[videos[i].dateInt] == 1){
+				videos[i].draw(lastHoverId,ofGetElapsedTimeMillis() - hoverTime);
+			}
 		}
 	}
+}
+	//vector<VisibleObject*>::iterator ti;
+//		for(ti = videoObjects.begin(); ti < videoObjects.end(); ti++){
+//			if(!loader.isThreadRunning()){
+//				if((*ti)->isLeft == _which){
+//					if(themes[(*ti)->themesInt] == 1){
+//						(*ti)->draw(lastHoverId,ofGetElapsedTimeMillis() - hoverTime);
+//					}
+//				}
+//			} 
+//		}
+//	}
 
 void VisibleObjectManager::stopVideo(int _side){
 }
@@ -318,6 +354,7 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 //	}
 	if(haveActives[0]){
 		if(rightClose.isInsideFlat(_x,_y)){
+			leave = 1;
 			if(rightClose.id == lastHoverId){
 				if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
 					cout<<"right front calling react."<<endl;
@@ -325,6 +362,13 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 					hoverTime = ofGetElapsedTimeMillis();
 					lastHoverId = -1;
 					actives[0]->react(0);
+					loader.numPlays[actives[0]->id]++;
+					if(loader.numPlays[actives[0]->id] == MAX_VIDEO_PLAYS){
+						actives[0]->shouldPlay = 0;
+					}
+					//cout << "loader.numPlaye["<<actives[0]->id<<" = "<<loader.numPlays[actives[0]->id]<<endl;
+					haveActives[0] = 0;
+					loader.haveActives[0] = -1;
 				}
 			} else {
 				lastHoverId = rightClose.id;
@@ -334,6 +378,7 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 	}
 	if(haveActives[1]){
 		if(leftClose.isInsideFlat(_x,_y)){
+			leave = 1;
 			if(leftClose.id == lastHoverId){
 				if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
 					cout<<"left front calling react."<<endl;
@@ -341,9 +386,16 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 					hoverTime = ofGetElapsedTimeMillis();
 					lastHoverId = -1;
 					actives[1]->react(0);
+					loader.numPlays[actives[1]->id]++;
+					if(loader.numPlays[actives[1]->id] == MAX_VIDEO_PLAYS){
+						actives[1]->shouldPlay = 0;
+					}
+					//cout << "loader.numPlaye["<<actives[1]->id<<" = "<<loader.numPlays[actives[1]->id]<<endl;
+					loader.haveActives[1] = 0;
+					haveActives[1] = 0;
 				}
 			} else {
-				lastHoverId = rightClose.id;
+				lastHoverId = leftClose.id;
 				hoverTime = ofGetElapsedTimeMillis();
 			}
 		}
@@ -399,21 +451,32 @@ void VisibleObjectManager::checkInsides(int _x, int _y){
 		return;
 	}
 	hadInside = 0;
-	int count = 0;
 	int remove =  -1;
 	int playing = -1;
-	for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
-		if(themes[(*vi)->themesInt]==1){
-			if((*vi)->isInside(_x,_y)){
-				tmpObject = (*vi);
-				remove = count;
+	for(int i = 0; i < MAX_VIDEOS; i++){
+		if(themes[videos[i].themesInt] == 1){
+			if(videos[i].isInside(_x,_y)){
+				//string newString = videos[i].artist +  " " + videos[i].date + "\n" + videos[i].description;
+//				hoverTextBoxes[videos[i].isLeft].setText(newString);
+//				haveMessage[videos[i].isLeft] = 1;
+				tmpObject = &videos[i];
+				remove = 1;
 			}
 		}
-		count++;
 	}
+	//for(vi = videoObjects.begin(); vi < videoObjects.end(); vi++){
+//		if(themes[(*vi)->themesInt]==1){
+//			if((*vi)->isInside(_x,_y)){
+//				tmpObject = (*vi);
+//				remove = count;
+//			}
+//		}
+//		count++;
+//	}
 	if(remove > -1){
 		if(tmpObject->id == lastHoverId){
 			if(ofGetElapsedTimeMillis() - hoverTime > HOVER_CLICK_TIME){
+				cout<<"calling react"<<endl;
 				int result = tmpObject->react(1);
 				if(result == STATE_PLAY){
 					if(haveActives[tmpObject->isLeft]){

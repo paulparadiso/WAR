@@ -41,6 +41,7 @@ void VideoObject::setup(string _path){
 	timeStarted = ofGetElapsedTimeMillis();
 	numPlays = 0;
 	textureSet = 0;
+	scaledX = 0;
 }
 
 string VideoObject::getLocationString(){
@@ -48,7 +49,8 @@ string VideoObject::getLocationString(){
 }
 
 string VideoObject::getUploadString(){
-	return uploadDate;
+	string out = "Uploaded from: " + uploaderLocale + " on: " + uploadDate;
+	return out;
 }
 
 string VideoObject::getThemeString(){
@@ -60,8 +62,13 @@ string VideoObject::getThemeString(){
 	return out;
 }
 
-string VideoObject::getFrontTitle(){
-	string out = artist + " - " + date;
+string VideoObject::getTitleString(){
+	return title;
+}
+
+string VideoObject::getArtistString(){
+	string out = "";
+	out = artist + " - " + date;
 	return out;
 }
 void VideoObject::update(){
@@ -78,9 +85,14 @@ void VideoObject::update(){
 }
 
 void VideoObject::draw(int _id, int _time){
+	if(isLeft){
+		scaledX = drawSize.x * 1/ofGetWidth() * pos.x;
+	} else {
+		scaledX = drawSize.x * 1/ofGetWidth() * (ofGetWidth() -  pos.x);
+	}
 	if(id == _id){
 		alpha = DEFAULT_ALPHA + (((255 - DEFAULT_ALPHA) / HOVER_CLICK_TIME) * _time);
-		trigger = (int)(float)drawSize.x * ((float)_time / (float)HOVER_CLICK_TIME);
+		trigger = ((int)(float)scaledX + 25)* ((float)_time / (float)HOVER_CLICK_TIME);
 		//cout<<"Trigger = "<<trigger<<endl;
 	} else {
 		alpha = DEFAULT_ALPHA;
@@ -92,8 +104,17 @@ void VideoObject::draw(int _id, int _time){
 void VideoObject::draw(){
 	//ofEnableAlphaBlending();
 	//ofEnableSmoothing();
-	if(state == STATE_PLAY){
+	size.set(vp.getWidth(),vp.getHeight());
+	if(state == STATE_PLAY  || shouldPlay == 0){
 		return;
+	}
+	vp.setPosition(0.2);
+	if(!fontsLoaded){
+		artistFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",14);
+		themeFont.loadFont("fonts/SpartanLTStd-BookClass.otf",10);
+		//tagsFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",10);
+		uploadFont.loadFont("fonts/SpartanLTStd-BookClass.otf",8);
+		fontsLoaded = 1;
 	}
 	if(!textureSet){
 		//vp.tex.allocate(vp.width, vp.height, GL_RGB);
@@ -118,21 +139,18 @@ void VideoObject::draw(){
 				//this->drawShape();
 				ofFill();
 				ofSetColor(128, 128, 128,200);
-				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 20);
+				ofRect(pos.x - 10,pos.y -10 ,scaledX + 20,drawSize.y + 20);
 				ofSetColor(255, 255, 255);
 				//uploadFont.drawString(artist + " - " + date, pos.x, pos.y + drawSize.y);
 				if(state == STATE_HOVER){	
 					ofSetColor(0, 255, 0);
-					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
+					ofRect(pos.x - 10,pos.y + drawSize.y + 10 ,trigger,10);
 				}
 				ofNoFill();
 			}
 			ofSetColor(255, 255, 255,alpha);
 			//vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
-			drawTexture.draw(pos.x,pos.y, drawSize.x, drawSize.y);
-			if(isHovering){
-				this->drawShape();
-			}
+			drawTexture.draw(pos.x,pos.y, scaledX, drawSize.y);
 			ofSetColor(255,255,255,255);
 			//ofPopMatrix();
 		} 
@@ -145,21 +163,18 @@ void VideoObject::draw(){
 				//this->drawShape();
 				ofFill();
 				ofSetColor(128, 128, 128,200);
-				ofRect(pos.x - 10,pos.y -10 ,drawSize.x + 20,drawSize.y + 20);
+				ofRect(pos.x - 10,pos.y -10 ,scaledX + 20,drawSize.y + 20);
 				ofSetColor(255, 255, 255);
 				//uploadFont.drawString(artist + " - " + date, pos.x, pos.y + drawSize.y);
 				if(state == STATE_HOVER){
 					ofSetColor(0, 255, 0);
-					ofRect(pos.x ,pos.y + drawSize.y + 10 ,trigger,10);
+					ofRect(pos.x - 10,pos.y + drawSize.y + 10 ,trigger,10);
 				}
 				ofNoFill();
 			}
 			ofSetColor(255, 255, 255,alpha);
 			//vp.draw(pos.x,pos.y, drawSize.x, drawSize.y);
-			drawTexture.draw(pos.x,pos.y, drawSize.x, drawSize.y);
-			if(isHovering){
-				this->drawShape();
-			}
+			drawTexture.draw(pos.x,pos.y, scaledX, drawSize.y);
 			ofSetColor(255,255,255,255);
 		}
 	}
@@ -167,6 +182,7 @@ void VideoObject::draw(){
 
 void VideoObject::drawFront(){
 	//ofEnableAlphaBlending();
+
 	if(!isLeft){
 		//ofTexture texR;
 		//texR.allocate(vp.getWidth(), vp.getHeight(), GL_RGB);
@@ -175,15 +191,15 @@ void VideoObject::drawFront(){
 		int topY = (ofGetHeight()/2) - (playSize.y/2);
 		ofFill();
 		ofSetColor(0, 0, 0, 128);
-		box.set(ofGetWidth()/3 * 2 - 50,topY - 80, playSize.x + 50, ofGetHeight() - topY - 80);
+		box.set(ofGetWidth()/3 * 2 - 50,topY - 80, playSize.x + 50, ofGetHeight() - topY - 120);
 		ofRect(box.x, box.y, box.z, box.w);
 		ofSetColor(255, 255, 255, 255);
 		//vpRight->draw((ofGetWidth()/3 * 2 + 25), topY, playSize->x, playSize->y);
 		drawTexture.draw((ofGetWidth()/3 * 2) - 25, topY, playSize.x, playSize.y);
-		artistFont.drawString(getFrontTitle(),topX - 50, topY - 30);
-		themeFont.drawString(getThemeString(),topX - 50, topY - 10);
+		artistFont.drawString(getArtistString(),topX - 50, topY - 30);
+		themeFont.drawString(getTitleString(),topX - 50, topY - 10);
 		//tagsFont.drawString("TAGS: war, art, new york",topX, ofGetHeight() - topY + 20);
-		uploadFont.drawString(getUploadString(),topX - 75, ofGetHeight() - topY + 30);
+		uploadFont.drawString(getUploadString(),topX - 50, ofGetHeight() - topY + 15);
 	} 
 	if(isLeft){
 		//ofTexture texR;
@@ -193,21 +209,22 @@ void VideoObject::drawFront(){
 		int topY = (ofGetHeight()/2) - (playSize.y/2);
 		ofFill();
 		ofSetColor(0, 0, 0, 128);
-		box.set(topX,topY - 80, ofGetWidth()/3, ofGetHeight() - topY - 80);
+		box.set(topX,topY - 80, ofGetWidth()/3, ofGetHeight() - topY - 120);
 		ofRect(box.x, box.y, box.z, box.w);
 		ofSetColor(255, 255, 255,255);
 		//vpLeft->draw(topX, topY, playSize->x, playSize->y);
 		drawTexture.draw(topX*2, topY, playSize.x, playSize.y);
-		artistFont.drawString(getFrontTitle(),topX + 25, topY - 30);
-		themeFont.drawString(getThemeString(),topX + 25, topY - 10);
+		artistFont.drawString(getArtistString(),topX + 25, topY - 30);
+		themeFont.drawString(getTitleString(),topX + 25, topY - 10);
 		//tagsFont.drawString("TAGS: music, new york, performance",topX, ofGetHeight() - topY + 20);
-		uploadFont.drawString(getUploadString(),topX + 25, ofGetHeight() + topY + 30);
+		uploadFont.drawString(getUploadString(),topX + 25, ofGetHeight() - topY + 15);
 	}
 	//ofDisableAlphaBlending();
 }
 
 
 int VideoObject::react(int _lvl){
+	cout<<"reacting"<<endl;
 	if(_lvl){
 		if(state == STATE_PLAY)
 			return state;
@@ -246,11 +263,12 @@ void VideoObject::resetState(){
 			isPlaying = 1;
 			numPlays++;
 			if(isLeft){
-				vp.setPan(0.0);
+				vp.setPan(-1.0);
 			} else {
 				vp.setPan(1.0);
 			}
 			vp.play();
+			vp.setPosition(0.0);
 			vp.setLoopState(0);
 			break;
 		default:
@@ -264,13 +282,6 @@ void VideoObject::stopVideo(){
 }
 	
 int VideoObject::isInside(int _x, int _y){
-	if(!fontsLoaded){
-		artistFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",14);
-		themeFont.loadFont("fonts/SpartanLTStd-BookClass.otf",10);
-		tagsFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",10);
-		uploadFont.loadFont("fonts/SpartanLTStd-BookClass.otf",8);
-		fontsLoaded = 1;
-	}
 	if(state == STATE_PLAY){
 		return 0;
 	}
@@ -375,7 +386,10 @@ void VideoObject::updateActualShape(){
 	//ofPushMatrix();
 	//cout<<"trans_x = "<<trans_x<<", trans_z = "<<trans_z<<endl;
 	if(isLeft){
-		translation.set(trans_x,0,trans_z);
+		//translation.set(trans_x,0,trans_z);
+		ofxVec3f rightEdge(ofGetWidth(),0,-300);
+		rightEdge.rotate(-30, ofxVec3f(0,1,0));
+		translation.set(ofGetWidth()/2 - rightEdge.x + 225, 0, rightEdge.z);
 		rotation.set(0,1,0);
 	} else {
 		translation.set(ofGetWidth()/2, 0, -300.0);
@@ -385,7 +399,7 @@ void VideoObject::updateActualShape(){
 	for(vi = shape.begin(); vi < shape.end(); vi++){
 		ofxVec3f *tmp = new ofxVec3f((*vi)->x,(*vi)->y, 0);
 		if(isLeft){
-			tmp->rotate(45,rotation);
+			tmp->rotate(30,rotation);
 		} else {
 			tmp->rotate(-30,rotation);
 		}

@@ -111,12 +111,12 @@ void NavObject::draw(int _id, int _time){
 		}
 	} else {
 		if(isPlaying){
-			ofSetColor(238, 0, 0,200);
+			ofSetColor(238, 0, 0,100);
 			ofRect(pos.x, pos.y, navImage.getWidth(), navImage.getHeight());
-			ofSetColor(255, 255, 255, 200);
+			ofSetColor(255, 255, 255, 180);
 			navImage.draw(pos.x,pos.y);
 		} else {
-			ofSetColor(255, 255, 255, 200);
+			ofSetColor(255, 255, 255, 180);
 			navImage.draw(pos.x,pos.y);
 		}
 	}
@@ -193,14 +193,14 @@ void NavObject::adjustPosition(){
 void NavObject::updateShape(){
 	shape.clear();
 	//calculate bottom left corner
-	ofxVec2f bl = ofxVec2f(pos.x + cos(ofDegToRad(90.0 + rot)) * drawSize.y, pos.y + sin(ofDegToRad(90.0 + rot)) * drawSize.y);
+	ofxVec2f bl = ofxVec2f((pos.x + cos(ofDegToRad(90.0 + rot)) * drawSize.y) + THEME_PLUS, pos.y + sin(ofDegToRad(90.0 + rot)) * drawSize.y);
 	//fill shape vector with rotated values.  The order is intentional.
-	shape.push_back(new ofxVec2f(pos.x,pos.y));
-	shape.push_back(new ofxVec2f(pos.x + cos(ofDegToRad(rot)) * drawSize.x, pos.y + sin(ofDegToRad(rot)) * drawSize.x));
+	shape.push_back(new ofxVec2f(pos.x - THEME_PLUS,pos.y));
+	shape.push_back(new ofxVec2f((pos.x - THEME_PLUS) + cos(ofDegToRad(rot)) * drawSize.x, pos.y + sin(ofDegToRad(rot)) * drawSize.x));
 	shape.push_back(new ofxVec2f(bl.x + cos(ofDegToRad(rot)) * drawSize.x, bl.y + sin(ofDegToRad(rot)) * drawSize.x));
 	shape.push_back(new ofxVec2f(bl.x,bl.y));
 	
-	this->updateActualShape();
+	//this->updateActualShape();
 }
 
 void NavObject::updateActualShape(){

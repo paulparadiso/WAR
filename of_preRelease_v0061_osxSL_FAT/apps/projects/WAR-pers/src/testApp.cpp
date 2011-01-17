@@ -40,9 +40,9 @@ void testApp::setup(){
 	leftWall.allocate(1366,768,GL_RGB);
 	leftFBO.allocate(leftWallImage.getWidth(),leftWallImage.getHeight());
 	//leftWall.loadData(leftWallImage.getPixels(),1366,768,GL_RGB);
-	floorImage.loadImage("room/carpet.jpg");
-	floor.allocate(1366,1366,GL_RGB);
-	floor.loadData(floorImage.getPixels(),1366,1366,GL_RGB);
+	floorImage.loadImage("room/parquet13.jpg");
+	floor.allocate(floorImage.getWidth(),floorImage.getHeight(),GL_RGB);
+	floor.loadData(floorImage.getPixels(),floorImage.getWidth(),floorImage.getHeight(),GL_RGB);
 	ceilingImage.loadImage("room/floor_c.png");
 	//ceiling.allocate(1029,1221,GL_RGB);
 	ceiling.allocate(1366,1366,GL_RGB);
@@ -94,7 +94,7 @@ void testApp::update(){
 		
 	}
 	vom.update(wiiX,wiiY);
-	makeMask(wiiX,wiiY,ofGetWidth()/2, ofGetHeight()/2);
+	//makeMask(wiiX,wiiY,ofGetWidth()/2, ofGetHeight()/2);
 }
 
 float testApp::scaleMouse(){
@@ -135,10 +135,13 @@ void testApp::draw(){
 	glEnable(GL_BLEND);
 	glColorMask(false, false, false, true);
 	glBlendFunc(GL_SRC_ALPHA, GL_ZERO);
-	glColor4f(1.0,1.0,1.0,0.95f);
+	glColor4f(1.0,1.0,1.0,0.90f);
 	glClear(GL_COLOR_BUFFER_BIT);
-	lightMask.draw(0,0);
-	//lightImage.draw(wiiX - lightImage.getWidth()/2, wiiY - lightImage.getHeight()/2);
+	//lightMask.draw(0,0);
+	lightImage.draw(wiiX - lightImage.getWidth()/2, wiiY - lightImage.getHeight()/2);
+	//glBlendFunc(GL_ZERO, GL_SRC_ALPHA);
+	//glColor4f(1.0,1.0,1.0,0.9f);
+	//glClear(GL_COLOR_BUFFER_BIT);
 	//lightImage.draw(ofGetWidth()/2 - lightImage.getWidth()/2, ofGetHeight()/2 - lightImage.getHeight()/2);
 	//lightFBO.draw(0,0);
 	glColorMask(true,true,true,true);
@@ -153,6 +156,14 @@ void testApp::draw(){
 	vom.drawThemes2D();
 	vom.drawDates2D();
 	vom.drawPlayer();
+	//if(vom.haveMessage[0]){
+//		vom.hoverTextBoxes[0].draw(ofGetWidth()/2, ofGetHeight()/2);
+//		vom.haveMessage[0] = 0;
+//	}
+//	if(vom.haveMessage[1]){
+//		vom.hoverTextBoxes[1].draw(ofGetWidth()/2 - vom.hoverTextBoxes[1].getWidth(), ofGetHeight()/2);
+//		vom.haveMessage[1] = 0;
+//	}
 	ofDisableAlphaBlending();
 	//ofSetColor(255, 255, 255);
 }
@@ -214,7 +225,7 @@ void testApp::draw3D(){
 	ceiling.draw3DTop((float*)&topF,
 					  (float*)&topR,
 					  (float*)&topB,
-					  (float*)&topL, ceiling.getWidth(),ceiling.getHeight());
+					  (float*)&topL, ceiling.getWidth(),ceiling.getHeight(),1.0,1.0);
 	topF[1] = rightWall.getHeight();
 	topR[1] = rightWall.getHeight();
 	topB[1] = rightWall.getHeight();
@@ -222,7 +233,7 @@ void testApp::draw3D(){
 	floor.draw3DTop((float*)&topF,
 					(float*)&topR,
 					(float*)&topB,
-					(float*)&topL, floor.getWidth(),floor.getHeight());
+					(float*)&topL, floor.getWidth(),floor.getHeight(),1.0,1.0);
 	
 	ofFill();
 	ofSetColor(255, 255, 255);

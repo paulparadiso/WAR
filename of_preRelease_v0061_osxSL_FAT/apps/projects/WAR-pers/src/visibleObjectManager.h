@@ -19,6 +19,7 @@
 #include "videoLoader.h"
 #include "threadedVideoLoader.h"
 #include "defines.h"
+#include "ofxTextSuite.h"
 
 using namespace std;
 
@@ -50,6 +51,10 @@ public:
 	void drawPlayer();
 	//void addObject(VisibleObject _vo);
 	vector<VisibleObject*>videoObjects;
+	VideoObject videos[MAX_VIDEOS];
+	int positionIndex;
+	ofxTextBlock hoverTextBoxes[2];
+	int haveMessage[2];
 private:
 	vector<VisibleObject*>themeObjects;
 	vector<VisibleObject*>dateObjects;

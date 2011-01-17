@@ -59,7 +59,8 @@ public:
 	string getThemeString();
 	string getUploadString();
 	string getLocationString();
-	string getFrontTitle();
+	string getTitleString();
+	string getArtistString();
 	void drawFront();
 	
 	vector<string>themes;
@@ -74,6 +75,9 @@ public:
 	ofTexture drawTexture;
 	
 	string artist, title, date, description, uploader, uploadDate, uploaderLocale;
+	
+	int positionIndex;
+	int scaledX;
 	
 private:
 	ofxVec2f drawSize;

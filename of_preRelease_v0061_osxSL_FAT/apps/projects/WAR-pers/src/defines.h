@@ -11,8 +11,6 @@
 
 #define DEPTH -600
 
-#define MAX_VIDEOS 10
-
 #define HOVER_CLICK_TIME 2000
 #define THEME_HOVER_CLICK_TIME 500
 #define DATE_SIZE 28
@@ -33,5 +31,10 @@
 
 #define MOVIE_LOAD_TIME 10000
 #define MAX_VIDEOS 10
+#define MAX_VIDEO_PLAYS 2
+#define MAX_VIDEO_LIFE 100000
+
+#define IS_THREADED 1
+#define DEFAULT_DATE 4
 
 #endif

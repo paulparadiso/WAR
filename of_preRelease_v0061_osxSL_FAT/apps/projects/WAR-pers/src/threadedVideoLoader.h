@@ -29,25 +29,32 @@ public:
 	string parseJSON(string _str);
 	
 	void setup(vector<VisibleObject*>*_vos);
+	void setup();
 	void threadedFunction();
 	
 	void checkVideos();
 	void loadMovie();
 	void update();
+	int makeDateInt(string _date);
 	
 	Reader reader;
 	Value root;
 	string localResult;
 	vector<VisibleObject*>*videoObjects;
-	PanningVideoPlayer videos[MAX_VIDEOS];
+	VideoObject videos[MAX_VIDEOS];
+	int numPlays[MAX_VIDEOS];
 	int haveNewVideo;
+	int haveActives[2];
 	
-	int lastMovieLoadedTime;	
-	int nextMovie;
-	int isDoingMovies;
+	int lastVideoLoadedTime;	
+	int nextVideo;
+	int nextNewVideo;
+	int isDoingVideos;
 	int numElements;
 	int enoughVideos;
 	int movieToLoad;
+	
+	string stripSlashes(string _input);
 	
 	int isThreaded;
 	int side;

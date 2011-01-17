@@ -55,6 +55,7 @@
 		EE73AE6312DFA1D800B12D85 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73AE6012DFA1D800B12D85 /* json_writer.cpp */; };
 		EE73B14912E0C4F700B12D85 /* videoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE73B14812E0C4F700B12D85 /* videoLoader.cpp */; };
 		EE8BA05312BC1247005740AD /* navObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8BA05212BC1247005740AD /* navObject.cpp */; };
+		EEA6CD9212E4229400053392 /* ofxTextBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEA6CD8F12E4229400053392 /* ofxTextBlock.cpp */; };
 		EECF76A012D9083400B46498 /* ofx3DGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769612D9083400B46498 /* ofx3DGraphics.cpp */; };
 		EECF76A112D9083400B46498 /* ofxCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769912D9083400B46498 /* ofxCamera.cpp */; };
 		EECF76A212D9083400B46498 /* ofxLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECF769C12D9083400B46498 /* ofxLight.cpp */; };
@@ -258,6 +259,10 @@
 		EE73B14812E0C4F700B12D85 /* videoLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = videoLoader.cpp; sourceTree = "<group>"; };
 		EE8BA05112BC1247005740AD /* navObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navObject.h; sourceTree = "<group>"; };
 		EE8BA05212BC1247005740AD /* navObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = navObject.cpp; sourceTree = "<group>"; };
+		EEA6CD8D12E4229400053392 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		EEA6CD8F12E4229400053392 /* ofxTextBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTextBlock.cpp; sourceTree = "<group>"; };
+		EEA6CD9012E4229400053392 /* ofxTextBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextBlock.h; sourceTree = "<group>"; };
+		EEA6CD9112E4229400053392 /* ofxTextSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTextSuite.h; sourceTree = "<group>"; };
 		EECF769412D9083400B46498 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EECF769612D9083400B46498 /* ofx3DGraphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofx3DGraphics.cpp; sourceTree = "<group>"; };
 		EECF769712D9083400B46498 /* ofx3DGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofx3DGraphics.h; sourceTree = "<group>"; };
@@ -403,6 +408,7 @@
 		120B6F1B1288B49B00962100 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EEA6CD8C12E4229400053392 /* ofxTextSuite */,
 				EE73AE3F12DF9ED200B12D85 /* ofxThread */,
 				EE61AFB912DA282C00B5D30D /* ofxTexture3D */,
 				EECF768F12D9083400B46498 /* ofx3DUtils */,
@@ -909,6 +915,26 @@
 			path = json/json;
 			sourceTree = "<group>";
 		};
+		EEA6CD8C12E4229400053392 /* ofxTextSuite */ = {
+			isa = PBXGroup;
+			children = (
+				EEA6CD8D12E4229400053392 /* install.xml */,
+				EEA6CD8E12E4229400053392 /* src */,
+			);
+			name = ofxTextSuite;
+			path = ../../../addons/ofxTextSuite;
+			sourceTree = SOURCE_ROOT;
+		};
+		EEA6CD8E12E4229400053392 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EEA6CD8F12E4229400053392 /* ofxTextBlock.cpp */,
+				EEA6CD9012E4229400053392 /* ofxTextBlock.h */,
+				EEA6CD9112E4229400053392 /* ofxTextSuite.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		EECF768F12D9083400B46498 /* ofx3DUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1281,6 +1307,7 @@
 				EE73AE6212DFA1D800B12D85 /* json_value.cpp in Sources */,
 				EE73AE6312DFA1D800B12D85 /* json_writer.cpp in Sources */,
 				EE73B14912E0C4F700B12D85 /* videoLoader.cpp in Sources */,
+				EEA6CD9212E4229400053392 /* ofxTextBlock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -78,6 +78,8 @@ public:
 	int trans_x;
 	int trans_z;
 	
+	int shouldPlay;
+	
 	virtual void testShape(int _which) = 0;
 	
 	ofxVec4f box;
