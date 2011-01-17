@@ -157,11 +157,13 @@ void testApp::draw(){
 	vom.drawDates2D();
 	vom.drawPlayer();
 	//if(vom.haveMessage[0]){
-//		vom.hoverTextBoxes[0].draw(ofGetWidth()/2, ofGetHeight()/2);
+//	
+	
+	//vom.hoverTextBoxes[0].draw(ofGetWidth()/2, ofGetHeight()/2);
 //		vom.haveMessage[0] = 0;
 //	}
 //	if(vom.haveMessage[1]){
-//		vom.hoverTextBoxes[1].draw(ofGetWidth()/2 - vom.hoverTextBoxes[1].getWidth(), ofGetHeight()/2);
+	//vom.hoverTextBoxes[1].draw(ofGetWidth()/2 - vom.hoverTextBoxes[1].getWidth(), ofGetHeight()/2);
 //		vom.haveMessage[1] = 0;
 //	}
 	ofDisableAlphaBlending();

@@ -43,9 +43,11 @@ VisibleObjectManager::VisibleObjectManager(){
 		videos[i] = loader.videos[i];
 	}
 	//hoverTextBoxes[0].init("SpartanLTStd-BookClass.otf",12);
-	//hoverTextBoxes[0].wrapTextX(ofGetWidth()/2 - ((ofGetWidth()/3) - 25));
-	//hoverTextBoxes[1].init("SpartanLTStd-BookClass.otf",12);
-	//hoverTextBoxes[1].wrapTextX(ofGetWidth()/2 - ((ofGetWidth()/3) - 25));
+//	hoverTextBoxes[0].wrapTextX(ofGetWidth()/2 - ((ofGetWidth()/3) - 25));
+//	hoverTextBoxes[0].setText("This is a large block of text that will appear on the right hand side of the screen when someone hovers over an item on that side of the screen."
+//	hoverTextBoxes[1].init("SpartanLTStd-BookClass.otf",12);
+//	hoverTextBoxes[1].wrapTextX(ofGetWidth()/2 - ((ofGetWidth()/3) - 25));
+//	hoverTextBoxes[1].setText("This is a large block of text that will appear on the right hand side of the screen when someone hovers over an item on that side of the screen."
 	haveMessage[0] = 0;
 	haveMessage[1] = 0;
 }
