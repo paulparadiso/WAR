@@ -604,13 +604,12 @@ void ofTexture::draw3D(float x, float y, float oZ, float w, float h, float eZ, f
 }
 
 //----------------------------------------------------------
-void ofTexture::draw3DTop(float *_a,float *_b,float *_c,float *_d, float w, float h){
+void ofTexture::draw3DTop(float *_a,float *_b,float *_c,float *_d, float w, float h, float _mulW, float _mulH){
 	
 	glEnable(texData.textureTarget);
 	
 	// bind the texture
 	glBindTexture( texData.textureTarget, (GLuint)texData.textureID );
-	
 	GLfloat px0 = 0;		// up to you to get the aspect ratio right
 	GLfloat py0 = 0;
 	GLfloat px1 = w;
@@ -678,9 +677,9 @@ void ofTexture::draw3DTop(float *_a,float *_b,float *_c,float *_d, float w, floa
 	
 	GLfloat tex_coords[] = {
 		tx0,ty0,
-		tx1,ty0,
-		tx1,ty1,
-		tx0,ty1
+		tx1 * _mulW,ty0,
+		tx1 * _mulW,ty1 * _mulH,
+		tx0,ty1 * _mulH
 	};
 	
 	//ofGetWidth()/2,0,-600,ceiling.getHeight(),0,ceiling.getWidth() * 1.414,topN

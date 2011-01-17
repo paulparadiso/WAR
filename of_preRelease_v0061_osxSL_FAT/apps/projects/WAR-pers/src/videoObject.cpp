@@ -108,7 +108,6 @@ void VideoObject::draw(){
 	if(state == STATE_PLAY  || shouldPlay == 0){
 		return;
 	}
-	vp.setPosition(0.2);
 	if(!fontsLoaded){
 		artistFont.loadFont("fonts/SpartanLTStd-HeavyClass.otf",14);
 		themeFont.loadFont("fonts/SpartanLTStd-BookClass.otf",10);
@@ -119,13 +118,15 @@ void VideoObject::draw(){
 	if(!textureSet){
 		//vp.tex.allocate(vp.width, vp.height, GL_RGB);
 		//vp.tex.loadData(vp.pixels, vp.width, vp.height, GL_RGB);
-		vp.play();
-		vp.setPosition(0.2);
-		vp.setLoopState(OF_LOOP_NONE);
-		vp.stop();
 		drawTexture.allocate(vp.getWidth(),vp.getHeight(),GL_RGB);
 		drawTexture.loadData(vp.getPixels(),vp.getWidth(),vp.getHeight(),GL_RGB);
 		textureSet = 1;
+		if(vp.bLoaded){
+			vp.play();
+			vp.setPosition(0.2);
+			vp.setLoopState(OF_LOOP_NONE);
+			vp.stop();
+		}
 	}
 	//ofTexture tex;
 	//tex.allocate(vp.getWidth(),vp.getHeight(),GL_RGB);

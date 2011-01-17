@@ -144,7 +144,7 @@ void ThreadedVideoLoader::checkVideos(){
 			if(numPlays[i] >= MAX_VIDEO_PLAYS){
 				cout << "Num plays met."<<endl;
 				if(haveNewVideo == 0 && haveActives[videos[i].isLeft] != videos[i].id){
-					nextVideo = i;
+					nextVideo = videos[i].id;
 					side = videos[i].isLeft;
 					if(side){
 						posLeftIndex = videos[i].positionIndex;
