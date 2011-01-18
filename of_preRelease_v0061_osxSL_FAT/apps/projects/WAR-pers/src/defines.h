@@ -37,4 +37,11 @@
 #define IS_THREADED 1
 #define DEFAULT_DATE 4
 
+#define MARGIN 100
+#define STATE_REST 0
+#define STATE_HOVER 1
+#define STATE_PLAY 2
+
+#define DEFAULT_DATE_STATE STATE_PLAY
+
 #endif

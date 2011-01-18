@@ -158,7 +158,7 @@ void testApp::draw(){
 	vom.drawPlayer();
 	//if(vom.haveMessage[0]){
 //	
-	
+	//ofSetColor(255, 255, 255);
 	//vom.hoverTextBoxes[0].draw(ofGetWidth()/2, ofGetHeight()/2);
 //		vom.haveMessage[0] = 0;
 //	}

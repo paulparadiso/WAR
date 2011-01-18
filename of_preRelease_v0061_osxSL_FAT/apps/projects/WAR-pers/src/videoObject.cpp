@@ -86,9 +86,9 @@ void VideoObject::update(){
 
 void VideoObject::draw(int _id, int _time){
 	if(isLeft){
-		scaledX = drawSize.x * 1/ofGetWidth() * pos.x;
+		scaledX = drawSize.x * (1.0/ofGetWidth()) * pos.x;
 	} else {
-		scaledX = drawSize.x * 1/ofGetWidth() * (ofGetWidth() -  pos.x);
+		scaledX = drawSize.x * (1.0/ofGetWidth()) * (ofGetWidth() -  pos.x);
 	}
 	if(id == _id){
 		alpha = DEFAULT_ALPHA + (((255 - DEFAULT_ALPHA) / HOVER_CLICK_TIME) * _time);
@@ -104,6 +104,7 @@ void VideoObject::draw(int _id, int _time){
 void VideoObject::draw(){
 	//ofEnableAlphaBlending();
 	//ofEnableSmoothing();
+	cout<<"I am drawing"<<endl;
 	size.set(vp.getWidth(),vp.getHeight());
 	if(state == STATE_PLAY  || shouldPlay == 0){
 		return;
@@ -122,6 +123,7 @@ void VideoObject::draw(){
 		drawTexture.loadData(vp.getPixels(),vp.getWidth(),vp.getHeight(),GL_RGB);
 		textureSet = 1;
 		if(vp.bLoaded){
+			vp.setVolume(0);
 			vp.play();
 			vp.setPosition(0.2);
 			vp.setLoopState(OF_LOOP_NONE);
@@ -249,6 +251,7 @@ void VideoObject::resetState(){
 	float twPercent;
 	switch(state){
 		case STATE_REST:
+			vp.setVolume(0);
 			vp.setPosition(0.2);
 			vp.stop();
 			drawTexture.loadData(vp.getPixels(), vp.getWidth(), vp.getHeight(), GL_RGB);
@@ -263,14 +266,15 @@ void VideoObject::resetState(){
 			playSize.set(tw, size.y * twPercent);
 			isPlaying = 1;
 			numPlays++;
+			vp.play();
+			vp.setPosition(0.0);
+			vp.setLoopState(0);
+			vp.setVolume(90);
 			if(isLeft){
 				vp.setPan(-1.0);
 			} else {
 				vp.setPan(1.0);
 			}
-			vp.play();
-			vp.setPosition(0.0);
-			vp.setLoopState(0);
 			break;
 		default:
 			break;

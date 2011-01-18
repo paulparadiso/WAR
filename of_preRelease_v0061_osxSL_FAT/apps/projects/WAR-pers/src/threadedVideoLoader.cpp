@@ -40,8 +40,8 @@ ThreadedVideoLoader::ThreadedVideoLoader(){
 	posLeft[0].set(ofGetWidth() - 320,20);
 	posLeft[1].set(ofGetWidth() - 350,290);
 	posLeft[2].set(ofGetWidth() - 520,535);
-	posLeft[3].set(ofGetWidth() - 675,100);
-	posLeft[4].set(ofGetWidth() - 625,300);
+	posLeft[3].set(ofGetWidth() - 575,50);
+	posLeft[4].set(ofGetWidth() - 625,280);
 	
 	haveActives[0] = -1;
 	haveActives[1] = -1;
@@ -216,8 +216,9 @@ string ThreadedVideoLoader::parseJSON(string _str){
 		cout<<"Failed to parse JSON\n"<< reader.getFormatedErrorMessages();
 		return result;
 	}
-	Value text = root[0];
-	numElements = (int)text.size();
+	Value text = root[0]
+	;
+	numElements = (int)root.size();
 	cout<<"First path = "<<text["url"].asString()<<"of "<<numElements<<" objects"<<endl;
 	return result;
 }
